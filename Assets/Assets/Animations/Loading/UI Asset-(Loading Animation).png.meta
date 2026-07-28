@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: d7ec1dfc0d4b29043b9d6e17306c8650
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5068779557978178108
+    second: UI Asset-(Loading Animation)_0
+  - first:
+      213: -8505801538676397111
+    second: UI Asset-(Loading Animation)_1
+  - first:
+      213: 3337525450028622203
+    second: UI Asset-(Loading Animation)_2
+  - first:
+      213: -264753580314898334
+    second: UI Asset-(Loading Animation)_3
+  - first:
+      213: 6685210606380801689
+    second: UI Asset-(Loading Animation)_4
+  - first:
+      213: 5393944852837690538
+    second: UI Asset-(Loading Animation)_5
+  - first:
+      213: 4997653391244315230
+    second: UI Asset-(Loading Animation)_6
+  - first:
+      213: 1269347966805008372
+    second: UI Asset-(Loading Animation)_7
+  - first:
+      213: -8882089244754242828
+    second: UI Asset-(Loading Animation)_8
+  - first:
+      213: -656085387666908804
+    second: UI Asset-(Loading Animation)_9
+  - first:
+      213: 7382000398436995789
+    second: UI Asset-(Loading Animation)_10
+  - first:
+      213: 8598563402936340120
+    second: UI Asset-(Loading Animation)_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c320d06072ce75640800000000000000
+      internalID: 5068779557978178108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbe835f09255f980800000000000000
+      internalID: -8505801538676397111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7128cdb6b5415e20800000000000000
+      internalID: 3337525450028622203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_3
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 260515c7508635cf0800000000000000
+      internalID: -264753580314898334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_4
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e500270a3a6cc50800000000000000
+      internalID: 6685210606380801689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_5
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacef6be3442bda40800000000000000
+      internalID: 5393944852837690538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_6
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5ac4a7d74b3b5540800000000000000
+      internalID: 4997653391244315230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_7
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ffd6c12041ad9110800000000000000
+      internalID: 1269347966805008372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_8
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f21b1724ea7cb480800000000000000
+      internalID: -8882089244754242828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_9
+      rect:
+        serializedVersion: 2
+        x: 1175
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c791ac5e0dd15e6f0800000000000000
+      internalID: -656085387666908804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_10
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc211a83042227660800000000000000
+      internalID: 7382000398436995789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Asset-(Loading Animation)_11
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 20
+        width: 83
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ec1ba9bdb345770800000000000000
+      internalID: 8598563402936340120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      UI Asset-(Loading Animation)_0: 5068779557978178108
+      UI Asset-(Loading Animation)_1: -8505801538676397111
+      UI Asset-(Loading Animation)_10: 7382000398436995789
+      UI Asset-(Loading Animation)_11: 8598563402936340120
+      UI Asset-(Loading Animation)_2: 3337525450028622203
+      UI Asset-(Loading Animation)_3: -264753580314898334
+      UI Asset-(Loading Animation)_4: 6685210606380801689
+      UI Asset-(Loading Animation)_5: 5393944852837690538
+      UI Asset-(Loading Animation)_6: 4997653391244315230
+      UI Asset-(Loading Animation)_7: 1269347966805008372
+      UI Asset-(Loading Animation)_8: -8882089244754242828
+      UI Asset-(Loading Animation)_9: -656085387666908804
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

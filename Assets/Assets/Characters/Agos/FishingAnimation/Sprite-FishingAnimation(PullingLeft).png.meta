@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 42046f04b4a7f274588f950139ea61cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2773772172014853708
+    second: Sprite-FishingAnimation(PullingLeft)_0
+  - first:
+      213: -151143259570833244
+    second: Sprite-FishingAnimation(PullingLeft)_1
+  - first:
+      213: 7138587217032964227
+    second: Sprite-FishingAnimation(PullingLeft)_2
+  - first:
+      213: 7671715457873957450
+    second: Sprite-FishingAnimation(PullingLeft)_3
+  - first:
+      213: 7062981674947563009
+    second: Sprite-FishingAnimation(PullingLeft)_4
+  - first:
+      213: -4388666211138363657
+    second: Sprite-FishingAnimation(PullingLeft)_5
+  - first:
+      213: -1710629160869065035
+    second: Sprite-FishingAnimation(PullingLeft)_6
+  - first:
+      213: 3569135154802187267
+    second: Sprite-FishingAnimation(PullingLeft)_7
+  - first:
+      213: -5435896500801021403
+    second: Sprite-FishingAnimation(PullingLeft)_8
+  - first:
+      213: 8186084477226934698
+    second: Sprite-FishingAnimation(PullingLeft)_9
+  - first:
+      213: 3308776811304482554
+    second: Sprite-FishingAnimation(PullingLeft)_10
+  - first:
+      213: -2809266713348797471
+    second: Sprite-FishingAnimation(PullingLeft)_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b1e037d7e49189d0800000000000000
+      internalID: -2773772172014853708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8f517910807edf0800000000000000
+      internalID: -151143259570833244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_2
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388e465804b511360800000000000000
+      internalID: 7138587217032964227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_3
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42537cff88677a60800000000000000
+      internalID: 7671715457873957450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ec75e7960c40260800000000000000
+      internalID: 7062981674947563009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe965745535813c0800000000000000
+      internalID: -4388666211138363657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 0
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be89fb67df9248e0800000000000000
+      internalID: -1710629160869065035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30cd751638d188130800000000000000
+      internalID: 3569135154802187267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_8
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 0
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a57f1eee0df84b0800000000000000
+      internalID: -5435896500801021403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_9
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 0
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa16376d570da9170800000000000000
+      internalID: 8186084477226934698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_10
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 0
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af67adeaaf22bed20800000000000000
+      internalID: 3308776811304482554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(PullingLeft)_11
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 0
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb048feeca7309d0800000000000000
+      internalID: -2809266713348797471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2defda5b0e8de2641ab282f5225e147c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprite-FishingAnimation(PullingLeft)_0: -2773772172014853708
+      Sprite-FishingAnimation(PullingLeft)_1: -151143259570833244
+      Sprite-FishingAnimation(PullingLeft)_10: 3308776811304482554
+      Sprite-FishingAnimation(PullingLeft)_11: -2809266713348797471
+      Sprite-FishingAnimation(PullingLeft)_2: 7138587217032964227
+      Sprite-FishingAnimation(PullingLeft)_3: 7671715457873957450
+      Sprite-FishingAnimation(PullingLeft)_4: 7062981674947563009
+      Sprite-FishingAnimation(PullingLeft)_5: -4388666211138363657
+      Sprite-FishingAnimation(PullingLeft)_6: -1710629160869065035
+      Sprite-FishingAnimation(PullingLeft)_7: 3569135154802187267
+      Sprite-FishingAnimation(PullingLeft)_8: -5435896500801021403
+      Sprite-FishingAnimation(PullingLeft)_9: 8186084477226934698
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

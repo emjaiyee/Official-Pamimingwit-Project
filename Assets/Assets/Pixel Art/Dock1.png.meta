@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: 26c1e841fbc39834387e0165183b862a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2649857629329529851
+    second: Dock1_0
+  - first:
+      213: -1385263783510544826
+    second: Dock1_1
+  - first:
+      213: 4789301071441475411
+    second: Dock1_2
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dock1_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb9b8d697f26c420800000000000000
+      internalID: 2649857629329529851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ee3a7aded86cce0800000000000000
+      internalID: -1385263783510544826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357baad13f3077240800000000000000
+      internalID: 4789301071441475411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_3
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 323
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbdeb11e87fa42a42a305003e0548c36
+      internalID: -2068994048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c79ef7797cc0e4c91dee57b64d32a6
+      internalID: -762732556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3560e3b83f7764faab9523e372f5af
+      internalID: -819972114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed0a613da152074db9073ba5b65d139
+      internalID: -1634214439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 323
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b19518cfaad88a4bb875b4a4764169e
+      internalID: 1030002217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e1f2284f9dbc541b9cf78561f1c8c8
+      internalID: 1239441971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d246608ebf26b0047921f7608164165b
+      internalID: 345715937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_10
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0219cb19fc482d4b80396c96bdce8ce
+      internalID: -1922474425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_11
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 259
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68324036540a7b946aeef104801203ce
+      internalID: -405971043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538a8bb18c20a244c8b23810d53f6ecc
+      internalID: -427732920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930d42999b1dd4744a203c3415962523
+      internalID: -1840299079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f2c8553262f07488bd2566c8a3af93
+      internalID: 86731093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 259
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea675fd6726dda4eb92ea06d6655ced
+      internalID: -1866186837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f929fcb2fa54cd345adff9ce5ab6c33f
+      internalID: -474970448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ef6a4639a7dcb44bff76f143c9aff5
+      internalID: 268324923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cacc5a421563d4b874314ebcddfe64
+      internalID: -1479198307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_19
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 195
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7461af216dfcedb43b410e8fa9e2cef0
+      internalID: -575286008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ed4e279035c4842a359f2fa626722f
+      internalID: 31870464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91d1093aa4e4b74d952491e26d3259e
+      internalID: 1908005667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_22
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4463c78e5d1df594c9222a99dde179cb
+      internalID: 2108424736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 195
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c602ca9c3a45c41bcf6bef40391dd4
+      internalID: -1203225155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2584afaa7ebc741a895e815ee37504
+      internalID: -654760125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19112f66e6160b149864100c70c6d981
+      internalID: -81533567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260d816a47d8dc94691796f463b37184
+      internalID: -269746154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_27
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 131
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d89affab2879494eb1d01a551fc5022
+      internalID: 140828147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e321d01b57a82f439221e3ef0281887
+      internalID: 1459801883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_29
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3ad6cd137fc4e478c70342f9ef770e
+      internalID: 1164768308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd52a3c05aa9224c990c42087cb7b35
+      internalID: -963976783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 131
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a54d9410c26064f889e1b60e69f827
+      internalID: -742652999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d66b1be6830df40bc2cbb4cdbacea1
+      internalID: -465711102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7536b14d75fe43a41b87a8ed82907e53
+      internalID: 1683650225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c674f2b1a943c45adbb6b039c489b1
+      internalID: 850603500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_35
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 67
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dd8cb33a8be2e4c805ec2ad3017443
+      internalID: -368076506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74318c07d887d44385a61a6cd0c5ece
+      internalID: 2086660115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c5ef3b819ba604696223e6a6e0f61d
+      internalID: 1235263073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3475f3d4d69384ba1319e4f27426b2
+      internalID: -1478217652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 67
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      - - {x: 4, y: 13.5}
+        - {x: 4, y: 13.5}
+        - {x: 4, y: 13.5}
+        - {x: 4, y: 13.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e67b7e1378b8304daabf2f669923a3a
+      internalID: 1330395555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b23cc03d7142204eb1c8bbb96dfbca5
+      internalID: 862698170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e344025d59a022a4391a3d6f04b033d2
+      internalID: -1257131148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_42
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1be3d41690b9314691b740a89f9b955
+      internalID: -1928436439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_43
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 3
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      - - {x: 3, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 13.5}
+      - - {x: 3, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 13.5}
+      - - {x: -3, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -13.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35843cdc9f815cb4cacd511d05920542
+      internalID: -600963390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 13
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9af0d65ce75824faf63f852089e81d
+      internalID: 988963989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_45
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 13
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cb2c76bc627bf40a432ff0dd5a9fe0
+      internalID: -487564862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_46
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 13
+        width: 32
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3146f4dc46a48d841ab5644529f4c3de
+      internalID: -1192695476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dock1_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 3
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -13.5}
+        - {x: 4, y: -13.5}
+        - {x: 4, y: -12.5}
+        - {x: 5, y: -12.5}
+        - {x: 5, y: 12.5}
+        - {x: 4, y: 12.5}
+        - {x: 4, y: 13.5}
+        - {x: 3, y: 13.5}
+        - {x: 3, y: 14.5}
+        - {x: -3, y: 14.5}
+        - {x: -3, y: 13.5}
+        - {x: -4, y: 13.5}
+        - {x: -4, y: 12.5}
+        - {x: -5, y: 12.5}
+        - {x: -5, y: -12.5}
+        - {x: -4, y: -12.5}
+        - {x: -4, y: -13.5}
+        - {x: -3, y: -13.5}
+        - {x: -3, y: -14.5}
+        - {x: 3, y: -14.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26afea2fbefc4ef44ab2f77a8ff96dd8
+      internalID: 124221149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Dock1_0: 2649857629329529851
+      Dock1_1: -1385263783510544826
+      Dock1_10: -1922474425
+      Dock1_11: -405971043
+      Dock1_12: -427732920
+      Dock1_13: -1840299079
+      Dock1_14: 86731093
+      Dock1_15: -1866186837
+      Dock1_16: -474970448
+      Dock1_17: 268324923
+      Dock1_18: -1479198307
+      Dock1_19: -575286008
+      Dock1_2: 4789301071441475411
+      Dock1_20: 31870464
+      Dock1_21: 1908005667
+      Dock1_22: 2108424736
+      Dock1_23: -1203225155
+      Dock1_24: -654760125
+      Dock1_25: -81533567
+      Dock1_26: -269746154
+      Dock1_27: 140828147
+      Dock1_28: 1459801883
+      Dock1_29: 1164768308
+      Dock1_3: -2068994048
+      Dock1_30: -963976783
+      Dock1_31: -742652999
+      Dock1_32: -465711102
+      Dock1_33: 1683650225
+      Dock1_34: 850603500
+      Dock1_35: -368076506
+      Dock1_36: 2086660115
+      Dock1_37: 1235263073
+      Dock1_38: -1478217652
+      Dock1_39: 1330395555
+      Dock1_4: -762732556
+      Dock1_40: 862698170
+      Dock1_41: -1257131148
+      Dock1_42: -1928436439
+      Dock1_43: -600963390
+      Dock1_44: 988963989
+      Dock1_45: -487564862
+      Dock1_46: -1192695476
+      Dock1_47: 124221149
+      Dock1_5: -819972114
+      Dock1_6: -1634214439
+      Dock1_7: 1030002217
+      Dock1_8: 1239441971
+      Dock1_9: 345715937
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

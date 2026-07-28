@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 00ce8f76fabf6de49bbf5079bf85083b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6386403688385252160
+    second: Sprite-FishingAnimation(ReleaseRight)_0
+  - first:
+      213: -4849902605746690298
+    second: Sprite-FishingAnimation(ReleaseRight)_1
+  - first:
+      213: 1035488871914489344
+    second: Sprite-FishingAnimation(ReleaseRight)_2
+  - first:
+      213: 2491036504020004143
+    second: Sprite-FishingAnimation(ReleaseRight)_3
+  - first:
+      213: 1906032295393786056
+    second: Sprite-FishingAnimation(ReleaseRight)_4
+  - first:
+      213: 8468191552687894559
+    second: Sprite-FishingAnimation(ReleaseRight)_5
+  - first:
+      213: 4655706470145208566
+    second: Sprite-FishingAnimation(ReleaseRight)_6
+  - first:
+      213: -7536062644669344698
+    second: Sprite-FishingAnimation(ReleaseRight)_7
+  - first:
+      213: 8811237748220515820
+    second: Sprite-FishingAnimation(ReleaseRight)_8
+  - first:
+      213: -5087176494336942359
+    second: Sprite-FishingAnimation(ReleaseRight)_9
+  - first:
+      213: -5308080336678918463
+    second: Sprite-FishingAnimation(ReleaseRight)_10
+  - first:
+      213: 7425917145359356831
+    second: Sprite-FishingAnimation(ReleaseRight)_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c47d899eafee57a0800000000000000
+      internalID: -6386403688385252160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6072a35a64fa1bcb0800000000000000
+      internalID: -4849902605746690298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006455b84abce5e00800000000000000
+      internalID: 1035488871914489344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_3
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 40
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2da4a89080f19220800000000000000
+      internalID: 2491036504020004143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 35
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c87e592646937a10800000000000000
+      internalID: 1906032295393786056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10fcebc95f058570800000000000000
+      internalID: 8468191552687894559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_6
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 0
+        width: 36
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f03e7b1e546c9040800000000000000
+      internalID: 4655706470145208566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_7
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 0
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6449463d3f68a6790800000000000000
+      internalID: -7536062644669344698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_8
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5523e4c0ec74a70800000000000000
+      internalID: 8811237748220515820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee54517ee7b669b0800000000000000
+      internalID: -5087176494336942359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_10
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 43
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c66405ae09e556b0800000000000000
+      internalID: -5308080336678918463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-FishingAnimation(ReleaseRight)_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 0
+        width: 43
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9390acac482e0760800000000000000
+      internalID: 7425917145359356831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprite-FishingAnimation(ReleaseRight)_0: -6386403688385252160
+      Sprite-FishingAnimation(ReleaseRight)_1: -4849902605746690298
+      Sprite-FishingAnimation(ReleaseRight)_10: -5308080336678918463
+      Sprite-FishingAnimation(ReleaseRight)_11: 7425917145359356831
+      Sprite-FishingAnimation(ReleaseRight)_2: 1035488871914489344
+      Sprite-FishingAnimation(ReleaseRight)_3: 2491036504020004143
+      Sprite-FishingAnimation(ReleaseRight)_4: 1906032295393786056
+      Sprite-FishingAnimation(ReleaseRight)_5: 8468191552687894559
+      Sprite-FishingAnimation(ReleaseRight)_6: 4655706470145208566
+      Sprite-FishingAnimation(ReleaseRight)_7: -7536062644669344698
+      Sprite-FishingAnimation(ReleaseRight)_8: 8811237748220515820
+      Sprite-FishingAnimation(ReleaseRight)_9: -5087176494336942359
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

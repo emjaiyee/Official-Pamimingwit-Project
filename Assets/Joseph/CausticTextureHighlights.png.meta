@@ -1,0 +1,3432 @@
+fileFormatVersion: 2
+guid: 887728da21207ff409eaff2590fa7326
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2097589039260507237
+    second: CausticTextureHighlights_0
+  - first:
+      213: -7133333867435954804
+    second: CausticTextureHighlights_1
+  - first:
+      213: -6777536487314170454
+    second: CausticTextureHighlights_2
+  - first:
+      213: -3274893939663111675
+    second: CausticTextureHighlights_3
+  - first:
+      213: 4486118552202053342
+    second: CausticTextureHighlights_4
+  - first:
+      213: 3499685788237770356
+    second: CausticTextureHighlights_5
+  - first:
+      213: 1981715124456529068
+    second: CausticTextureHighlights_6
+  - first:
+      213: -828131171028284736
+    second: CausticTextureHighlights_7
+  - first:
+      213: 7350178200680156219
+    second: CausticTextureHighlights_8
+  - first:
+      213: 5233295626192960536
+    second: CausticTextureHighlights_9
+  - first:
+      213: 8419730361189038388
+    second: CausticTextureHighlights_10
+  - first:
+      213: 8954945382312620594
+    second: CausticTextureHighlights_11
+  - first:
+      213: -2244002247321947572
+    second: CausticTextureHighlights_12
+  - first:
+      213: -9008007351117541403
+    second: CausticTextureHighlights_13
+  - first:
+      213: -8254631180229235713
+    second: CausticTextureHighlights_14
+  - first:
+      213: -551896991753903438
+    second: CausticTextureHighlights_15
+  - first:
+      213: -9097223336643714435
+    second: CausticTextureHighlights_16
+  - first:
+      213: 7484254404577438467
+    second: CausticTextureHighlights_17
+  - first:
+      213: 5218646255468876680
+    second: CausticTextureHighlights_18
+  - first:
+      213: -2424669239741550023
+    second: CausticTextureHighlights_19
+  - first:
+      213: -931310202785910609
+    second: CausticTextureHighlights_20
+  - first:
+      213: 2535136140359864738
+    second: CausticTextureHighlights_21
+  - first:
+      213: -4098506432219098873
+    second: CausticTextureHighlights_22
+  - first:
+      213: 2384395799893928760
+    second: CausticTextureHighlights_23
+  - first:
+      213: -2170736421571984571
+    second: CausticTextureHighlights_24
+  - first:
+      213: 2315073653990090437
+    second: CausticTextureHighlights_25
+  - first:
+      213: 1026660660875751830
+    second: CausticTextureHighlights_26
+  - first:
+      213: 3649068923263286941
+    second: CausticTextureHighlights_27
+  - first:
+      213: -1867939209805231578
+    second: CausticTextureHighlights_28
+  - first:
+      213: -5264469688550294662
+    second: CausticTextureHighlights_29
+  - first:
+      213: -3178123261692485420
+    second: CausticTextureHighlights_30
+  - first:
+      213: 5985589277162727229
+    second: CausticTextureHighlights_31
+  - first:
+      213: 3034994748805171410
+    second: CausticTextureHighlights_32
+  - first:
+      213: 1599121963154248800
+    second: CausticTextureHighlights_33
+  - first:
+      213: -4742530704051771952
+    second: CausticTextureHighlights_34
+  - first:
+      213: 8633072671691129469
+    second: CausticTextureHighlights_35
+  - first:
+      213: 1737632181862746811
+    second: CausticTextureHighlights_36
+  - first:
+      213: -208891801950657646
+    second: CausticTextureHighlights_37
+  - first:
+      213: 5762349291651910310
+    second: CausticTextureHighlights_38
+  - first:
+      213: 953300221076042833
+    second: CausticTextureHighlights_39
+  - first:
+      213: 677762400693388277
+    second: CausticTextureHighlights_40
+  - first:
+      213: -3658041681990076626
+    second: CausticTextureHighlights_41
+  - first:
+      213: -4307157046713310261
+    second: CausticTextureHighlights_42
+  - first:
+      213: 8516102791102288085
+    second: CausticTextureHighlights_43
+  - first:
+      213: -2986828138057528784
+    second: CausticTextureHighlights_44
+  - first:
+      213: -8584468567817515732
+    second: CausticTextureHighlights_45
+  - first:
+      213: 8790538730109054860
+    second: CausticTextureHighlights_46
+  - first:
+      213: -4220780093732460992
+    second: CausticTextureHighlights_47
+  - first:
+      213: -4974624378720826460
+    second: CausticTextureHighlights_48
+  - first:
+      213: 7423125025993217540
+    second: CausticTextureHighlights_49
+  - first:
+      213: -4520869698359356758
+    second: CausticTextureHighlights_50
+  - first:
+      213: 1707239184719130444
+    second: CausticTextureHighlights_51
+  - first:
+      213: 3309876859706047093
+    second: CausticTextureHighlights_52
+  - first:
+      213: -9026972430032134592
+    second: CausticTextureHighlights_53
+  - first:
+      213: 2374779550400802036
+    second: CausticTextureHighlights_54
+  - first:
+      213: -2978295239725074572
+    second: CausticTextureHighlights_55
+  - first:
+      213: -1951243669525817476
+    second: CausticTextureHighlights_56
+  - first:
+      213: -966418306091848396
+    second: CausticTextureHighlights_57
+  - first:
+      213: 126182214518867843
+    second: CausticTextureHighlights_58
+  - first:
+      213: -6365838072293103416
+    second: CausticTextureHighlights_59
+  - first:
+      213: 1160734133713850598
+    second: CausticTextureHighlights_60
+  - first:
+      213: -4208801587924852339
+    second: CausticTextureHighlights_61
+  - first:
+      213: 2377336139223318197
+    second: CausticTextureHighlights_62
+  - first:
+      213: -9126803486348596162
+    second: CausticTextureHighlights_63
+  - first:
+      213: 658900478176308580
+    second: CausticTextureHighlights_64
+  - first:
+      213: 1050940815471202959
+    second: CausticTextureHighlights_65
+  - first:
+      213: 972445637693137056
+    second: CausticTextureHighlights_66
+  - first:
+      213: 122805875731909471
+    second: CausticTextureHighlights_67
+  - first:
+      213: -7198398569848128613
+    second: CausticTextureHighlights_68
+  - first:
+      213: -4462633845552362561
+    second: CausticTextureHighlights_69
+  - first:
+      213: -5182828632923145246
+    second: CausticTextureHighlights_70
+  - first:
+      213: 7249002601099066458
+    second: CausticTextureHighlights_71
+  - first:
+      213: 5981385187583934157
+    second: CausticTextureHighlights_72
+  - first:
+      213: -3529765020036863577
+    second: CausticTextureHighlights_73
+  - first:
+      213: 7428582507147022566
+    second: CausticTextureHighlights_74
+  - first:
+      213: 2609477572657882465
+    second: CausticTextureHighlights_75
+  - first:
+      213: -6592440767906340714
+    second: CausticTextureHighlights_76
+  - first:
+      213: -9111203369079607180
+    second: CausticTextureHighlights_77
+  - first:
+      213: -3436634574269531426
+    second: CausticTextureHighlights_78
+  - first:
+      213: -8247638948306718805
+    second: CausticTextureHighlights_79
+  - first:
+      213: 8194024067173801157
+    second: CausticTextureHighlights_80
+  - first:
+      213: 3319918715724512397
+    second: CausticTextureHighlights_81
+  - first:
+      213: 2645726262654324303
+    second: CausticTextureHighlights_82
+  - first:
+      213: 709984120288646348
+    second: CausticTextureHighlights_83
+  - first:
+      213: -4629024711777549310
+    second: CausticTextureHighlights_84
+  - first:
+      213: -1427856414324250324
+    second: CausticTextureHighlights_85
+  - first:
+      213: 1432438625095691867
+    second: CausticTextureHighlights_86
+  - first:
+      213: -3547794741738900565
+    second: CausticTextureHighlights_87
+  - first:
+      213: -7210351342424281459
+    second: CausticTextureHighlights_88
+  - first:
+      213: -6953102170275892799
+    second: CausticTextureHighlights_89
+  - first:
+      213: 1938622337134097797
+    second: CausticTextureHighlights_90
+  - first:
+      213: -8870528782646577264
+    second: CausticTextureHighlights_91
+  - first:
+      213: -4332158551439650573
+    second: CausticTextureHighlights_92
+  - first:
+      213: -7417407234386370503
+    second: CausticTextureHighlights_93
+  - first:
+      213: 372419033332197079
+    second: CausticTextureHighlights_94
+  - first:
+      213: 3179388561031828651
+    second: CausticTextureHighlights_95
+  - first:
+      213: 8591029561476901005
+    second: CausticTextureHighlights_96
+  - first:
+      213: 7269668326958077415
+    second: CausticTextureHighlights_97
+  - first:
+      213: 883134371680891055
+    second: CausticTextureHighlights_98
+  - first:
+      213: -7933516931066954493
+    second: CausticTextureHighlights_99
+  - first:
+      213: -4340317092444800765
+    second: CausticTextureHighlights_100
+  - first:
+      213: 2286106162847866976
+    second: CausticTextureHighlights_101
+  - first:
+      213: -7983806441298990799
+    second: CausticTextureHighlights_102
+  - first:
+      213: -3702618276406323042
+    second: CausticTextureHighlights_103
+  - first:
+      213: 8561162919554575087
+    second: CausticTextureHighlights_104
+  - first:
+      213: 7119221232505563491
+    second: CausticTextureHighlights_105
+  - first:
+      213: 8037057276318944122
+    second: CausticTextureHighlights_106
+  - first:
+      213: -6184680951341809949
+    second: CausticTextureHighlights_107
+  - first:
+      213: 6353087005120435751
+    second: CausticTextureHighlights_108
+  - first:
+      213: 6677913065925225800
+    second: CausticTextureHighlights_109
+  - first:
+      213: -4527107395365659758
+    second: CausticTextureHighlights_110
+  - first:
+      213: -4817035629529564036
+    second: CausticTextureHighlights_111
+  - first:
+      213: -3594205874837865092
+    second: CausticTextureHighlights_112
+  - first:
+      213: -6659066978638240002
+    second: CausticTextureHighlights_113
+  - first:
+      213: 399403475980566241
+    second: CausticTextureHighlights_114
+  - first:
+      213: -61643956307435490
+    second: CausticTextureHighlights_115
+  - first:
+      213: 1133747600446060244
+    second: CausticTextureHighlights_116
+  - first:
+      213: -6211677100300428754
+    second: CausticTextureHighlights_117
+  - first:
+      213: -8999169157222332531
+    second: CausticTextureHighlights_118
+  - first:
+      213: 76318241565312797
+    second: CausticTextureHighlights_119
+  - first:
+      213: 9120708499660196576
+    second: CausticTextureHighlights_120
+  - first:
+      213: -1553274773581011823
+    second: CausticTextureHighlights_121
+  - first:
+      213: -4707161331520751551
+    second: CausticTextureHighlights_122
+  - first:
+      213: -5089600628323683510
+    second: CausticTextureHighlights_123
+  - first:
+      213: -7940202323945504964
+    second: CausticTextureHighlights_124
+  - first:
+      213: -3830480735111157026
+    second: CausticTextureHighlights_125
+  - first:
+      213: -208782173976595324
+    second: CausticTextureHighlights_126
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CausticTextureHighlights_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 321
+        width: 15
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b93ef1ed1edd3e2e0800000000000000
+      internalID: -2097589039260507237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 334
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8d673f34ae410d90800000000000000
+      internalID: -7133333867435954804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 279
+        width: 24
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aadd365497a51f1a0800000000000000
+      internalID: -6777536487314170454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 292
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50afc41205d3d82d0800000000000000
+      internalID: -3274893939663111675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 319
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed60b440e05e14e30800000000000000
+      internalID: 4486118552202053342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 273
+        width: 35
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e2569aea1619030800000000000000
+      internalID: 3499685788237770356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_6
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 317
+        width: 58
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac1047f767708b10800000000000000
+      internalID: 1981715124456529068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_7
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 336
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca4e6b6613e184f0800000000000000
+      internalID: -828131171028284736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_8
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 322
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c4c5f6124110660800000000000000
+      internalID: 7350178200680156219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_9
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 293
+        width: 34
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81c36d315a660a840800000000000000
+      internalID: 5233295626192960536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_10
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 311
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4397e336724e8d470800000000000000
+      internalID: 8419730361189038388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_11
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 318
+        width: 70
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232b4cf316b564c70800000000000000
+      internalID: 8954945382312620594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 209
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42723568d3bbd0e0800000000000000
+      internalID: -2244002247321947572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 286
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef08866a012df280800000000000000
+      internalID: -9008007351117541403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_14
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 246
+        width: 31
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffba29e2da8a17d80800000000000000
+      internalID: -8254631180229235713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_15
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 304
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2e6ed2c944758f0800000000000000
+      internalID: -551896991753903438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_16
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 128
+        width: 66
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7225f0139b20c180800000000000000
+      internalID: -9097223336643714435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_17
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 255
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30bad794ab96dd760800000000000000
+      internalID: 7484254404577438467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_18
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 270
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88315a9ae1b5c6840800000000000000
+      internalID: 5218646255468876680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 301
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93273634c28d95ed0800000000000000
+      internalID: -2424669239741550023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_20
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 248
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa0bf3b0e425313f0800000000000000
+      internalID: -931310202785910609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 288
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1976f43ec9e2320800000000000000
+      internalID: 2535136140359864738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_22
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 299
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7015ded5d1e2f17c0800000000000000
+      internalID: -4098506432219098873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_23
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 259
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b6c90d853171120800000000000000
+      internalID: 2384395799893928760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_24
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 250
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5430333c9beffd1e0800000000000000
+      internalID: -2170736421571984571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_25
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 261
+        width: 32
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6e1f6f83bc02020800000000000000
+      internalID: 2315073653990090437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_26
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 225
+        width: 26
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691fd5c7e6e6f3e00800000000000000
+      internalID: 1026660660875751830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 198
+        width: 25
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e76042ad814a230800000000000000
+      internalID: 3649068923263286941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_28
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 244
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a09897f2fb316e0800000000000000
+      internalID: -1867939209805231578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_29
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 247
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bf52be5b8d0f6b0800000000000000
+      internalID: -5264469688550294662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_30
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 227
+        width: 10
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d0e96e5bb905e3d0800000000000000
+      internalID: -3178123261692485420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_31
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 235
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37ebac0cb5111350800000000000000
+      internalID: 5985589277162727229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_32
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 210
+        width: 21
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d845b9d4a77e1a20800000000000000
+      internalID: 3034994748805171410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_33
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 240
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0649556f3f8313610800000000000000
+      internalID: 1599121963154248800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_34
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 246
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d56c90a3752f2eb0800000000000000
+      internalID: -4742530704051771952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_35
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 241
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d72484cdad5dec770800000000000000
+      internalID: 8633072671691129469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_36
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 208
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bba4736534f4d1810800000000000000
+      internalID: 1737632181862746811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_37
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 229
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2936d3c430ed91df0800000000000000
+      internalID: -208891801950657646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_38
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 180
+        width: 39
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aac2a8862af7ff40800000000000000
+      internalID: 5762349291651910310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_39
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 233
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154f981108dca3d00800000000000000
+      internalID: 953300221076042833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_40
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 231
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3027fff45e76900800000000000000
+      internalID: 677762400693388277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_41
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 210
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27b86ba8760c3dc0800000000000000
+      internalID: -3658041681990076626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_42
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 205
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc325de7c77e934c0800000000000000
+      internalID: -4307157046713310261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_43
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 214
+        width: 26
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d05d564e564f2670800000000000000
+      internalID: 8516102791102288085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_44
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 191
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a80f122a7ac86d0800000000000000
+      internalID: -2986828138057528784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_45
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 200
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d0bbde157ddd880800000000000000
+      internalID: -8584468567817515732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_46
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 192
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8fa67896644ef970800000000000000
+      internalID: 8790538730109054860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_47
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 145
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 046690e0ed6cc65c0800000000000000
+      internalID: -4220780093732460992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_48
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 203
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abc857fb7596fab0800000000000000
+      internalID: -4974624378720826460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_49
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 187
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40653a9b1ec340760800000000000000
+      internalID: 7423125025993217540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_50
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 139
+        width: 26
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa2967146f4a241c0800000000000000
+      internalID: -4520869698359356758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_51
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 196
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4fafcf3ef451b710800000000000000
+      internalID: 1707239184719130444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_52
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 179
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a7019a77b0fed20800000000000000
+      internalID: 3309876859706047093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_53
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 184
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e90bed660c9b280800000000000000
+      internalID: -9026972430032134592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_54
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 178
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc60814b69e4f020800000000000000
+      internalID: 2374779550400802036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_55
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 138
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47733f75248faa6d0800000000000000
+      internalID: -2978295239725074572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_56
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 170
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c771faf783acbe4e0800000000000000
+      internalID: -1951243669525817476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_57
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 146
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43de5f0cba79692f0800000000000000
+      internalID: -966418306091848396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_58
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 174
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3878e593e0a40c100800000000000000
+      internalID: 126182214518867843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_59
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 166
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8ef4b300008a7a0800000000000000
+      internalID: -6365838072293103416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 165
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e05fa67b81cb1010800000000000000
+      internalID: 1160734133713850598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_61
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 164
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81a3a541455795c0800000000000000
+      internalID: -4208801587924852339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_62
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 158
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5beba1a7f9efdf020800000000000000
+      internalID: 2377336139223318197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_63
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 139
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c2565c594175180800000000000000
+      internalID: -9126803486348596162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_64
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46da8007e72e42900800000000000000
+      internalID: 658900478176308580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_65
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 136
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82de128a11b59e00800000000000000
+      internalID: 1050940815471202959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_66
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 115
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0e31eb722de7d00800000000000000
+      internalID: 972445637693137056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_67
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 150
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bc4571b4b44b100800000000000000
+      internalID: 122805875731909471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_68
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 132
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9bb584b3a62a1c90800000000000000
+      internalID: -7198398569848128613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_69
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 86
+        width: 59
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb4739592a8112c0800000000000000
+      internalID: -4462633845552362561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_70
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 118
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb74e271d4e218b0800000000000000
+      internalID: -5182828632923145246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_71
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 132
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c74667571a99460800000000000000
+      internalID: 7249002601099066458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_72
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 110
+        width: 20
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce39ba2326220350800000000000000
+      internalID: 5981385187583934157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_73
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 109
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a96a107a61c30fc0800000000000000
+      internalID: -3529765020036863577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_74
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 115
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e0dd239e60a71760800000000000000
+      internalID: 7428582507147022566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_75
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 125
+        width: 6
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1652f97d60ab63420800000000000000
+      internalID: 2609477572657882465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_76
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 124
+        width: 14
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690a322cc02f284a0800000000000000
+      internalID: -6592440767906340714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_77
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 130
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470faad1fc08e8180800000000000000
+      internalID: -9111203369079607180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_78
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 127
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edab6d1101f9e40d0800000000000000
+      internalID: -3436634574269531426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_79
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 72
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf608a03108a8d80800000000000000
+      internalID: -8247638948306718805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_80
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 9
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc55eca97507b170800000000000000
+      internalID: 8194024067173801157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_81
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 100
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c3ee57b78b21e20800000000000000
+      internalID: 3319918715724512397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_82
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 17
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4ece6aa40287b420800000000000000
+      internalID: 2645726262654324303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_83
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 42
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc419f5bbce5ad900800000000000000
+      internalID: 709984120288646348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_84
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 46
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2048efddc8662cfb0800000000000000
+      internalID: -4629024711777549310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_85
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 76
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c29a0f1082c3f2ce0800000000000000
+      internalID: -1427856414324250324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_86
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 101
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ea063175b01e310800000000000000
+      internalID: 1432438625095691867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_87
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 54
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba377aaba73b3cec0800000000000000
+      internalID: -3547794741738900565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_88
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 11
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e2a09f7afafeb90800000000000000
+      internalID: -7210351342424281459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_89
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 111
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c135bd4a6e918f90800000000000000
+      internalID: -6953102170275892799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_90
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 585f38e8ebe57ea10800000000000000
+      internalID: 1938622337134097797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_91
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 54
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 097f87cf11d85e480800000000000000
+      internalID: -8870528782646577264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_92
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 91
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0d4ce00c411e3c0800000000000000
+      internalID: -4332158551439650573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_93
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 71
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 930ecff5b63101990800000000000000
+      internalID: -7417407234386370503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_94
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 49
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d62c5d33291b2500800000000000000
+      internalID: 372419033332197079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_95
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 94
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba41e371d057f1c20800000000000000
+      internalID: 3179388561031828651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_96
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88e5b27ed7793770800000000000000
+      internalID: 8591029561476901005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_97
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 76
+        width: 36
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e59e37b3dc03e460800000000000000
+      internalID: 7269668326958077415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_98
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 12
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa03af03806814c00800000000000000
+      internalID: 883134371680891055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_99
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 35
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30df430826c76e190800000000000000
+      internalID: -7933516931066954493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_100
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 10
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3097544b99814c3c0800000000000000
+      internalID: -4340317092444800765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_101
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 50
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 060e06b5171e9bf10800000000000000
+      internalID: 2286106162847866976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_102
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 38
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139e5e67752d33190800000000000000
+      internalID: -7983806441298990799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_103
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 31
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e989eef7b48ad9cc0800000000000000
+      internalID: -3702618276406323042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_104
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 3
+        width: 41
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feaeb4cf05c5fc670800000000000000
+      internalID: 8561162919554575087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_105
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 78
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369a9e0edfd8cc260800000000000000
+      internalID: 7119221232505563491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_106
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 105
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b857ab20d598f60800000000000000
+      internalID: 8037057276318944122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_107
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 46
+        width: 46
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee752e41799b2aa0800000000000000
+      internalID: -6184680951341809949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_108
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 21
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7269a5798f2ba2850800000000000000
+      internalID: 6353087005120435751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_109
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84da9676d86bcac50800000000000000
+      internalID: 6677913065925225800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_110
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 34
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29b9f2f3fcb7c21c0800000000000000
+      internalID: -4527107395365659758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_111
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 88
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c7d7fdd93762db0800000000000000
+      internalID: -4817035629529564036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_112
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 10
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7dbaacbcc0de1ec0800000000000000
+      internalID: -3594205874837865092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_113
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 12
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef6ebba3ddd3693a0800000000000000
+      internalID: -6659066978638240002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_114
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 94
+        width: 49
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eeb0e36857fa8500800000000000000
+      internalID: 399403475980566241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_115
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 77
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10eeb9f52ff42ff0800000000000000
+      internalID: -61643956307435490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_116
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 72
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6f98d8f61ebbf00800000000000000
+      internalID: 1133747600446060244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_117
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 85
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a1a219690bbc9a0800000000000000
+      internalID: -6211677100300428754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_118
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 61
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d878c16c4578c1380800000000000000
+      internalID: -8999169157222332531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_119
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d17026e49032f0100800000000000000
+      internalID: 76318241565312797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_120
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 43
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eac12e8e04439e70800000000000000
+      internalID: 9120708499660196576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_121
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 29
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 194e022b2d8a17ae0800000000000000
+      internalID: -1553274773581011823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_122
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 43
+        width: 43
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148304665bdccaeb0800000000000000
+      internalID: -4707161331520751551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_123
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 22
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a437924c13b1e59b0800000000000000
+      internalID: -5089600628323683510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_124
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 97
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f3f7c2e0cbec190800000000000000
+      internalID: -7940202323945504964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_125
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 4
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edae8b0f01667dac0800000000000000
+      internalID: -3830480735111157026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CausticTextureHighlights_126
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 88
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484f0bc08b14a1df0800000000000000
+      internalID: -208782173976595324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CausticTextureHighlights_0: -2097589039260507237
+      CausticTextureHighlights_1: -7133333867435954804
+      CausticTextureHighlights_10: 8419730361189038388
+      CausticTextureHighlights_100: -4340317092444800765
+      CausticTextureHighlights_101: 2286106162847866976
+      CausticTextureHighlights_102: -7983806441298990799
+      CausticTextureHighlights_103: -3702618276406323042
+      CausticTextureHighlights_104: 8561162919554575087
+      CausticTextureHighlights_105: 7119221232505563491
+      CausticTextureHighlights_106: 8037057276318944122
+      CausticTextureHighlights_107: -6184680951341809949
+      CausticTextureHighlights_108: 6353087005120435751
+      CausticTextureHighlights_109: 6677913065925225800
+      CausticTextureHighlights_11: 8954945382312620594
+      CausticTextureHighlights_110: -4527107395365659758
+      CausticTextureHighlights_111: -4817035629529564036
+      CausticTextureHighlights_112: -3594205874837865092
+      CausticTextureHighlights_113: -6659066978638240002
+      CausticTextureHighlights_114: 399403475980566241
+      CausticTextureHighlights_115: -61643956307435490
+      CausticTextureHighlights_116: 1133747600446060244
+      CausticTextureHighlights_117: -6211677100300428754
+      CausticTextureHighlights_118: -8999169157222332531
+      CausticTextureHighlights_119: 76318241565312797
+      CausticTextureHighlights_12: -2244002247321947572
+      CausticTextureHighlights_120: 9120708499660196576
+      CausticTextureHighlights_121: -1553274773581011823
+      CausticTextureHighlights_122: -4707161331520751551
+      CausticTextureHighlights_123: -5089600628323683510
+      CausticTextureHighlights_124: -7940202323945504964
+      CausticTextureHighlights_125: -3830480735111157026
+      CausticTextureHighlights_126: -208782173976595324
+      CausticTextureHighlights_13: -9008007351117541403
+      CausticTextureHighlights_14: -8254631180229235713
+      CausticTextureHighlights_15: -551896991753903438
+      CausticTextureHighlights_16: -9097223336643714435
+      CausticTextureHighlights_17: 7484254404577438467
+      CausticTextureHighlights_18: 5218646255468876680
+      CausticTextureHighlights_19: -2424669239741550023
+      CausticTextureHighlights_2: -6777536487314170454
+      CausticTextureHighlights_20: -931310202785910609
+      CausticTextureHighlights_21: 2535136140359864738
+      CausticTextureHighlights_22: -4098506432219098873
+      CausticTextureHighlights_23: 2384395799893928760
+      CausticTextureHighlights_24: -2170736421571984571
+      CausticTextureHighlights_25: 2315073653990090437
+      CausticTextureHighlights_26: 1026660660875751830
+      CausticTextureHighlights_27: 3649068923263286941
+      CausticTextureHighlights_28: -1867939209805231578
+      CausticTextureHighlights_29: -5264469688550294662
+      CausticTextureHighlights_3: -3274893939663111675
+      CausticTextureHighlights_30: -3178123261692485420
+      CausticTextureHighlights_31: 5985589277162727229
+      CausticTextureHighlights_32: 3034994748805171410
+      CausticTextureHighlights_33: 1599121963154248800
+      CausticTextureHighlights_34: -4742530704051771952
+      CausticTextureHighlights_35: 8633072671691129469
+      CausticTextureHighlights_36: 1737632181862746811
+      CausticTextureHighlights_37: -208891801950657646
+      CausticTextureHighlights_38: 5762349291651910310
+      CausticTextureHighlights_39: 953300221076042833
+      CausticTextureHighlights_4: 4486118552202053342
+      CausticTextureHighlights_40: 677762400693388277
+      CausticTextureHighlights_41: -3658041681990076626
+      CausticTextureHighlights_42: -4307157046713310261
+      CausticTextureHighlights_43: 8516102791102288085
+      CausticTextureHighlights_44: -2986828138057528784
+      CausticTextureHighlights_45: -8584468567817515732
+      CausticTextureHighlights_46: 8790538730109054860
+      CausticTextureHighlights_47: -4220780093732460992
+      CausticTextureHighlights_48: -4974624378720826460
+      CausticTextureHighlights_49: 7423125025993217540
+      CausticTextureHighlights_5: 3499685788237770356
+      CausticTextureHighlights_50: -4520869698359356758
+      CausticTextureHighlights_51: 1707239184719130444
+      CausticTextureHighlights_52: 3309876859706047093
+      CausticTextureHighlights_53: -9026972430032134592
+      CausticTextureHighlights_54: 2374779550400802036
+      CausticTextureHighlights_55: -2978295239725074572
+      CausticTextureHighlights_56: -1951243669525817476
+      CausticTextureHighlights_57: -966418306091848396
+      CausticTextureHighlights_58: 126182214518867843
+      CausticTextureHighlights_59: -6365838072293103416
+      CausticTextureHighlights_6: 1981715124456529068
+      CausticTextureHighlights_60: 1160734133713850598
+      CausticTextureHighlights_61: -4208801587924852339
+      CausticTextureHighlights_62: 2377336139223318197
+      CausticTextureHighlights_63: -9126803486348596162
+      CausticTextureHighlights_64: 658900478176308580
+      CausticTextureHighlights_65: 1050940815471202959
+      CausticTextureHighlights_66: 972445637693137056
+      CausticTextureHighlights_67: 122805875731909471
+      CausticTextureHighlights_68: -7198398569848128613
+      CausticTextureHighlights_69: -4462633845552362561
+      CausticTextureHighlights_7: -828131171028284736
+      CausticTextureHighlights_70: -5182828632923145246
+      CausticTextureHighlights_71: 7249002601099066458
+      CausticTextureHighlights_72: 5981385187583934157
+      CausticTextureHighlights_73: -3529765020036863577
+      CausticTextureHighlights_74: 7428582507147022566
+      CausticTextureHighlights_75: 2609477572657882465
+      CausticTextureHighlights_76: -6592440767906340714
+      CausticTextureHighlights_77: -9111203369079607180
+      CausticTextureHighlights_78: -3436634574269531426
+      CausticTextureHighlights_79: -8247638948306718805
+      CausticTextureHighlights_8: 7350178200680156219
+      CausticTextureHighlights_80: 8194024067173801157
+      CausticTextureHighlights_81: 3319918715724512397
+      CausticTextureHighlights_82: 2645726262654324303
+      CausticTextureHighlights_83: 709984120288646348
+      CausticTextureHighlights_84: -4629024711777549310
+      CausticTextureHighlights_85: -1427856414324250324
+      CausticTextureHighlights_86: 1432438625095691867
+      CausticTextureHighlights_87: -3547794741738900565
+      CausticTextureHighlights_88: -7210351342424281459
+      CausticTextureHighlights_89: -6953102170275892799
+      CausticTextureHighlights_9: 5233295626192960536
+      CausticTextureHighlights_90: 1938622337134097797
+      CausticTextureHighlights_91: -8870528782646577264
+      CausticTextureHighlights_92: -4332158551439650573
+      CausticTextureHighlights_93: -7417407234386370503
+      CausticTextureHighlights_94: 372419033332197079
+      CausticTextureHighlights_95: 3179388561031828651
+      CausticTextureHighlights_96: 8591029561476901005
+      CausticTextureHighlights_97: 7269668326958077415
+      CausticTextureHighlights_98: 883134371680891055
+      CausticTextureHighlights_99: -7933516931066954493
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

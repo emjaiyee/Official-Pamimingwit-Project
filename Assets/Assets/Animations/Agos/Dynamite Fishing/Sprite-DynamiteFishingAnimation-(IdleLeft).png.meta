@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 55bb078a8abde434cb43c18f8fd50c82
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6766673075135799527
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_0
+  - first:
+      213: 2532936758627846875
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_1
+  - first:
+      213: -880479257566670492
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_2
+  - first:
+      213: 6001839822420454703
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_3
+  - first:
+      213: -1664656117895084865
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_4
+  - first:
+      213: 197564151253898949
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_5
+  - first:
+      213: 4786015910351559129
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_6
+  - first:
+      213: -5102714408604480857
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_7
+  - first:
+      213: 7233214880093067441
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_8
+  - first:
+      213: -8312936141712379947
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_9
+  - first:
+      213: 3596612350781793084
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_10
+  - first:
+      213: 2388077982831941619
+    second: Sprite-DynamiteFishingAnimation-(IdleLeft)_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f945580b2f712a0800000000000000
+      internalID: -6766673075135799527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdaca88df8cc62320800000000000000
+      internalID: 2532936758627846875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_2
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46193acb7c8e7c3f0800000000000000
+      internalID: -880479257566670492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_3
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 0
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d2a26f481da4350800000000000000
+      internalID: 6001839822420454703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_4
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 0
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4ceab9414f5e8e0800000000000000
+      internalID: -1664656117895084865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_5
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 0
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c617df7c83edb200800000000000000
+      internalID: 197564151253898949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_6
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d95fd1fc185b6240800000000000000
+      internalID: 4786015910351559129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_7
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 0
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aaccdcd7448f29b0800000000000000
+      internalID: -5102714408604480857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_8
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b854083c9a816460800000000000000
+      internalID: 7233214880093067441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_9
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 0
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df2ab87f9482ac80800000000000000
+      internalID: -8312936141712379947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_10
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 0
+        width: 21
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33a12b90ebb9e130800000000000000
+      internalID: 3596612350781793084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-DynamiteFishingAnimation-(IdleLeft)_11
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 0
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f711a6d548242120800000000000000
+      internalID: 2388077982831941619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_0: -6766673075135799527
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_1: 2532936758627846875
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_10: 3596612350781793084
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_11: 2388077982831941619
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_2: -880479257566670492
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_3: 6001839822420454703
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_4: -1664656117895084865
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_5: 197564151253898949
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_6: 4786015910351559129
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_7: -5102714408604480857
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_8: 7233214880093067441
+      Sprite-DynamiteFishingAnimation-(IdleLeft)_9: -8312936141712379947
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
