@@ -144,6 +144,7 @@ public class GameManager : MonoBehaviour
     public void AdvanceDay()
     {
         currentDay++;
+        // Call OnDayAdvanced
         OnDayAdvanced?.Invoke();
         Debug.Log("Starting Day " + currentDay);
     }
