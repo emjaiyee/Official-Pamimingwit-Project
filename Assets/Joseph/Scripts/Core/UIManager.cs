@@ -89,6 +89,8 @@ public class UIManager : MonoBehaviour
     [Header("Game Messages")]
     public TextMeshProUGUI messageText;
 
+
+    // Migrate to a modular audio scrippt
     [Header("Audio")]
     public AudioClip panelOpenSFX;
     public AudioClip panelCloseSFX;
@@ -195,6 +197,8 @@ public class UIManager : MonoBehaviour
         GameManager.Instance?.AdvanceDay();
         UpdateDayHUD();
 
+        
+        // Migrate to a modular audio Script!
         if (roosterSFX != null && audioSource != null)
             audioSource.PlayOneShot(roosterSFX);
 
