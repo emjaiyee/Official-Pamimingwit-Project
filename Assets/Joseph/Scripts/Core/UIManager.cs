@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
     private float visualStamina;
     private bool initializedStamina;
 
-    //TODO: Refactor Day Cycle that uses the new logic in game manager to reset time when day advances!
+    // TODO: Refactor Day Cycle that uses the new logic in game manager to reset time when day advances!
     [Header("Day Cycle UI")]
     public TextMeshProUGUI dayHUDText;
     public CanvasGroup dayTransitionOverlay;
@@ -79,6 +79,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI dialogueContentText;
     public Image dialogueIcon;
 
+    // TODO: Revive Crafting System
     [Header("Crafting UI")]
     public GameObject craftingPanel;
     public CraftingResultSlot resultSlot;
@@ -91,7 +92,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI messageText;
 
 
-    //TODO: Migrate audio and use a modular audio script for all sounds!
+    // TODO: Migrate audio and use a modular audio script for all sounds!
     [Header("Audio")]
     public AudioClip panelOpenSFX;
     public AudioClip panelCloseSFX;
