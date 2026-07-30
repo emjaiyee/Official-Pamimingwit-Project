@@ -90,7 +90,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI messageText;
 
 
-    // Migrate to a modular audio script!
+    //TODO: Migrate audio and use a modular audio script for all sounds!
     [Header("Audio")]
     public AudioClip panelOpenSFX;
     public AudioClip panelCloseSFX;
@@ -198,10 +198,8 @@ public class UIManager : MonoBehaviour
         UpdateDayHUD();
 
         
-        // Migrate to a modular audio Script!
         if (roosterSFX != null && audioSource != null)
             audioSource.PlayOneShot(roosterSFX);
-
         // Play ambience as a sustained, stoppable track rather than a one-shot
         if (morningAmbienceSFX != null && audioSource != null)
         {
@@ -223,7 +221,6 @@ public class UIManager : MonoBehaviour
             string taxMessage = GameManager.Instance.ProcessTax();
             taxTransitionText.text = taxMessage;
 
-            // Play sound based on tax outcome
             if (taxMessage.Contains("deducted") && taxPaidSFX != null)
                 audioSource.PlayOneShot(taxPaidSFX);
             else if (taxMessage.Contains("doubles") && taxFailedSFX != null)
