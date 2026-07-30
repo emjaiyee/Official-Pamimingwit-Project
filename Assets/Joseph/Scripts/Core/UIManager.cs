@@ -90,7 +90,7 @@ public class UIManager : MonoBehaviour
     public TextMeshProUGUI messageText;
 
 
-    // Migrate to a modular audio scrippt
+    // Migrate to a modular audio script!
     [Header("Audio")]
     public AudioClip panelOpenSFX;
     public AudioClip panelCloseSFX;
