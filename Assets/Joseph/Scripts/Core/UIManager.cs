@@ -45,6 +45,7 @@ public class UIManager : MonoBehaviour
     private float visualStamina;
     private bool initializedStamina;
 
+    //TODO: Refactor Day Cycle that uses the new logic in game manager to reset time when day advances!
     [Header("Day Cycle UI")]
     public TextMeshProUGUI dayHUDText;
     public CanvasGroup dayTransitionOverlay;
