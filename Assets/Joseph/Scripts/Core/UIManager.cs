@@ -115,16 +115,15 @@ public class UIManager : MonoBehaviour
 
         staminaSlider.interactable = false;
 
-        // 1. Force HUD visibility immediately
         if (hotbarPanel != null) hotbarPanel.SetActive(true);
 
         if (Inventory.Instance != null)
         {
             Inventory.Instance.OnInventoryChanged += RefreshInventory;
-            // No need to subscribe to StaminaManager here, it's done in Start()
+
         }
 
-        // 2. Ensure all panels are in their correct starting state before the first refresh
+        // Ensure all panels are in their correct starting state before the first refresh
         HideCraftingPanel();
         HideShopPanel();
         choicePanel?.SetActive(false);
@@ -572,7 +571,6 @@ public class UIManager : MonoBehaviour
             initializedStamina = true;
         }
 
-        // --- NEW: Pulse Logic ---
         bool isLow = maxStamina > 0 && (currentStamina / maxStamina) <= lowStaminaThreshold;
 
         if (isLow)
