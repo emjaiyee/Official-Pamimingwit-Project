@@ -151,13 +151,6 @@ public class UIManager : MonoBehaviour
             dayTransitionOverlay.alpha = SaveController.shouldLoadGame ? 1f : 0f;
         }
         RefreshInventory();
-        UpdateDayHUD();
-    }
-
-    public void UpdateDayHUD()
-    {
-        if (dayHUDText != null && GameManager.Instance != null)
-            dayHUDText.text = $"DAY: {GameManager.Instance.currentDay}";
     }
 
     public void StartDayTransition(Action onFadeComplete)
@@ -196,7 +189,6 @@ public class UIManager : MonoBehaviour
 
         // Update day and show text
         GameManager.Instance?.AdvanceDay();
-        UpdateDayHUD();
 
         
         if (roosterSFX != null && audioSource != null)

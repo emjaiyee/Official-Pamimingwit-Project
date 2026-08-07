@@ -206,7 +206,6 @@ public class SaveController : MonoBehaviour
         {
             GameManager.Instance.currentDay = saveData.currentDay;
             GameManager.Instance.currentTaxAmount = saveData.currentTaxAmount;
-            UIManager.Instance?.UpdateDayHUD();
         }
 
         if (StaminaManager.Instance != null)
