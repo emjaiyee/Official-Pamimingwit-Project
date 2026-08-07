@@ -146,7 +146,14 @@ public class GameManager : MonoBehaviour
         currentDay++;
         // Call OnDayAdvanced
         OnDayAdvanced?.Invoke();
-        Debug.Log("Starting Day " + currentDay);
+        ResetTime();
+    }
+
+    public void ResetTime()
+    {
+        hours = 6;
+        minutes = 0;
+        seconds = 0;
     }
 
     public string ProcessTax()
