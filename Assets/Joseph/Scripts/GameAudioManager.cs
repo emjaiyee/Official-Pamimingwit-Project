@@ -16,12 +16,14 @@ public class GameAudioManager : MonoBehaviour
     private AudioSource sfxSource;
     private AudioSource ambienceSource;
     private AudioSource musicSource;
+    private AudioSource typewriterSource;
 
     private void Awake()
     {
         sfxSource = gameObject.AddComponent<AudioSource>();
         ambienceSource = gameObject.AddComponent<AudioSource>();
         musicSource = gameObject.AddComponent<AudioSource>();
+        typewriterSource = gameObject.AddComponent<AudioSource>();
          
         ambienceSource.loop = true;
     }
@@ -39,8 +41,6 @@ public class GameAudioManager : MonoBehaviour
             case SoundType.PanelClose:
                 sfxSource.PlayOneShot(panelCloseSFX);
                 break;
-            case SoundType.Typewriter:
-                sfxSource.PlayOneShot(typewriterSFX);
                 break;
             case SoundType.Rooster:
                 sfxSource.PlayOneShot(roosterSFX);
@@ -53,6 +53,15 @@ public class GameAudioManager : MonoBehaviour
                 break;
             case SoundType.MorningAmbience:
                 PlayAmbience(morningAmbienceSFX);
+                break;
+            case SoundType.StopTransitionAudio:
+                if (ambienceSource != null)
+                {
+                    ambienceSource.Stop();
+                    ambienceSource.clip = null;
+                    ambienceSource.loop = false;
+                    ambienceSource.volume = 1f;
+                }
                 break;
         }
     }
