@@ -6,10 +6,12 @@ public enum SoundType
     PanelOpen,
     PanelClose,
     Typewriter,
+    StopTypeWriter,
     Rooster,
     TaxPaid,
     TaxFailed,
-    MorningAmbience
+    MorningAmbience,
+    StopTransitionAudio
 }
 
 public static class GameEvents

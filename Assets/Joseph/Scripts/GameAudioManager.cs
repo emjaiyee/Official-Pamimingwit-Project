@@ -40,7 +40,20 @@ public class GameAudioManager : MonoBehaviour
                 sfxSource.PlayOneShot(panelCloseSFX);
                 break;
             case SoundType.Typewriter:
-                sfxSource.PlayOneShot(typewriterSFX);
+                if (sfxSource != null && !sfxSource.isPlaying)
+                {
+                    sfxSource.clip = typewriterSFX;
+                    sfxSource.loop = true;
+                    sfxSource.Play();
+                }
+                break;
+            case SoundType.StopTypeWriter:
+                if (sfxSource != null)
+                {
+                    sfxSource.Stop();
+                    sfxSource.clip = null;
+                    sfxSource.loop = false;
+                }
                 break;
             case SoundType.Rooster:
                 sfxSource.PlayOneShot(roosterSFX);
@@ -53,6 +66,15 @@ public class GameAudioManager : MonoBehaviour
                 break;
             case SoundType.MorningAmbience:
                 PlayAmbience(morningAmbienceSFX);
+                break;
+            case SoundType.StopTransitionAudio:
+                if (ambienceSource != null)
+                {
+                    ambienceSource.Stop();
+                    ambienceSource.clip = null;
+                    ambienceSource.loop = false;
+                    ambienceSource.volume = 1f;
+                }
                 break;
         }
     }

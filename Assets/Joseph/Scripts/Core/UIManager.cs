@@ -112,7 +112,6 @@ public class UIManager : MonoBehaviour
 
         }
 
-        // Ensure all panels are in their correct starting state before the first refresh
         HideCraftingPanel();
         HideShopPanel();
         choicePanel?.SetActive(false);
@@ -180,7 +179,7 @@ public class UIManager : MonoBehaviour
         GameManager.Instance?.AdvanceDay();
 
         
-            GameEvents.TriggerSound(SoundType.Rooster);
+        GameEvents.TriggerSound(SoundType.Rooster);
 
         GameEvents.TriggerSound(SoundType.MorningAmbience);
 
@@ -234,8 +233,11 @@ public class UIManager : MonoBehaviour
             t -= Time.deltaTime / overlayFadeDuration;
             dayTransitionOverlay.alpha = Mathf.Max(t, 0);
 
+
             yield return null;
         }
+
+        GameEvents.TriggerSound(SoundType.StopTransitionAudio);
 
         dayTransitionOverlay.alpha = 0f;
 
@@ -246,12 +248,20 @@ public class UIManager : MonoBehaviour
     private IEnumerator TypewriterEffect(TextMeshProUGUI textComponent, string content)
     {
         textComponent.text = "";
-        foreach (char c in content.ToCharArray())
-        {
-            textComponent.text += c;
-                GameEvents.TriggerSound(SoundType.Typewriter);
+        GameEvents.TriggerSound(SoundType.Typewriter);
 
-            yield return new WaitForSeconds(typewriterSpeed);
+        try
+        {
+            foreach (char c in content.ToCharArray())
+            {
+                textComponent.text += c;
+                    
+                yield return new WaitForSeconds(typewriterSpeed);
+            }
+        }
+        finally
+        {
+            GameEvents.TriggerSound(SoundType.StopTypeWriter);
         }
     }
 
