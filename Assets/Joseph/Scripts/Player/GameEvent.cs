@@ -5,8 +5,6 @@ public enum SoundType
 {
     PanelOpen,
     PanelClose,
-    Typewriter,
-    StopTypeWriter,
     Rooster,
     TaxPaid,
     TaxFailed,

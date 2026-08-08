@@ -249,13 +249,13 @@ public class UIManager : MonoBehaviour
     {
         textComponent.text = "";
         
-
         foreach (char c in content.ToCharArray())
         {
             textComponent.text += c;
-            GameEvents.TriggerSound(SoundType.Typewriter);        
+                        
             yield return new WaitForSeconds(typewriterSpeed);
-         }
+        }
+
     }
 
     void Update()
