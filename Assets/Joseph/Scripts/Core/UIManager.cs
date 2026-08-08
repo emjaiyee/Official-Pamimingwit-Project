@@ -1,4 +1,6 @@
-﻿﻿using UnityEngine;
+﻿﻿// TODO: Fix audio not matching advance day
+
+using UnityEngine;
 using TMPro;
 using System;
 using System.Collections;
@@ -45,7 +47,8 @@ public class UIManager : MonoBehaviour
     private float visualStamina;
     private bool initializedStamina;
 
-    // TODO: Refactor Day Cycle that uses the new logic in game manager to reset time when day advances!
+
+
     [Header("Day Cycle UI")]
     public TextMeshProUGUI dayHUDText;
     public CanvasGroup dayTransitionOverlay;
@@ -91,23 +94,9 @@ public class UIManager : MonoBehaviour
     [Header("Game Messages")]
     public TextMeshProUGUI messageText;
 
-
-    // TODO: Migrate audio and use a modular audio script for all sounds!
-    [Header("Audio")]
-    public AudioClip panelOpenSFX;
-    public AudioClip panelCloseSFX;
-    public AudioClip typewriterSFX;
-    public AudioClip roosterSFX;
-    public AudioClip taxPaidSFX;
-    public AudioClip taxFailedSFX;
-    public AudioClip morningAmbienceSFX;
-    private AudioSource audioSource;
-
     void Awake()
     {
         Instance = this;
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Start()
@@ -169,7 +158,7 @@ public class UIManager : MonoBehaviour
         if (dayTransitionText != null)
         {
             dayTransitionText.text = "";
-            dayTransitionText.alpha = 1f; // Ensure day text starts as opaque for the typewriter effect
+            dayTransitionText.alpha = 1f; 
         }
         if (taxTransitionText != null) 
         {
@@ -191,15 +180,9 @@ public class UIManager : MonoBehaviour
         GameManager.Instance?.AdvanceDay();
 
         
-        if (roosterSFX != null && audioSource != null)
-            audioSource.PlayOneShot(roosterSFX);
-        // Play ambience as a sustained, stoppable track rather than a one-shot
-        if (morningAmbienceSFX != null && audioSource != null)
-        {
-            audioSource.clip = morningAmbienceSFX;
-            audioSource.loop = true;
-            audioSource.Play();
-        }
+            GameEvents.TriggerSound(SoundType.Rooster);
+
+        GameEvents.TriggerSound(SoundType.MorningAmbience);
 
         // Animate Day Text
         if (dayTransitionText != null)
@@ -214,10 +197,10 @@ public class UIManager : MonoBehaviour
             string taxMessage = GameManager.Instance.ProcessTax();
             taxTransitionText.text = taxMessage;
 
-            if (taxMessage.Contains("deducted") && taxPaidSFX != null)
-                audioSource.PlayOneShot(taxPaidSFX);
-            else if (taxMessage.Contains("doubles") && taxFailedSFX != null)
-                audioSource.PlayOneShot(taxFailedSFX);
+            if (taxMessage.Contains("deducted"))
+                GameEvents.TriggerSound(SoundType.TaxPaid);
+            else if (taxMessage.Contains("doubles"))
+                GameEvents.TriggerSound(SoundType.TaxFailed);
 
             float textFadeT = 0f;
             while (textFadeT < 1f)
@@ -245,28 +228,13 @@ public class UIManager : MonoBehaviour
         if (dayTransitionText != null) dayTransitionText.alpha = 0f;
         if (taxTransitionText != null) taxTransitionText.alpha = 0f;
 
-        // Fade In
-        t = 1f;
-        float startVolume = audioSource != null ? audioSource.volume : 1f;
 
         while (t > 0)
         {
             t -= Time.deltaTime / overlayFadeDuration;
             dayTransitionOverlay.alpha = Mathf.Max(t, 0);
 
-            if (audioSource != null)
-                audioSource.volume = t * startVolume;
-
             yield return null;
-        }
-
-        // Stop all transition-related audio (Ambience and any lingering SFX)
-        if (audioSource != null)
-        {
-            audioSource.Stop();
-            audioSource.clip = null;
-            audioSource.loop = false;
-            audioSource.volume = startVolume; // Restore original volume for standard UI sounds
         }
 
         dayTransitionOverlay.alpha = 0f;
@@ -281,8 +249,7 @@ public class UIManager : MonoBehaviour
         foreach (char c in content.ToCharArray())
         {
             textComponent.text += c;
-            if (typewriterSFX != null && audioSource != null)
-                audioSource.PlayOneShot(typewriterSFX);
+                GameEvents.TriggerSound(SoundType.Typewriter);
 
             yield return new WaitForSeconds(typewriterSpeed);
         }
@@ -594,12 +561,12 @@ public class UIManager : MonoBehaviour
     }
     public void PlayPanelOpenSFX()
     {
-        if (panelOpenSFX != null && audioSource != null) audioSource.PlayOneShot(panelOpenSFX);
+        GameEvents.TriggerSound(SoundType.PanelOpen);
     }
 
     public void PlayPanelCloseSFX()
     {
-        if (panelCloseSFX != null && audioSource != null) audioSource.PlayOneShot(panelCloseSFX);
+        GameEvents.TriggerSound(SoundType.PanelClose);
     }
 
     public bool IsPointerOverUI()
