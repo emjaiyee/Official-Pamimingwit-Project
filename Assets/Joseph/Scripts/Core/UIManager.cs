@@ -248,21 +248,14 @@ public class UIManager : MonoBehaviour
     private IEnumerator TypewriterEffect(TextMeshProUGUI textComponent, string content)
     {
         textComponent.text = "";
-        GameEvents.TriggerSound(SoundType.Typewriter);
+        
 
-        try
+        foreach (char c in content.ToCharArray())
         {
-            foreach (char c in content.ToCharArray())
-            {
-                textComponent.text += c;
-                    
-                yield return new WaitForSeconds(typewriterSpeed);
-            }
-        }
-        finally
-        {
-            GameEvents.TriggerSound(SoundType.StopTypeWriter);
-        }
+            textComponent.text += c;
+            GameEvents.TriggerSound(SoundType.Typewriter);        
+            yield return new WaitForSeconds(typewriterSpeed);
+         }
     }
 
     void Update()
