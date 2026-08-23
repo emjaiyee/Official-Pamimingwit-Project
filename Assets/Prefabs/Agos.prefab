@@ -151,7 +151,6 @@ GameObject:
   - component: {fileID: 9105254653678572704}
   - component: {fileID: 4041510854277467973}
   - component: {fileID: -7827914273929667821}
-  - component: {fileID: 779867597306956437}
   - component: {fileID: 3452239422987403753}
   - component: {fileID: 4108252574710588403}
   - component: {fileID: 6524500479562787420}
@@ -325,7 +324,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.6875, y: 1.3125}
     newSize: {x: 6.9375, y: 13.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -342,24 +341,10 @@ SortingGroup:
   m_GameObject: {fileID: 5243109721669505822}
   m_Enabled: 1
   m_SortingLayerID: 735575153
-  m_SortingLayer: 8
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
---- !u!114 &779867597306956437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5243109721669505822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0588c6d30650d2b47b9abce666101929, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DynamiteThrower
-  dynamitePrefab: {fileID: 0}
-  throwDistance: 4
 --- !u!114 &3452239422987403753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 5
+  shadowTransform: {fileID: 0}
 --- !u!114 &6524500479562787420
 MonoBehaviour:
   m_ObjectHideFlags: 0

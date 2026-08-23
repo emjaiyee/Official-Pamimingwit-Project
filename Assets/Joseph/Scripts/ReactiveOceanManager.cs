@@ -128,7 +128,6 @@ public class ReactiveOceanManager : MonoBehaviour
 
         float roll = UnityEngine.Random.value;
 
-        // 1. Rare Artifact roll (rarest)
         if (_currentTier.artifactPool != null && _currentTier.artifactPool.Length > 0 && roll < _currentTier.artifactProbability)
         {
             return _currentTier.artifactPool[UnityEngine.Random.Range(0, _currentTier.artifactPool.Length)];
