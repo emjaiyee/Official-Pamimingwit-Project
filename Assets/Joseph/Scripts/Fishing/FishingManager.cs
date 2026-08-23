@@ -320,7 +320,6 @@ public class FishingManager : MonoBehaviour
             return;
         }
 
-        // --- NEW: Consume Stamina ---
         if (StaminaManager.Instance != null)
         {
             if (pendingIsDynamite)
@@ -761,23 +760,12 @@ public class FishingManager : MonoBehaviour
             InventoryItem slot = Inventory.Instance.itemList[index];
             if (slot.item != null)
             {
-                // Trigger reverse pop if this is the last item in the stack
-                if (slot.amount <= 1 && UIManager.Instance != null && UIManager.Instance.hotbarSlots.Length > index)
+                slot.amount--;
+                if (slot.amount <= 0)
                 {
-                    ItemSlotUI slotUI = UIManager.Instance.hotbarSlots[index];
-                    slotUI.AnimatePopOut(() => 
-                    {
-                        slot.amount = 0;
-                        slot.item = null;
-                        Inventory.Instance.OnInventoryChanged?.Invoke();
-                    });
+                    slot.item = null;
                 }
-                else
-                {
-                    slot.amount--;
-                    if (slot.amount <= 0) slot.item = null;
-                    Inventory.Instance.OnInventoryChanged?.Invoke();
-                }
+                Inventory.Instance.OnInventoryChanged?.Invoke();
             }
         }
     }
