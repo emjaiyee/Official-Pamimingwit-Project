@@ -33493,6 +33493,7 @@ GameObject:
   - component: {fileID: 1229685255}
   - component: {fileID: 1229685257}
   - component: {fileID: 1229685256}
+  - component: {fileID: 1229685258}
   m_Layer: 0
   m_Name: MusicManager
   m_TagString: Untagged
@@ -33631,6 +33632,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1229685258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229685254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0600f0bca12d37c4cb316fe0bc160918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameAudioManager
+  panelOpenSFX: {fileID: 8300000, guid: 2e12103bcbad9e348b915350e33c2721, type: 3}
+  panelCloseSFX: {fileID: 8300000, guid: 8df079f6a4c0f3b42951679aa63904b1, type: 3}
+  typewriterSFX: {fileID: 8300000, guid: 8d0b48f01a6ea4545a765ecf146d6e28, type: 3}
+  roosterSFX: {fileID: 8300000, guid: c26049dade5a537469e300220f06a187, type: 3}
+  taxPaidSFX: {fileID: 8300000, guid: 79248add7cd7f96438c477cbd53c691b, type: 3}
+  taxFailedSFX: {fileID: 0}
+  morningAmbienceSFX: {fileID: 8300000, guid: 44045650ddf32a64abc83240b406b689, type: 3}
 --- !u!1 &1241767794
 GameObject:
   m_ObjectHideFlags: 0
@@ -39221,7 +39241,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: -1, z: 0}
@@ -39361,7 +39381,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 5, y: -1, z: 0}
@@ -39613,7 +39633,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 14, y: -1, z: 0}
@@ -39669,7 +39689,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -40150,13 +40170,6 @@ MonoBehaviour:
   resultSlot: {fileID: 0}
   questPanel: {fileID: 1939304738}
   messageText: {fileID: 1430885695}
-  panelOpenSFX: {fileID: 8300000, guid: 56e9803a2165bd24c90e4715ede7e561, type: 3}
-  panelCloseSFX: {fileID: 8300000, guid: 8df079f6a4c0f3b42951679aa63904b1, type: 3}
-  typewriterSFX: {fileID: 8300000, guid: 5ca75412c6c286d4b9307fe21f1b0e93, type: 3}
-  roosterSFX: {fileID: 8300000, guid: c26049dade5a537469e300220f06a187, type: 3}
-  taxPaidSFX: {fileID: 8300000, guid: 79248add7cd7f96438c477cbd53c691b, type: 3}
-  taxFailedSFX: {fileID: 0}
-  morningAmbienceSFX: {fileID: 8300000, guid: 0228d6903e0af1045b4b40b29d793ad5, type: 3}
 --- !u!1 &1539058058
 GameObject:
   m_ObjectHideFlags: 0
@@ -41401,7 +41414,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1658995958}
   - component: {fileID: 1658995959}
-  - component: {fileID: 1658995964}
   - component: {fileID: 1658995963}
   - component: {fileID: 1658995962}
   - component: {fileID: 1658995960}
@@ -41485,18 +41497,6 @@ MonoBehaviour:
   selectedIndex: 5
   hotbarSize: 6
   switchSFX: {fileID: 8300000, guid: 433b1d528f8cf3a46b47c16b3442f745, type: 3}
---- !u!114 &1658995964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658995957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69b05dd9c41e6584987b48c1c326145b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WalletUI
 --- !u!114 &1658995965
 MonoBehaviour:
   m_ObjectHideFlags: 0

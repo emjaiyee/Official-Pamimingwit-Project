@@ -48,9 +48,7 @@ public class FishingManager : MonoBehaviour
 
     float holdTime;
     bool inputLocked;
-    private AudioSource audioSource;
 
-    // Pending cast data to sync with animation events
     private Vector3 pendingTargetPos;
     private ItemData pendingItem;
     private bool pendingIsDynamite;
@@ -62,9 +60,6 @@ public class FishingManager : MonoBehaviour
     private ArtifactData pendingArtifact;
     FishData hookedFish;
 
-    [Header("Audio")]
-    [SerializeField] private AudioClip castSFX;
-    [SerializeField] private AudioClip pullSFX;
 
     // Events for modularity
     public static event Action<FishData> OnFishHooked;
@@ -73,9 +68,6 @@ public class FishingManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
 
         if (fishingLine != null)
         {
@@ -347,8 +339,6 @@ public class FishingManager : MonoBehaviour
             state = FishingState.Waiting;
         }
 
-        if (castSFX != null) audioSource.PlayOneShot(castSFX);
-
         if (PlayerController.Instance != null)
         {
             PlayerController.Instance.SetFishingDirection(dir);
@@ -581,16 +571,9 @@ public class FishingManager : MonoBehaviour
     {
         PlayerController.Instance?.SetPulling(true);
 
-        // 🔧 ADDED (PULL ANIMATION)
         PlayerController.Instance?.PlayPullAnimation();
 
         state = FishingState.Result;
-
-        if (pullSFX != null) {
-            audioSource.clip = pullSFX;
-            audioSource.loop = true; // Make the pulling sound loop
-            audioSource.Play();
-        }
 
         ConsumeBait(); // Bait is consumed the moment you hook the fish
 
@@ -682,11 +665,6 @@ public class FishingManager : MonoBehaviour
             Destroy(currentBobber.gameObject);
 
         pendingArtifact = null;
-
-        if (audioSource.isPlaying && audioSource.clip == pullSFX) {
-            audioSource.Stop(); // Stop the pulling sound
-            audioSource.loop = false; // Reset loop state
-        }
 
         // Ensure Animator returns to Idle immediately
         PlayerController.Instance?.StopFishingAnimation();
