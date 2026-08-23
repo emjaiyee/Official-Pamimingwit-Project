@@ -41,7 +41,6 @@ public class GameAudioManager : MonoBehaviour
             case SoundType.PanelClose:
                 sfxSource.PlayOneShot(panelCloseSFX);
                 break;
-                break;
             case SoundType.Rooster:
                 sfxSource.PlayOneShot(roosterSFX);
                 break;

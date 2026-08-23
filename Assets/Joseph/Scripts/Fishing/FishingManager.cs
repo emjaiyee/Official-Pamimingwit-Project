@@ -56,12 +56,12 @@ public class FishingManager : MonoBehaviour
 
     FishingBobber currentBobber;
 
-    // 🆕 NEW
     private ArtifactData pendingArtifact;
     FishData hookedFish;
 
+    private FishData runtimeArtifactStruggle;
 
-    // Events for modularity
+
     public static event Action<FishData> OnFishHooked;
     public static event Action OnFishEscaped;
 
@@ -490,18 +490,18 @@ public class FishingManager : MonoBehaviour
             yield break;
         }
 
-        // Artifacts trigger a difficult minigame (Heavy struggle)
         if (caughtItem is ArtifactData artifact)
         {
             pendingArtifact = artifact;
             
-            // Create a high-difficulty struggle profile for the artifact
-            FishData artifactStruggle = ScriptableObject.CreateInstance<FishData>();
-            artifactStruggle.itemName = "Mysterious Heavy Object";
-            artifactStruggle.weightClass = FishWeight.Heavy;
-            artifactStruggle.minClicks = 45;
-            artifactStruggle.maxClicks = 75;
-            hookedFish = artifactStruggle;
+            if (runtimeArtifactStruggle != null) Destroy(runtimeArtifactStruggle);
+
+            runtimeArtifactStruggle = ScriptableObject.CreateInstance<FishData>();
+            runtimeArtifactStruggle.itemName = "Mysterious Heavy Object";
+            runtimeArtifactStruggle.weightClass = FishWeight.Heavy;
+            runtimeArtifactStruggle.minClicks = 45;
+            runtimeArtifactStruggle.maxClicks = 75;
+            hookedFish = runtimeArtifactStruggle;
         }
         else
         {
@@ -665,6 +665,12 @@ public class FishingManager : MonoBehaviour
             Destroy(currentBobber.gameObject);
 
         pendingArtifact = null;
+
+        if (runtimeArtifactStruggle != null)
+        {
+            Destroy(runtimeArtifactStruggle);
+            runtimeArtifactStruggle = null;
+        }
 
         // Ensure Animator returns to Idle immediately
         PlayerController.Instance?.StopFishingAnimation();
