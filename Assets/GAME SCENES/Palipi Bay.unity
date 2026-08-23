@@ -8685,6 +8685,11 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1.8285642}
   m_EdgeRadius: 0
+--- !u!1 &451442910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5243109721669505822, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+  m_PrefabInstance: {fileID: 842082284}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &458384197
 GameObject:
   m_ObjectHideFlags: 0
@@ -13027,8 +13032,8 @@ MonoBehaviour:
   minBiteWindow: 1
   maxBiteWindow: 3
   loseBaitChance: 0.5
-  castSFX: {fileID: 8300000, guid: 9f427e645b6f55742b0cb78f85889aa4, type: 3}
-  pullSFX: {fileID: 8300000, guid: 37d321000103a9f4b949832a415775d3, type: 3}
+  castSFX: {fileID: 0}
+  pullSFX: {fileID: 0}
 --- !u!114 &636273874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17463,8 +17468,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
-    - {fileID: 8765501818345716213, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
-    - {fileID: 779867597306956437, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1758707573032046433, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
@@ -17477,6 +17481,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1553856652}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5243109721669505822, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1582750319}
+    - targetCorrespondingSourceObject: {fileID: 5243109721669505822, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1582750318}
     - targetCorrespondingSourceObject: {fileID: 979144561411691788, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
       insertIndex: -1
       addedObject: {fileID: 818143965}
@@ -39241,7 +39251,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: -1, z: 0}
@@ -39269,7 +39279,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -1, z: 0}
@@ -39521,7 +39531,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: -1, z: 0}
@@ -40532,6 +40542,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1758707573032046433, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
   m_PrefabInstance: {fileID: 842082284}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1582750318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451442910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f264e3304ecb404f9aa5d668e923cd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraShakeListener
+--- !u!114 &1582750319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451442910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineImpulseSource
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
 --- !u!1 &1585133073
 GameObject:
   m_ObjectHideFlags: 0
@@ -47122,7 +47197,7 @@ MonoBehaviour:
     junkProbability: 0
     haulMultiplier: 0
     waterColor: {r: 0.7126202, g: 0.8748888, b: 0.9622642, a: 1}
-  waterMaterial: {fileID: 2100000, guid: fa4cf9d6f0c950a4f869c176b05e3177, type: 2}
+  waterRenderer: {fileID: 0}
   colorPropertyName: _BaseColor
   transparencyPropertyName: 
   colorTransitionSpeed: 0.25

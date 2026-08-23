@@ -24,70 +24,90 @@ public class ReactiveOceanManager : MonoBehaviour
     public static ReactiveOceanManager Instance;
 
     [Header("Ocean Tiers")]
-    [Tooltip("Define tiers from lowest threshold to highest (e.g., Dead to Pristine).")]
+    [Tooltip("Define tiers in any order (sorted internally by threshold).")]
     public List<OceanTier> tiers = new List<OceanTier>();
 
     [Header("Water Visuals")]
-    public Material waterMaterial;
+    [SerializeField] private Renderer waterRenderer;
     public string colorPropertyName = "_BaseColor";
-    [Tooltip("Optional: If your shader uses a separate float for transparency (e.g., _Opacity). Leave empty to use Color Alpha.")]
+    [Tooltip("Optional: Shader property for transparency. Leave empty to use Color Alpha.")]
     public string transparencyPropertyName = "";
     public float colorTransitionSpeed = 1.5f;
 
     public Action<OceanTier> OnTierChanged;
+    
     private OceanTier _currentTier;
+    private Material _instancedWaterMaterial;
     private int _colorID;
     private int _alphaID = -1;
     private Color _targetColor;
+    private Color _currentColor;
 
     void Awake()
     {
         Instance = this;
         _colorID = Shader.PropertyToID(colorPropertyName);
+        
         if (!string.IsNullOrEmpty(transparencyPropertyName))
             _alphaID = Shader.PropertyToID(transparencyPropertyName);
+
+        if (waterRenderer != null)
+        {
+            // .material creates an instance copy, preventing project asset mutation
+            _instancedWaterMaterial = waterRenderer.material; 
+        }
+        else
+        {
+            Debug.LogWarning("ReactiveOceanManager: Water Renderer reference is missing in the Inspector!");
+        }
+    }
+
+    void OnEnable()
+    {
+        if (SustainabilityManager.Instance != null)
+        {
+            SustainabilityManager.Instance.OnSustainabilityChanged.AddListener(OnSustainabilityUpdated);
+        }
+    }
+
+    void OnDisable()
+    {
+        if (SustainabilityManager.Instance != null)
+        {
+            SustainabilityManager.Instance.OnSustainabilityChanged.RemoveListener(OnSustainabilityUpdated);
+        }
     }
 
     void Start()
     {
         UpdateTier();
         
-        // Initialize target color based on starting tier
         if (_currentTier != null)
         {
             _targetColor = _currentTier.waterColor;
+            _currentColor = _targetColor;
 
-            if (waterMaterial != null)
+            if (_instancedWaterMaterial != null)
             {
-                // Snap values immediately on start
-                waterMaterial.SetColor(_colorID, _targetColor);
-                if (_alphaID != -1) waterMaterial.SetFloat(_alphaID, _targetColor.a);
+                _instancedWaterMaterial.SetColor(_colorID, _targetColor);
+                if (_alphaID != -1) _instancedWaterMaterial.SetFloat(_alphaID, _targetColor.a);
             }
-        }
-
-        if (SustainabilityManager.Instance != null)
-        {
-            SustainabilityManager.Instance.OnSustainabilityChanged.AddListener((val) => UpdateTier());
         }
     }
 
     void Update()
     {
-        if (waterMaterial != null)
-        {
-            Color currentColor = waterMaterial.GetColor(_colorID);
-            
-            // If we are not yet at the target color, interpolate toward it
-            if (ColorDistance(currentColor, _targetColor) > 0.001f)
-            {
-                Color nextColor = Color.Lerp(currentColor, _targetColor, Time.deltaTime * colorTransitionSpeed);
-                waterMaterial.SetColor(_colorID, nextColor);
+        if (_instancedWaterMaterial == null) return;
 
-                if (_alphaID != -1)
-                {
-                    float currentA = waterMaterial.GetFloat(_alphaID);
-                    waterMaterial.SetFloat(_alphaID, Mathf.Lerp(currentA, _targetColor.a, Time.deltaTime * colorTransitionSpeed));
-                }
+        // Compare cached local variables instead of executing native GetColor queries
+        if (ColorDistance(_currentColor, _targetColor) > 0.001f)
+        {
+            _currentColor = Color.Lerp(_currentColor, _targetColor, Time.deltaTime * colorTransitionSpeed);
+            _instancedWaterMaterial.SetColor(_colorID, _currentColor);
+
+            if (_alphaID != -1)
+            {
+                _instancedWaterMaterial.SetFloat(_alphaID, _currentColor.a);
             }
         }
     }
@@ -97,18 +117,41 @@ public class ReactiveOceanManager : MonoBehaviour
         return Mathf.Abs(a.r - b.r) + Mathf.Abs(a.g - b.g) + Mathf.Abs(a.b - b.b) + Mathf.Abs(a.a - b.a);
     }
 
+    private void OnSustainabilityUpdated(int val)
+    {
+        UpdateTier();
+    }
+
     private void UpdateTier()
     {
         int currentSus = SustainabilityManager.Instance != null ? SustainabilityManager.Instance.CurrentSustainability : 0;
         
-        OceanTier newTier = tiers.Count > 0 ? tiers[0] : null;
-        foreach (var tier in tiers)
+        OceanTier newTier = null;
+
+        // Evaluates highest qualified threshold regardless of Inspector list arrangement
+        for (int i = 0; i < tiers.Count; i++)
         {
-            if (currentSus >= tier.threshold)
-                newTier = tier;
+            if (currentSus >= tiers[i].threshold)
+            {
+                if (newTier == null || tiers[i].threshold > newTier.threshold)
+                {
+                    newTier = tiers[i];
+                }
+            }
         }
 
-        if (newTier != _currentTier)
+        // Fallback to lowest defined tier if sustainability is below all thresholds
+        if (newTier == null && tiers.Count > 0)
+        {
+            newTier = tiers[0];
+            for (int i = 1; i < tiers.Count; i++)
+            {
+                if (tiers[i].threshold < newTier.threshold)
+                    newTier = tiers[i];
+            }
+        }
+
+        if (newTier != null && newTier != _currentTier)
         {
             _currentTier = newTier;
             _targetColor = _currentTier.waterColor;
@@ -119,31 +162,38 @@ public class ReactiveOceanManager : MonoBehaviour
 
     public OceanTier GetCurrentTier() => _currentTier;
 
-    /// <summary>
-    /// Returns a random catch from the current tier's pools.
-    /// </summary>
     public ItemData GetRandomCatch()
     {
         if (_currentTier == null) return null;
 
         float roll = UnityEngine.Random.value;
 
+        // Rare Artifact roll (rarest)
         if (_currentTier.artifactPool != null && _currentTier.artifactPool.Length > 0 && roll < _currentTier.artifactProbability)
         {
             return _currentTier.artifactPool[UnityEngine.Random.Range(0, _currentTier.artifactPool.Length)];
         }
 
-        // 2. Junk roll
-        if (UnityEngine.Random.value < _currentTier.junkProbability && _currentTier.junkPool.Length > 0)
+        // Junk roll
+        if (_currentTier.junkPool != null && _currentTier.junkPool.Length > 0 && UnityEngine.Random.value < _currentTier.junkProbability)
         {
             return _currentTier.junkPool[UnityEngine.Random.Range(0, _currentTier.junkPool.Length)];
         }
 
-        if (_currentTier.fishPool.Length > 0)
+        // Fish roll
+        if (_currentTier.fishPool != null && _currentTier.fishPool.Length > 0)
         {
             return _currentTier.fishPool[UnityEngine.Random.Range(0, _currentTier.fishPool.Length)];
         }
 
         return null;
+    }
+
+    private void OnDestroy()
+    {
+        if (_instancedWaterMaterial != null)
+        {
+            Destroy(_instancedWaterMaterial);
+        }
     }
 }
