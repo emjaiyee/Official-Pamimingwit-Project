@@ -127,7 +127,7 @@ Material:
     - _WobbleStrength: 0.01
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.5087665, g: 0.7507536, b: 0.9716981, a: 1}
+    - _BaseColor: {r: 0.35046482, g: 0.539144, b: 0.5064902, a: 1}
     - _CausticColor: {r: 0, g: 0.5806451, b: 1, a: 1}
     - _CausticSpeed: {r: 0.1, g: 0.1, b: -0.05, a: -0.05}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
