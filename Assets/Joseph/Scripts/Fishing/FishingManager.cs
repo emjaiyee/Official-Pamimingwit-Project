@@ -65,6 +65,8 @@ public class FishingManager : MonoBehaviour
     public static event Action<FishData> OnFishHooked;
     public static event Action OnFishEscaped;
 
+    public static event Action<float, float> OnCameraShakeRequested;
+
     void Awake()
     {
         Instance = this;
@@ -400,10 +402,8 @@ public class FishingManager : MonoBehaviour
 
     private void ExplodeDynamite(Vector3 targetPos, ItemData data)
     {
-        //Debug.Log($"[FishingManager] Dynamite exploded at {targetPos}");
-
-        // 0. Shake Camera first to ensure visual feedback
-        StartCoroutine(ShakeCamera());
+        
+        OnCameraShakeRequested?.Invoke(shakeDuration, shakeMagnitude);
 
         // 1. Visual Effects
         if (explosionParticlePrefab != null)
@@ -782,28 +782,4 @@ public class FishingManager : MonoBehaviour
         }
     }
 
-    private IEnumerator ShakeCamera()
-    {
-        Camera mainCam = Camera.main;
-        if (mainCam == null)
-        {
-            //Debug.LogWarning("ShakeCamera: No Main Camera found! Make sure your camera is tagged 'MainCamera'.");
-            yield break;
-        }
-
-        Transform camTransform = mainCam.transform;
-        Vector3 originalPos = camTransform.position;
-        float elapsed = 0.0f;
-
-        while (elapsed < shakeDuration)
-        {
-            Vector2 shakeOffset = UnityEngine.Random.insideUnitCircle * shakeMagnitude;
-            camTransform.position = new Vector3(originalPos.x + shakeOffset.x, originalPos.y + shakeOffset.y, originalPos.z);
-
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        camTransform.position = originalPos;
-    }
 }
