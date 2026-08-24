@@ -39279,7 +39279,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -1, z: 0}
@@ -39643,7 +39643,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 14, y: -1, z: 0}
@@ -47138,7 +47138,7 @@ MonoBehaviour:
     artifactProbability: 0.2
     junkProbability: 0.2
     haulMultiplier: 0
-    waterColor: {r: 0.5087665, g: 0.7507536, b: 0.9716981, a: 1}
+    waterColor: {r: 0.41451588, g: 0.50192463, b: 0.764151, a: 1}
   - tierName: Thriving Ocean
     threshold: 50
     fishPool:
@@ -47197,7 +47197,7 @@ MonoBehaviour:
     junkProbability: 0
     haulMultiplier: 0
     waterColor: {r: 0.7126202, g: 0.8748888, b: 0.9622642, a: 1}
-  waterRenderer: {fileID: 0}
+  waterRenderer: {fileID: 1460524211}
   colorPropertyName: _BaseColor
   transparencyPropertyName: 
   colorTransitionSpeed: 0.25

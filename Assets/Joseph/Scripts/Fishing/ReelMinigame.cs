@@ -73,9 +73,9 @@ public class ReelMinigame : MonoBehaviour
     {
         return weight switch
         {
-            FishWeight.Small => 2.5f,  // Increased from 1.5
-            FishWeight.Medium => 5.0f, // Increased from 3.0
-            FishWeight.Heavy => 9.0f,  // Increased from 5.0
+            FishWeight.Small => 2.5f,  
+            FishWeight.Medium => 5.0f, 
+            FishWeight.Heavy => 9.0f,  
             _ => 1.0f
         };
     }
