@@ -3,49 +3,52 @@ using UnityEngine.UI;
 
 public class ReelMinigame : MonoBehaviour
 {
-    public static ReelMinigame Instance;
+    public static ReelMinigame Instance { get; private set; }
 
-    [Header("UI")]
-    public GameObject panel;
-    public Slider bar;
-    public GameObject pullSign;
+    [Header("UI References")]
+    [SerializeField] private GameObject panel;
+    [SerializeField] private Slider bar;
+    [SerializeField] private GameObject pullSign;
 
     [Header("Juice Settings")]
-    public float pulseSpeed = 10f;
-    public float pulseAmount = 0.15f;
-    public Vector3 signOffset = new Vector3(0, 0, 0);
+    [SerializeField] private float pulseSpeed = 10f;
+    [SerializeField] private float pulseAmount = 0.15f;
+    [SerializeField] private Vector3 signOffset = Vector3.zero;
 
-    float progress;
-    float maxProgress;
-    float decaySpeed;
-    float currentPullPower = 1f;
+    private float progress;
+    private float maxProgress;
+    private float decaySpeed;
+    private float currentPullPower = 1f;
+    private bool active;
+    private FishData currentFish;
 
-    bool active;
-
-    FishData currentFish;
-
-    void Awake()
+    private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
     }
 
-    void Update()
+    private void Update()
     {
         if (!active) return;
 
-        // Fish fights back
-        progress -= decaySpeed * Time.deltaTime;
-        progress = Mathf.Clamp(progress, 0, maxProgress);
+        HandleInput();
+        HandleDecay();
+        UpdateUI();
+    }
 
-        bar.value = progress / maxProgress;
+    private void LateUpdate()
+    {
+        if (!active) return;
+        UpdatePullSignPosition();
+    }
 
-        // Fail
-        if (progress <= 0)
-        {
-            EndMinigame(false);
-        }
-
-        // Spam click (your universal input)
+    private void HandleInput()
+    {
         if (InputHandler.Instance != null && InputHandler.Instance.ClickDown)
         {
             progress += currentPullPower;
@@ -55,17 +58,40 @@ public class ReelMinigame : MonoBehaviour
                 EndMinigame(true);
             }
         }
+    }
 
-        // Position and Pulse the "PULL!" sign
+    private void HandleDecay()
+    {
+        if (!active) return;
+
+        progress -= decaySpeed * Time.deltaTime;
+        progress = Mathf.Clamp(progress, 0, maxProgress);
+
+        if (progress <= 0)
+        {
+            EndMinigame(false);
+        }
+    }
+
+    private void UpdateUI()
+    {
+        if (bar != null && maxProgress > 0)
+        {
+            bar.value = progress / maxProgress;
+        }
+
         if (pullSign != null && pullSign.activeSelf)
         {
-            if (PlayerController.Instance != null)
-            {
-                pullSign.transform.position = PlayerController.Instance.transform.position + signOffset;
-            }
+            float scale = 1f + (Mathf.Sin(Time.time * pulseSpeed) * pulseAmount);
+            pullSign.transform.localScale = new Vector3(scale, scale, 1f);
+        }
+    }
 
-            float s = 1f + (Mathf.Sin(Time.time * pulseSpeed) * pulseAmount);
-            pullSign.transform.localScale = new Vector3(s, s, 1f);
+    private void UpdatePullSignPosition()
+    {
+        if (pullSign != null && pullSign.activeSelf && PlayerController.Instance != null)
+        {
+            pullSign.transform.position = PlayerController.Instance.transform.position + signOffset;
         }
     }
 
@@ -73,65 +99,64 @@ public class ReelMinigame : MonoBehaviour
     {
         return weight switch
         {
-            FishWeight.Small => 2.5f,  
-            FishWeight.Medium => 5.0f, 
-            FishWeight.Heavy => 9.0f,  
+            FishWeight.Small => 2.5f,
+            FishWeight.Medium => 5.0f,
+            FishWeight.Heavy => 9.0f,
             _ => 1.0f
         };
     }
 
     public void StartMinigame(FishData fish)
     {
-        currentFish = fish;
-        panel.SetActive(true);
-        
-        if (pullSign != null)
+        if (fish == null)
         {
-            pullSign.SetActive(true);
+            Debug.LogError("[ReelMinigame] Cannot start with null FishData.");
+            return;
         }
+
+        currentFish = fish;
+        if (panel != null) panel.SetActive(true);
+        if (pullSign != null) pullSign.SetActive(true);
 
         maxProgress = Random.Range(fish.minClicks, fish.maxClicks);
-        
-        // Difficulty is now driven by the Weight Class enum
-        decaySpeed = GetDecayMultiplier(fish.weightClass);
+        float baseDecay = GetDecayMultiplier(fish.weightClass);
 
-        // Apply Rod progression
-        currentPullPower = 1f;
-        float artifactReelStrength = 0f;
-        float artifactPullPower = 0f;
+        // Fetch bonuses safely
+        float artifactReelStrength = Inventory.Instance != null 
+            ? Inventory.Instance.GetTotalArtifactBonus(a => a.reelStrengthBonus) 
+            : 0f;
 
-        if (Inventory.Instance != null)
-        {
-            artifactReelStrength = Inventory.Instance.GetTotalArtifactBonus(a => a.reelStrengthBonus);
-            artifactPullPower = Inventory.Instance.GetTotalArtifactBonus(a => a.pullPowerBonus);
-        }
+        float artifactPullPower = Inventory.Instance != null 
+            ? Inventory.Instance.GetTotalArtifactBonus(a => a.pullPowerBonus) 
+            : 0f;
 
-        if (PlayerController.Instance != null && PlayerController.Instance.GetHeldItem() is FishingRodData rod)
-        {
-            decaySpeed /= Mathf.Max(rod.reelStrength + artifactReelStrength, 0.1f);
-            currentPullPower = rod.pullPower + artifactPullPower;
-        }
-        else
-        {
-            decaySpeed /= Mathf.Max(1.0f + artifactReelStrength, 0.1f);
-            currentPullPower = 1.0f + artifactPullPower;
-        }
+        FishingRodData rod = (PlayerController.Instance != null) 
+            ? PlayerController.Instance.GetHeldItem() as FishingRodData 
+            : null;
 
-        // Start with less progress (20% instead of 30%) to increase initial tension
+        float rodReelStrength = rod != null ? rod.reelStrength : 1.0f;
+        float rodPullPower = rod != null ? rod.pullPower : 1.0f;
+
+        // Stat Calculations with floor guards
+        float totalReelStrength = Mathf.Max(rodReelStrength + artifactReelStrength, 0.1f);
+        decaySpeed = baseDecay / totalReelStrength;
+        currentPullPower = Mathf.Max(rodPullPower + artifactPullPower, 0.1f);
+
         progress = maxProgress * 0.2f;
-
         active = true;
+
+        UpdateUI();
     }
 
-    void EndMinigame(bool success)
+    private void EndMinigame(bool success)
     {
         active = false;
-        panel.SetActive(false);
-        
+        if (panel != null) panel.SetActive(false);
+
         if (pullSign != null)
         {
             pullSign.SetActive(false);
-            pullSign.transform.localScale = Vector3.one; // Reset scale for next time
+            pullSign.transform.localScale = Vector3.one;
         }
 
         if (FishingManager.Instance != null)
