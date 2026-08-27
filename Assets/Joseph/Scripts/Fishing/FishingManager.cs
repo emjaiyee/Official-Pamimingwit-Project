@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.InputSystem;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 
 public class FishingManager : MonoBehaviour
 {
-    public static FishingManager Instance;
+    public static FishingManager Instance { get; private set; }
 
     public enum FishingState
     {
@@ -17,52 +17,51 @@ public class FishingManager : MonoBehaviour
         Result
     }
 
-    public FishingState state = FishingState.Idle;
+    public FishingState state { get; private set; } = FishingState.Idle;
 
     [Header("Fishing Setup")]
-    public bool debugMode = false;
+    [SerializeField] private bool debugMode = false;
     public LayerMask waterLayer;
-    public GameObject bobberPrefab;
-    public Transform player;
+    [SerializeField] private GameObject bobberPrefab;
+    [SerializeField] private Transform player;
 
     [Header("Visuals")]
-    public LineRenderer fishingLine;
-    public Transform rodTip;
+    [SerializeField] private LineRenderer fishingLine;
+    [SerializeField] private Transform rodTip;
     [SerializeField] private int lineResolution = 15;
     [SerializeField] private float lineSagAmount = 0.3f;
-    public GameObject dynamitePrefab; 
+    [SerializeField] private GameObject dynamitePrefab; 
     [SerializeField] private GameObject explosionParticlePrefab;
     [SerializeField] private float shakeDuration = 0.2f;
     [SerializeField] private float shakeMagnitude = 0.15f;
 
-    [Header("Fish")]
-    public ItemData[] fishPool;
+    [Header("Fish Pool")]
+    [SerializeField] private ItemData[] fishPool;
 
-    [Header("Casting")]
-    public float maxHoldTime = 1.5f;
+    [Header("Casting Parameters")]
+    [SerializeField] private float maxHoldTime = 1.5f;
 
     [Header("Bite Window")]
-    public float minBiteWindow = 1.0f;
-    public float maxBiteWindow = 3.0f;
-    public float loseBaitChance = 0.5f;
+    [SerializeField] private float minBiteWindow = 1.0f;
+    [SerializeField] private float maxBiteWindow = 3.0f;
+    [SerializeField] private float loseBaitChance = 0.5f;
+    private Coroutine biteCoroutine;
 
     [Header("Audio")]
     [SerializeField] private AudioClip castSFX;
     [SerializeField] private AudioClip pullSFX;
 
-    float holdTime;
-    bool inputLocked;
+    private float holdTime;
+    private bool inputLocked;
 
     private Vector3 pendingTargetPos;
     private ItemData pendingItem;
     private bool pendingIsDynamite;
     private bool isCastPending; 
 
-    FishingBobber currentBobber;
-
+    private FishingBobber currentBobber;
     private ArtifactData pendingArtifact;
-    FishData hookedFish;
-
+    private FishData hookedFish;
     private FishData runtimeArtifactStruggle;
     private AudioSource audioSource;
 
@@ -71,12 +70,16 @@ public class FishingManager : MonoBehaviour
     public static event Action OnFishEscaped;
     public static event Action<float, float> OnCameraShakeRequested;
 
-    // Persistent References
     private PlayerController cachedPlayer;
     private Inventory cachedInventory;
 
-    void Awake()
+    private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
 
         audioSource = GetComponent<AudioSource>();
@@ -88,14 +91,25 @@ public class FishingManager : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
         cachedPlayer = PlayerController.Instance;
         cachedInventory = Inventory.Instance;
     }
 
+    private void Update()
+    {
+        HandleInput();
+    }
+
+    private void LateUpdate()
+    {
+        UpdateFishingLine();
+    }
+
     private Vector3 GetMouseWorldPosition()
     {
+        if (Camera.main == null) return Vector3.zero;
         Vector3 screenPos = Mouse.current.position.ReadValue();
         screenPos.z = -Camera.main.transform.position.z;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(screenPos);
@@ -103,17 +117,7 @@ public class FishingManager : MonoBehaviour
         return mousePos;
     }
 
-    void Update()
-    {
-        HandleInput();
-    }
-
-    void LateUpdate()
-    {
-        UpdateFishingLine();
-    }
-
-    void HandleInput()
+    private void HandleInput()
     {
         if (inputLocked) return;
 
@@ -122,7 +126,7 @@ public class FishingManager : MonoBehaviour
 
         bool hasRod = EquipmentManager.Instance != null && EquipmentManager.Instance.hasFishingRodEquipped;
         bool hasDynamite = EquipmentManager.Instance != null && EquipmentManager.Instance.hasDynamiteEquipped;
-        ItemData heldItem = cachedPlayer?.GetHeldItem();
+        ItemData heldItem = cachedPlayer != null ? cachedPlayer.GetHeldItem() : null;
         bool holdingFish = heldItem is FishData;
         bool holdingJunk = heldItem != null && heldItem.itemType == ItemType.Junk;
 
@@ -133,7 +137,6 @@ public class FishingManager : MonoBehaviour
             return;
 
         if (InputHandler.Instance == null) return;
-
         var input = InputHandler.Instance;
 
         if (input.ClickDown)
@@ -173,7 +176,7 @@ public class FishingManager : MonoBehaviour
                         UIManager.Instance?.ShowMessage("Not enough stamina to use dynamite!");
                         return;
                     }
-                    else if (hasRod && !StaminaManager.Instance.CanAffordFishing())
+                    if (hasRod && !StaminaManager.Instance.CanAffordFishing())
                     {
                         UIManager.Instance?.ShowMessage("Not enough stamina to fish!");
                         return;
@@ -200,11 +203,11 @@ public class FishingManager : MonoBehaviour
 
     public Vector3 GetRodTipPosition()
     {
-        if (rodTip == null) return player.position;
+        if (rodTip == null) return player != null ? player.position : Vector3.zero;
 
         Vector3 worldPos = rodTip.position;
 
-        if (cachedPlayer != null && cachedPlayer.GetComponent<SpriteRenderer>().flipX)
+        if (cachedPlayer != null && cachedPlayer.GetComponent<SpriteRenderer>() != null && cachedPlayer.GetComponent<SpriteRenderer>().flipX)
         {
             Vector3 localPos = player.InverseTransformPoint(worldPos);
             localPos.x = -localPos.x;
@@ -214,7 +217,7 @@ public class FishingManager : MonoBehaviour
         return worldPos;
     }
 
-    void UpdateFishingLine()
+    private void UpdateFishingLine()
     {
         if (fishingLine == null) return;
 
@@ -245,12 +248,14 @@ public class FishingManager : MonoBehaviour
         }
         else
         {
-            fishingLine.enabled = false;
+            if (fishingLine.enabled) fishingLine.enabled = false;
         }
     }
 
-    void StartAiming(bool isDynamite, ItemData heldItem)
+    private void StartAiming(bool isDynamite, ItemData heldItem)
     {
+        if (player == null) return;
+
         Vector3 mouse = GetMouseWorldPosition();
         Vector3 dir = (mouse - player.position).normalized;
         Vector3 initialTarget = player.position + dir * 1f; 
@@ -258,9 +263,7 @@ public class FishingManager : MonoBehaviour
         if (!Physics2D.OverlapCircle(initialTarget, 0.2f, waterLayer))
             return;
 
-        if (GameManager.Instance != null)
-            GameManager.Instance.SetState(GameState.Fishing);
-
+        GameManager.Instance?.SetState(GameState.Fishing);
         cachedPlayer?.StartAiming(isDynamite);
 
         state = FishingState.Aiming;
@@ -272,7 +275,7 @@ public class FishingManager : MonoBehaviour
         ChargeCast();
     }
 
-    void ChargeCast()
+    private void ChargeCast()
     {
         holdTime += Time.deltaTime;
         holdTime = Mathf.Clamp(holdTime, 0, maxHoldTime);
@@ -283,7 +286,7 @@ public class FishingManager : MonoBehaviour
         cachedPlayer?.SetFishingDirection(dir);
     }
 
-    void CastRod()
+    private void CastRod()
     {
         float power = holdTime / maxHoldTime;
         Vector3 mouse = GetMouseWorldPosition();
@@ -300,23 +303,12 @@ public class FishingManager : MonoBehaviour
         if (StaminaManager.Instance != null)
         {
             if (pendingIsDynamite)
-            {
                 StaminaManager.Instance.ConsumeDynamiteStamina();
-            }
             else
-            {
                 StaminaManager.Instance.ConsumeFishingStamina();
-            }
         }
 
-        if (pendingIsDynamite)
-        {
-            state = FishingState.Result;
-        }
-        else
-        {
-            state = FishingState.Waiting;
-        }
+        state = pendingIsDynamite ? FishingState.Result : FishingState.Waiting;
 
         if (castSFX != null && audioSource != null) audioSource.PlayOneShot(castSFX);
 
@@ -341,13 +333,17 @@ public class FishingManager : MonoBehaviour
         {
             LaunchDynamiteVisual(pendingTargetPos, pendingItem);
         }
-        else
+        else if (bobberPrefab != null)
         {
             Vector3 launchOrigin = GetRodTipPosition();
             launchOrigin.z = 0;
             GameObject b = Instantiate(bobberPrefab, launchOrigin, Quaternion.identity);
             currentBobber = b.GetComponent<FishingBobber>();
-            currentBobber.Launch(pendingTargetPos, () => StartCoroutine(WaitForBite()));
+            if (currentBobber != null)
+            {
+                if (biteCoroutine != null) StopCoroutine(biteCoroutine);
+                currentBobber.Launch(pendingTargetPos, () => biteCoroutine = StartCoroutine(WaitForBite()));
+            }
         }
     }
 
@@ -355,7 +351,7 @@ public class FishingManager : MonoBehaviour
     {
         if (dynamitePrefab == null)
         {
-            Debug.LogError("FishingManager: Dynamite Prefab is missing in the Inspector!");
+            Debug.LogError("[FishingManager] Dynamite Prefab missing.");
             Cleanup();
             return;
         }
@@ -394,13 +390,12 @@ public class FishingManager : MonoBehaviour
         SustainabilityManager.Instance?.Add(penalty);
 
         float oceanMultiplier = ReactiveOceanManager.Instance != null ? ReactiveOceanManager.Instance.GetCurrentTier().haulMultiplier : 1f;
-        
         int bonusHaul = UnityEngine.Random.Range(1, 4); 
         int finalHaul = Mathf.Max(1, Mathf.RoundToInt(haul * oceanMultiplier) + bonusHaul);
 
         for (int i = 0; i < finalHaul; i++)
         {
-            ItemData caught = (ReactiveOceanManager.Instance != null) ? ReactiveOceanManager.Instance.GetRandomCatch() : null;
+            ItemData caught = ReactiveOceanManager.Instance != null ? ReactiveOceanManager.Instance.GetRandomCatch() : null;
             if (caught == null && fishPool.Length > 0) caught = fishPool[UnityEngine.Random.Range(0, fishPool.Length)];
 
             if (caught != null && cachedInventory != null && cachedInventory.AddItem(caught))
@@ -414,7 +409,7 @@ public class FishingManager : MonoBehaviour
         Cleanup();
     }
 
-    IEnumerator WaitForBite()
+    private IEnumerator WaitForBite()
     {
         float catchModifier = 1f;
         float artifactBonus = cachedInventory != null ? cachedInventory.GetTotalArtifactBonus(a => a.catchRateBonus) : 0f;
@@ -431,14 +426,14 @@ public class FishingManager : MonoBehaviour
             catchModifier *= bonus;
         }
 
-        float wait = UnityEngine.Random.Range(2f, 5f) / catchModifier;
+        float wait = UnityEngine.Random.Range(2f, 5f) / Mathf.Max(catchModifier, 0.1f);
         yield return new WaitForSeconds(wait);
 
         if (state != FishingState.Waiting) yield break;
 
         state = FishingState.Biting;
 
-        BaitData currentBait = (baitStack != null) ? baitStack.item as BaitData : null;
+        BaitData currentBait = baitStack != null ? baitStack.item as BaitData : null;
         ItemData caughtItem = SelectCatch(currentBait);
 
         if (caughtItem != null && caughtItem.itemType == ItemType.Junk)
@@ -454,14 +449,18 @@ public class FishingManager : MonoBehaviour
         if (caughtItem is ArtifactData artifact)
         {
             pendingArtifact = artifact;
-            
-            if (runtimeArtifactStruggle != null) Destroy(runtimeArtifactStruggle);
+            ClearRuntimeArtifact();
 
             runtimeArtifactStruggle = ScriptableObject.CreateInstance<FishData>();
             runtimeArtifactStruggle.itemName = "Mysterious Heavy Object";
             runtimeArtifactStruggle.weightClass = FishWeight.Heavy;
-            runtimeArtifactStruggle.minClicks = 45;
-            runtimeArtifactStruggle.maxClicks = 75;
+
+            runtimeArtifactStruggle.baseCatchDifficulty = 140f;    
+            runtimeArtifactStruggle.escapeResistance = 8.0f;       
+            runtimeArtifactStruggle.rageChance = 0.15f;            
+            runtimeArtifactStruggle.rageMultiplier = 1.6f;
+            runtimeArtifactStruggle.safeZoneWidth = 0.3f;          
+
             hookedFish = runtimeArtifactStruggle;
         }
         else
@@ -472,11 +471,9 @@ public class FishingManager : MonoBehaviour
 
         if (hookedFish == null) { HandleFishEscape(); yield break; }
 
-        if (currentBobber != null)
-            currentBobber.PlayBite();
+        if (currentBobber != null) currentBobber.PlayBite();
 
         float window = UnityEngine.Random.Range(minBiteWindow, maxBiteWindow);
-
         if (baitStack != null && baitStack.item is BaitData baitData)
             window += baitData.biteWindowExtension;
 
@@ -493,7 +490,6 @@ public class FishingManager : MonoBehaviour
         if (ReactiveOceanManager.Instance != null)
         {
             ItemData tierCatch = ReactiveOceanManager.Instance.GetRandomCatch();
-            
             if (tierCatch != null && (tierCatch.itemType == ItemType.Artifact || tierCatch.itemType == ItemType.Junk))
             {
                 return tierCatch;
@@ -501,7 +497,6 @@ public class FishingManager : MonoBehaviour
         }
 
         List<ItemData> eligibleItems = new List<ItemData>();
-
         foreach (var item in fishPool)
         {
             if (item is FishData fish)
@@ -521,21 +516,27 @@ public class FishingManager : MonoBehaviour
         return eligibleItems[UnityEngine.Random.Range(0, eligibleItems.Count)];
     }
 
-    void StartReel()
+    private void StartReel()
     {
+        if (biteCoroutine != null)
+        {
+            StopCoroutine(biteCoroutine);
+            biteCoroutine = null;
+        }
+
         cachedPlayer?.SetPulling(true);
         cachedPlayer?.PlayPullAnimation();
 
         state = FishingState.Result;
 
-        if (pullSFX != null && audioSource != null) {
+        if (pullSFX != null && audioSource != null)
+        {
             audioSource.clip = pullSFX;
             audioSource.loop = true; 
             audioSource.Play();
         }
 
         ConsumeBait(); 
-
         OnFishHooked?.Invoke(hookedFish);
 
         if (ReelMinigame.Instance != null)
@@ -552,17 +553,15 @@ public class FishingManager : MonoBehaviour
         {
             if (pendingArtifact != null)
             {
-                if (cachedInventory != null)
-                    cachedInventory.AddItem(pendingArtifact);
-
-                UIManager.Instance?.ShowMessage("Recovered Artifact: " + pendingArtifact.itemName);
+                cachedInventory?.AddItem(pendingArtifact);
+                UIManager.Instance?.ShowMessage($"Recovered Artifact: {pendingArtifact.itemName}");
                 GameEvents.OnItemCaught?.Invoke(pendingArtifact);
                 pendingArtifact = null;
                 Cleanup();
                 return;
             }
 
-            if (cachedInventory != null)
+            if (cachedInventory != null && fish != null)
             {
                 float luck = 0f;
                 float artifactLuck = cachedInventory.GetTotalArtifactBonus(a => a.qualityLuckBonus);
@@ -581,30 +580,24 @@ public class FishingManager : MonoBehaviour
 
             if (fish != null)
             {
-                Debug.Log("Firing OnItemCaught event for quest system: " + fish.itemName);
                 GameEvents.OnItemCaught?.Invoke(fish);
+                UIManager.Instance?.ShowMessage($"Caught: {fish.itemName}");
             }
-
-            if (UIManager.Instance != null)
-                UIManager.Instance.ShowMessage("Caught: " + fish.itemName);
         }
         else
         {
-            if (UIManager.Instance != null)
-                UIManager.Instance.ShowMessage("Fish Escaped!");
+            UIManager.Instance?.ShowMessage("Fish Escaped!");
         }
 
         Cleanup();
     }
 
-    void HandleFishEscape()
+    private void HandleFishEscape()
     {
         cachedPlayer?.SetPulling(false);
-
         state = FishingState.Result;
 
-        if (UIManager.Instance != null)
-            UIManager.Instance.ShowMessage("Fish Escaped!");
+        UIManager.Instance?.ShowMessage("Fish Escaped!");
 
         if (UnityEngine.Random.value < loseBaitChance)
         {
@@ -615,30 +608,40 @@ public class FishingManager : MonoBehaviour
         Cleanup();
     }
 
-    void Cleanup()
+    private void Cleanup()
     {
+        if (biteCoroutine != null)
+        {
+            StopCoroutine(biteCoroutine);
+            biteCoroutine = null;
+        }
+
         if (currentBobber != null)
             Destroy(currentBobber.gameObject);
 
         pendingArtifact = null;
+        ClearRuntimeArtifact();
 
-        if (runtimeArtifactStruggle != null)
+        if (audioSource != null && audioSource.isPlaying && audioSource.clip == pullSFX)
         {
-            Destroy(runtimeArtifactStruggle);
-            runtimeArtifactStruggle = null;
-        }
-
-        if (audioSource != null && audioSource.isPlaying && audioSource.clip == pullSFX) {
             audioSource.Stop();
             audioSource.loop = false;
         }
 
         cachedPlayer?.StopFishingAnimation();
-
         StartCoroutine(ResetDelay());
     }
 
-    IEnumerator ResetDelay()
+    private void ClearRuntimeArtifact()
+    {
+        if (runtimeArtifactStruggle != null)
+        {
+            Destroy(runtimeArtifactStruggle);
+            runtimeArtifactStruggle = null;
+        }
+    }
+
+    private IEnumerator ResetDelay()
     {
         inputLocked = true;
         yield return new WaitForSeconds(0.2f); 
@@ -665,11 +668,9 @@ public class FishingManager : MonoBehaviour
         ConsumeHeldItem();
     }
 
-    void ResetFishing()
+    private void ResetFishing()
     {
-        if (GameManager.Instance != null)
-            GameManager.Instance.SetState(GameState.Normal);
-
+        GameManager.Instance?.SetState(GameState.Normal);
         state = FishingState.Idle;
         holdTime = 0;
     }

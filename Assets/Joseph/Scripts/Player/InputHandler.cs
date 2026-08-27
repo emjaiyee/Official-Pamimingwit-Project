@@ -3,25 +3,24 @@ using UnityEngine.InputSystem;
 
 public class InputHandler : MonoBehaviour
 {
-    public static InputHandler Instance;
+    public static InputHandler Instance { get; private set; }
 
-    public Vector2 MoveInput;
+    public Vector2 MoveInput { get; private set; }
 
-    public bool ClickDown;
-    public bool ClickHeld;
-    public bool ClickUp;
+    public bool ClickDown { get; private set; }
+    public bool ClickHeld { get; private set; }
+    public bool ClickUp { get; private set; }
 
-    public bool RightClickDown;
+    public bool RightClickDown { get; private set; }
 
-    public bool InteractPressed;
-    public bool InventoryPressed;
-    public bool CraftingPressed;
-    public bool CancelPressed;
-    public bool RotatePressed;
+    public bool InteractPressed { get; private set; }
+    public bool InventoryPressed { get; private set; }
+    public bool CraftingPressed { get; private set; }
+    public bool CancelPressed { get; private set; }
+    public bool RotatePressed { get; private set; }
 
-    void Awake()
+    private void Awake()
     {
-        // ✅ PREVENT DUPLICATES
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -29,12 +28,10 @@ public class InputHandler : MonoBehaviour
         }
 
         Instance = this;
-
-        // ✅ KEEP BETWEEN SCENES
         DontDestroyOnLoad(gameObject);
     }
 
-    void LateUpdate()
+    private void LateUpdate()
     {
         ClickDown = false;
         ClickUp = false;
@@ -54,10 +51,7 @@ public class InputHandler : MonoBehaviour
 
     public void OnClick(InputAction.CallbackContext context)
     {
-        if (GameManager.Instance != null &&
-            GameManager.Instance.currentState == GameState.UI)
-            return;
-
+        // Always track hold and release states regardless of GameState
         if (context.started)
         {
             ClickDown = true;
@@ -133,7 +127,7 @@ public class InputHandler : MonoBehaviour
         RotatePressed = true;
     }
 
-    Interactable FindClosest()
+    private Interactable FindClosest()
     {
         Interactable[] list = Object.FindObjectsByType<Interactable>(FindObjectsSortMode.None);
 
