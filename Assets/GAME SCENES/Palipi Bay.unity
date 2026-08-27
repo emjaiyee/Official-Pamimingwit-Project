@@ -4515,6 +4515,85 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 645d02acfaa528a4c8f4d0706e2018fc, type: 3}
+--- !u!1 &181992789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181992790}
+  - component: {fileID: 181992791}
+  m_Layer: 8
+  m_Name: PlayerUIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &181992790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181992789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1900034379}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &181992791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181992789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6730943c6140d234c93cf30d45189e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerUIManager
+  selyoText: {fileID: 299744239}
+  staminaPanel: {fileID: 930347616}
+  staminaSlider: {fileID: 1303141418}
+  staminaFillImage: {fileID: 1328980585}
+  staminaText: {fileID: 1752779536}
+  lowStaminaThreshold: 0.2
+  pulseSpeed: 4
+  pulseScaleAmount: 0.15
+  staminaSmoothSpeed: 10
+  inventorySlots:
+  - {fileID: 2042901685}
+  - {fileID: 1776663011}
+  - {fileID: 1601392861}
+  - {fileID: 1246123348}
+  - {fileID: 829947589}
+  - {fileID: 126348813}
+  - {fileID: 703990124}
+  - {fileID: 1660457443}
+  - {fileID: 2129311773}
+  - {fileID: 2076911946}
+  - {fileID: 1939776157}
+  - {fileID: 1158088368}
+  - {fileID: 519059569}
+  - {fileID: 1432596563}
+  - {fileID: 741266749}
+  - {fileID: 1163728457}
+  inventoryPanel: {fileID: 137828055}
+  hotbarPanel: {fileID: 420460397}
+  hotbarSlots:
+  - {fileID: 1972285499}
+  - {fileID: 420504430}
+  - {fileID: 1094230619}
+  - {fileID: 1470899594}
+  - {fileID: 1212273986}
+  - {fileID: 1283268891}
 --- !u!1 &203468414
 GameObject:
   m_ObjectHideFlags: 0
@@ -17480,6 +17559,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1758707573032046433, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1553856652}
+    - targetCorrespondingSourceObject: {fileID: 1758707573032046433, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1900034379}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5243109721669505822, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
       insertIndex: -1
@@ -20583,7 +20665,7 @@ RectTransform:
   m_Father: {fileID: 846703788}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -39643,7 +39725,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 14, y: -1, z: 0}
@@ -40111,46 +40193,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   currentShopType: 0
-  inventorySlots:
-  - {fileID: 2042901685}
-  - {fileID: 1776663011}
-  - {fileID: 1601392861}
-  - {fileID: 1246123348}
-  - {fileID: 829947589}
-  - {fileID: 126348813}
-  - {fileID: 703990124}
-  - {fileID: 1660457443}
-  - {fileID: 2129311773}
-  - {fileID: 2076911946}
-  - {fileID: 1939776157}
-  - {fileID: 1158088368}
-  - {fileID: 519059569}
-  - {fileID: 1432596563}
-  - {fileID: 741266749}
-  - {fileID: 1163728457}
-  inventoryPanel: {fileID: 137828055}
-  hotbarPanel: {fileID: 420460397}
-  hotbarSlots:
-  - {fileID: 1972285499}
-  - {fileID: 420504430}
-  - {fileID: 1094230619}
-  - {fileID: 1470899594}
-  - {fileID: 1212273986}
-  - {fileID: 1283268891}
   shopPanel: {fileID: 627012953}
   shopContent: {fileID: 673111380}
   industrialShopPanel: {fileID: 1698046026}
   industrialShopContent: {fileID: 2005942078}
   shopSlotPrefab: {fileID: 1647461877249870514, guid: 7ad246ebe0abf4e438efc5b8ebbc62e0, type: 3}
   trashDisposalPanel: {fileID: 339647047}
-  staminaPanel: {fileID: 930347616}
-  staminaSlider: {fileID: 1303141418}
-  staminaFillImage: {fileID: 1328980585}
-  staminaText: {fileID: 0}
-  lowStaminaThreshold: 0.2
-  pulseSpeed: 0.5
-  pulseScaleAmount: 0.1
-  staminaSmoothSpeed: 10
   dayHUDText: {fileID: 0}
   dayTransitionOverlay: {fileID: 370828124}
   dayTransitionText: {fileID: 1931151464}
@@ -43676,6 +43724,38 @@ RectTransform:
   m_AnchoredPosition: {x: 343, y: 12.838}
   m_SizeDelta: {x: 1322.6238, y: 474.32}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1900034378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900034379}
+  m_Layer: 8
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900034379
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900034378}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 181992790}
+  m_Father: {fileID: 1582750309}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914276115
 GameObject:
   m_ObjectHideFlags: 0

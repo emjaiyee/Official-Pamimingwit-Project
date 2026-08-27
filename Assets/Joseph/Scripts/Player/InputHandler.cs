@@ -107,8 +107,8 @@ public class InputHandler : MonoBehaviour
     {
         if (!context.started) return;
 
-        if (UIManager.Instance != null)
-            UIManager.Instance.ToggleInventory();
+        if (PlayerUIManager.Instance != null)
+            PlayerUIManager.Instance.ToggleInventory();
     }
 
     public void OnCrafting(InputAction.CallbackContext context)

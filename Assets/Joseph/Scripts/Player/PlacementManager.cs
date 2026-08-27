@@ -100,9 +100,9 @@ public class PlacementManager : MonoBehaviour
         if (HotbarManager.Instance == null || Inventory.Instance == null) return;
         int index = HotbarManager.Instance.selectedIndex;
         
-        if (Inventory.Instance.itemList[index].amount <= 1 && UIManager.Instance != null)
+        if (Inventory.Instance.itemList[index].amount <= 1 && PlayerUIManager.Instance != null)
         {
-            ItemSlotUI slotUI = UIManager.Instance.hotbarSlots[index];
+            ItemSlotUI slotUI = PlayerUIManager.Instance.hotbarSlots[index];
             slotUI.AnimatePopOut(() => {
                 Inventory.Instance.itemList[index].amount = 0;
                 Inventory.Instance.itemList[index].item = null;
