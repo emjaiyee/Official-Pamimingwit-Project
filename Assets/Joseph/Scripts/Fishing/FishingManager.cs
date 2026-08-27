@@ -41,6 +41,16 @@ public class FishingManager : MonoBehaviour
     [Header("Casting Parameters")]
     [SerializeField] private float maxHoldTime = 1.5f;
 
+    [Header("Wait & Nibble Parameters")]
+    [Tooltip("Minimum awkward silence delay (seconds) before any fish approaches.")]
+    [SerializeField] private float minWaitTime = 3.5f;
+    [Tooltip("Maximum awkward silence delay (seconds) before any fish approaches.")]
+    [SerializeField] private float maxWaitTime = 7.0f;
+    [Tooltip("Min/Max number of false nibbles before a full bite.")]
+    [SerializeField] private Vector2Int nibbleCountRange = new Vector2Int(1, 3);
+    [Tooltip("Time between nibbles.")]
+    [SerializeField] private float nibbleInterval = 1.2f;
+
     [Header("Bite Window")]
     [SerializeField] private float minBiteWindow = 1.0f;
     [SerializeField] private float maxBiteWindow = 3.0f;
@@ -50,6 +60,7 @@ public class FishingManager : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private AudioClip castSFX;
     [SerializeField] private AudioClip pullSFX;
+    [SerializeField] private AudioClip nibbleSFX;
 
     private float holdTime;
     private bool inputLocked;
@@ -426,11 +437,29 @@ public class FishingManager : MonoBehaviour
             catchModifier *= bonus;
         }
 
-        float wait = UnityEngine.Random.Range(2f, 5f) / Mathf.Max(catchModifier, 0.1f);
-        yield return new WaitForSeconds(wait);
+        // --- 1. AWKWARD SILENCE PHASE ---
+        // Base delay scales down with equipment/bait bonuses
+        float baseWait = UnityEngine.Random.Range(minWaitTime, maxWaitTime) / Mathf.Max(catchModifier, 0.1f);
+        yield return new WaitForSeconds(baseWait);
 
         if (state != FishingState.Waiting) yield break;
 
+        // --- 2. NIBBLE / SUSPENSE PHASE ---
+        int nibbles = UnityEngine.Random.Range(nibbleCountRange.x, nibbleCountRange.y + 1);
+        for (int i = 0; i < nibbles; i++)
+        {
+            if (state != FishingState.Waiting) yield break;
+
+            // Visual/Audio nibble pop
+            if (currentBobber != null) currentBobber.PlayNibble(); 
+            if (nibbleSFX != null && audioSource != null) audioSource.PlayOneShot(nibbleSFX);
+
+            yield return new WaitForSeconds(nibbleInterval);
+        }
+
+        if (state != FishingState.Waiting) yield break;
+
+        // --- 3. FULL BITE PHASE ---
         state = FishingState.Biting;
 
         BaitData currentBait = baitStack != null ? baitStack.item as BaitData : null;
