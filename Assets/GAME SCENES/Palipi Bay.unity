@@ -908,7 +908,7 @@ RectTransform:
   m_GameObject: {fileID: 57962836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 846703788}
@@ -4708,8 +4708,8 @@ MonoBehaviour:
   staminaSlider: {fileID: 1303141418}
   staminaFillImage: {fileID: 1328980585}
   staminaText: {fileID: 1752779536}
-  lowStaminaThreshold: 0.2
-  pulseSpeed: 4
+  lowStaminaThreshold: 0.3
+  pulseSpeed: 0.25
   pulseScaleAmount: 0.15
   staminaSmoothSpeed: 10
   inventorySlots:

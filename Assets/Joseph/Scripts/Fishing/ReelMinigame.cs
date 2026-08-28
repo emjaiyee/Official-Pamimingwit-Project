@@ -215,7 +215,9 @@ public class ReelMinigame : MonoBehaviour
         }
     }
 
-    private void PositionFishIcon()
+    private float lastSafeCenter = 0.5f;
+
+private void PositionFishIcon()
     {
         if (fishIcon == null || tensionBar == null) return;
 
@@ -224,10 +226,29 @@ public class ReelMinigame : MonoBehaviour
 
         float barWidth = barRect.rect.width;
         
-        // Calculate X position relative to tension bar center
+        
         float xPos = (currentSafeCenter - 0.5f) * barWidth;
-
         iconRect.anchoredPosition = new Vector2(xPos, iconRect.anchoredPosition.y);
+
+        
+        float moveDelta = currentSafeCenter - lastSafeCenter;
+
+        if (Mathf.Abs(moveDelta) > 0.0001f)
+        {
+            Vector3 localScale = iconRect.localScale;
+
+            if (moveDelta < 0)
+            {
+                localScale.x = -Mathf.Abs(localScale.x);
+            }
+            else if (moveDelta > 0)
+            {
+                localScale.x = Mathf.Abs(localScale.x);
+            }
+
+            iconRect.localScale = localScale;
+        }
+        lastSafeCenter = currentSafeCenter;
     }
 
     public void StartMinigame(FishData fish)
