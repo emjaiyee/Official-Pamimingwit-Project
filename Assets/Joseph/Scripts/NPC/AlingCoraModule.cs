@@ -11,9 +11,8 @@ public class AlingCoraModule : NPCModule
 
     public override void OnInteract()
     {
-        if (DialogueManager.Instance != null)
+        if (DialogueManager.Instance != null && dialogueLines != null && dialogueLines.Length > 0)
         {
-            // Start dialogue and pass the shop opening logic as a callback
             DialogueManager.Instance.ShowDialogue(dialogueLines, OpenShop);
         }
         else
@@ -24,7 +23,6 @@ public class AlingCoraModule : NPCModule
 
     private void OpenShop()
     {
-        Debug.Log("Aling Cora: Shop Opened!");
         UIManager.Instance?.OpenShop();
     }
 }

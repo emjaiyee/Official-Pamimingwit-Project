@@ -16,24 +16,34 @@ public class DialogueLine
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager Instance;
+    public static DialogueManager Instance { get; private set; }
 
     private DialogueLine[] currentLines;
     private int currentIndex;
     private Action onFinishCallback;
 
     [SerializeField] private float fadeDuration = 0.25f;
-    [SerializeField] private float textFadeDuration = 0.15f; // For the text content
+    [SerializeField] private float textFadeDuration = 0.15f;
+    
     private CanvasGroup canvasGroup;
     private Coroutine fadeCoroutine;
+    private Coroutine lineRoutine;
+    private Coroutine textFadeRoutine;
+
     private CanvasGroup dialogueNameCanvasGroup;
     private CanvasGroup dialogueContentCanvasGroup;
     private CanvasGroup dialogueIconCanvasGroup;
 
     public bool IsDialogueActive { get; private set; }
+    private bool isDisplayingLine;
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
     }
 
@@ -41,8 +51,13 @@ public class DialogueManager : MonoBehaviour
     {
         if (!IsDialogueActive) return;
 
-        // Advance dialogue with Spacebar or Left Mouse Button
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame || Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
+        // Block advance while active text transitions are animating
+        if (isDisplayingLine) return;
+
+        bool spacePressed = Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame;
+        bool clickPressed = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+
+        if (spacePressed || clickPressed)
         {
             AdvanceDialogue();
         }
@@ -67,6 +82,12 @@ public class DialogueManager : MonoBehaviour
 
     public void ShowDialogue(DialogueLine[] lines, Action onFinish = null)
     {
+        if (lines == null || lines.Length == 0)
+        {
+            onFinish?.Invoke();
+            return;
+        }
+
         currentLines = lines;
         currentIndex = 0;
         onFinishCallback = onFinish;
@@ -74,7 +95,8 @@ public class DialogueManager : MonoBehaviour
 
         if (UIManager.Instance == null || UIManager.Instance.dialoguePanel == null)
         {
-            Debug.LogError("DialogueManager: UIManager Instance or Dialogue Panel is missing!");
+            Debug.LogError("[DialogueManager] UIManager Instance or Dialogue Panel missing!");
+            IsDialogueActive = false;
             return;
         }
 
@@ -83,65 +105,71 @@ public class DialogueManager : MonoBehaviour
 
         UIManager.Instance.dialoguePanel.SetActive(true);
 
-        // Get or add CanvasGroup for the main panel
-        if (canvasGroup == null) canvasGroup = UIManager.Instance.dialoguePanel.GetComponent<CanvasGroup>();
-        if (canvasGroup == null) canvasGroup = UIManager.Instance.dialoguePanel.AddComponent<CanvasGroup>();
-
-        // Get or add CanvasGroup for text elements
-        if (UIManager.Instance.dialogueNameText != null)
-        {
-            dialogueNameCanvasGroup = UIManager.Instance.dialogueNameText.GetComponent<CanvasGroup>();
-            if (dialogueNameCanvasGroup == null) dialogueNameCanvasGroup = UIManager.Instance.dialogueNameText.gameObject.AddComponent<CanvasGroup>();
-            dialogueNameCanvasGroup.alpha = 0f; // Start hidden
-        }
-        if (UIManager.Instance.dialogueContentText != null)
-        {
-            dialogueContentCanvasGroup = UIManager.Instance.dialogueContentText.GetComponent<CanvasGroup>();
-            if (dialogueContentCanvasGroup == null) dialogueContentCanvasGroup = UIManager.Instance.dialogueContentText.gameObject.AddComponent<CanvasGroup>();
-            dialogueContentCanvasGroup.alpha = 0f; // Start hidden
-        }
-        if (UIManager.Instance.dialogueIcon != null)
-        {
-            dialogueIconCanvasGroup = UIManager.Instance.dialogueIcon.GetComponent<CanvasGroup>();
-            if (dialogueIconCanvasGroup == null) dialogueIconCanvasGroup = UIManager.Instance.dialogueIcon.gameObject.AddComponent<CanvasGroup>();
-            dialogueIconCanvasGroup.alpha = 0f; // Start hidden
-        }
-
-        // Initialize the first line's data immediately so it's correct during the panel fade-in
+        InitializeCanvasGroups();
         UpdateUI(0);
 
         canvasGroup.alpha = 0f;
         StartFade(1f, () => {
-            UIManager.Instance?.PlayPanelOpenSFX(); // Play sound after panel fully faded in
-            StartCoroutine(DisplayLineRoutine());
-        }); // Fade in panel, then display first line
+            UIManager.Instance?.PlayPanelOpenSFX();
+            StartLineDisplay();
+        });
+    }
+
+    private void InitializeCanvasGroups()
+    {
+        if (canvasGroup == null) canvasGroup = GetOrAddComponent<CanvasGroup>(UIManager.Instance.dialoguePanel);
+
+        if (UIManager.Instance.dialogueNameText != null)
+        {
+            dialogueNameCanvasGroup = GetOrAddComponent<CanvasGroup>(UIManager.Instance.dialogueNameText.gameObject);
+            dialogueNameCanvasGroup.alpha = 0f;
+        }
+        if (UIManager.Instance.dialogueContentText != null)
+        {
+            dialogueContentCanvasGroup = GetOrAddComponent<CanvasGroup>(UIManager.Instance.dialogueContentText.gameObject);
+            dialogueContentCanvasGroup.alpha = 0f;
+        }
+        if (UIManager.Instance.dialogueIcon != null)
+        {
+            dialogueIconCanvasGroup = GetOrAddComponent<CanvasGroup>(UIManager.Instance.dialogueIcon.gameObject);
+            dialogueIconCanvasGroup.alpha = 0f;
+        }
+    }
+
+    private T GetOrAddComponent<T>(GameObject target) where T : Component
+    {
+        T comp = target.GetComponent<T>();
+        return comp != null ? comp : target.AddComponent<T>();
     }
 
     private void UpdateUI(int index)
     {
-        if (index < currentLines.Length)
+        if (index >= currentLines.Length) return;
+
+        DialogueLine current = currentLines[index];
+        UIManager ui = UIManager.Instance;
+        
+        if (ui.dialogueNameText != null) ui.dialogueNameText.text = current.speakerName;
+        if (ui.dialogueContentText != null) ui.dialogueContentText.text = current.text;
+
+        if (ui.dialogueIcon != null)
         {
-            DialogueLine current = currentLines[index];
-            UIManager ui = UIManager.Instance;
-            
-            if (ui.dialogueNameText != null)
-                ui.dialogueNameText.text = current.speakerName;
-
-            if (ui.dialogueContentText != null)
-                ui.dialogueContentText.text = current.text;
-
-            if (ui.dialogueIcon != null)
-            {
-                ui.dialogueIcon.sprite = current.icon;
-                ui.dialogueIcon.gameObject.SetActive(current.icon != null);
-            }
+            ui.dialogueIcon.sprite = current.icon;
+            ui.dialogueIcon.gameObject.SetActive(current.icon != null);
         }
+    }
+
+    private void StartLineDisplay()
+    {
+        if (lineRoutine != null) StopCoroutine(lineRoutine);
+        lineRoutine = StartCoroutine(DisplayLineRoutine());
     }
 
     private IEnumerator DisplayLineRoutine()
     {
-        // Fade out current text if not the very first line
-        if (currentIndex > 0 && (dialogueNameCanvasGroup != null || dialogueContentCanvasGroup != null || dialogueIconCanvasGroup != null))
+        isDisplayingLine = true;
+
+        if (currentIndex > 0)
         {
             yield return StartCoroutine(FadeText(0f));
         }
@@ -149,13 +177,10 @@ public class DialogueManager : MonoBehaviour
         if (currentIndex < currentLines.Length)
         {
             UpdateUI(currentIndex);
-
-            // Fade in new text
-            if (dialogueNameCanvasGroup != null || dialogueContentCanvasGroup != null || dialogueIconCanvasGroup != null)
-            {
-                yield return StartCoroutine(FadeText(1f));
-            }
+            yield return StartCoroutine(FadeText(1f));
         }
+
+        isDisplayingLine = false;
     }
 
     public void AdvanceDialogue()
@@ -163,7 +188,7 @@ public class DialogueManager : MonoBehaviour
         currentIndex++;
         if (currentIndex < currentLines.Length)
         {
-            StartCoroutine(DisplayLineRoutine()); // Start routine to fade out old, show new
+            StartLineDisplay();
         }
         else
         {
@@ -174,18 +199,28 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         IsDialogueActive = false;
+        isDisplayingLine = false;
+
         StartFade(0f, () =>
         {
-            UIManager.Instance?.PlayPanelCloseSFX(); // Play sound after panel fully faded out
-            if (UIManager.Instance.dialoguePanel) UIManager.Instance.dialoguePanel.SetActive(false);
+            UIManager.Instance?.PlayPanelCloseSFX();
+            if (UIManager.Instance?.dialoguePanel != null) 
+                UIManager.Instance.dialoguePanel.SetActive(false);
 
-            GameManager.Instance?.SetState(GameState.Normal);
-            PlayerController.Instance?.UnlockMovement();
+            if (NarrativeStateManager.Instance != null) 
+                NarrativeStateManager.Instance.IsNarrativeActive = false;
 
-            // Release the narrative lock
-            if (NarrativeStateManager.Instance != null) NarrativeStateManager.Instance.IsNarrativeActive = false;
+            // Execute callback FIRST so secondary UI (like Shops) can acquire state control correctly
+            Action callback = onFinishCallback;
+            onFinishCallback = null;
+            callback?.Invoke();
 
-            onFinishCallback?.Invoke();
+            // Only restore to normal state if no other UI panel was opened by the callback
+            if (UIManager.Instance != null && !UIManager.Instance.IsUIOpen())
+            {
+                GameManager.Instance?.SetState(GameState.Normal);
+                PlayerController.Instance?.UnlockMovement();
+            }
         });
     }
 
@@ -208,14 +243,13 @@ public class DialogueManager : MonoBehaviour
             canvasGroup.alpha = Mathf.Lerp(startAlpha, targetAlpha, time / fadeDuration);
             yield return null;
         }
+
         canvasGroup.alpha = targetAlpha;
         onComplete?.Invoke();
     }
 
     private IEnumerator FadeText(float targetAlpha)
     {
-        if (dialogueNameCanvasGroup == null && dialogueContentCanvasGroup == null && dialogueIconCanvasGroup == null) yield break;
-
         float startNameAlpha = dialogueNameCanvasGroup != null ? dialogueNameCanvasGroup.alpha : 0;
         float startContentAlpha = dialogueContentCanvasGroup != null ? dialogueContentCanvasGroup.alpha : 0;
         float startIconAlpha = dialogueIconCanvasGroup != null ? dialogueIconCanvasGroup.alpha : 0;
@@ -225,11 +259,14 @@ public class DialogueManager : MonoBehaviour
         {
             time += Time.deltaTime;
             float progress = time / textFadeDuration;
+
             if (dialogueNameCanvasGroup != null) dialogueNameCanvasGroup.alpha = Mathf.Lerp(startNameAlpha, targetAlpha, progress);
             if (dialogueContentCanvasGroup != null) dialogueContentCanvasGroup.alpha = Mathf.Lerp(startContentAlpha, targetAlpha, progress);
             if (dialogueIconCanvasGroup != null) dialogueIconCanvasGroup.alpha = Mathf.Lerp(startIconAlpha, targetAlpha, progress);
+
             yield return null;
         }
+
         if (dialogueNameCanvasGroup != null) dialogueNameCanvasGroup.alpha = targetAlpha;
         if (dialogueContentCanvasGroup != null) dialogueContentCanvasGroup.alpha = targetAlpha;
         if (dialogueIconCanvasGroup != null) dialogueIconCanvasGroup.alpha = targetAlpha;
