@@ -3,20 +3,25 @@ using System;
 
 public class StaminaManager : MonoBehaviour
 {
-    public static StaminaManager Instance;
+    public static StaminaManager Instance { get; private set; }
 
     [Header("Stamina Settings")]
     [SerializeField] private float maxStamina = 100f;
-    [SerializeField] private float staminaRegenRate = 5f; // Stamina per second
+    [SerializeField] private float staminaRegenRate = 5f;
     [SerializeField] private float fishingStaminaCost = 10f;
     [SerializeField] private float dynamiteStaminaCost = 25f;
 
+    [Header("Exhaustion Debuff Settings")]
+    [Tooltip("Multiplier applied to max stamina the day after passing out (e.g. 0.5 = 50% max stamina).")]
+    [SerializeField] private float fatigueMaxStaminaMultiplier = 0.5f;
+
     private float currentStamina;
+    private bool isFatiguedNextDay = false;
+    private bool isPassingOut = false;
 
-    // Event to notify UI or other systems about stamina changes
-    public event Action<float, float> OnStaminaChanged; // currentStamina, maxStamina
+    public event Action<float, float> OnStaminaChanged;
 
-    void Awake()
+    private void Awake()
     {
         if (Instance != null && Instance != this)
         {
@@ -26,32 +31,81 @@ public class StaminaManager : MonoBehaviour
         Instance = this;
     }
 
-    void Start()
+    private void OnEnable()
     {
-        currentStamina = maxStamina;
-        OnStaminaChanged?.Invoke(currentStamina, maxStamina);
+        GameManager.OnDayAdvanced += HandleDayAdvanced;
     }
 
-    void Update()
+    private void OnDisable()
     {
-        if (currentStamina < maxStamina)
+        GameManager.OnDayAdvanced -= HandleDayAdvanced;
+    }
+
+    private void Start()
+    {
+        currentStamina = maxStamina;
+        OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
+    }
+
+    private void Update()
+    {
+        // Regenerate stamina if below effective max and not working late
+        float effectiveMax = GetEffectiveMaxStamina();
+
+        if (currentStamina < effectiveMax && (GameManager.Instance == null || !GameManager.Instance.IsLateNight))
         {
             currentStamina += staminaRegenRate * Time.deltaTime;
-            currentStamina = Mathf.Min(currentStamina, maxStamina);
-            OnStaminaChanged?.Invoke(currentStamina, maxStamina);
+            currentStamina = Mathf.Min(currentStamina, effectiveMax);
+            OnStaminaChanged?.Invoke(currentStamina, effectiveMax);
         }
+    }
+
+    private void HandleDayAdvanced()
+    {
+        isPassingOut = false;
+
+        if (isFatiguedNextDay)
+        {
+            // Apply fatigue penalty for today
+            currentStamina = GetEffectiveMaxStamina();
+            UIManager.Instance?.ShowMessage("Feeling sluggish from passing out last night...");
+            isFatiguedNextDay = false; // Reset flag for subsequent days
+        }
+        else
+        {
+            // Full recovery when sleeping normally
+            RefillStamina();
+        }
+
+        OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
+    }
+
+    public void ApplyLateNightDrain(float amount)
+    {
+        if (isPassingOut) return;
+        ConsumeStamina(amount);
+    }
+
+    public void SetFatiguedForNextDay(bool state)
+    {
+        isFatiguedNextDay = state;
+    }
+
+    public float GetEffectiveMaxStamina()
+    {
+        return isFatiguedNextDay ? (maxStamina * fatigueMaxStaminaMultiplier) : maxStamina;
     }
 
     public void RefillStamina()
     {
-        currentStamina = maxStamina;
-        OnStaminaChanged?.Invoke(currentStamina, maxStamina);
+        currentStamina = GetEffectiveMaxStamina();
+        OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
     }
 
     public void SetStamina(float amount)
     {
-        currentStamina = Mathf.Clamp(amount, 0, maxStamina);
-        OnStaminaChanged?.Invoke(currentStamina, maxStamina);
+        currentStamina = Mathf.Clamp(amount, 0, GetEffectiveMaxStamina());
+        OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
     }
 
     public float GetStamina() => currentStamina;
@@ -59,20 +113,26 @@ public class StaminaManager : MonoBehaviour
     public bool CanAffordFishing() => currentStamina >= fishingStaminaCost;
     public bool CanAffordDynamite() => currentStamina >= dynamiteStaminaCost;
 
-    public void ConsumeFishingStamina()
-    {
-        ConsumeStamina(fishingStaminaCost);
-    }
-
-    public void ConsumeDynamiteStamina()
-    {
-        ConsumeStamina(dynamiteStaminaCost);
-    }
+    public void ConsumeFishingStamina() => ConsumeStamina(fishingStaminaCost);
+    public void ConsumeDynamiteStamina() => ConsumeStamina(dynamiteStaminaCost);
 
     private void ConsumeStamina(float amount)
     {
+        if (isPassingOut) return;
+
         currentStamina -= amount;
-        currentStamina = Mathf.Max(currentStamina, 0);
-        OnStaminaChanged?.Invoke(currentStamina, maxStamina);
+        
+        if (currentStamina <= 0f)
+        {
+            currentStamina = 0f;
+            isPassingOut = true;
+
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.PassOutFromFatigue();
+            }
+        }
+
+        OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
     }
 }

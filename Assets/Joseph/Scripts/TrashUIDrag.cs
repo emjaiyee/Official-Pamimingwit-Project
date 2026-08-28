@@ -6,6 +6,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class TrashUIDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
+    public bool isRecyclable; // Category Flag
+
     private RectTransform rectTransform;
     private Canvas canvas;
     private CanvasGroup canvasGroup;
@@ -18,8 +20,8 @@ public class TrashUIDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     [Header("Shadow & Lift Settings")]
     public Image shadowImage;
-    public Image trashImage; // The main trash visual
-    public RectTransform visualContent; // The part that "lifts" up
+    public Image trashImage; 
+    public RectTransform visualContent; 
     public float maxLiftOffset = 25f;
     public float minShadowAlpha = 0f;
 
@@ -43,11 +45,9 @@ public class TrashUIDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         audioSource = GetComponent<AudioSource>();
         canvas = GetComponentInParent<Canvas>();
 
-        // Randomize initial state for a natural "scattered" look
         restingRotation = Quaternion.Euler(0, 0, Random.Range(0f, 360f));
         baseScale = Random.Range(0.85f, 1.15f);
         
-        // Keep the root (and shadow) upright; only the visual content gets the random rotation
         rectTransform.localRotation = Quaternion.identity;
         if (visualContent != null) visualContent.localRotation = restingRotation;
 
@@ -56,21 +56,15 @@ public class TrashUIDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     void Update()
     {
-        // Apply tilt and rotation to the visual content only
         if (visualContent != null)
             visualContent.localRotation = Quaternion.Lerp(visualContent.localRotation, restingRotation, Time.deltaTime * lerpSpeed);
         
-        // "Plop" effect: use a faster lerp when dropping (returning to scale 1)
         float currentLerp = (targetScale == 1f) ? lerpSpeed * 1.5f : lerpSpeed;
         rectTransform.localScale = Vector3.Lerp(rectTransform.localScale, Vector3.one * (baseScale * targetScale), Time.deltaTime * currentLerp);
 
-        // Simulated height logic
         if (shadowImage != null && visualContent != null)
         {
-            // Use targetScale for the progress calculation to avoid jitter during lerps
             float liftProgress = Mathf.Clamp01((targetScale - 1f) / (dragScale - 1f));
-
-            // Calculate height with a floating bobbing effect that only happens when lifted
             float liftOffset = liftProgress * maxLiftOffset;
             float floatBob = Mathf.Sin(Time.time * floatSpeed) * floatAmplitude * liftProgress;
 
@@ -79,7 +73,6 @@ public class TrashUIDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
             shadowImage.transform.localScale = Vector3.Lerp(Vector3.one, Vector3.one * 0.5f, liftProgress);
         }
 
-        // Detect the end of the "Plop" to play the landing sound
         if (isFalling && targetScale == 1f)
         {
             if (rectTransform.localScale.x <= (baseScale * 1.02f))
@@ -92,7 +85,6 @@ public class TrashUIDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // Make it semi-transparent and ignore raycasts so we can drop it "into" the bin
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
         targetScale = dragScale;
@@ -103,21 +95,17 @@ public class TrashUIDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnDrag(PointerEventData eventData)
     {
-        // Move the trash following the mouse delta, adjusted for canvas scale
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
 
-        // Apply tilt based on movement velocity
         float tiltZ = Mathf.Clamp(-eventData.delta.x * swayAmount, -25f, 25f);
         float tiltX = Mathf.Clamp(eventData.delta.y * swayAmount, -15f, 15f);
         
-        // Apply the tilt on top of the resting rotation
         if (visualContent != null) 
             visualContent.localRotation = restingRotation * Quaternion.Euler(tiltX, 0, tiltZ);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        // Reset transparency and raycasting
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
         targetScale = 1f;

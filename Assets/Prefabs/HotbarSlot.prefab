@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1eddcb627e2c7204f89da962f9c56d33, type: 2}
+  m_sharedMaterial: {fileID: -9157503706692484869, guid: 1eddcb627e2c7204f89da962f9c56d33, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -232,6 +232,14 @@ MonoBehaviour:
   icon: {fileID: 3094208932708920534}
   amountText: {fileID: 3080718146055451198}
   highlight: {fileID: 6706262441921739947}
+  selectionScaleMult: 1.2
+  selectionYOffset: 10
+  lerpSpeed: 15
+  popDuration: 0.2
+  popScaleAmount: 1.25
+  bronzeTint: {r: 0.82, g: 0.41, b: 0.12, a: 1}
+  silverTint: {r: 0.75, g: 0.75, b: 0.75, a: 1}
+  goldTint: {r: 1, g: 0.84, b: 0, a: 1}
 --- !u!114 &483960814378105051
 MonoBehaviour:
   m_ObjectHideFlags: 0

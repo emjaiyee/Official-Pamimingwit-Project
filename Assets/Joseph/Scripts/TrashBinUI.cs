@@ -3,13 +3,15 @@ using UnityEngine.EventSystems;
 
 public class TrashBinUI : MonoBehaviour, IDropHandler
 {
+    [Header("Bin Configuration")]
+    [Tooltip("Check true if this bin is for Recyclables; uncheck for General/Organic Waste.")]
+    [SerializeField] private bool isRecycleBin = true;
+
     public void OnDrop(PointerEventData eventData)
     {
-        // If the object dropped has the drag script, notify the manager
         if (eventData.pointerDrag != null)
         {
-            // Trigger the binned logic in the manager
-            CleaningMiniGameManager.Instance?.OnTrashBinned(eventData.pointerDrag);
+            CleaningMiniGameManager.Instance?.OnTrashSorted(eventData.pointerDrag, isRecycleBin);
         }
     }
 }

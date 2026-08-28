@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using System.Collections;
 
 public class FishingBobber : MonoBehaviour
 {
@@ -8,8 +9,8 @@ public class FishingBobber : MonoBehaviour
     float floatAmount = 0.1f;
     
     [Header("Flight Settings")]
-    [SerializeField] private float flightSpeed = 5.0f; // Slightly slower for better visibility
-    [SerializeField] private float flightArcHeight = 2.0f; // Higher arc for a more natural rod cast
+    [SerializeField] private float flightSpeed = 5.0f; 
+    [SerializeField] private float flightArcHeight = 2.0f; 
     [SerializeField] private GameObject ripplePrefab;
 
     [Header("Ambient Ripples")]
@@ -35,6 +36,8 @@ public class FishingBobber : MonoBehaviour
     private bool isBiting = false;
     private float ambientRippleTimer;
     private float intenseRippleTimer;
+
+    private Coroutine nibbleCoroutine;
 
     void Start()
     {
@@ -112,18 +115,52 @@ public class FishingBobber : MonoBehaviour
             return;
         }
 
-        // Apply SmoothStep for a natural ease-in and ease-out acceleration curve
         float smoothedT = Mathf.SmoothStep(0f, 1f, normalizedProgress);
 
         Vector3 currentPos = Vector3.Lerp(flightStart, flightTarget, smoothedT);
         float height = Mathf.Sin(smoothedT * Mathf.PI) * flightArcHeight;
-        currentPos.z = 0; // Ensure it stays on the rendering plane
+        currentPos.z = 0; 
         currentPos.y += height;
         transform.position = currentPos;
     }
 
+    public void PlayNibble()
+    {
+        if (isBiting) return;
+
+        SpawnRipple(0.65f);
+
+        if (nibbleCoroutine != null) StopCoroutine(nibbleCoroutine);
+        nibbleCoroutine = StartCoroutine(AnimateNibbleDip());
+    }
+
+    private IEnumerator AnimateNibbleDip()
+    {
+        Vector3 dipOffset = new Vector3(0, -0.15f, 0);
+        float duration = 0.12f;
+        float elapsed = 0f;
+
+        Vector3 initialPos = transform.position;
+
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            transform.position = Vector3.Lerp(initialPos, startPos + dipOffset, elapsed / duration);
+            yield return null;
+        }
+
+        elapsed = 0f;
+        while (elapsed < duration)
+        {
+            elapsed += Time.deltaTime;
+            transform.position = Vector3.Lerp(startPos + dipOffset, startPos, elapsed / duration);
+            yield return null;
+        }
+    }
+
     public void PlayBite()
     {
+        if (nibbleCoroutine != null) StopCoroutine(nibbleCoroutine);
         isBiting = true;
     }
 
@@ -131,7 +168,6 @@ public class FishingBobber : MonoBehaviour
     {
         if (ripplePrefab == null) return;
 
-        // Spawn at the resting water level (startPos) rather than current bobbing position
         Quaternion randomRot = Quaternion.Euler(0, 0, UnityEngine.Random.Range(0f, 360f));
         GameObject rippleGo = Instantiate(ripplePrefab, startPos, randomRot);
 

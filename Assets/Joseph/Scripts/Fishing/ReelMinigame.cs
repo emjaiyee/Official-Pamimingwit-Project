@@ -7,20 +7,56 @@ public class ReelMinigame : MonoBehaviour
 
     [Header("UI References")]
     [SerializeField] private GameObject panel;
-    [SerializeField] private Slider bar;
-    [SerializeField] private GameObject pullSign;
+    [SerializeField] private Slider progressBar;
+    [SerializeField] private Slider tensionBar;
+    [SerializeField] private Image tensionFillImage;
+    [SerializeField] private Image fishIcon; // Fish target icon moving along the bar
 
-    [Header("Juice Settings")]
-    [SerializeField] private float pulseSpeed = 10f;
-    [SerializeField] private float pulseAmount = 0.15f;
-    [SerializeField] private Vector3 signOffset = Vector3.zero;
+    [Header("Juice & Shake Settings")]
+    [SerializeField] private Transform uiPanelTransform;
+    [SerializeField] private float shakeIntensity = 4f;
+
+    [Header("Tension Mechanics")]
+    [SerializeField] private float pullStrength = 0.95f;
+    [SerializeField] private float fishPullDownSpeed = 0.65f;
+    [SerializeField] private float lineDamping = 0.08f;
+
+    [Header("Safe Zone Visual Colors")]
+    [SerializeField] private Color safeColor = new Color(0.2f, 0.8f, 0.3f);
+    [SerializeField] private Color dangerColor = new Color(0.9f, 0.2f, 0.2f);
+    [SerializeField] private Color rageColor = new Color(0.9f, 0.5f, 0.1f);
+
+    [Header("Fish Movement AI")]
+    [SerializeField] private float targetShiftIntervalMin = 0.6f;
+    [SerializeField] private float targetShiftIntervalMax = 1.4f;
+
+    // Runtime Dynamic Values
+    private float fishIconRadius; // Half-width window derived from FishData.safeZoneWidth
+    private float minSafeTension;
+    private float maxSafeTension;
+    private float currentSafeCenter = 0.5f;
+    private float targetSafeCenter = 0.5f;
+
+    private float currentStruggleIntensity;
+    private float currentRageChance;
+    private float currentRageMultiplier;
 
     private float progress;
     private float maxProgress;
-    private float decaySpeed;
-    private float currentPullPower = 1f;
+    private float targetTension;
+    private float currentTension;
+    private float tensionVelocity;
+    
+    private float reelPower;
+    private float fishResistance;
+    private float fishStruggleOffset;
+    private float struggleTimer;
+    private float comboMultiplier = 1.0f;
+    private bool isRaging;
+
     private bool active;
     private FishData currentFish;
+    private Vector3 originalPanelPos;
 
     private void Awake()
     {
@@ -30,44 +66,122 @@ public class ReelMinigame : MonoBehaviour
             return;
         }
         Instance = this;
+
+        if (uiPanelTransform != null)
+            originalPanelPos = uiPanelTransform.localPosition;
     }
 
     private void Update()
     {
         if (!active) return;
 
-        HandleInput();
-        HandleDecay();
+        bool isReeling = InputHandler.Instance != null && InputHandler.Instance.ClickHeld;
+
+        UpdateFishAI();
+        CalculateTension(isReeling);
+        CalculateProgress(isReeling);
         UpdateUI();
+        ApplyJuiceEffects();
+        CheckWinLossConditions();
     }
 
-    private void LateUpdate()
+    private void UpdateFishAI()
     {
-        if (!active) return;
-        UpdatePullSignPosition();
-    }
-
-    private void HandleInput()
-    {
-        if (InputHandler.Instance != null && InputHandler.Instance.ClickDown)
+        struggleTimer -= Time.deltaTime;
+        if (struggleTimer <= 0)
         {
-            progress += currentPullPower;
+            struggleTimer = Random.Range(targetShiftIntervalMin, targetShiftIntervalMax);
 
-            if (progress >= maxProgress)
+            // Shift the fish's center position across the slider bounds (0.15 to 0.85)
+            targetSafeCenter = Random.Range(0.15f, 0.85f);
+
+            isRaging = Random.value < currentRageChance;
+
+            if (isRaging)
             {
-                EndMinigame(true);
+                fishStruggleOffset = currentStruggleIntensity * currentRageMultiplier;
             }
+            else
+            {
+                fishStruggleOffset = Random.Range(-currentStruggleIntensity, currentStruggleIntensity);
+            }
+        }
+
+        // Smoothly translate the fish icon position
+        currentSafeCenter = Mathf.MoveTowards(currentSafeCenter, targetSafeCenter, Time.deltaTime * 0.8f);
+
+        // Derive hit detection window around the fish icon
+        minSafeTension = Mathf.Clamp(currentSafeCenter - fishIconRadius, 0.02f, 0.98f);
+        maxSafeTension = Mathf.Clamp(currentSafeCenter + fishIconRadius, 0.02f, 0.98f);
+
+        float decayRate = isRaging ? 1.0f : 1.6f;
+        fishStruggleOffset = Mathf.MoveTowards(fishStruggleOffset, 0f, Time.deltaTime * decayRate);
+        if (Mathf.Abs(fishStruggleOffset) < 0.05f) isRaging = false;
+    }
+
+    private void CalculateTension(bool isReeling)
+    {
+        if (isReeling)
+        {
+            targetTension += pullStrength * Time.deltaTime;
+        }
+        else
+        {
+            targetTension -= fishPullDownSpeed * Time.deltaTime;
+        }
+
+        float desiredTension = Mathf.Clamp01(targetTension + fishStruggleOffset);
+        currentTension = Mathf.SmoothDamp(currentTension, desiredTension, ref tensionVelocity, lineDamping);
+        
+        targetTension = Mathf.Clamp01(targetTension);
+    }
+
+    private void CalculateProgress(bool isReeling)
+    {
+        bool inSafeZone = currentTension >= minSafeTension && currentTension <= maxSafeTension;
+
+        if (inSafeZone)
+        {
+            if (isReeling)
+            {
+                comboMultiplier = Mathf.Min(comboMultiplier + Time.deltaTime * 0.5f, 2.0f);
+                progress += reelPower * comboMultiplier * Time.deltaTime;
+            }
+        }
+        else
+        {
+            comboMultiplier = 1.0f;
+            float penaltyMultiplier = (currentTension > maxSafeTension) ? 2.8f : 1.8f;
+            progress -= fishResistance * penaltyMultiplier * Time.deltaTime;
+        }
+
+        progress = Mathf.Clamp(progress, 0f, maxProgress);
+    }
+
+    private void ApplyJuiceEffects()
+    {
+        if (uiPanelTransform == null) return;
+
+        bool inDanger = currentTension > maxSafeTension || currentTension < minSafeTension;
+
+        if (inDanger || isRaging)
+        {
+            Vector3 randomOffset = (Vector3)Random.insideUnitCircle * (shakeIntensity * (isRaging ? 1.5f : 1.0f));
+            uiPanelTransform.localPosition = originalPanelPos + randomOffset;
+        }
+        else
+        {
+            uiPanelTransform.localPosition = Vector3.Lerp(uiPanelTransform.localPosition, originalPanelPos, Time.deltaTime * 10f);
         }
     }
 
-    private void HandleDecay()
+    private void CheckWinLossConditions()
     {
-        if (!active) return;
-
-        progress -= decaySpeed * Time.deltaTime;
-        progress = Mathf.Clamp(progress, 0, maxProgress);
-
-        if (progress <= 0)
+        if (progress >= maxProgress)
+        {
+            EndMinigame(true);
+        }
+        else if (currentTension >= 0.96f || currentTension <= 0.02f || progress <= 0f)
         {
             EndMinigame(false);
         }
@@ -75,35 +189,66 @@ public class ReelMinigame : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (bar != null && maxProgress > 0)
+        if (progressBar != null && maxProgress > 0)
         {
-            bar.value = progress / maxProgress;
+            progressBar.value = progress / maxProgress;
         }
 
-        if (pullSign != null && pullSign.activeSelf)
+        if (tensionBar != null)
         {
-            float scale = 1f + (Mathf.Sin(Time.time * pulseSpeed) * pulseAmount);
-            pullSign.transform.localScale = new Vector3(scale, scale, 1f);
+            tensionBar.value = currentTension;
+
+            if (tensionFillImage != null)
+            {
+                if (isRaging)
+                {
+                    tensionFillImage.color = rageColor;
+                }
+                else
+                {
+                    bool isDangerous = currentTension < minSafeTension || currentTension > maxSafeTension;
+                    tensionFillImage.color = isDangerous ? dangerColor : safeColor;
+                }
+            }
+
+            PositionFishIcon();
         }
     }
 
-    private void UpdatePullSignPosition()
-    {
-        if (pullSign != null && pullSign.activeSelf && PlayerController.Instance != null)
-        {
-            pullSign.transform.position = PlayerController.Instance.transform.position + signOffset;
-        }
-    }
+    private float lastSafeCenter = 0.5f;
 
-    private float GetDecayMultiplier(FishWeight weight)
+private void PositionFishIcon()
     {
-        return weight switch
+        if (fishIcon == null || tensionBar == null) return;
+
+        RectTransform barRect = tensionBar.GetComponent<RectTransform>();
+        RectTransform iconRect = fishIcon.rectTransform;
+
+        float barWidth = barRect.rect.width;
+        
+        
+        float xPos = (currentSafeCenter - 0.5f) * barWidth;
+        iconRect.anchoredPosition = new Vector2(xPos, iconRect.anchoredPosition.y);
+
+        
+        float moveDelta = currentSafeCenter - lastSafeCenter;
+
+        if (Mathf.Abs(moveDelta) > 0.0001f)
         {
-            FishWeight.Small => 2.5f,
-            FishWeight.Medium => 5.0f,
-            FishWeight.Heavy => 9.0f,
-            _ => 1.0f
-        };
+            Vector3 localScale = iconRect.localScale;
+
+            if (moveDelta < 0)
+            {
+                localScale.x = -Mathf.Abs(localScale.x);
+            }
+            else if (moveDelta > 0)
+            {
+                localScale.x = Mathf.Abs(localScale.x);
+            }
+
+            iconRect.localScale = localScale;
+        }
+        lastSafeCenter = currentSafeCenter;
     }
 
     public void StartMinigame(FishData fish)
@@ -116,12 +261,13 @@ public class ReelMinigame : MonoBehaviour
 
         currentFish = fish;
         if (panel != null) panel.SetActive(true);
-        if (pullSign != null) pullSign.SetActive(true);
 
-        maxProgress = Random.Range(fish.minClicks, fish.maxClicks);
-        float baseDecay = GetDecayMultiplier(fish.weightClass);
+        // Assign current fish icon to UI
+        if (fishIcon != null && fish.icon != null)
+        {
+            fishIcon.sprite = fish.icon;
+        }
 
-        // Fetch bonuses safely
         float artifactReelStrength = Inventory.Instance != null 
             ? Inventory.Instance.GetTotalArtifactBonus(a => a.reelStrengthBonus) 
             : 0f;
@@ -130,19 +276,35 @@ public class ReelMinigame : MonoBehaviour
             ? Inventory.Instance.GetTotalArtifactBonus(a => a.pullPowerBonus) 
             : 0f;
 
-        FishingRodData rod = (PlayerController.Instance != null) 
+        FishingRodData rod = PlayerController.Instance != null 
             ? PlayerController.Instance.GetHeldItem() as FishingRodData 
             : null;
 
-        float rodReelStrength = rod != null ? rod.reelStrength : 1.0f;
-        float rodPullPower = rod != null ? rod.pullPower : 1.0f;
+        float rodStrength = rod != null ? rod.reelStrength : 1.0f;
+        float rodPower = rod != null ? rod.pullPower : 1.0f;
 
-        // Stat Calculations with floor guards
-        float totalReelStrength = Mathf.Max(rodReelStrength + artifactReelStrength, 0.1f);
-        decaySpeed = baseDecay / totalReelStrength;
-        currentPullPower = Mathf.Max(rodPullPower + artifactPullPower, 0.1f);
+        maxProgress = fish.baseCatchDifficulty;
+        currentStruggleIntensity = fish.struggleIntensity;
+        currentRageChance = fish.rageChance;
+        currentRageMultiplier = fish.rageMultiplier;
 
-        progress = maxProgress * 0.2f;
+        // Radius window surrounding the fish icon center
+        fishIconRadius = Mathf.Clamp(fish.safeZoneWidth, 0.1f, 0.5f) / 2f;
+        currentSafeCenter = 0.5f;
+        targetSafeCenter = 0.5f;
+
+        reelPower = (rodPower + artifactPullPower) * 22f;
+        fishResistance = fish.escapeResistance / Mathf.Max(rodStrength + artifactReelStrength, 0.1f);
+
+        targetTension = 0.5f;
+        currentTension = 0.5f;
+        tensionVelocity = 0f;
+        fishStruggleOffset = 0f;
+        struggleTimer = 0.5f;
+        comboMultiplier = 1.0f;
+        isRaging = false;
+
+        progress = maxProgress * 0.30f;
         active = true;
 
         UpdateUI();
@@ -151,13 +313,8 @@ public class ReelMinigame : MonoBehaviour
     private void EndMinigame(bool success)
     {
         active = false;
+        if (uiPanelTransform != null) uiPanelTransform.localPosition = originalPanelPos;
         if (panel != null) panel.SetActive(false);
-
-        if (pullSign != null)
-        {
-            pullSign.SetActive(false);
-            pullSign.transform.localScale = Vector3.one;
-        }
 
         if (FishingManager.Instance != null)
         {
