@@ -27,6 +27,8 @@ public class UIManager : MonoBehaviour
     public CanvasGroup dayTransitionOverlay;
     public TextMeshProUGUI dayTransitionText;
     public TextMeshProUGUI taxTransitionText;
+    public TextMeshProUGUI fatigueNoticeText; // Text display for passing out
+
     [SerializeField] private float typewriterSpeed = 0.05f;
     [SerializeField] private float overlayFadeDuration = 2.0f;
     [SerializeField] private float taxFadeDuration = 1.0f;
@@ -101,33 +103,27 @@ public class UIManager : MonoBehaviour
     // ---------------------------
     // DAY TRANSITION SYSTEM
     // ---------------------------
-    public void StartDayTransition(Action onFadeComplete)
+    public void StartDayTransition(Action onFadeComplete, bool passedOut = false)
     {
         if (activeDayTransitionCoroutine != null)
         {
             StopCoroutine(activeDayTransitionCoroutine);
         }
-        activeDayTransitionCoroutine = StartCoroutine(DayTransitionRoutine(onFadeComplete));
+        activeDayTransitionCoroutine = StartCoroutine(DayTransitionRoutine(onFadeComplete, passedOut));
     }
 
-    private IEnumerator DayTransitionRoutine(Action onFadeComplete)
+    private IEnumerator DayTransitionRoutine(Action onFadeComplete, bool passedOut)
     {
         if (dayTransitionOverlay == null) yield break;
 
         GameManager.Instance?.SetState(GameState.UI);
         PlayerController.Instance?.LockMovement();
 
-        if (dayTransitionText != null)
-        {
-            dayTransitionText.text = "";
-            dayTransitionText.alpha = 1f;
-        }
-        if (taxTransitionText != null)
-        {
-            taxTransitionText.text = "";
-            taxTransitionText.alpha = 0f;
-        }
+        if (dayTransitionText != null) { dayTransitionText.text = ""; dayTransitionText.alpha = 1f; }
+        if (taxTransitionText != null) { taxTransitionText.text = ""; taxTransitionText.alpha = 0f; }
+        if (fatigueNoticeText != null) { fatigueNoticeText.text = ""; fatigueNoticeText.alpha = 0f; }
 
+        // Fade Screen to Black
         float t = 0f;
         while (t < 1f)
         {
@@ -136,6 +132,24 @@ public class UIManager : MonoBehaviour
             yield return null;
         }
         dayTransitionOverlay.alpha = 1f;
+
+        // Display Fatigue Text if the player passed out
+        if (passedOut && fatigueNoticeText != null)
+        {
+            fatigueNoticeText.alpha = 1f;
+            yield return StartCoroutine(TypewriterEffect(fatigueNoticeText, "You passed out from exhaustion..."));
+            yield return new WaitForSeconds(1.2f);
+
+            // Fade out fatigue notice before showing Day number
+            float noticeFade = 1f;
+            while (noticeFade > 0f)
+            {
+                noticeFade -= Time.deltaTime / taxFadeDuration;
+                fatigueNoticeText.alpha = noticeFade;
+                yield return null;
+            }
+            fatigueNoticeText.alpha = 0f;
+        }
 
         GameManager.Instance?.AdvanceDay();
         GameEvents.TriggerSound(SoundType.Rooster);
@@ -394,7 +408,7 @@ public class UIManager : MonoBehaviour
 
     private void CheckAndRestoreState()
     {
-        if (!IsUIOpen())
+        if (!IsUIOpen() && (GameManager.Instance == null || !GameManager.Instance.IsTransitioningDay))
         {
             GameManager.Instance?.SetState(GameState.Normal);
             PlayerController.Instance?.UnlockMovement();
@@ -421,5 +435,4 @@ public class UIManager : MonoBehaviour
                (cutscenePanel != null && cutscenePanel.activeSelf) ||
                (dialoguePanel != null && dialoguePanel.activeSelf);
     }
-
 }

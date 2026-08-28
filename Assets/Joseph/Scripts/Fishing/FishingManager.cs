@@ -437,20 +437,16 @@ public class FishingManager : MonoBehaviour
             catchModifier *= bonus;
         }
 
-        // --- 1. AWKWARD SILENCE PHASE ---
-        // Base delay scales down with equipment/bait bonuses
         float baseWait = UnityEngine.Random.Range(minWaitTime, maxWaitTime) / Mathf.Max(catchModifier, 0.1f);
         yield return new WaitForSeconds(baseWait);
 
         if (state != FishingState.Waiting) yield break;
 
-        // --- 2. NIBBLE / SUSPENSE PHASE ---
         int nibbles = UnityEngine.Random.Range(nibbleCountRange.x, nibbleCountRange.y + 1);
         for (int i = 0; i < nibbles; i++)
         {
             if (state != FishingState.Waiting) yield break;
 
-            // Visual/Audio nibble pop
             if (currentBobber != null) currentBobber.PlayNibble(); 
             if (nibbleSFX != null && audioSource != null) audioSource.PlayOneShot(nibbleSFX);
 
@@ -459,7 +455,6 @@ public class FishingManager : MonoBehaviour
 
         if (state != FishingState.Waiting) yield break;
 
-        // --- 3. FULL BITE PHASE ---
         state = FishingState.Biting;
 
         BaitData currentBait = baitStack != null ? baitStack.item as BaitData : null;
@@ -706,18 +701,38 @@ public class FishingManager : MonoBehaviour
 
     public void CancelFishing()
     {
-        if (state == FishingState.Idle) return;
-
-        if ((state == FishingState.Waiting || state == FishingState.Biting) && UnityEngine.Random.value < loseBaitChance)
+        if (biteCoroutine != null)
         {
-            ConsumeBait();
+            StopCoroutine(biteCoroutine);
+            biteCoroutine = null;
         }
 
         if (currentBobber != null)
+        {
             Destroy(currentBobber.gameObject);
-            
+        }
+
+        if (audioSource != null && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+            audioSource.loop = false;
+        }
+
+        cachedPlayer?.SetPulling(false);
         cachedPlayer?.StopFishingAnimation();
-        ResetFishing();
+
+        pendingArtifact = null;
+        ClearRuntimeArtifact();
+        
+        state = FishingState.Idle;
+        holdTime = 0;
+        inputLocked = false;
+        isCastPending = false;
+
+        if (fishingLine != null)
+        {
+            fishingLine.enabled = false;
+        }
     }
 
     private InventoryItem FindBaitInInventory()
