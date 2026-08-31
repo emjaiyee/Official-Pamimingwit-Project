@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: 12ed007a90ce5674aaad67880381a7b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3002598817406288411
+    second: Aling Cora Idle Animation_0
+  - first:
+      213: -4244608392959126043
+    second: Aling Cora Idle Animation_1
+  - first:
+      213: 8730759725421099357
+    second: Aling Cora Idle Animation_2
+  - first:
+      213: -8949761684903549450
+    second: Aling Cora Idle Animation_3
+  - first:
+      213: -913014758874239134
+    second: Aling Cora Idle Animation_4
+  - first:
+      213: -2298381673537123852
+    second: Aling Cora Idle Animation_5
+  - first:
+      213: -4717152834521122074
+    second: Aling Cora Idle Animation_6
+  - first:
+      213: 5425409238395977117
+    second: Aling Cora Idle Animation_7
+  - first:
+      213: -6756759611757805204
+    second: Aling Cora Idle Animation_8
+  - first:
+      213: 7127418690836590251
+    second: Aling Cora Idle Animation_9
+  - first:
+      213: 4494593722416087443
+    second: Aling Cora Idle Animation_10
+  - first:
+      213: -7178299182786816086
+    second: Aling Cora Idle Animation_11
+  - first:
+      213: 3432631541107570758
+    second: Aling Cora Idle Animation_12
+  - first:
+      213: -5027511483054429807
+    second: Aling Cora Idle Animation_13
+  - first:
+      213: 8027300910259737903
+    second: Aling Cora Idle Animation_14
+  - first:
+      213: 6966329183210622790
+    second: Aling Cora Idle Animation_15
+  - first:
+      213: -6188701171713482336
+    second: Aling Cora Idle Animation_16
+  - first:
+      213: -4593906417155238499
+    second: Aling Cora Idle Animation_17
+  - first:
+      213: -6824700139282606953
+    second: Aling Cora Idle Animation_18
+  - first:
+      213: 8696953495703503360
+    second: Aling Cora Idle Animation_19
+  - first:
+      213: -2443135323753155297
+    second: Aling Cora Idle Animation_20
+  - first:
+      213: -6053520079588511902
+    second: Aling Cora Idle Animation_21
+  - first:
+      213: -9193715194448746622
+    second: Aling Cora Idle Animation_22
+  - first:
+      213: 8536396201618168592
+    second: Aling Cora Idle Animation_23
+  - first:
+      213: -1056999274446878025
+    second: Aling Cora Idle Animation_24
+  - first:
+      213: -881266938556335286
+    second: Aling Cora Idle Animation_25
+  - first:
+      213: 9119674723726025020
+    second: Aling Cora Idle Animation_26
+  - first:
+      213: -3283211681635458562
+    second: Aling Cora Idle Animation_27
+  - first:
+      213: -4211032198973541080
+    second: Aling Cora Idle Animation_28
+  - first:
+      213: 5197556979423355721
+    second: Aling Cora Idle Animation_29
+  - first:
+      213: -2361559238447066155
+    second: Aling Cora Idle Animation_30
+  - first:
+      213: -5166748133462997903
+    second: Aling Cora Idle Animation_31
+  - first:
+      213: -4570068461987306436
+    second: Aling Cora Idle Animation_32
+  - first:
+      213: 3702899520574747738
+    second: Aling Cora Idle Animation_33
+  - first:
+      213: 1867463496671995046
+    second: Aling Cora Idle Animation_34
+  - first:
+      213: -7569838935911324474
+    second: Aling Cora Idle Animation_35
+  - first:
+      213: -1418501977679976951
+    second: Aling Cora Idle Animation_36
+  - first:
+      213: -8976920138731826996
+    second: Aling Cora Idle Animation_37
+  - first:
+      213: -2727927755664230380
+    second: Aling Cora Idle Animation_38
+  - first:
+      213: -4977760576448551632
+    second: Aling Cora Idle Animation_39
+  - first:
+      213: -744208085506297041
+    second: Aling Cora Idle Animation_40
+  - first:
+      213: -8742420369142728926
+    second: Aling Cora Idle Animation_41
+  - first:
+      213: 4767114689353385978
+    second: Aling Cora Idle Animation_42
+  - first:
+      213: -80973268174340420
+    second: Aling Cora Idle Animation_43
+  - first:
+      213: 4262563009607443841
+    second: Aling Cora Idle Animation_44
+  - first:
+      213: -6504271977326954486
+    second: Aling Cora Idle Animation_45
+  - first:
+      213: -3814661681624835735
+    second: Aling Cora Idle Animation_46
+  - first:
+      213: -9026229253014826232
+    second: Aling Cora Idle Animation_47
+  - first:
+      213: -1289357438095725968
+    second: Aling Cora Idle Animation_48
+  - first:
+      213: -8603253852090717446
+    second: Aling Cora Idle Animation_49
+  - first:
+      213: -7956460486295450755
+    second: Aling Cora Idle Animation_50
+  - first:
+      213: 3744596276442069423
+    second: Aling Cora Idle Animation_51
+  - first:
+      213: 3569013461772242328
+    second: Aling Cora Idle Animation_52
+  - first:
+      213: 1679173329559519224
+    second: Aling Cora Idle Animation_53
+  - first:
+      213: 7100006012065318701
+    second: Aling Cora Idle Animation_54
+  - first:
+      213: -93001499322496054
+    second: Aling Cora Idle Animation_55
+  - first:
+      213: 3598021991604368264
+    second: Aling Cora Idle Animation_56
+  - first:
+      213: -8321996982594137304
+    second: Aling Cora Idle Animation_57
+  - first:
+      213: 1262852690359843520
+    second: Aling Cora Idle Animation_58
+  - first:
+      213: 8614891392300785366
+    second: Aling Cora Idle Animation_59
+  - first:
+      213: -1861621686008998907
+    second: Aling Cora Idle Animation_60
+  - first:
+      213: 4375721703192896188
+    second: Aling Cora Idle Animation_61
+  - first:
+      213: -2202044028074949378
+    second: Aling Cora Idle Animation_62
+  - first:
+      213: 8168939779653280380
+    second: Aling Cora Idle Animation_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed7d75b840a456d0800000000000000
+      internalID: -3002598817406288411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e5970fc72f1815c0800000000000000
+      internalID: -4244608392959126043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59f20576b3e92970800000000000000
+      internalID: 8730759725421099357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f52cea5a2f0cc380800000000000000
+      internalID: -8949761684903549450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fac960ae15453f0800000000000000
+      internalID: -913014758874239134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f94d869b028a10e0800000000000000
+      internalID: -2298381673537123852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea34235d7e498eb0800000000000000
+      internalID: -4717152834521122074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_7
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9df6bf05fcea4b40800000000000000
+      internalID: 5425409238395977117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6148749eea2b32a0800000000000000
+      internalID: -6756759611757805204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_9
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae6bc0698da9e260800000000000000
+      internalID: 7127418690836590251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391cf4a5d21006e30800000000000000
+      internalID: 4494593722416087443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7d38eecee816c90800000000000000
+      internalID: -7178299182786816086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648b484233823af20800000000000000
+      internalID: 3432631541107570758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 199e75c61f0ba3ab0800000000000000
+      internalID: -5027511483054429807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25933db5a3b66f60800000000000000
+      internalID: 8027300910259737903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fc4b1ab7f5da060800000000000000
+      internalID: 6966329183210622790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_16
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a169fec2115d1aa0800000000000000
+      internalID: -6188701171713482336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_17
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d951312047a2f30c0800000000000000
+      internalID: -4593906417155238499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_18
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7945083d16bc941a0800000000000000
+      internalID: -6824700139282606953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_19
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002cf7b3029c1b870800000000000000
+      internalID: 8696953495703503360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_20
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f15fb790e5d381ed0800000000000000
+      internalID: -2443135323753155297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_21
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26fae6f7f839dfba0800000000000000
+      internalID: -6053520079588511902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28765c4bdbc596080800000000000000
+      internalID: -9193715194448746622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bd17b1e1f577670800000000000000
+      internalID: 8536396201618168592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba8fb692c8c451f0800000000000000
+      internalID: -1056999274446878025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_25
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bbd07736c15c3f0800000000000000
+      internalID: -881266938556335286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_26
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c316cc6d7d79f8e70800000000000000
+      internalID: 9119674723726025020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_27
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1a4b9ee50bf62d0800000000000000
+      internalID: -3283211681635458562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 825337aa6886f85c0800000000000000
+      internalID: -4211032198973541080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943a162f88e612840800000000000000
+      internalID: 5197556979423355721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_30
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3125c726e0a3fd0800000000000000
+      internalID: -2361559238447066155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_31
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174860d72f50c48b0800000000000000
+      internalID: -5166748133462997903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_32
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34e70472fad390c0800000000000000
+      internalID: -4570068461987306436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_33
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5472d2ce77536330800000000000000
+      internalID: 3702899520574747738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4a42ee7209ae910800000000000000
+      internalID: 1867463496671995046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4a512389782f690800000000000000
+      internalID: -7569838935911324474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_36
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906223387f7705ce0800000000000000
+      internalID: -1418501977679976951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_37
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0d6d112b29b6380800000000000000
+      internalID: -8976920138731826996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_38
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41874bec824742ad0800000000000000
+      internalID: -2727927755664230380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_39
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03527d701217beab0800000000000000
+      internalID: -4977760576448551632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f237c6070ba0ca5f0800000000000000
+      internalID: -744208085506297041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227bb1c5efeaca680800000000000000
+      internalID: -8742420369142728926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_42
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7847e7d81382240800000000000000
+      internalID: 4767114689353385978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_43
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe7a2add3350eef0800000000000000
+      internalID: -80973268174340420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_44
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1852f54297aa72b30800000000000000
+      internalID: 4262563009607443841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_45
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0836e4091f2cb5a0800000000000000
+      internalID: -6504271977326954486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_46
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 969157859699f0bc0800000000000000
+      internalID: -3814661681624835735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_47
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803dfc041546cb280800000000000000
+      internalID: -9026229253014826232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_48
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07aebc9cd384b1ee0800000000000000
+      internalID: -1289357438095725968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_49
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa2f99143a1b9880800000000000000
+      internalID: -8603253852090717446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_50
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b8de4c759f49190800000000000000
+      internalID: -7956460486295450755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_51
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa97494497a77f330800000000000000
+      internalID: 3744596276442069423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_52
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d858385dea78130800000000000000
+      internalID: 3569013461772242328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_53
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff74b02f3f9d4710800000000000000
+      internalID: 1679173329559519224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_54
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d278a4cb9d9488260800000000000000
+      internalID: 7100006012065318701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_55
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 3
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbcd4d01a795bef0800000000000000
+      internalID: -93001499322496054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_56
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8833f9f20fdbee130800000000000000
+      internalID: 3598021991604368264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_57
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8239a9e06d3528c80800000000000000
+      internalID: -8321996982594137304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_58
+      rect:
+        serializedVersion: 2
+        x: 2799
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca7b8cb4dd868110800000000000000
+      internalID: 1262852690359843520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_59
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de98a0e31e3e8770800000000000000
+      internalID: 8614891392300785366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_60
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504154b90f03a26e0800000000000000
+      internalID: -1861621686008998907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_61
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb2a7ca94bfa9bc30800000000000000
+      internalID: 4375721703192896188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_62
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef482d69f94c071e0800000000000000
+      internalID: -2202044028074949378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_63
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72aacdd277ed5170800000000000000
+      internalID: 8168939779653280380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Aling Cora Idle Animation_0: -3002598817406288411
+      Aling Cora Idle Animation_1: -4244608392959126043
+      Aling Cora Idle Animation_10: 4494593722416087443
+      Aling Cora Idle Animation_11: -7178299182786816086
+      Aling Cora Idle Animation_12: 3432631541107570758
+      Aling Cora Idle Animation_13: -5027511483054429807
+      Aling Cora Idle Animation_14: 8027300910259737903
+      Aling Cora Idle Animation_15: 6966329183210622790
+      Aling Cora Idle Animation_16: -6188701171713482336
+      Aling Cora Idle Animation_17: -4593906417155238499
+      Aling Cora Idle Animation_18: -6824700139282606953
+      Aling Cora Idle Animation_19: 8696953495703503360
+      Aling Cora Idle Animation_2: 8730759725421099357
+      Aling Cora Idle Animation_20: -2443135323753155297
+      Aling Cora Idle Animation_21: -6053520079588511902
+      Aling Cora Idle Animation_22: -9193715194448746622
+      Aling Cora Idle Animation_23: 8536396201618168592
+      Aling Cora Idle Animation_24: -1056999274446878025
+      Aling Cora Idle Animation_25: -881266938556335286
+      Aling Cora Idle Animation_26: 9119674723726025020
+      Aling Cora Idle Animation_27: -3283211681635458562
+      Aling Cora Idle Animation_28: -4211032198973541080
+      Aling Cora Idle Animation_29: 5197556979423355721
+      Aling Cora Idle Animation_3: -8949761684903549450
+      Aling Cora Idle Animation_30: -2361559238447066155
+      Aling Cora Idle Animation_31: -5166748133462997903
+      Aling Cora Idle Animation_32: -4570068461987306436
+      Aling Cora Idle Animation_33: 3702899520574747738
+      Aling Cora Idle Animation_34: 1867463496671995046
+      Aling Cora Idle Animation_35: -7569838935911324474
+      Aling Cora Idle Animation_36: -1418501977679976951
+      Aling Cora Idle Animation_37: -8976920138731826996
+      Aling Cora Idle Animation_38: -2727927755664230380
+      Aling Cora Idle Animation_39: -4977760576448551632
+      Aling Cora Idle Animation_4: -913014758874239134
+      Aling Cora Idle Animation_40: -744208085506297041
+      Aling Cora Idle Animation_41: -8742420369142728926
+      Aling Cora Idle Animation_42: 4767114689353385978
+      Aling Cora Idle Animation_43: -80973268174340420
+      Aling Cora Idle Animation_44: 4262563009607443841
+      Aling Cora Idle Animation_45: -6504271977326954486
+      Aling Cora Idle Animation_46: -3814661681624835735
+      Aling Cora Idle Animation_47: -9026229253014826232
+      Aling Cora Idle Animation_48: -1289357438095725968
+      Aling Cora Idle Animation_49: -8603253852090717446
+      Aling Cora Idle Animation_5: -2298381673537123852
+      Aling Cora Idle Animation_50: -7956460486295450755
+      Aling Cora Idle Animation_51: 3744596276442069423
+      Aling Cora Idle Animation_52: 3569013461772242328
+      Aling Cora Idle Animation_53: 1679173329559519224
+      Aling Cora Idle Animation_54: 7100006012065318701
+      Aling Cora Idle Animation_55: -93001499322496054
+      Aling Cora Idle Animation_56: 3598021991604368264
+      Aling Cora Idle Animation_57: -8321996982594137304
+      Aling Cora Idle Animation_58: 1262852690359843520
+      Aling Cora Idle Animation_59: 8614891392300785366
+      Aling Cora Idle Animation_6: -4717152834521122074
+      Aling Cora Idle Animation_60: -1861621686008998907
+      Aling Cora Idle Animation_61: 4375721703192896188
+      Aling Cora Idle Animation_62: -2202044028074949378
+      Aling Cora Idle Animation_63: 8168939779653280380
+      Aling Cora Idle Animation_7: 5425409238395977117
+      Aling Cora Idle Animation_8: -6756759611757805204
+      Aling Cora Idle Animation_9: 7127418690836590251
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

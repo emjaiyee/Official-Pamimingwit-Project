@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: 8e214dd61d7e01841bf7f52cc7bd7ec6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7953507801048441538
+    second: Agos Walking Animation_0
+  - first:
+      213: 6648194837726936744
+    second: Agos Walking Animation_1
+  - first:
+      213: -5602750908573578481
+    second: Agos Walking Animation_2
+  - first:
+      213: -5522555713145972879
+    second: Agos Walking Animation_3
+  - first:
+      213: 6388679158221737078
+    second: Agos Walking Animation_4
+  - first:
+      213: -4735556871959007083
+    second: Agos Walking Animation_5
+  - first:
+      213: -605872813652899103
+    second: Agos Walking Animation_6
+  - first:
+      213: -5538002951135495117
+    second: Agos Walking Animation_7
+  - first:
+      213: -1115580894719396052
+    second: Agos Walking Animation_8
+  - first:
+      213: -1249540990791001469
+    second: Agos Walking Animation_9
+  - first:
+      213: 3505471084773084746
+    second: Agos Walking Animation_10
+  - first:
+      213: -8969288376923958758
+    second: Agos Walking Animation_11
+  - first:
+      213: -8561262091803145944
+    second: Agos Walking Animation_12
+  - first:
+      213: -4238070054497042295
+    second: Agos Walking Animation_13
+  - first:
+      213: 4865053704553560621
+    second: Agos Walking Animation_14
+  - first:
+      213: -6864516002741825932
+    second: Agos Walking Animation_15
+  - first:
+      213: -4939301241689934362
+    second: Agos Walking Animation_16
+  - first:
+      213: 3689308582512127495
+    second: Agos Walking Animation_17
+  - first:
+      213: -4104014028480815242
+    second: Agos Walking Animation_18
+  - first:
+      213: 5889967250973326273
+    second: Agos Walking Animation_19
+  - first:
+      213: -5491626249215613037
+    second: Agos Walking Animation_20
+  - first:
+      213: 5009596366780996898
+    second: Agos Walking Animation_21
+  - first:
+      213: -5922131346285934521
+    second: Agos Walking Animation_22
+  - first:
+      213: -7288812132635030133
+    second: Agos Walking Animation_23
+  - first:
+      213: -2222748822170575811
+    second: Agos Walking Animation_24
+  - first:
+      213: -7689493829067444437
+    second: Agos Walking Animation_25
+  - first:
+      213: 7405326988311817952
+    second: Agos Walking Animation_26
+  - first:
+      213: 3201190253249334035
+    second: Agos Walking Animation_27
+  - first:
+      213: -5392374319887037709
+    second: Agos Walking Animation_28
+  - first:
+      213: 4345999563674311345
+    second: Agos Walking Animation_29
+  - first:
+      213: 5761582663950609327
+    second: Agos Walking Animation_30
+  - first:
+      213: 7335739562055188482
+    second: Agos Walking Animation_31
+  - first:
+      213: -6726514156557811718
+    second: Agos Walking Animation_32
+  - first:
+      213: 7302557233750999192
+    second: Agos Walking Animation_33
+  - first:
+      213: -9073281200099634890
+    second: Agos Walking Animation_34
+  - first:
+      213: -1068213020761892426
+    second: Agos Walking Animation_35
+  - first:
+      213: 8132116446666512912
+    second: Agos Walking Animation_36
+  - first:
+      213: 2713525729483262597
+    second: Agos Walking Animation_37
+  - first:
+      213: 2785155197298471116
+    second: Agos Walking Animation_38
+  - first:
+      213: 7394488619610065185
+    second: Agos Walking Animation_39
+  - first:
+      213: 5763272628205562316
+    second: Agos Walking Animation_40
+  - first:
+      213: -6670038771670315498
+    second: Agos Walking Animation_41
+  - first:
+      213: -7228251047940374325
+    second: Agos Walking Animation_42
+  - first:
+      213: -812442738088435342
+    second: Agos Walking Animation_43
+  - first:
+      213: -8124783461876887013
+    second: Agos Walking Animation_44
+  - first:
+      213: 4440856520608073344
+    second: Agos Walking Animation_45
+  - first:
+      213: -861838501747518970
+    second: Agos Walking Animation_46
+  - first:
+      213: 2696919356707177512
+    second: Agos Walking Animation_47
+  - first:
+      213: 6026950125155467362
+    second: Agos Walking Animation_48
+  - first:
+      213: -2233293423218321693
+    second: Agos Walking Animation_49
+  - first:
+      213: 5200072426938697418
+    second: Agos Walking Animation_50
+  - first:
+      213: 4132419370328654569
+    second: Agos Walking Animation_51
+  - first:
+      213: 7387896383171567197
+    second: Agos Walking Animation_52
+  - first:
+      213: -421292517411481733
+    second: Agos Walking Animation_53
+  - first:
+      213: -6887398587739915861
+    second: Agos Walking Animation_54
+  - first:
+      213: 1209183699677054591
+    second: Agos Walking Animation_55
+  - first:
+      213: -7337456060269579856
+    second: Agos Walking Animation_56
+  - first:
+      213: -7995223951108531678
+    second: Agos Walking Animation_57
+  - first:
+      213: -1901934478283661110
+    second: Agos Walking Animation_58
+  - first:
+      213: 1084674822455765442
+    second: Agos Walking Animation_59
+  - first:
+      213: 7177496949080778560
+    second: Agos Walking Animation_60
+  - first:
+      213: 4108838677931671786
+    second: Agos Walking Animation_61
+  - first:
+      213: -9147724848723864381
+    second: Agos Walking Animation_62
+  - first:
+      213: 6764543306570190838
+    second: Agos Walking Animation_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Agos Walking Animation_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c26acf9439806e60800000000000000
+      internalID: 7953507801048441538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aebc443bf1234c50800000000000000
+      internalID: 6648194837726936744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b8979bbb70f32b0800000000000000
+      internalID: -5602750908573578481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17751a1b6d0fb53b0800000000000000
+      internalID: -5522555713145972879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c8fb188d529a850800000000000000
+      internalID: 6388679158221737078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59039317d1ce74eb0800000000000000
+      internalID: -4735556871959007083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 2
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea0723d2e18797f0800000000000000
+      internalID: -605872813652899103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 2
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cf08458af0523b0800000000000000
+      internalID: -5538002951135495117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27b90c3619a480f0800000000000000
+      internalID: -1115580894719396052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38adc97d61db8aee0800000000000000
+      internalID: -1249540990791001469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e8d4af06fe5a030800000000000000
+      internalID: 3505471084773084746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1258651ebfa68380800000000000000
+      internalID: -8969288376923958758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8294e0dac79403980800000000000000
+      internalID: -8561262091803145944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980cb7c5db95f25c0800000000000000
+      internalID: -4238070054497042295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 4
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2afc117194248340800000000000000
+      internalID: 4865053704553560621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 4
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ec695b0175cb0a0800000000000000
+      internalID: -6864516002741825932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_16
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5fc62b0b3147bb0800000000000000
+      internalID: -4939301241689934362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_17
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70e6f67eb9e033330800000000000000
+      internalID: 3689308582512127495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_18
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67f5e2f2cfc9b07c0800000000000000
+      internalID: -4104014028480815242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_19
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbf2f4220e5db150800000000000000
+      internalID: 5889967250973326273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_20
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397ea40b503d9c3b0800000000000000
+      internalID: -5491626249215613037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_21
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d91168a59a58540800000000000000
+      internalID: 5009596366780996898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748cb67daec50dda0800000000000000
+      internalID: -5922131346285934521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d4bbfabffe8da90800000000000000
+      internalID: -7288812132635030133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 3
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cda9d09b53721e0800000000000000
+      internalID: -2222748822170575811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_25
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f60e76a1e694590800000000000000
+      internalID: -7689493829067444437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_26
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee60f729a105c660800000000000000
+      internalID: 7405326988311817952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_27
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b8e5f1399ec6c20800000000000000
+      internalID: 3201190253249334035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fac13740207a25b0800000000000000
+      internalID: -5392374319887037709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba5fcab397105c30800000000000000
+      internalID: 4345999563674311345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_30
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 4
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fab23dc18e045ff40800000000000000
+      internalID: 5761582663950609327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_31
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 4
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2004419e348cdc560800000000000000
+      internalID: 7335739562055188482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_32
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff3cb1630f96a2a0800000000000000
+      internalID: -6726514156557811718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_33
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89000bd0d15e75560800000000000000
+      internalID: 7302557233750999192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 2
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631d4d022da351280800000000000000
+      internalID: -9073281200099634890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 2
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b95a01dae1fc21f0800000000000000
+      internalID: -1068213020761892426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_36
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a5bab82d41bd070800000000000000
+      internalID: 8132116446666512912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_37
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a8bba264168a520800000000000000
+      internalID: 2713525729483262597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_38
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 2
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0fe4345ebd6a620800000000000000
+      internalID: 2785155197298471116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_39
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 2
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 129c68bc8308e9660800000000000000
+      internalID: 7394488619610065185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 3
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9ace39be14bff40800000000000000
+      internalID: 5763272628205562316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 3
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e028893134f63a0800000000000000
+      internalID: -6670038771670315498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_42
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc04b2408f710bb90800000000000000
+      internalID: -7228251047940374325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_43
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271a4eb52af99b4f0800000000000000
+      internalID: -812442738088435342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_44
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 3
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b121cd50d78fe3f80800000000000000
+      internalID: -8124783461876887013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_45
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 3
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08642511a7711ad30800000000000000
+      internalID: 4440856520608073344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_46
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 4
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6029599e2722a04f0800000000000000
+      internalID: -861838501747518970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_47
+      rect:
+        serializedVersion: 2
+        x: 2268
+        y: 4
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8240864bdd16d6520800000000000000
+      internalID: 2696919356707177512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_48
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26043e8e43704a350800000000000000
+      internalID: 6026950125155467362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_49
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e61bddc67fb101e0800000000000000
+      internalID: -2233293423218321693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_50
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac60cf5325e5a2840800000000000000
+      internalID: 5200072426938697418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_51
+      rect:
+        serializedVersion: 2
+        x: 2463
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e20267d58d495930800000000000000
+      internalID: 4132419370328654569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_52
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e95542e94178660800000000000000
+      internalID: 7387896383171567197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_53
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77982100b4472af0800000000000000
+      internalID: -421292517411481733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_54
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba93c37b97b0b60a0800000000000000
+      internalID: -6887398587739915861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_55
+      rect:
+        serializedVersion: 2
+        x: 2655
+        y: 3
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7681771b22e7c010800000000000000
+      internalID: 1209183699677054591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_56
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b13894b69e1c2a90800000000000000
+      internalID: -7337456060269579856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_57
+      rect:
+        serializedVersion: 2
+        x: 2750
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a1b7e4d224b0190800000000000000
+      internalID: -7995223951108531678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_58
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0a5db3ba8fa95e0800000000000000
+      internalID: -1901934478283661110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_59
+      rect:
+        serializedVersion: 2
+        x: 2846
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c92941110a8d0f00800000000000000
+      internalID: 1084674822455765442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_60
+      rect:
+        serializedVersion: 2
+        x: 2894
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047e86a72779b9360800000000000000
+      internalID: 7177496949080778560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_61
+      rect:
+        serializedVersion: 2
+        x: 2942
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0c08d0207850930800000000000000
+      internalID: 4108838677931671786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_62
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 4
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4dcc087b0cc0180800000000000000
+      internalID: -9147724848723864381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Walking Animation_63
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 4
+        width: 24
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffccd71c4c70ed50800000000000000
+      internalID: 6764543306570190838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Agos Walking Animation_0: 7953507801048441538
+      Agos Walking Animation_1: 6648194837726936744
+      Agos Walking Animation_10: 3505471084773084746
+      Agos Walking Animation_11: -8969288376923958758
+      Agos Walking Animation_12: -8561262091803145944
+      Agos Walking Animation_13: -4238070054497042295
+      Agos Walking Animation_14: 4865053704553560621
+      Agos Walking Animation_15: -6864516002741825932
+      Agos Walking Animation_16: -4939301241689934362
+      Agos Walking Animation_17: 3689308582512127495
+      Agos Walking Animation_18: -4104014028480815242
+      Agos Walking Animation_19: 5889967250973326273
+      Agos Walking Animation_2: -5602750908573578481
+      Agos Walking Animation_20: -5491626249215613037
+      Agos Walking Animation_21: 5009596366780996898
+      Agos Walking Animation_22: -5922131346285934521
+      Agos Walking Animation_23: -7288812132635030133
+      Agos Walking Animation_24: -2222748822170575811
+      Agos Walking Animation_25: -7689493829067444437
+      Agos Walking Animation_26: 7405326988311817952
+      Agos Walking Animation_27: 3201190253249334035
+      Agos Walking Animation_28: -5392374319887037709
+      Agos Walking Animation_29: 4345999563674311345
+      Agos Walking Animation_3: -5522555713145972879
+      Agos Walking Animation_30: 5761582663950609327
+      Agos Walking Animation_31: 7335739562055188482
+      Agos Walking Animation_32: -6726514156557811718
+      Agos Walking Animation_33: 7302557233750999192
+      Agos Walking Animation_34: -9073281200099634890
+      Agos Walking Animation_35: -1068213020761892426
+      Agos Walking Animation_36: 8132116446666512912
+      Agos Walking Animation_37: 2713525729483262597
+      Agos Walking Animation_38: 2785155197298471116
+      Agos Walking Animation_39: 7394488619610065185
+      Agos Walking Animation_4: 6388679158221737078
+      Agos Walking Animation_40: 5763272628205562316
+      Agos Walking Animation_41: -6670038771670315498
+      Agos Walking Animation_42: -7228251047940374325
+      Agos Walking Animation_43: -812442738088435342
+      Agos Walking Animation_44: -8124783461876887013
+      Agos Walking Animation_45: 4440856520608073344
+      Agos Walking Animation_46: -861838501747518970
+      Agos Walking Animation_47: 2696919356707177512
+      Agos Walking Animation_48: 6026950125155467362
+      Agos Walking Animation_49: -2233293423218321693
+      Agos Walking Animation_5: -4735556871959007083
+      Agos Walking Animation_50: 5200072426938697418
+      Agos Walking Animation_51: 4132419370328654569
+      Agos Walking Animation_52: 7387896383171567197
+      Agos Walking Animation_53: -421292517411481733
+      Agos Walking Animation_54: -6887398587739915861
+      Agos Walking Animation_55: 1209183699677054591
+      Agos Walking Animation_56: -7337456060269579856
+      Agos Walking Animation_57: -7995223951108531678
+      Agos Walking Animation_58: -1901934478283661110
+      Agos Walking Animation_59: 1084674822455765442
+      Agos Walking Animation_6: -605872813652899103
+      Agos Walking Animation_60: 7177496949080778560
+      Agos Walking Animation_61: 4108838677931671786
+      Agos Walking Animation_62: -9147724848723864381
+      Agos Walking Animation_63: 6764543306570190838
+      Agos Walking Animation_7: -5538002951135495117
+      Agos Walking Animation_8: -1115580894719396052
+      Agos Walking Animation_9: -1249540990791001469
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

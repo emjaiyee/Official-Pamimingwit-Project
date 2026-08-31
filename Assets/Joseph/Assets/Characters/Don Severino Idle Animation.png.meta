@@ -1,0 +1,1807 @@
+fileFormatVersion: 2
+guid: 6cae1241584320a4796de7da1269991e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3167374933858439506
+    second: Don Severino Idle Animation_0
+  - first:
+      213: 3529620378250493995
+    second: Don Severino Idle Animation_1
+  - first:
+      213: -5142318347783167026
+    second: Don Severino Idle Animation_2
+  - first:
+      213: 69134793526967381
+    second: Don Severino Idle Animation_3
+  - first:
+      213: -4542921875091600255
+    second: Don Severino Idle Animation_4
+  - first:
+      213: 3761405675865458713
+    second: Don Severino Idle Animation_5
+  - first:
+      213: -6203521777986054122
+    second: Don Severino Idle Animation_6
+  - first:
+      213: -5004486353831646891
+    second: Don Severino Idle Animation_7
+  - first:
+      213: -6952491258796830622
+    second: Don Severino Idle Animation_8
+  - first:
+      213: -1847672891972641798
+    second: Don Severino Idle Animation_9
+  - first:
+      213: -144566731079590894
+    second: Don Severino Idle Animation_10
+  - first:
+      213: 1609131956110179674
+    second: Don Severino Idle Animation_11
+  - first:
+      213: -6221399997040695637
+    second: Don Severino Idle Animation_12
+  - first:
+      213: -7536439030381442249
+    second: Don Severino Idle Animation_13
+  - first:
+      213: 4786348776213257714
+    second: Don Severino Idle Animation_14
+  - first:
+      213: -5004609158179471208
+    second: Don Severino Idle Animation_15
+  - first:
+      213: 6290337254246548700
+    second: Don Severino Idle Animation_16
+  - first:
+      213: -7419160764360479090
+    second: Don Severino Idle Animation_17
+  - first:
+      213: 8533871974640904476
+    second: Don Severino Idle Animation_18
+  - first:
+      213: -8334381272463147813
+    second: Don Severino Idle Animation_19
+  - first:
+      213: 5459955317820125790
+    second: Don Severino Idle Animation_20
+  - first:
+      213: 1532428630290716158
+    second: Don Severino Idle Animation_21
+  - first:
+      213: 1713706631268631205
+    second: Don Severino Idle Animation_22
+  - first:
+      213: 8070089279123597844
+    second: Don Severino Idle Animation_23
+  - first:
+      213: -4215150656542395178
+    second: Don Severino Idle Animation_24
+  - first:
+      213: 4434998631867911699
+    second: Don Severino Idle Animation_25
+  - first:
+      213: 431122059809193684
+    second: Don Severino Idle Animation_26
+  - first:
+      213: -2971844573011795951
+    second: Don Severino Idle Animation_27
+  - first:
+      213: -2594820163271256551
+    second: Don Severino Idle Animation_28
+  - first:
+      213: -8410026992147949803
+    second: Don Severino Idle Animation_29
+  - first:
+      213: 4320461852668500499
+    second: Don Severino Idle Animation_30
+  - first:
+      213: -1655603801539106893
+    second: Don Severino Idle Animation_31
+  - first:
+      213: -2231417426874922864
+    second: Don Severino Idle Animation_32
+  - first:
+      213: 2728004624665230059
+    second: Don Severino Idle Animation_33
+  - first:
+      213: -3666815649273303519
+    second: Don Severino Idle Animation_34
+  - first:
+      213: -2542983365015806972
+    second: Don Severino Idle Animation_35
+  - first:
+      213: 4038326798208465332
+    second: Don Severino Idle Animation_36
+  - first:
+      213: 5413159621122073976
+    second: Don Severino Idle Animation_37
+  - first:
+      213: -6749548846253023533
+    second: Don Severino Idle Animation_38
+  - first:
+      213: 687621597441901614
+    second: Don Severino Idle Animation_39
+  - first:
+      213: -4572241465080468867
+    second: Don Severino Idle Animation_40
+  - first:
+      213: -5461073289244070929
+    second: Don Severino Idle Animation_41
+  - first:
+      213: -9218126192211948490
+    second: Don Severino Idle Animation_42
+  - first:
+      213: 896169582242455286
+    second: Don Severino Idle Animation_43
+  - first:
+      213: 2021517609450148010
+    second: Don Severino Idle Animation_44
+  - first:
+      213: -2084483262128497458
+    second: Don Severino Idle Animation_45
+  - first:
+      213: 6020733108124358415
+    second: Don Severino Idle Animation_46
+  - first:
+      213: -5520725868726440517
+    second: Don Severino Idle Animation_47
+  - first:
+      213: 7614245803265187317
+    second: Don Severino Idle Animation_48
+  - first:
+      213: -7452218543945503016
+    second: Don Severino Idle Animation_49
+  - first:
+      213: 4531922516198698956
+    second: Don Severino Idle Animation_50
+  - first:
+      213: 1207054032785790701
+    second: Don Severino Idle Animation_51
+  - first:
+      213: -6839683758869606092
+    second: Don Severino Idle Animation_52
+  - first:
+      213: -117482815341525902
+    second: Don Severino Idle Animation_53
+  - first:
+      213: 3828833062859061278
+    second: Don Severino Idle Animation_54
+  - first:
+      213: -3007573873693236036
+    second: Don Severino Idle Animation_55
+  - first:
+      213: -582884412799005853
+    second: Don Severino Idle Animation_56
+  - first:
+      213: -1414345777506641314
+    second: Don Severino Idle Animation_57
+  - first:
+      213: -7667932151392416661
+    second: Don Severino Idle Animation_58
+  - first:
+      213: -7771274724548792144
+    second: Don Severino Idle Animation_59
+  - first:
+      213: -4272071200913587801
+    second: Don Severino Idle Animation_60
+  - first:
+      213: 5713563483683355036
+    second: Don Severino Idle Animation_61
+  - first:
+      213: -1460986033940522603
+    second: Don Severino Idle Animation_62
+  - first:
+      213: -2781058833700496177
+    second: Don Severino Idle Animation_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251db1b88b6c4fb20800000000000000
+      internalID: 3167374933858439506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20c995880bbbf030800000000000000
+      internalID: 3529620378250493995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec3296635b0d2a8b0800000000000000
+      internalID: -5142318347783167026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c7bc97abd95f000800000000000000
+      internalID: 69134793526967381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c40d0cf9c44f0c0800000000000000
+      internalID: -4542921875091600255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918491e8882333430800000000000000
+      internalID: 3761405675865458713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618ddb28fc9a8e9a0800000000000000
+      internalID: -6203521777986054122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55923941d2e7c8ab0800000000000000
+      internalID: -5004486353831646891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2601867390ac38f90800000000000000
+      internalID: -6952491258796830622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb1adc4b4fbb56e0800000000000000
+      internalID: -1847672891972641798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21c59a3f2556efdf0800000000000000
+      internalID: -144566731079590894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_11
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d3da01df8c45610800000000000000
+      internalID: 1609131956110179674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_12
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6e5c24aa529a9a0800000000000000
+      internalID: -6221399997040695637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b89b2b1a0396790800000000000000
+      internalID: -7536439030381442249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_14
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd11515ad68c6240800000000000000
+      internalID: 4786348776213257714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_15
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890cb077c7e0c8ab0800000000000000
+      internalID: -5004609158179471208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_16
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd485c4b764cb4750800000000000000
+      internalID: 6290337254246548700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_17
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e27ccd798d90990800000000000000
+      internalID: -7419160764360479090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_18
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19e127b8576e6670800000000000000
+      internalID: 8533871974640904476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_19
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdc7a20e364565c80800000000000000
+      internalID: -8334381272463147813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_20
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e527c28fe68a5cb40800000000000000
+      internalID: 5459955317820125790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_21
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5dd1858b7444510800000000000000
+      internalID: 1532428630290716158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a28ffdf91f48c710800000000000000
+      internalID: 1713706631268631205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41aa9d33177beff60800000000000000
+      internalID: 8070089279123597844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4390a8fc6c085c0800000000000000
+      internalID: -4215150656542395178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_25
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e84df02c74c8d30800000000000000
+      internalID: 4434998631867911699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_26
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4def2cdaa37abf500800000000000000
+      internalID: 431122059809193684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_27
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110a5f93b13e1c6d0800000000000000
+      internalID: -2971844573011795951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91612383fc85dfbd0800000000000000
+      internalID: -2594820163271256551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51713954205994b80800000000000000
+      internalID: -8410026992147949803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_30
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a9ee90a2d55fb30800000000000000
+      internalID: 4320461852668500499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_31
+      rect:
+        serializedVersion: 2
+        x: 1501
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7a9704d1d1609e0800000000000000
+      internalID: -1655603801539106893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_32
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098018d3ca96801e0800000000000000
+      internalID: -2231417426874922864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_33
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea3bc6a0c1dbd520800000000000000
+      internalID: 2728004624665230059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ea838389adc1dc0800000000000000
+      internalID: -3666815649273303519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40c51825a1285bcd0800000000000000
+      internalID: -2542983365015806972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_36
+      rect:
+        serializedVersion: 2
+        x: 1739
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9f726b3d40b0830800000000000000
+      internalID: 4038326798208465332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_37
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8752879cef76f1b40800000000000000
+      internalID: 5413159621122073976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_38
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ded0f0c519c452a0800000000000000
+      internalID: -6749548846253023533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_39
+      rect:
+        serializedVersion: 2
+        x: 1883
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24496f133cea8900800000000000000
+      internalID: 687621597441901614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a219ebc922c80c0800000000000000
+      internalID: -4572241465080468867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febab3607ce5634b0800000000000000
+      internalID: -5461073289244070929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_42
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c8b726113a21080800000000000000
+      internalID: -9218126192211948490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_43
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe5218ac75df6c00800000000000000
+      internalID: 896169582242455286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_44
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0197a2e8fdd0c10800000000000000
+      internalID: 2021517609450148010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_45
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc5594648d6213e0800000000000000
+      internalID: -2084483262128497458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_46
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f079f25dcd0fd8350800000000000000
+      internalID: 6020733108124358415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_47
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd204c82117263b0800000000000000
+      internalID: -5520725868726440517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_48
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fd5120573c3ba960800000000000000
+      internalID: 7614245803265187317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_49
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8deac83c7b6649890800000000000000
+      internalID: -7452218543945503016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_50
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf2e9f648f94ee30800000000000000
+      internalID: 4531922516198698956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_51
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de656e06f3150c010800000000000000
+      internalID: 1207054032785790701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_52
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43191980cdf8411a0800000000000000
+      internalID: -6839683758869606092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_53
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2740b5c700e9e5ef0800000000000000
+      internalID: -117482815341525902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_54
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e183cf7726fb22530800000000000000
+      internalID: 3828833062859061278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_55
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4e4c62f73f246d0800000000000000
+      internalID: -3007573873693236036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_56
+      rect:
+        serializedVersion: 2
+        x: 2701
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bc00ef6bd29e7f0800000000000000
+      internalID: -582884412799005853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_57
+      rect:
+        serializedVersion: 2
+        x: 2749
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5a9426420c3f5ce0800000000000000
+      internalID: -1414345777506641314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_58
+      rect:
+        serializedVersion: 2
+        x: 2797
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c4572b558069590800000000000000
+      internalID: -7667932151392416661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_59
+      rect:
+        serializedVersion: 2
+        x: 2845
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b03c4fdfc2e62490800000000000000
+      internalID: -7771274724548792144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_60
+      rect:
+        serializedVersion: 2
+        x: 2893
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a18e5e80ed86b4c0800000000000000
+      internalID: -4272071200913587801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_61
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99f69677b7aa4f40800000000000000
+      internalID: 5713563483683355036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_62
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5991b2951f889bbe0800000000000000
+      internalID: -1460986033940522603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Don Severino Idle Animation_63
+      rect:
+        serializedVersion: 2
+        x: 3037
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fccd1d5b9b1b769d0800000000000000
+      internalID: -2781058833700496177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Don Severino Idle Animation_0: 3167374933858439506
+      Don Severino Idle Animation_1: 3529620378250493995
+      Don Severino Idle Animation_10: -144566731079590894
+      Don Severino Idle Animation_11: 1609131956110179674
+      Don Severino Idle Animation_12: -6221399997040695637
+      Don Severino Idle Animation_13: -7536439030381442249
+      Don Severino Idle Animation_14: 4786348776213257714
+      Don Severino Idle Animation_15: -5004609158179471208
+      Don Severino Idle Animation_16: 6290337254246548700
+      Don Severino Idle Animation_17: -7419160764360479090
+      Don Severino Idle Animation_18: 8533871974640904476
+      Don Severino Idle Animation_19: -8334381272463147813
+      Don Severino Idle Animation_2: -5142318347783167026
+      Don Severino Idle Animation_20: 5459955317820125790
+      Don Severino Idle Animation_21: 1532428630290716158
+      Don Severino Idle Animation_22: 1713706631268631205
+      Don Severino Idle Animation_23: 8070089279123597844
+      Don Severino Idle Animation_24: -4215150656542395178
+      Don Severino Idle Animation_25: 4434998631867911699
+      Don Severino Idle Animation_26: 431122059809193684
+      Don Severino Idle Animation_27: -2971844573011795951
+      Don Severino Idle Animation_28: -2594820163271256551
+      Don Severino Idle Animation_29: -8410026992147949803
+      Don Severino Idle Animation_3: 69134793526967381
+      Don Severino Idle Animation_30: 4320461852668500499
+      Don Severino Idle Animation_31: -1655603801539106893
+      Don Severino Idle Animation_32: -2231417426874922864
+      Don Severino Idle Animation_33: 2728004624665230059
+      Don Severino Idle Animation_34: -3666815649273303519
+      Don Severino Idle Animation_35: -2542983365015806972
+      Don Severino Idle Animation_36: 4038326798208465332
+      Don Severino Idle Animation_37: 5413159621122073976
+      Don Severino Idle Animation_38: -6749548846253023533
+      Don Severino Idle Animation_39: 687621597441901614
+      Don Severino Idle Animation_4: -4542921875091600255
+      Don Severino Idle Animation_40: -4572241465080468867
+      Don Severino Idle Animation_41: -5461073289244070929
+      Don Severino Idle Animation_42: -9218126192211948490
+      Don Severino Idle Animation_43: 896169582242455286
+      Don Severino Idle Animation_44: 2021517609450148010
+      Don Severino Idle Animation_45: -2084483262128497458
+      Don Severino Idle Animation_46: 6020733108124358415
+      Don Severino Idle Animation_47: -5520725868726440517
+      Don Severino Idle Animation_48: 7614245803265187317
+      Don Severino Idle Animation_49: -7452218543945503016
+      Don Severino Idle Animation_5: 3761405675865458713
+      Don Severino Idle Animation_50: 4531922516198698956
+      Don Severino Idle Animation_51: 1207054032785790701
+      Don Severino Idle Animation_52: -6839683758869606092
+      Don Severino Idle Animation_53: -117482815341525902
+      Don Severino Idle Animation_54: 3828833062859061278
+      Don Severino Idle Animation_55: -3007573873693236036
+      Don Severino Idle Animation_56: -582884412799005853
+      Don Severino Idle Animation_57: -1414345777506641314
+      Don Severino Idle Animation_58: -7667932151392416661
+      Don Severino Idle Animation_59: -7771274724548792144
+      Don Severino Idle Animation_6: -6203521777986054122
+      Don Severino Idle Animation_60: -4272071200913587801
+      Don Severino Idle Animation_61: 5713563483683355036
+      Don Severino Idle Animation_62: -1460986033940522603
+      Don Severino Idle Animation_63: -2781058833700496177
+      Don Severino Idle Animation_7: -5004486353831646891
+      Don Severino Idle Animation_8: -6952491258796830622
+      Don Severino Idle Animation_9: -1847672891972641798
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -227,12 +227,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5793388210788405007, guid: 34e55b82552ae5541b8c08f1ffccd108, type: 3}
+  m_Sprite: {fileID: 226488988168733183, guid: 1456c164a0a8d2349b1edbf53a1c469d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.9375, y: 13.5}
+  m_Size: {x: 0.26, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -324,8 +324,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6875, y: 1.3125}
-    newSize: {x: 6.9375, y: 13.5}
+    oldSize: {x: 1.0833334, y: 1.625}
+    newSize: {x: 0.26, y: 0.39}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -357,16 +357,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe7fa0f925b50a048b953f03df2fb935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InputHandler
-  MoveInput: {x: 0, y: 0}
-  ClickDown: 0
-  ClickHeld: 0
-  ClickUp: 0
-  RightClickDown: 0
-  InteractPressed: 0
-  InventoryPressed: 0
-  CraftingPressed: 0
-  CancelPressed: 0
-  RotatePressed: 0
 --- !u!114 &4108252574710588403
 MonoBehaviour:
   m_ObjectHideFlags: 0
