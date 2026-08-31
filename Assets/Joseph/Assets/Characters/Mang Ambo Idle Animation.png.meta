@@ -1,199 +1,199 @@
 fileFormatVersion: 2
-guid: 8e214dd61d7e01841bf7f52cc7bd7ec6
+guid: c191cc03b30e1004aaf4a5be323b7a41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7953507801048441538
-    second: Agos Walking Animation_0
+      213: -7878539807818420477
+    second: Mang Ambo Idle Animation_0
   - first:
-      213: 6648194837726936744
-    second: Agos Walking Animation_1
+      213: -4284852317460603048
+    second: Mang Ambo Idle Animation_1
   - first:
-      213: -5602750908573578481
-    second: Agos Walking Animation_2
+      213: 3024637092575507449
+    second: Mang Ambo Idle Animation_2
   - first:
-      213: -5522555713145972879
-    second: Agos Walking Animation_3
+      213: 2312128152334646813
+    second: Mang Ambo Idle Animation_3
   - first:
-      213: 6388679158221737078
-    second: Agos Walking Animation_4
+      213: 7978337720384223440
+    second: Mang Ambo Idle Animation_4
   - first:
-      213: -4735556871959007083
-    second: Agos Walking Animation_5
+      213: -6639141233964711622
+    second: Mang Ambo Idle Animation_5
   - first:
-      213: -605872813652899103
-    second: Agos Walking Animation_6
+      213: -7091870616720787194
+    second: Mang Ambo Idle Animation_6
   - first:
-      213: -5538002951135495117
-    second: Agos Walking Animation_7
+      213: 8627280876577096365
+    second: Mang Ambo Idle Animation_7
   - first:
-      213: -1115580894719396052
-    second: Agos Walking Animation_8
+      213: -9102927472501770275
+    second: Mang Ambo Idle Animation_8
   - first:
-      213: -1249540990791001469
-    second: Agos Walking Animation_9
+      213: 628621250568724373
+    second: Mang Ambo Idle Animation_9
   - first:
-      213: 3505471084773084746
-    second: Agos Walking Animation_10
+      213: 5356577662198154791
+    second: Mang Ambo Idle Animation_10
   - first:
-      213: -8969288376923958758
-    second: Agos Walking Animation_11
+      213: -6507559426068571100
+    second: Mang Ambo Idle Animation_11
   - first:
-      213: -8561262091803145944
-    second: Agos Walking Animation_12
+      213: -6974357268598382
+    second: Mang Ambo Idle Animation_12
   - first:
-      213: -4238070054497042295
-    second: Agos Walking Animation_13
+      213: -1645145947642346833
+    second: Mang Ambo Idle Animation_13
   - first:
-      213: 4865053704553560621
-    second: Agos Walking Animation_14
+      213: 1868911356614592682
+    second: Mang Ambo Idle Animation_14
   - first:
-      213: -6864516002741825932
-    second: Agos Walking Animation_15
+      213: 3130976453094301970
+    second: Mang Ambo Idle Animation_15
   - first:
-      213: -4939301241689934362
-    second: Agos Walking Animation_16
+      213: 6524516887688640142
+    second: Mang Ambo Idle Animation_16
   - first:
-      213: 3689308582512127495
-    second: Agos Walking Animation_17
+      213: 4502139905756406661
+    second: Mang Ambo Idle Animation_17
   - first:
-      213: -4104014028480815242
-    second: Agos Walking Animation_18
+      213: 8682151691736971589
+    second: Mang Ambo Idle Animation_18
   - first:
-      213: 5889967250973326273
-    second: Agos Walking Animation_19
+      213: -4306758196244718094
+    second: Mang Ambo Idle Animation_19
   - first:
-      213: -5491626249215613037
-    second: Agos Walking Animation_20
+      213: 5190710724539325105
+    second: Mang Ambo Idle Animation_20
   - first:
-      213: 5009596366780996898
-    second: Agos Walking Animation_21
+      213: -3462106234668639652
+    second: Mang Ambo Idle Animation_21
   - first:
-      213: -5922131346285934521
-    second: Agos Walking Animation_22
+      213: -2505802412701428024
+    second: Mang Ambo Idle Animation_22
   - first:
-      213: -7288812132635030133
-    second: Agos Walking Animation_23
+      213: 7617631727209665579
+    second: Mang Ambo Idle Animation_23
   - first:
-      213: -2222748822170575811
-    second: Agos Walking Animation_24
+      213: 5701950075592289604
+    second: Mang Ambo Idle Animation_24
   - first:
-      213: -7689493829067444437
-    second: Agos Walking Animation_25
+      213: 8526257605690877150
+    second: Mang Ambo Idle Animation_25
   - first:
-      213: 7405326988311817952
-    second: Agos Walking Animation_26
+      213: 3268680234410251613
+    second: Mang Ambo Idle Animation_26
   - first:
-      213: 3201190253249334035
-    second: Agos Walking Animation_27
+      213: -2400958008421007905
+    second: Mang Ambo Idle Animation_27
   - first:
-      213: -5392374319887037709
-    second: Agos Walking Animation_28
+      213: -1109494531428286180
+    second: Mang Ambo Idle Animation_28
   - first:
-      213: 4345999563674311345
-    second: Agos Walking Animation_29
+      213: -2087343480634258591
+    second: Mang Ambo Idle Animation_29
   - first:
-      213: 5761582663950609327
-    second: Agos Walking Animation_30
+      213: -8200363678017299603
+    second: Mang Ambo Idle Animation_30
   - first:
-      213: 7335739562055188482
-    second: Agos Walking Animation_31
+      213: 1506941157588919569
+    second: Mang Ambo Idle Animation_31
   - first:
-      213: -6726514156557811718
-    second: Agos Walking Animation_32
+      213: 5373896474700492979
+    second: Mang Ambo Idle Animation_32
   - first:
-      213: 7302557233750999192
-    second: Agos Walking Animation_33
+      213: 6146995640504672485
+    second: Mang Ambo Idle Animation_33
   - first:
-      213: -9073281200099634890
-    second: Agos Walking Animation_34
+      213: 108036619576609006
+    second: Mang Ambo Idle Animation_34
   - first:
-      213: -1068213020761892426
-    second: Agos Walking Animation_35
+      213: -8695489684733308445
+    second: Mang Ambo Idle Animation_35
   - first:
-      213: 8132116446666512912
-    second: Agos Walking Animation_36
+      213: -6259423155909917111
+    second: Mang Ambo Idle Animation_36
   - first:
-      213: 2713525729483262597
-    second: Agos Walking Animation_37
+      213: 2234172673130940655
+    second: Mang Ambo Idle Animation_37
   - first:
-      213: 2785155197298471116
-    second: Agos Walking Animation_38
+      213: -693847205760761201
+    second: Mang Ambo Idle Animation_38
   - first:
-      213: 7394488619610065185
-    second: Agos Walking Animation_39
+      213: 4612011323061175043
+    second: Mang Ambo Idle Animation_39
   - first:
-      213: 5763272628205562316
-    second: Agos Walking Animation_40
+      213: 2371915730615051178
+    second: Mang Ambo Idle Animation_40
   - first:
-      213: -6670038771670315498
-    second: Agos Walking Animation_41
+      213: -9124705164875144698
+    second: Mang Ambo Idle Animation_41
   - first:
-      213: -7228251047940374325
-    second: Agos Walking Animation_42
+      213: -4435548975455339580
+    second: Mang Ambo Idle Animation_42
   - first:
-      213: -812442738088435342
-    second: Agos Walking Animation_43
+      213: -2975998698946611803
+    second: Mang Ambo Idle Animation_43
   - first:
-      213: -8124783461876887013
-    second: Agos Walking Animation_44
+      213: -2510401268895035163
+    second: Mang Ambo Idle Animation_44
   - first:
-      213: 4440856520608073344
-    second: Agos Walking Animation_45
+      213: -80048667025153479
+    second: Mang Ambo Idle Animation_45
   - first:
-      213: -861838501747518970
-    second: Agos Walking Animation_46
+      213: 7950452690796033459
+    second: Mang Ambo Idle Animation_46
   - first:
-      213: 2696919356707177512
-    second: Agos Walking Animation_47
+      213: -7423105686364344907
+    second: Mang Ambo Idle Animation_47
   - first:
-      213: 6026950125155467362
-    second: Agos Walking Animation_48
+      213: -29148598693862154
+    second: Mang Ambo Idle Animation_48
   - first:
-      213: -2233293423218321693
-    second: Agos Walking Animation_49
+      213: -1133769116280930491
+    second: Mang Ambo Idle Animation_49
   - first:
-      213: 5200072426938697418
-    second: Agos Walking Animation_50
+      213: -7426911846471021634
+    second: Mang Ambo Idle Animation_50
   - first:
-      213: 4132419370328654569
-    second: Agos Walking Animation_51
+      213: -5358664671263931056
+    second: Mang Ambo Idle Animation_51
   - first:
-      213: 7387896383171567197
-    second: Agos Walking Animation_52
+      213: -1908545951564076801
+    second: Mang Ambo Idle Animation_52
   - first:
-      213: -421292517411481733
-    second: Agos Walking Animation_53
+      213: 5326225299498624761
+    second: Mang Ambo Idle Animation_53
   - first:
-      213: -6887398587739915861
-    second: Agos Walking Animation_54
+      213: 3019981515406884628
+    second: Mang Ambo Idle Animation_54
   - first:
-      213: 1209183699677054591
-    second: Agos Walking Animation_55
+      213: 755012691090503202
+    second: Mang Ambo Idle Animation_55
   - first:
-      213: -7337456060269579856
-    second: Agos Walking Animation_56
+      213: -3045680816462484039
+    second: Mang Ambo Idle Animation_56
   - first:
-      213: -7995223951108531678
-    second: Agos Walking Animation_57
+      213: -5148445520928262176
+    second: Mang Ambo Idle Animation_57
   - first:
-      213: -1901934478283661110
-    second: Agos Walking Animation_58
+      213: -2982425057478453621
+    second: Mang Ambo Idle Animation_58
   - first:
-      213: 1084674822455765442
-    second: Agos Walking Animation_59
+      213: 2217532229103472963
+    second: Mang Ambo Idle Animation_59
   - first:
-      213: 7177496949080778560
-    second: Agos Walking Animation_60
+      213: -4575634568853399619
+    second: Mang Ambo Idle Animation_60
   - first:
-      213: 4108838677931671786
-    second: Agos Walking Animation_61
+      213: -7074931720047052411
+    second: Mang Ambo Idle Animation_61
   - first:
-      213: -9147724848723864381
-    second: Agos Walking Animation_62
+      213: 5874942742167813560
+    second: Mang Ambo Idle Animation_62
   - first:
-      213: 6764543306570190838
-    second: Agos Walking Animation_63
+      213: 3682478610039895763
+    second: Mang Ambo Idle Animation_63
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -315,7 +315,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Agos Walking Animation_0
+      name: Mang Ambo Idle Animation_0
       rect:
         serializedVersion: 2
         x: 11
@@ -330,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c26acf9439806e60800000000000000
-      internalID: 7953507801048441538
+      spriteID: 30f653e79cdc9a290800000000000000
+      internalID: -7878539807818420477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_1
+      name: Mang Ambo Idle Animation_1
       rect:
         serializedVersion: 2
         x: 59
@@ -352,18 +352,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aebc443bf1234c50800000000000000
-      internalID: 6648194837726936744
+      spriteID: 85f50c6f4852984c0800000000000000
+      internalID: -4284852317460603048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_2
+      name: Mang Ambo Idle Animation_2
       rect:
         serializedVersion: 2
         x: 107
-        y: 2
+        y: 3
         width: 26
         height: 39
       alignment: 0
@@ -374,18 +374,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0b8979bbb70f32b0800000000000000
-      internalID: -5602750908573578481
+      spriteID: 9f3fe65196ba9f920800000000000000
+      internalID: 3024637092575507449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_3
+      name: Mang Ambo Idle Animation_3
       rect:
         serializedVersion: 2
         x: 155
-        y: 2
+        y: 3
         width: 26
         height: 39
       alignment: 0
@@ -396,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 17751a1b6d0fb53b0800000000000000
-      internalID: -5522555713145972879
+      spriteID: d1e361bed44561020800000000000000
+      internalID: 2312128152334646813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_4
+      name: Mang Ambo Idle Animation_4
       rect:
         serializedVersion: 2
         x: 203
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67c8fb188d529a850800000000000000
-      internalID: 6388679158221737078
+      spriteID: 0d8f999b2efb8be60800000000000000
+      internalID: 7978337720384223440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_5
+      name: Mang Ambo Idle Animation_5
       rect:
         serializedVersion: 2
         x: 251
@@ -440,20 +440,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59039317d1ce74eb0800000000000000
-      internalID: -4735556871959007083
+      spriteID: a3182ef29380dd3a0800000000000000
+      internalID: -6639141233964711622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_6
+      name: Mang Ambo Idle Animation_6
       rect:
         serializedVersion: 2
         x: 299
-        y: 2
+        y: 3
         width: 26
-        height: 39
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,18 +462,84 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ea0723d2e18797f0800000000000000
-      internalID: -605872813652899103
+      spriteID: 609b3599f3d949d90800000000000000
+      internalID: -7091870616720787194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_7
+      name: Mang Ambo Idle Animation_7
       rect:
         serializedVersion: 2
         x: 347
-        y: 2
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da206e97f324ab770800000000000000
+      internalID: 8627280876577096365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7336171b7eba180800000000000000
+      internalID: -9102927472501770275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_9
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 3
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f196262bf49b800800000000000000
+      internalID: 628621250568724373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 3
         width: 26
         height: 39
       alignment: 0
@@ -484,17 +550,127 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33cf08458af0523b0800000000000000
-      internalID: -5538002951135495117
+      spriteID: 7260d1fd003665a40800000000000000
+      internalID: 5356577662198154791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_8
+      name: Mang Ambo Idle Animation_11
       rect:
         serializedVersion: 2
-        x: 396
+        x: 539
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c10763e2180b5a0800000000000000
+      internalID: -6507559426068571100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_12
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291f778ebd837eff0800000000000000
+      internalID: -6974357268598382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_13
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2ca1b1a744b29e0800000000000000
+      internalID: -1645145947642346833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_14
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa8c4b71af4bfe910800000000000000
+      internalID: 1868911356614592682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_15
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2116cc6de76737b20800000000000000
+      internalID: 3130976453094301970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_16
+      rect:
+        serializedVersion: 2
+        x: 781
         y: 3
         width: 22
         height: 39
@@ -506,17 +682,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c27b90c3619a480f0800000000000000
-      internalID: -1115580894719396052
+      spriteID: e86f7bd7a8dbb8a50800000000000000
+      internalID: 6524516887688640142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_9
+      name: Mang Ambo Idle Animation_17
       rect:
         serializedVersion: 2
-        x: 444
+        x: 829
         y: 3
         width: 22
         height: 39
@@ -528,61 +704,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38adc97d61db8aee0800000000000000
-      internalID: -1249540990791001469
+      spriteID: 583a8b31460da7e30800000000000000
+      internalID: 4502139905756406661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_10
+      name: Mang Ambo Idle Animation_18
       rect:
         serializedVersion: 2
-        x: 492
-        y: 3
-        width: 22
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a4e8d4af06fe5a030800000000000000
-      internalID: 3505471084773084746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_11
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 3
-        width: 22
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1258651ebfa68380800000000000000
-      internalID: -8969288376923958758
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_12
-      rect:
-        serializedVersion: 2
-        x: 588
+        x: 877
         y: 3
         width: 22
         height: 39
@@ -594,17 +726,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8294e0dac79403980800000000000000
-      internalID: -8561262091803145944
+      spriteID: 549f900b6f23d7870800000000000000
+      internalID: 8682151691736971589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_13
+      name: Mang Ambo Idle Animation_19
       rect:
         serializedVersion: 2
-        x: 636
+        x: 925
         y: 3
         width: 22
         height: 39
@@ -616,63 +748,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 980cb7c5db95f25c0800000000000000
-      internalID: -4238070054497042295
+      spriteID: 2fdd45b1d325b34c0800000000000000
+      internalID: -4306758196244718094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_14
+      name: Mang Ambo Idle Animation_20
       rect:
         serializedVersion: 2
-        x: 684
-        y: 4
-        width: 24
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2afc117194248340800000000000000
-      internalID: 4865053704553560621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_15
-      rect:
-        serializedVersion: 2
-        x: 732
-        y: 4
-        width: 24
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 47ec695b0175cb0a0800000000000000
-      internalID: -6864516002741825932
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_16
-      rect:
-        serializedVersion: 2
-        x: 782
+        x: 973
         y: 3
-        width: 19
+        width: 22
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -682,19 +770,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e5fc62b0b3147bb0800000000000000
-      internalID: -4939301241689934362
+      spriteID: 1ba1af307eb190840800000000000000
+      internalID: 5190710724539325105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_17
+      name: Mang Ambo Idle Animation_21
       rect:
         serializedVersion: 2
-        x: 830
+        x: 1021
         y: 3
-        width: 19
+        width: 22
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -704,20 +792,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70e6f67eb9e033330800000000000000
-      internalID: 3689308582512127495
+      spriteID: c5a19ebf8b024ffc0800000000000000
+      internalID: -3462106234668639652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_18
+      name: Mang Ambo Idle Animation_22
       rect:
         serializedVersion: 2
-        x: 878
+        x: 1069
         y: 3
-        width: 19
-        height: 37
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,20 +814,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67f5e2f2cfc9b07c0800000000000000
-      internalID: -4104014028480815242
+      spriteID: 8c65d916bf9993dd0800000000000000
+      internalID: -2505802412701428024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_19
+      name: Mang Ambo Idle Animation_23
       rect:
         serializedVersion: 2
-        x: 926
+        x: 1117
         y: 3
-        width: 19
-        height: 37
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,108 +836,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cbf2f4220e5db150800000000000000
-      internalID: 5889967250973326273
+      spriteID: b24d31a22b347b960800000000000000
+      internalID: 7617631727209665579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_20
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 3
-        width: 19
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 397ea40b503d9c3b0800000000000000
-      internalID: -5491626249215613037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_21
-      rect:
-        serializedVersion: 2
-        x: 1022
-        y: 3
-        width: 19
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22d91168a59a58540800000000000000
-      internalID: 5009596366780996898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_22
-      rect:
-        serializedVersion: 2
-        x: 1070
-        y: 3
-        width: 19
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 748cb67daec50dda0800000000000000
-      internalID: -5922131346285934521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_23
-      rect:
-        serializedVersion: 2
-        x: 1118
-        y: 3
-        width: 19
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b8d4bbfabffe8da90800000000000000
-      internalID: -7288812132635030133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_24
+      name: Mang Ambo Idle Animation_24
       rect:
         serializedVersion: 2
         x: 1165
         y: 3
-        width: 25
-        height: 39
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,19 +858,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3cda9d09b53721e0800000000000000
-      internalID: -2222748822170575811
+      spriteID: 44da0be2265612f40800000000000000
+      internalID: 5701950075592289604
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_25
+      name: Mang Ambo Idle Animation_25
       rect:
         serializedVersion: 2
         x: 1213
         y: 3
         width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed46daa4e1a535670800000000000000
+      internalID: 8526257605690877150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_26
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 3
+        width: 22
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -880,42 +902,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2f60e76a1e694590800000000000000
-      internalID: -7689493829067444437
+      spriteID: d551d50ea5fac5d20800000000000000
+      internalID: 3268680234410251613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_26
-      rect:
-        serializedVersion: 2
-        x: 1261
-        y: 3
-        width: 22
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ee60f729a105c660800000000000000
-      internalID: 7405326988311817952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_27
+      name: Mang Ambo Idle Animation_27
       rect:
         serializedVersion: 2
         x: 1309
         y: 3
         width: 22
-        height: 38
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -924,14 +924,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31b8e5f1399ec6c20800000000000000
-      internalID: 3201190253249334035
+      spriteID: fddbf6389651eaed0800000000000000
+      internalID: -2400958008421007905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_28
+      name: Mang Ambo Idle Animation_28
       rect:
         serializedVersion: 2
         x: 1357
@@ -946,14 +946,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fac13740207a25b0800000000000000
-      internalID: -5392374319887037709
+      spriteID: c118afd1a984a90f0800000000000000
+      internalID: -1109494531428286180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_29
+      name: Mang Ambo Idle Animation_29
       rect:
         serializedVersion: 2
         x: 1405
@@ -968,20 +968,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ba5fcab397105c30800000000000000
-      internalID: 4345999563674311345
+      spriteID: 16b4190e9244803e0800000000000000
+      internalID: -2087343480634258591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_30
+      name: Mang Ambo Idle Animation_30
       rect:
         serializedVersion: 2
         x: 1453
-        y: 4
-        width: 23
-        height: 37
+        y: 3
+        width: 22
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -990,20 +990,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fab23dc18e045ff40800000000000000
-      internalID: 5761582663950609327
+      spriteID: d6b53c6aea4723e80800000000000000
+      internalID: -8200363678017299603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_31
+      name: Mang Ambo Idle Animation_31
       rect:
         serializedVersion: 2
         x: 1501
-        y: 4
-        width: 23
-        height: 37
+        y: 3
+        width: 22
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1012,14 +1012,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2004419e348cdc560800000000000000
-      internalID: 7335739562055188482
+      spriteID: 115e08baffab9e410800000000000000
+      internalID: 1506941157588919569
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_32
+      name: Mang Ambo Idle Animation_32
       rect:
         serializedVersion: 2
         x: 1547
@@ -1034,14 +1034,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aff3cb1630f96a2a0800000000000000
-      internalID: -6726514156557811718
+      spriteID: 3b03f322f5ae39a40800000000000000
+      internalID: 5373896474700492979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_33
+      name: Mang Ambo Idle Animation_33
       rect:
         serializedVersion: 2
         x: 1595
@@ -1056,20 +1056,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89000bd0d15e75560800000000000000
-      internalID: 7302557233750999192
+      spriteID: 5e0e72487f38e4550800000000000000
+      internalID: 6146995640504672485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_34
+      name: Mang Ambo Idle Animation_34
       rect:
         serializedVersion: 2
         x: 1643
-        y: 2
+        y: 3
         width: 26
-        height: 38
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1078,20 +1078,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 631d4d022da351280800000000000000
-      internalID: -9073281200099634890
+      spriteID: ee8099cabb2df7100800000000000000
+      internalID: 108036619576609006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_35
+      name: Mang Ambo Idle Animation_35
       rect:
         serializedVersion: 2
         x: 1691
-        y: 2
+        y: 3
         width: 26
-        height: 38
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,14 +1100,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6b95a01dae1fc21f0800000000000000
-      internalID: -1068213020761892426
+      spriteID: 3e1d561d33a635780800000000000000
+      internalID: -8695489684733308445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_36
+      name: Mang Ambo Idle Animation_36
       rect:
         serializedVersion: 2
         x: 1739
@@ -1122,14 +1122,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01a5bab82d41bd070800000000000000
-      internalID: 8132116446666512912
+      spriteID: 9468225bdcf0229a0800000000000000
+      internalID: -6259423155909917111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_37
+      name: Mang Ambo Idle Animation_37
       rect:
         serializedVersion: 2
         x: 1787
@@ -1144,18 +1144,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58a8bba264168a520800000000000000
-      internalID: 2713525729483262597
+      spriteID: fe8cad48530610f10800000000000000
+      internalID: 2234172673130940655
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_38
+      name: Mang Ambo Idle Animation_38
       rect:
         serializedVersion: 2
         x: 1835
-        y: 2
+        y: 3
         width: 26
         height: 38
       alignment: 0
@@ -1166,18 +1166,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc0fe4345ebd6a620800000000000000
-      internalID: 2785155197298471116
+      spriteID: f828b3c74a5fe56f0800000000000000
+      internalID: -693847205760761201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_39
+      name: Mang Ambo Idle Animation_39
       rect:
         serializedVersion: 2
         x: 1883
-        y: 2
+        y: 3
         width: 26
         height: 38
       alignment: 0
@@ -1188,19 +1188,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 129c68bc8308e9660800000000000000
-      internalID: 7394488619610065185
+      spriteID: 3030423ecd7210040800000000000000
+      internalID: 4612011323061175043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_40
+      name: Mang Ambo Idle Animation_40
       rect:
         serializedVersion: 2
-        x: 1930
+        x: 1931
         y: 3
-        width: 25
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3a8704accbae020800000000000000
+      internalID: 2371915730615051178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 3
+        width: 26
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602e17f4ff88e5180800000000000000
+      internalID: -9124705164875144698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_42
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 3
+        width: 26
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1210,19 +1254,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cc9ace39be14bff40800000000000000
-      internalID: 5763272628205562316
+      spriteID: 4cbf22615b3c172c0800000000000000
+      internalID: -4435548975455339580
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_41
+      name: Mang Ambo Idle Animation_43
       rect:
         serializedVersion: 2
-        x: 1978
+        x: 2075
         y: 3
-        width: 25
+        width: 26
         height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1232,17 +1276,237 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61e028893134f63a0800000000000000
-      internalID: -6670038771670315498
+      spriteID: 5a5334963f023b6d0800000000000000
+      internalID: -2975998698946611803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_42
+      name: Mang Ambo Idle Animation_44
       rect:
         serializedVersion: 2
-        x: 2029
+        x: 2123
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e052dbb853492dd0800000000000000
+      internalID: -2510401268895035163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_45
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932e835592c93eef0800000000000000
+      internalID: -80048667025153479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_46
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b53276599ea55e60800000000000000
+      internalID: 7950452690796033459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_47
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd221225b4dbf890800000000000000
+      internalID: -7423105686364344907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_48
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f4e6210181789ff0800000000000000
+      internalID: -29148598693862154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_49
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f34c6eefa0440f0800000000000000
+      internalID: -1133769116280930491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_50
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb44fc660f4ee890800000000000000
+      internalID: -7426911846471021634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_51
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055c0e67fd232a5b0800000000000000
+      internalID: -5358664671263931056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_52
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff86387a19b7385e0800000000000000
+      internalID: -1908545951564076801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_53
+      rect:
+        serializedVersion: 2
+        x: 2557
+        y: 3
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6605ab0bd8ae940800000000000000
+      internalID: 5326225299498624761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mang Ambo Idle Animation_54
+      rect:
+        serializedVersion: 2
+        x: 2605
         y: 3
         width: 22
         height: 38
@@ -1254,17 +1518,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc04b2408f710bb90800000000000000
-      internalID: -7228251047940374325
+      spriteID: 41fb21e003129e920800000000000000
+      internalID: 3019981515406884628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_43
+      name: Mang Ambo Idle Animation_55
       rect:
         serializedVersion: 2
-        x: 2077
+        x: 2653
         y: 3
         width: 22
         height: 38
@@ -1276,20 +1540,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 271a4eb52af99b4f0800000000000000
-      internalID: -812442738088435342
+      spriteID: 2267c55da085a7a00800000000000000
+      internalID: 755012691090503202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_44
+      name: Mang Ambo Idle Animation_56
       rect:
         serializedVersion: 2
-        x: 2122
+        x: 2701
         y: 3
-        width: 25
-        height: 39
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1298,20 +1562,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b121cd50d78fe3f80800000000000000
-      internalID: -8124783461876887013
+      spriteID: 9bd28832f619bb5d0800000000000000
+      internalID: -3045680816462484039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_45
+      name: Mang Ambo Idle Animation_57
       rect:
         serializedVersion: 2
-        x: 2170
+        x: 2749
         y: 3
-        width: 25
-        height: 39
+        width: 22
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1320,237 +1584,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08642511a7711ad30800000000000000
-      internalID: 4440856520608073344
+      spriteID: 0e7be9b831c0d88b0800000000000000
+      internalID: -5148445520928262176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_46
+      name: Mang Ambo Idle Animation_58
       rect:
         serializedVersion: 2
-        x: 2220
-        y: 4
-        width: 23
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6029599e2722a04f0800000000000000
-      internalID: -861838501747518970
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_47
-      rect:
-        serializedVersion: 2
-        x: 2268
-        y: 4
-        width: 23
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8240864bdd16d6520800000000000000
-      internalID: 2696919356707177512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_48
-      rect:
-        serializedVersion: 2
-        x: 2319
-        y: 3
-        width: 19
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 26043e8e43704a350800000000000000
-      internalID: 6026950125155467362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_49
-      rect:
-        serializedVersion: 2
-        x: 2367
-        y: 3
-        width: 19
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3e61bddc67fb101e0800000000000000
-      internalID: -2233293423218321693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_50
-      rect:
-        serializedVersion: 2
-        x: 2415
-        y: 3
-        width: 19
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac60cf5325e5a2840800000000000000
-      internalID: 5200072426938697418
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_51
-      rect:
-        serializedVersion: 2
-        x: 2463
-        y: 3
-        width: 19
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e20267d58d495930800000000000000
-      internalID: 4132419370328654569
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_52
-      rect:
-        serializedVersion: 2
-        x: 2511
-        y: 3
-        width: 19
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5e95542e94178660800000000000000
-      internalID: 7387896383171567197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_53
-      rect:
-        serializedVersion: 2
-        x: 2559
-        y: 3
-        width: 19
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b77982100b4472af0800000000000000
-      internalID: -421292517411481733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_54
-      rect:
-        serializedVersion: 2
-        x: 2607
-        y: 3
-        width: 19
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba93c37b97b0b60a0800000000000000
-      internalID: -6887398587739915861
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_55
-      rect:
-        serializedVersion: 2
-        x: 2655
-        y: 3
-        width: 19
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f7681771b22e7c010800000000000000
-      internalID: 1209183699677054591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_56
-      rect:
-        serializedVersion: 2
-        x: 2702
+        x: 2797
         y: 3
         width: 22
         height: 39
@@ -1562,17 +1606,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b13894b69e1c2a90800000000000000
-      internalID: -7337456060269579856
+      spriteID: b86d5c7363c4c96d0800000000000000
+      internalID: -2982425057478453621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_57
+      name: Mang Ambo Idle Animation_59
       rect:
         serializedVersion: 2
-        x: 2750
+        x: 2845
         y: 3
         width: 22
         height: 39
@@ -1584,61 +1628,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22a1b7e4d224b0190800000000000000
-      internalID: -7995223951108531678
+      spriteID: 34151b930d146ce10800000000000000
+      internalID: 2217532229103472963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_58
+      name: Mang Ambo Idle Animation_60
       rect:
         serializedVersion: 2
-        x: 2798
-        y: 3
-        width: 22
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac0a5db3ba8fa95e0800000000000000
-      internalID: -1901934478283661110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_59
-      rect:
-        serializedVersion: 2
-        x: 2846
-        y: 3
-        width: 22
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c92941110a8d0f00800000000000000
-      internalID: 1084674822455765442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_60
-      rect:
-        serializedVersion: 2
-        x: 2894
+        x: 2893
         y: 3
         width: 22
         height: 39
@@ -1650,17 +1650,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 047e86a72779b9360800000000000000
-      internalID: 7177496949080778560
+      spriteID: db7de753a941080c0800000000000000
+      internalID: -4575634568853399619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_61
+      name: Mang Ambo Idle Animation_61
       rect:
         serializedVersion: 2
-        x: 2942
+        x: 2941
         y: 3
         width: 22
         height: 39
@@ -1672,20 +1672,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae0c08d0207850930800000000000000
-      internalID: 4108838677931671786
+      spriteID: 589b370d51bc0dd90800000000000000
+      internalID: -7074931720047052411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_62
+      name: Mang Ambo Idle Animation_62
       rect:
         serializedVersion: 2
-        x: 2988
-        y: 4
-        width: 24
-        height: 36
+        x: 2989
+        y: 3
+        width: 22
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1694,20 +1694,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c4dcc087b0cc0180800000000000000
-      internalID: -9147724848723864381
+      spriteID: 8bdfba61c4df78150800000000000000
+      internalID: 5874942742167813560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_63
+      name: Mang Ambo Idle Animation_63
       rect:
         serializedVersion: 2
-        x: 3036
-        y: 4
-        width: 24
-        height: 36
+        x: 3037
+        y: 3
+        width: 22
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1716,8 +1716,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ffccd71c4c70ed50800000000000000
-      internalID: 6764543306570190838
+      spriteID: 3d6f66409caca1330800000000000000
+      internalID: 3682478610039895763
       vertices: []
       indices: 
       edges: []
@@ -1736,70 +1736,70 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Agos Walking Animation_0: 7953507801048441538
-      Agos Walking Animation_1: 6648194837726936744
-      Agos Walking Animation_10: 3505471084773084746
-      Agos Walking Animation_11: -8969288376923958758
-      Agos Walking Animation_12: -8561262091803145944
-      Agos Walking Animation_13: -4238070054497042295
-      Agos Walking Animation_14: 4865053704553560621
-      Agos Walking Animation_15: -6864516002741825932
-      Agos Walking Animation_16: -4939301241689934362
-      Agos Walking Animation_17: 3689308582512127495
-      Agos Walking Animation_18: -4104014028480815242
-      Agos Walking Animation_19: 5889967250973326273
-      Agos Walking Animation_2: -5602750908573578481
-      Agos Walking Animation_20: -5491626249215613037
-      Agos Walking Animation_21: 5009596366780996898
-      Agos Walking Animation_22: -5922131346285934521
-      Agos Walking Animation_23: -7288812132635030133
-      Agos Walking Animation_24: -2222748822170575811
-      Agos Walking Animation_25: -7689493829067444437
-      Agos Walking Animation_26: 7405326988311817952
-      Agos Walking Animation_27: 3201190253249334035
-      Agos Walking Animation_28: -5392374319887037709
-      Agos Walking Animation_29: 4345999563674311345
-      Agos Walking Animation_3: -5522555713145972879
-      Agos Walking Animation_30: 5761582663950609327
-      Agos Walking Animation_31: 7335739562055188482
-      Agos Walking Animation_32: -6726514156557811718
-      Agos Walking Animation_33: 7302557233750999192
-      Agos Walking Animation_34: -9073281200099634890
-      Agos Walking Animation_35: -1068213020761892426
-      Agos Walking Animation_36: 8132116446666512912
-      Agos Walking Animation_37: 2713525729483262597
-      Agos Walking Animation_38: 2785155197298471116
-      Agos Walking Animation_39: 7394488619610065185
-      Agos Walking Animation_4: 6388679158221737078
-      Agos Walking Animation_40: 5763272628205562316
-      Agos Walking Animation_41: -6670038771670315498
-      Agos Walking Animation_42: -7228251047940374325
-      Agos Walking Animation_43: -812442738088435342
-      Agos Walking Animation_44: -8124783461876887013
-      Agos Walking Animation_45: 4440856520608073344
-      Agos Walking Animation_46: -861838501747518970
-      Agos Walking Animation_47: 2696919356707177512
-      Agos Walking Animation_48: 6026950125155467362
-      Agos Walking Animation_49: -2233293423218321693
-      Agos Walking Animation_5: -4735556871959007083
-      Agos Walking Animation_50: 5200072426938697418
-      Agos Walking Animation_51: 4132419370328654569
-      Agos Walking Animation_52: 7387896383171567197
-      Agos Walking Animation_53: -421292517411481733
-      Agos Walking Animation_54: -6887398587739915861
-      Agos Walking Animation_55: 1209183699677054591
-      Agos Walking Animation_56: -7337456060269579856
-      Agos Walking Animation_57: -7995223951108531678
-      Agos Walking Animation_58: -1901934478283661110
-      Agos Walking Animation_59: 1084674822455765442
-      Agos Walking Animation_6: -605872813652899103
-      Agos Walking Animation_60: 7177496949080778560
-      Agos Walking Animation_61: 4108838677931671786
-      Agos Walking Animation_62: -9147724848723864381
-      Agos Walking Animation_63: 6764543306570190838
-      Agos Walking Animation_7: -5538002951135495117
-      Agos Walking Animation_8: -1115580894719396052
-      Agos Walking Animation_9: -1249540990791001469
+      Mang Ambo Idle Animation_0: -7878539807818420477
+      Mang Ambo Idle Animation_1: -4284852317460603048
+      Mang Ambo Idle Animation_10: 5356577662198154791
+      Mang Ambo Idle Animation_11: -6507559426068571100
+      Mang Ambo Idle Animation_12: -6974357268598382
+      Mang Ambo Idle Animation_13: -1645145947642346833
+      Mang Ambo Idle Animation_14: 1868911356614592682
+      Mang Ambo Idle Animation_15: 3130976453094301970
+      Mang Ambo Idle Animation_16: 6524516887688640142
+      Mang Ambo Idle Animation_17: 4502139905756406661
+      Mang Ambo Idle Animation_18: 8682151691736971589
+      Mang Ambo Idle Animation_19: -4306758196244718094
+      Mang Ambo Idle Animation_2: 3024637092575507449
+      Mang Ambo Idle Animation_20: 5190710724539325105
+      Mang Ambo Idle Animation_21: -3462106234668639652
+      Mang Ambo Idle Animation_22: -2505802412701428024
+      Mang Ambo Idle Animation_23: 7617631727209665579
+      Mang Ambo Idle Animation_24: 5701950075592289604
+      Mang Ambo Idle Animation_25: 8526257605690877150
+      Mang Ambo Idle Animation_26: 3268680234410251613
+      Mang Ambo Idle Animation_27: -2400958008421007905
+      Mang Ambo Idle Animation_28: -1109494531428286180
+      Mang Ambo Idle Animation_29: -2087343480634258591
+      Mang Ambo Idle Animation_3: 2312128152334646813
+      Mang Ambo Idle Animation_30: -8200363678017299603
+      Mang Ambo Idle Animation_31: 1506941157588919569
+      Mang Ambo Idle Animation_32: 5373896474700492979
+      Mang Ambo Idle Animation_33: 6146995640504672485
+      Mang Ambo Idle Animation_34: 108036619576609006
+      Mang Ambo Idle Animation_35: -8695489684733308445
+      Mang Ambo Idle Animation_36: -6259423155909917111
+      Mang Ambo Idle Animation_37: 2234172673130940655
+      Mang Ambo Idle Animation_38: -693847205760761201
+      Mang Ambo Idle Animation_39: 4612011323061175043
+      Mang Ambo Idle Animation_4: 7978337720384223440
+      Mang Ambo Idle Animation_40: 2371915730615051178
+      Mang Ambo Idle Animation_41: -9124705164875144698
+      Mang Ambo Idle Animation_42: -4435548975455339580
+      Mang Ambo Idle Animation_43: -2975998698946611803
+      Mang Ambo Idle Animation_44: -2510401268895035163
+      Mang Ambo Idle Animation_45: -80048667025153479
+      Mang Ambo Idle Animation_46: 7950452690796033459
+      Mang Ambo Idle Animation_47: -7423105686364344907
+      Mang Ambo Idle Animation_48: -29148598693862154
+      Mang Ambo Idle Animation_49: -1133769116280930491
+      Mang Ambo Idle Animation_5: -6639141233964711622
+      Mang Ambo Idle Animation_50: -7426911846471021634
+      Mang Ambo Idle Animation_51: -5358664671263931056
+      Mang Ambo Idle Animation_52: -1908545951564076801
+      Mang Ambo Idle Animation_53: 5326225299498624761
+      Mang Ambo Idle Animation_54: 3019981515406884628
+      Mang Ambo Idle Animation_55: 755012691090503202
+      Mang Ambo Idle Animation_56: -3045680816462484039
+      Mang Ambo Idle Animation_57: -5148445520928262176
+      Mang Ambo Idle Animation_58: -2982425057478453621
+      Mang Ambo Idle Animation_59: 2217532229103472963
+      Mang Ambo Idle Animation_6: -7091870616720787194
+      Mang Ambo Idle Animation_60: -4575634568853399619
+      Mang Ambo Idle Animation_61: -7074931720047052411
+      Mang Ambo Idle Animation_62: 5874942742167813560
+      Mang Ambo Idle Animation_63: 3682478610039895763
+      Mang Ambo Idle Animation_7: 8627280876577096365
+      Mang Ambo Idle Animation_8: -9102927472501770275
+      Mang Ambo Idle Animation_9: 628621250568724373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

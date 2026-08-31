@@ -1,199 +1,199 @@
 fileFormatVersion: 2
-guid: 8e214dd61d7e01841bf7f52cc7bd7ec6
+guid: 12ed007a90ce5674aaad67880381a7b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7953507801048441538
-    second: Agos Walking Animation_0
+      213: -3002598817406288411
+    second: Aling Cora Idle Animation_0
   - first:
-      213: 6648194837726936744
-    second: Agos Walking Animation_1
+      213: -4244608392959126043
+    second: Aling Cora Idle Animation_1
   - first:
-      213: -5602750908573578481
-    second: Agos Walking Animation_2
+      213: 8730759725421099357
+    second: Aling Cora Idle Animation_2
   - first:
-      213: -5522555713145972879
-    second: Agos Walking Animation_3
+      213: -8949761684903549450
+    second: Aling Cora Idle Animation_3
   - first:
-      213: 6388679158221737078
-    second: Agos Walking Animation_4
+      213: -913014758874239134
+    second: Aling Cora Idle Animation_4
   - first:
-      213: -4735556871959007083
-    second: Agos Walking Animation_5
+      213: -2298381673537123852
+    second: Aling Cora Idle Animation_5
   - first:
-      213: -605872813652899103
-    second: Agos Walking Animation_6
+      213: -4717152834521122074
+    second: Aling Cora Idle Animation_6
   - first:
-      213: -5538002951135495117
-    second: Agos Walking Animation_7
+      213: 5425409238395977117
+    second: Aling Cora Idle Animation_7
   - first:
-      213: -1115580894719396052
-    second: Agos Walking Animation_8
+      213: -6756759611757805204
+    second: Aling Cora Idle Animation_8
   - first:
-      213: -1249540990791001469
-    second: Agos Walking Animation_9
+      213: 7127418690836590251
+    second: Aling Cora Idle Animation_9
   - first:
-      213: 3505471084773084746
-    second: Agos Walking Animation_10
+      213: 4494593722416087443
+    second: Aling Cora Idle Animation_10
   - first:
-      213: -8969288376923958758
-    second: Agos Walking Animation_11
+      213: -7178299182786816086
+    second: Aling Cora Idle Animation_11
   - first:
-      213: -8561262091803145944
-    second: Agos Walking Animation_12
+      213: 3432631541107570758
+    second: Aling Cora Idle Animation_12
   - first:
-      213: -4238070054497042295
-    second: Agos Walking Animation_13
+      213: -5027511483054429807
+    second: Aling Cora Idle Animation_13
   - first:
-      213: 4865053704553560621
-    second: Agos Walking Animation_14
+      213: 8027300910259737903
+    second: Aling Cora Idle Animation_14
   - first:
-      213: -6864516002741825932
-    second: Agos Walking Animation_15
+      213: 6966329183210622790
+    second: Aling Cora Idle Animation_15
   - first:
-      213: -4939301241689934362
-    second: Agos Walking Animation_16
+      213: -6188701171713482336
+    second: Aling Cora Idle Animation_16
   - first:
-      213: 3689308582512127495
-    second: Agos Walking Animation_17
+      213: -4593906417155238499
+    second: Aling Cora Idle Animation_17
   - first:
-      213: -4104014028480815242
-    second: Agos Walking Animation_18
+      213: -6824700139282606953
+    second: Aling Cora Idle Animation_18
   - first:
-      213: 5889967250973326273
-    second: Agos Walking Animation_19
+      213: 8696953495703503360
+    second: Aling Cora Idle Animation_19
   - first:
-      213: -5491626249215613037
-    second: Agos Walking Animation_20
+      213: -2443135323753155297
+    second: Aling Cora Idle Animation_20
   - first:
-      213: 5009596366780996898
-    second: Agos Walking Animation_21
+      213: -6053520079588511902
+    second: Aling Cora Idle Animation_21
   - first:
-      213: -5922131346285934521
-    second: Agos Walking Animation_22
+      213: -9193715194448746622
+    second: Aling Cora Idle Animation_22
   - first:
-      213: -7288812132635030133
-    second: Agos Walking Animation_23
+      213: 8536396201618168592
+    second: Aling Cora Idle Animation_23
   - first:
-      213: -2222748822170575811
-    second: Agos Walking Animation_24
+      213: -1056999274446878025
+    second: Aling Cora Idle Animation_24
   - first:
-      213: -7689493829067444437
-    second: Agos Walking Animation_25
+      213: -881266938556335286
+    second: Aling Cora Idle Animation_25
   - first:
-      213: 7405326988311817952
-    second: Agos Walking Animation_26
+      213: 9119674723726025020
+    second: Aling Cora Idle Animation_26
   - first:
-      213: 3201190253249334035
-    second: Agos Walking Animation_27
+      213: -3283211681635458562
+    second: Aling Cora Idle Animation_27
   - first:
-      213: -5392374319887037709
-    second: Agos Walking Animation_28
+      213: -4211032198973541080
+    second: Aling Cora Idle Animation_28
   - first:
-      213: 4345999563674311345
-    second: Agos Walking Animation_29
+      213: 5197556979423355721
+    second: Aling Cora Idle Animation_29
   - first:
-      213: 5761582663950609327
-    second: Agos Walking Animation_30
+      213: -2361559238447066155
+    second: Aling Cora Idle Animation_30
   - first:
-      213: 7335739562055188482
-    second: Agos Walking Animation_31
+      213: -5166748133462997903
+    second: Aling Cora Idle Animation_31
   - first:
-      213: -6726514156557811718
-    second: Agos Walking Animation_32
+      213: -4570068461987306436
+    second: Aling Cora Idle Animation_32
   - first:
-      213: 7302557233750999192
-    second: Agos Walking Animation_33
+      213: 3702899520574747738
+    second: Aling Cora Idle Animation_33
   - first:
-      213: -9073281200099634890
-    second: Agos Walking Animation_34
+      213: 1867463496671995046
+    second: Aling Cora Idle Animation_34
   - first:
-      213: -1068213020761892426
-    second: Agos Walking Animation_35
+      213: -7569838935911324474
+    second: Aling Cora Idle Animation_35
   - first:
-      213: 8132116446666512912
-    second: Agos Walking Animation_36
+      213: -1418501977679976951
+    second: Aling Cora Idle Animation_36
   - first:
-      213: 2713525729483262597
-    second: Agos Walking Animation_37
+      213: -8976920138731826996
+    second: Aling Cora Idle Animation_37
   - first:
-      213: 2785155197298471116
-    second: Agos Walking Animation_38
+      213: -2727927755664230380
+    second: Aling Cora Idle Animation_38
   - first:
-      213: 7394488619610065185
-    second: Agos Walking Animation_39
+      213: -4977760576448551632
+    second: Aling Cora Idle Animation_39
   - first:
-      213: 5763272628205562316
-    second: Agos Walking Animation_40
+      213: -744208085506297041
+    second: Aling Cora Idle Animation_40
   - first:
-      213: -6670038771670315498
-    second: Agos Walking Animation_41
+      213: -8742420369142728926
+    second: Aling Cora Idle Animation_41
   - first:
-      213: -7228251047940374325
-    second: Agos Walking Animation_42
+      213: 4767114689353385978
+    second: Aling Cora Idle Animation_42
   - first:
-      213: -812442738088435342
-    second: Agos Walking Animation_43
+      213: -80973268174340420
+    second: Aling Cora Idle Animation_43
   - first:
-      213: -8124783461876887013
-    second: Agos Walking Animation_44
+      213: 4262563009607443841
+    second: Aling Cora Idle Animation_44
   - first:
-      213: 4440856520608073344
-    second: Agos Walking Animation_45
+      213: -6504271977326954486
+    second: Aling Cora Idle Animation_45
   - first:
-      213: -861838501747518970
-    second: Agos Walking Animation_46
+      213: -3814661681624835735
+    second: Aling Cora Idle Animation_46
   - first:
-      213: 2696919356707177512
-    second: Agos Walking Animation_47
+      213: -9026229253014826232
+    second: Aling Cora Idle Animation_47
   - first:
-      213: 6026950125155467362
-    second: Agos Walking Animation_48
+      213: -1289357438095725968
+    second: Aling Cora Idle Animation_48
   - first:
-      213: -2233293423218321693
-    second: Agos Walking Animation_49
+      213: -8603253852090717446
+    second: Aling Cora Idle Animation_49
   - first:
-      213: 5200072426938697418
-    second: Agos Walking Animation_50
+      213: -7956460486295450755
+    second: Aling Cora Idle Animation_50
   - first:
-      213: 4132419370328654569
-    second: Agos Walking Animation_51
+      213: 3744596276442069423
+    second: Aling Cora Idle Animation_51
   - first:
-      213: 7387896383171567197
-    second: Agos Walking Animation_52
+      213: 3569013461772242328
+    second: Aling Cora Idle Animation_52
   - first:
-      213: -421292517411481733
-    second: Agos Walking Animation_53
+      213: 1679173329559519224
+    second: Aling Cora Idle Animation_53
   - first:
-      213: -6887398587739915861
-    second: Agos Walking Animation_54
+      213: 7100006012065318701
+    second: Aling Cora Idle Animation_54
   - first:
-      213: 1209183699677054591
-    second: Agos Walking Animation_55
+      213: -93001499322496054
+    second: Aling Cora Idle Animation_55
   - first:
-      213: -7337456060269579856
-    second: Agos Walking Animation_56
+      213: 3598021991604368264
+    second: Aling Cora Idle Animation_56
   - first:
-      213: -7995223951108531678
-    second: Agos Walking Animation_57
+      213: -8321996982594137304
+    second: Aling Cora Idle Animation_57
   - first:
-      213: -1901934478283661110
-    second: Agos Walking Animation_58
+      213: 1262852690359843520
+    second: Aling Cora Idle Animation_58
   - first:
-      213: 1084674822455765442
-    second: Agos Walking Animation_59
+      213: 8614891392300785366
+    second: Aling Cora Idle Animation_59
   - first:
-      213: 7177496949080778560
-    second: Agos Walking Animation_60
+      213: -1861621686008998907
+    second: Aling Cora Idle Animation_60
   - first:
-      213: 4108838677931671786
-    second: Agos Walking Animation_61
+      213: 4375721703192896188
+    second: Aling Cora Idle Animation_61
   - first:
-      213: -9147724848723864381
-    second: Agos Walking Animation_62
+      213: -2202044028074949378
+    second: Aling Cora Idle Animation_62
   - first:
-      213: 6764543306570190838
-    second: Agos Walking Animation_63
+      213: 8168939779653280380
+    second: Aling Cora Idle Animation_63
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -315,13 +315,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Agos Walking Animation_0
+      name: Aling Cora Idle Animation_0
       rect:
         serializedVersion: 2
-        x: 11
+        x: 12
         y: 3
-        width: 26
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -330,20 +330,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c26acf9439806e60800000000000000
-      internalID: 7953507801048441538
+      spriteID: 5ed7d75b840a456d0800000000000000
+      internalID: -3002598817406288411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_1
+      name: Aling Cora Idle Animation_1
       rect:
         serializedVersion: 2
-        x: 59
+        x: 60
         y: 3
-        width: 26
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,64 +352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8aebc443bf1234c50800000000000000
-      internalID: 6648194837726936744
+      spriteID: 5e5970fc72f1815c0800000000000000
+      internalID: -4244608392959126043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_2
+      name: Aling Cora Idle Animation_2
       rect:
         serializedVersion: 2
-        x: 107
-        y: 2
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0b8979bbb70f32b0800000000000000
-      internalID: -5602750908573578481
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_3
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 2
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17751a1b6d0fb53b0800000000000000
-      internalID: -5522555713145972879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_4
-      rect:
-        serializedVersion: 2
-        x: 203
+        x: 108
         y: 3
-        width: 26
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,20 +374,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67c8fb188d529a850800000000000000
-      internalID: 6388679158221737078
+      spriteID: d59f20576b3e92970800000000000000
+      internalID: 8730759725421099357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_5
+      name: Aling Cora Idle Animation_3
       rect:
         serializedVersion: 2
-        x: 251
+        x: 156
         y: 3
-        width: 26
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -440,20 +396,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59039317d1ce74eb0800000000000000
-      internalID: -4735556871959007083
+      spriteID: 6f52cea5a2f0cc380800000000000000
+      internalID: -8949761684903549450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_6
+      name: Aling Cora Idle Animation_4
       rect:
         serializedVersion: 2
-        x: 299
-        y: 2
-        width: 26
-        height: 39
+        x: 204
+        y: 3
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,20 +418,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ea0723d2e18797f0800000000000000
-      internalID: -605872813652899103
+      spriteID: 26fac960ae15453f0800000000000000
+      internalID: -913014758874239134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_7
+      name: Aling Cora Idle Animation_5
       rect:
         serializedVersion: 2
-        x: 347
-        y: 2
-        width: 26
-        height: 39
+        x: 252
+        y: 3
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,20 +440,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 33cf08458af0523b0800000000000000
-      internalID: -5538002951135495117
+      spriteID: 4f94d869b028a10e0800000000000000
+      internalID: -2298381673537123852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_8
+      name: Aling Cora Idle Animation_6
       rect:
         serializedVersion: 2
-        x: 396
+        x: 300
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea34235d7e498eb0800000000000000
+      internalID: -4717152834521122074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_7
+      rect:
+        serializedVersion: 2
+        x: 349
         y: 3
         width: 22
-        height: 39
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -506,20 +484,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c27b90c3619a480f0800000000000000
-      internalID: -1115580894719396052
+      spriteID: d9df6bf05fcea4b40800000000000000
+      internalID: 5425409238395977117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_9
+      name: Aling Cora Idle Animation_8
       rect:
         serializedVersion: 2
-        x: 444
+        x: 397
         y: 3
         width: 22
-        height: 39
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -528,20 +506,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 38adc97d61db8aee0800000000000000
-      internalID: -1249540990791001469
+      spriteID: c6148749eea2b32a0800000000000000
+      internalID: -6756759611757805204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_10
+      name: Aling Cora Idle Animation_9
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 3
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae6bc0698da9e260800000000000000
+      internalID: 7127418690836590251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_10
       rect:
         serializedVersion: 2
         x: 492
         y: 3
-        width: 22
-        height: 37
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -550,20 +550,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4e8d4af06fe5a030800000000000000
-      internalID: 3505471084773084746
+      spriteID: 391cf4a5d21006e30800000000000000
+      internalID: 4494593722416087443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_11
+      name: Aling Cora Idle Animation_11
       rect:
         serializedVersion: 2
         x: 540
         y: 3
-        width: 22
-        height: 37
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,20 +572,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a1258651ebfa68380800000000000000
-      internalID: -8969288376923958758
+      spriteID: aa7d38eecee816c90800000000000000
+      internalID: -7178299182786816086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_12
+      name: Aling Cora Idle Animation_12
       rect:
         serializedVersion: 2
         x: 588
         y: 3
-        width: 22
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -594,20 +594,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8294e0dac79403980800000000000000
-      internalID: -8561262091803145944
+      spriteID: 648b484233823af20800000000000000
+      internalID: 3432631541107570758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_13
+      name: Aling Cora Idle Animation_13
       rect:
         serializedVersion: 2
         x: 636
         y: 3
-        width: 22
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -616,20 +616,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 980cb7c5db95f25c0800000000000000
-      internalID: -4238070054497042295
+      spriteID: 199e75c61f0ba3ab0800000000000000
+      internalID: -5027511483054429807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_14
+      name: Aling Cora Idle Animation_14
       rect:
         serializedVersion: 2
         x: 684
-        y: 4
+        y: 3
         width: 24
-        height: 36
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,20 +638,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d2afc117194248340800000000000000
-      internalID: 4865053704553560621
+      spriteID: f25933db5a3b66f60800000000000000
+      internalID: 8027300910259737903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_15
+      name: Aling Cora Idle Animation_15
       rect:
         serializedVersion: 2
         x: 732
-        y: 4
+        y: 3
         width: 24
-        height: 36
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,20 +660,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 47ec695b0175cb0a0800000000000000
-      internalID: -6864516002741825932
+      spriteID: 64fc4b1ab7f5da060800000000000000
+      internalID: 6966329183210622790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_16
+      name: Aling Cora Idle Animation_16
       rect:
         serializedVersion: 2
-        x: 782
+        x: 781
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -682,20 +682,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e5fc62b0b3147bb0800000000000000
-      internalID: -4939301241689934362
+      spriteID: 0a169fec2115d1aa0800000000000000
+      internalID: -6188701171713482336
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_17
+      name: Aling Cora Idle Animation_17
       rect:
         serializedVersion: 2
-        x: 830
+        x: 829
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,20 +704,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70e6f67eb9e033330800000000000000
-      internalID: 3689308582512127495
+      spriteID: d951312047a2f30c0800000000000000
+      internalID: -4593906417155238499
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_18
+      name: Aling Cora Idle Animation_18
       rect:
         serializedVersion: 2
-        x: 878
+        x: 877
         y: 3
-        width: 19
-        height: 37
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -726,20 +726,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 67f5e2f2cfc9b07c0800000000000000
-      internalID: -4104014028480815242
+      spriteID: 7945083d16bc941a0800000000000000
+      internalID: -6824700139282606953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_19
+      name: Aling Cora Idle Animation_19
       rect:
         serializedVersion: 2
-        x: 926
+        x: 925
         y: 3
-        width: 19
-        height: 37
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -748,20 +748,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1cbf2f4220e5db150800000000000000
-      internalID: 5889967250973326273
+      spriteID: 002cf7b3029c1b870800000000000000
+      internalID: 8696953495703503360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_20
+      name: Aling Cora Idle Animation_20
       rect:
         serializedVersion: 2
-        x: 974
+        x: 973
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -770,20 +770,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 397ea40b503d9c3b0800000000000000
-      internalID: -5491626249215613037
+      spriteID: f15fb790e5d381ed0800000000000000
+      internalID: -2443135323753155297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_21
+      name: Aling Cora Idle Animation_21
       rect:
         serializedVersion: 2
-        x: 1022
+        x: 1021
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -792,20 +792,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 22d91168a59a58540800000000000000
-      internalID: 5009596366780996898
+      spriteID: 26fae6f7f839dfba0800000000000000
+      internalID: -6053520079588511902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_22
+      name: Aling Cora Idle Animation_22
       rect:
         serializedVersion: 2
-        x: 1070
+        x: 1069
         y: 3
-        width: 19
-        height: 37
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -814,19 +814,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 748cb67daec50dda0800000000000000
-      internalID: -5922131346285934521
+      spriteID: 28765c4bdbc596080800000000000000
+      internalID: -9193715194448746622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_23
+      name: Aling Cora Idle Animation_23
       rect:
         serializedVersion: 2
         x: 1118
         y: 3
         width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bd17b1e1f577670800000000000000
+      internalID: 8536396201618168592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3
+        width: 19
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -836,20 +858,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8d4bbfabffe8da90800000000000000
-      internalID: -7288812132635030133
+      spriteID: 7ba8fb692c8c451f0800000000000000
+      internalID: -1056999274446878025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_24
+      name: Aling Cora Idle Animation_25
       rect:
         serializedVersion: 2
-        x: 1165
+        x: 1214
         y: 3
-        width: 25
-        height: 39
+        width: 19
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -858,41 +880,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d3cda9d09b53721e0800000000000000
-      internalID: -2222748822170575811
+      spriteID: a4bbd07736c15c3f0800000000000000
+      internalID: -881266938556335286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_25
-      rect:
-        serializedVersion: 2
-        x: 1213
-        y: 3
-        width: 22
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b2f60e76a1e694590800000000000000
-      internalID: -7689493829067444437
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_26
+      name: Aling Cora Idle Animation_26
       rect:
         serializedVersion: 2
         x: 1261
         y: 3
-        width: 22
+        width: 20
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -902,19 +902,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ee60f729a105c660800000000000000
-      internalID: 7405326988311817952
+      spriteID: c316cc6d7d79f8e70800000000000000
+      internalID: 9119674723726025020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_27
+      name: Aling Cora Idle Animation_27
       rect:
         serializedVersion: 2
         x: 1309
         y: 3
-        width: 22
+        width: 20
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -924,20 +924,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 31b8e5f1399ec6c20800000000000000
-      internalID: 3201190253249334035
+      spriteID: ef1a4b9ee50bf62d0800000000000000
+      internalID: -3283211681635458562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_28
+      name: Aling Cora Idle Animation_28
       rect:
         serializedVersion: 2
         x: 1357
         y: 3
-        width: 22
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -946,20 +946,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3fac13740207a25b0800000000000000
-      internalID: -5392374319887037709
+      spriteID: 825337aa6886f85c0800000000000000
+      internalID: -4211032198973541080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_29
+      name: Aling Cora Idle Animation_29
       rect:
         serializedVersion: 2
         x: 1405
         y: 3
-        width: 22
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -968,20 +968,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ba5fcab397105c30800000000000000
-      internalID: 4345999563674311345
+      spriteID: 943a162f88e612840800000000000000
+      internalID: 5197556979423355721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_30
+      name: Aling Cora Idle Animation_30
       rect:
         serializedVersion: 2
         x: 1453
-        y: 4
-        width: 23
-        height: 37
+        y: 3
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -990,19 +990,217 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fab23dc18e045ff40800000000000000
-      internalID: 5761582663950609327
+      spriteID: 5d3125c726e0a3fd0800000000000000
+      internalID: -2361559238447066155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_31
+      name: Aling Cora Idle Animation_31
       rect:
         serializedVersion: 2
         x: 1501
-        y: 4
-        width: 23
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174860d72f50c48b0800000000000000
+      internalID: -5166748133462997903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_32
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c34e70472fad390c0800000000000000
+      internalID: -4570068461987306436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_33
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5472d2ce77536330800000000000000
+      internalID: 3702899520574747738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4a42ee7209ae910800000000000000
+      internalID: 1867463496671995046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4a512389782f690800000000000000
+      internalID: -7569838935911324474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_36
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906223387f7705ce0800000000000000
+      internalID: -1418501977679976951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_37
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc0d6d112b29b6380800000000000000
+      internalID: -8976920138731826996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_38
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 3
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41874bec824742ad0800000000000000
+      internalID: -2727927755664230380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_39
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 3
+        width: 22
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03527d701217beab0800000000000000
+      internalID: -4977760576448551632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 3
+        width: 22
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1012,239 +1210,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2004419e348cdc560800000000000000
-      internalID: 7335739562055188482
+      spriteID: f237c6070ba0ca5f0800000000000000
+      internalID: -744208085506297041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_32
+      name: Aling Cora Idle Animation_41
       rect:
         serializedVersion: 2
-        x: 1547
-        y: 3
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aff3cb1630f96a2a0800000000000000
-      internalID: -6726514156557811718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_33
-      rect:
-        serializedVersion: 2
-        x: 1595
-        y: 3
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 89000bd0d15e75560800000000000000
-      internalID: 7302557233750999192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_34
-      rect:
-        serializedVersion: 2
-        x: 1643
-        y: 2
-        width: 26
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 631d4d022da351280800000000000000
-      internalID: -9073281200099634890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_35
-      rect:
-        serializedVersion: 2
-        x: 1691
-        y: 2
-        width: 26
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6b95a01dae1fc21f0800000000000000
-      internalID: -1068213020761892426
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_36
-      rect:
-        serializedVersion: 2
-        x: 1739
-        y: 3
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 01a5bab82d41bd070800000000000000
-      internalID: 8132116446666512912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_37
-      rect:
-        serializedVersion: 2
-        x: 1787
-        y: 3
-        width: 26
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58a8bba264168a520800000000000000
-      internalID: 2713525729483262597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_38
-      rect:
-        serializedVersion: 2
-        x: 1835
-        y: 2
-        width: 26
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc0fe4345ebd6a620800000000000000
-      internalID: 2785155197298471116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_39
-      rect:
-        serializedVersion: 2
-        x: 1883
-        y: 2
-        width: 26
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 129c68bc8308e9660800000000000000
-      internalID: 7394488619610065185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_40
-      rect:
-        serializedVersion: 2
-        x: 1930
-        y: 3
-        width: 25
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc9ace39be14bff40800000000000000
-      internalID: 5763272628205562316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_41
-      rect:
-        serializedVersion: 2
-        x: 1978
-        y: 3
-        width: 25
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61e028893134f63a0800000000000000
-      internalID: -6670038771670315498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_42
-      rect:
-        serializedVersion: 2
-        x: 2029
+        x: 1981
         y: 3
         width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227bb1c5efeaca680800000000000000
+      internalID: -8742420369142728926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_42
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 3
+        width: 24
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1254,19 +1254,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc04b2408f710bb90800000000000000
-      internalID: -7228251047940374325
+      spriteID: af7847e7d81382240800000000000000
+      internalID: 4767114689353385978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_43
+      name: Aling Cora Idle Animation_43
       rect:
         serializedVersion: 2
-        x: 2077
+        x: 2076
         y: 3
-        width: 22
+        width: 24
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1276,20 +1276,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 271a4eb52af99b4f0800000000000000
-      internalID: -812442738088435342
+      spriteID: cbe7a2add3350eef0800000000000000
+      internalID: -80973268174340420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_44
+      name: Aling Cora Idle Animation_44
       rect:
         serializedVersion: 2
-        x: 2122
+        x: 2124
         y: 3
-        width: 25
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1298,20 +1298,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b121cd50d78fe3f80800000000000000
-      internalID: -8124783461876887013
+      spriteID: 1852f54297aa72b30800000000000000
+      internalID: 4262563009607443841
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_45
+      name: Aling Cora Idle Animation_45
       rect:
         serializedVersion: 2
-        x: 2170
+        x: 2172
         y: 3
-        width: 25
-        height: 39
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1320,20 +1320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08642511a7711ad30800000000000000
-      internalID: 4440856520608073344
+      spriteID: a0836e4091f2cb5a0800000000000000
+      internalID: -6504271977326954486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_46
+      name: Aling Cora Idle Animation_46
       rect:
         serializedVersion: 2
         x: 2220
-        y: 4
-        width: 23
-        height: 37
+        y: 3
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1342,20 +1342,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6029599e2722a04f0800000000000000
-      internalID: -861838501747518970
+      spriteID: 969157859699f0bc0800000000000000
+      internalID: -3814661681624835735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_47
+      name: Aling Cora Idle Animation_47
       rect:
         serializedVersion: 2
         x: 2268
-        y: 4
-        width: 23
-        height: 37
+        y: 3
+        width: 24
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1364,20 +1364,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8240864bdd16d6520800000000000000
-      internalID: 2696919356707177512
+      spriteID: 803dfc041546cb280800000000000000
+      internalID: -9026229253014826232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_48
+      name: Aling Cora Idle Animation_48
       rect:
         serializedVersion: 2
         x: 2319
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1386,20 +1386,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26043e8e43704a350800000000000000
-      internalID: 6026950125155467362
+      spriteID: 07aebc9cd384b1ee0800000000000000
+      internalID: -1289357438095725968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_49
+      name: Aling Cora Idle Animation_49
       rect:
         serializedVersion: 2
         x: 2367
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1408,20 +1408,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e61bddc67fb101e0800000000000000
-      internalID: -2233293423218321693
+      spriteID: afa2f99143a1b9880800000000000000
+      internalID: -8603253852090717446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_50
+      name: Aling Cora Idle Animation_50
       rect:
         serializedVersion: 2
         x: 2415
         y: 3
-        width: 19
-        height: 37
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1430,20 +1430,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac60cf5325e5a2840800000000000000
-      internalID: 5200072426938697418
+      spriteID: d7b8de4c759f49190800000000000000
+      internalID: -7956460486295450755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_51
+      name: Aling Cora Idle Animation_51
       rect:
         serializedVersion: 2
         x: 2463
         y: 3
-        width: 19
-        height: 37
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1452,20 +1452,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9e20267d58d495930800000000000000
-      internalID: 4132419370328654569
+      spriteID: fa97494497a77f330800000000000000
+      internalID: 3744596276442069423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_52
+      name: Aling Cora Idle Animation_52
       rect:
         serializedVersion: 2
         x: 2511
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1474,20 +1474,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d5e95542e94178660800000000000000
-      internalID: 7387896383171567197
+      spriteID: 89d858385dea78130800000000000000
+      internalID: 3569013461772242328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_53
+      name: Aling Cora Idle Animation_53
       rect:
         serializedVersion: 2
         x: 2559
         y: 3
-        width: 19
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1496,20 +1496,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b77982100b4472af0800000000000000
-      internalID: -421292517411481733
+      spriteID: 8ff74b02f3f9d4710800000000000000
+      internalID: 1679173329559519224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_54
+      name: Aling Cora Idle Animation_54
       rect:
         serializedVersion: 2
         x: 2607
         y: 3
-        width: 19
-        height: 37
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1518,19 +1518,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba93c37b97b0b60a0800000000000000
-      internalID: -6887398587739915861
+      spriteID: d278a4cb9d9488260800000000000000
+      internalID: 7100006012065318701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_55
+      name: Aling Cora Idle Animation_55
       rect:
         serializedVersion: 2
         x: 2655
         y: 3
         width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbcd4d01a795bef0800000000000000
+      internalID: -93001499322496054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_56
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 3
+        width: 19
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1540,63 +1562,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f7681771b22e7c010800000000000000
-      internalID: 1209183699677054591
+      spriteID: 8833f9f20fdbee130800000000000000
+      internalID: 3598021991604368264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_56
+      name: Aling Cora Idle Animation_57
       rect:
         serializedVersion: 2
-        x: 2702
+        x: 2751
         y: 3
-        width: 22
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b13894b69e1c2a90800000000000000
-      internalID: -7337456060269579856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_57
-      rect:
-        serializedVersion: 2
-        x: 2750
-        y: 3
-        width: 22
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22a1b7e4d224b0190800000000000000
-      internalID: -7995223951108531678
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Agos Walking Animation_58
-      rect:
-        serializedVersion: 2
-        x: 2798
-        y: 3
-        width: 22
+        width: 19
         height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -1606,20 +1584,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ac0a5db3ba8fa95e0800000000000000
-      internalID: -1901934478283661110
+      spriteID: 8239a9e06d3528c80800000000000000
+      internalID: -8321996982594137304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_59
+      name: Aling Cora Idle Animation_58
       rect:
         serializedVersion: 2
-        x: 2846
+        x: 2799
         y: 3
-        width: 22
-        height: 37
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1628,20 +1606,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c92941110a8d0f00800000000000000
-      internalID: 1084674822455765442
+      spriteID: 0ca7b8cb4dd868110800000000000000
+      internalID: 1262852690359843520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_60
+      name: Aling Cora Idle Animation_59
       rect:
         serializedVersion: 2
-        x: 2894
+        x: 2847
         y: 3
-        width: 22
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1650,20 +1628,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 047e86a72779b9360800000000000000
-      internalID: 7177496949080778560
+      spriteID: 6de98a0e31e3e8770800000000000000
+      internalID: 8614891392300785366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_61
+      name: Aling Cora Idle Animation_60
       rect:
         serializedVersion: 2
-        x: 2942
+        x: 2895
         y: 3
-        width: 22
-        height: 39
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1672,20 +1650,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae0c08d0207850930800000000000000
-      internalID: 4108838677931671786
+      spriteID: 504154b90f03a26e0800000000000000
+      internalID: -1861621686008998907
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_62
+      name: Aling Cora Idle Animation_61
       rect:
         serializedVersion: 2
-        x: 2988
-        y: 4
-        width: 24
-        height: 36
+        x: 2943
+        y: 3
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1694,20 +1672,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c4dcc087b0cc0180800000000000000
-      internalID: -9147724848723864381
+      spriteID: cb2a7ca94bfa9bc30800000000000000
+      internalID: 4375721703192896188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Agos Walking Animation_63
+      name: Aling Cora Idle Animation_62
       rect:
         serializedVersion: 2
-        x: 3036
-        y: 4
-        width: 24
-        height: 36
+        x: 2991
+        y: 3
+        width: 20
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1716,8 +1694,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ffccd71c4c70ed50800000000000000
-      internalID: 6764543306570190838
+      spriteID: ef482d69f94c071e0800000000000000
+      internalID: -2202044028074949378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aling Cora Idle Animation_63
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 3
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72aacdd277ed5170800000000000000
+      internalID: 8168939779653280380
       vertices: []
       indices: 
       edges: []
@@ -1736,70 +1736,70 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Agos Walking Animation_0: 7953507801048441538
-      Agos Walking Animation_1: 6648194837726936744
-      Agos Walking Animation_10: 3505471084773084746
-      Agos Walking Animation_11: -8969288376923958758
-      Agos Walking Animation_12: -8561262091803145944
-      Agos Walking Animation_13: -4238070054497042295
-      Agos Walking Animation_14: 4865053704553560621
-      Agos Walking Animation_15: -6864516002741825932
-      Agos Walking Animation_16: -4939301241689934362
-      Agos Walking Animation_17: 3689308582512127495
-      Agos Walking Animation_18: -4104014028480815242
-      Agos Walking Animation_19: 5889967250973326273
-      Agos Walking Animation_2: -5602750908573578481
-      Agos Walking Animation_20: -5491626249215613037
-      Agos Walking Animation_21: 5009596366780996898
-      Agos Walking Animation_22: -5922131346285934521
-      Agos Walking Animation_23: -7288812132635030133
-      Agos Walking Animation_24: -2222748822170575811
-      Agos Walking Animation_25: -7689493829067444437
-      Agos Walking Animation_26: 7405326988311817952
-      Agos Walking Animation_27: 3201190253249334035
-      Agos Walking Animation_28: -5392374319887037709
-      Agos Walking Animation_29: 4345999563674311345
-      Agos Walking Animation_3: -5522555713145972879
-      Agos Walking Animation_30: 5761582663950609327
-      Agos Walking Animation_31: 7335739562055188482
-      Agos Walking Animation_32: -6726514156557811718
-      Agos Walking Animation_33: 7302557233750999192
-      Agos Walking Animation_34: -9073281200099634890
-      Agos Walking Animation_35: -1068213020761892426
-      Agos Walking Animation_36: 8132116446666512912
-      Agos Walking Animation_37: 2713525729483262597
-      Agos Walking Animation_38: 2785155197298471116
-      Agos Walking Animation_39: 7394488619610065185
-      Agos Walking Animation_4: 6388679158221737078
-      Agos Walking Animation_40: 5763272628205562316
-      Agos Walking Animation_41: -6670038771670315498
-      Agos Walking Animation_42: -7228251047940374325
-      Agos Walking Animation_43: -812442738088435342
-      Agos Walking Animation_44: -8124783461876887013
-      Agos Walking Animation_45: 4440856520608073344
-      Agos Walking Animation_46: -861838501747518970
-      Agos Walking Animation_47: 2696919356707177512
-      Agos Walking Animation_48: 6026950125155467362
-      Agos Walking Animation_49: -2233293423218321693
-      Agos Walking Animation_5: -4735556871959007083
-      Agos Walking Animation_50: 5200072426938697418
-      Agos Walking Animation_51: 4132419370328654569
-      Agos Walking Animation_52: 7387896383171567197
-      Agos Walking Animation_53: -421292517411481733
-      Agos Walking Animation_54: -6887398587739915861
-      Agos Walking Animation_55: 1209183699677054591
-      Agos Walking Animation_56: -7337456060269579856
-      Agos Walking Animation_57: -7995223951108531678
-      Agos Walking Animation_58: -1901934478283661110
-      Agos Walking Animation_59: 1084674822455765442
-      Agos Walking Animation_6: -605872813652899103
-      Agos Walking Animation_60: 7177496949080778560
-      Agos Walking Animation_61: 4108838677931671786
-      Agos Walking Animation_62: -9147724848723864381
-      Agos Walking Animation_63: 6764543306570190838
-      Agos Walking Animation_7: -5538002951135495117
-      Agos Walking Animation_8: -1115580894719396052
-      Agos Walking Animation_9: -1249540990791001469
+      Aling Cora Idle Animation_0: -3002598817406288411
+      Aling Cora Idle Animation_1: -4244608392959126043
+      Aling Cora Idle Animation_10: 4494593722416087443
+      Aling Cora Idle Animation_11: -7178299182786816086
+      Aling Cora Idle Animation_12: 3432631541107570758
+      Aling Cora Idle Animation_13: -5027511483054429807
+      Aling Cora Idle Animation_14: 8027300910259737903
+      Aling Cora Idle Animation_15: 6966329183210622790
+      Aling Cora Idle Animation_16: -6188701171713482336
+      Aling Cora Idle Animation_17: -4593906417155238499
+      Aling Cora Idle Animation_18: -6824700139282606953
+      Aling Cora Idle Animation_19: 8696953495703503360
+      Aling Cora Idle Animation_2: 8730759725421099357
+      Aling Cora Idle Animation_20: -2443135323753155297
+      Aling Cora Idle Animation_21: -6053520079588511902
+      Aling Cora Idle Animation_22: -9193715194448746622
+      Aling Cora Idle Animation_23: 8536396201618168592
+      Aling Cora Idle Animation_24: -1056999274446878025
+      Aling Cora Idle Animation_25: -881266938556335286
+      Aling Cora Idle Animation_26: 9119674723726025020
+      Aling Cora Idle Animation_27: -3283211681635458562
+      Aling Cora Idle Animation_28: -4211032198973541080
+      Aling Cora Idle Animation_29: 5197556979423355721
+      Aling Cora Idle Animation_3: -8949761684903549450
+      Aling Cora Idle Animation_30: -2361559238447066155
+      Aling Cora Idle Animation_31: -5166748133462997903
+      Aling Cora Idle Animation_32: -4570068461987306436
+      Aling Cora Idle Animation_33: 3702899520574747738
+      Aling Cora Idle Animation_34: 1867463496671995046
+      Aling Cora Idle Animation_35: -7569838935911324474
+      Aling Cora Idle Animation_36: -1418501977679976951
+      Aling Cora Idle Animation_37: -8976920138731826996
+      Aling Cora Idle Animation_38: -2727927755664230380
+      Aling Cora Idle Animation_39: -4977760576448551632
+      Aling Cora Idle Animation_4: -913014758874239134
+      Aling Cora Idle Animation_40: -744208085506297041
+      Aling Cora Idle Animation_41: -8742420369142728926
+      Aling Cora Idle Animation_42: 4767114689353385978
+      Aling Cora Idle Animation_43: -80973268174340420
+      Aling Cora Idle Animation_44: 4262563009607443841
+      Aling Cora Idle Animation_45: -6504271977326954486
+      Aling Cora Idle Animation_46: -3814661681624835735
+      Aling Cora Idle Animation_47: -9026229253014826232
+      Aling Cora Idle Animation_48: -1289357438095725968
+      Aling Cora Idle Animation_49: -8603253852090717446
+      Aling Cora Idle Animation_5: -2298381673537123852
+      Aling Cora Idle Animation_50: -7956460486295450755
+      Aling Cora Idle Animation_51: 3744596276442069423
+      Aling Cora Idle Animation_52: 3569013461772242328
+      Aling Cora Idle Animation_53: 1679173329559519224
+      Aling Cora Idle Animation_54: 7100006012065318701
+      Aling Cora Idle Animation_55: -93001499322496054
+      Aling Cora Idle Animation_56: 3598021991604368264
+      Aling Cora Idle Animation_57: -8321996982594137304
+      Aling Cora Idle Animation_58: 1262852690359843520
+      Aling Cora Idle Animation_59: 8614891392300785366
+      Aling Cora Idle Animation_6: -4717152834521122074
+      Aling Cora Idle Animation_60: -1861621686008998907
+      Aling Cora Idle Animation_61: 4375721703192896188
+      Aling Cora Idle Animation_62: -2202044028074949378
+      Aling Cora Idle Animation_63: 8168939779653280380
+      Aling Cora Idle Animation_7: 5425409238395977117
+      Aling Cora Idle Animation_8: -6756759611757805204
+      Aling Cora Idle Animation_9: 7127418690836590251
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
