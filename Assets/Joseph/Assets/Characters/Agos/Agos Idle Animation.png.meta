@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 1456c164a0a8d2349b1edbf53a1c469d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 226488988168733183
+    second: Agos Idle Animation_0
+  - first:
+      213: -1239432952936686101
+    second: Agos Idle Animation_1
+  - first:
+      213: -4105262323174665948
+    second: Agos Idle Animation_2
+  - first:
+      213: -1704114088149984174
+    second: Agos Idle Animation_3
+  - first:
+      213: -1001939212765701706
+    second: Agos Idle Animation_4
+  - first:
+      213: 4662428139375164118
+    second: Agos Idle Animation_5
+  - first:
+      213: 2671752152089488159
+    second: Agos Idle Animation_6
+  - first:
+      213: -3669882748738015956
+    second: Agos Idle Animation_7
+  - first:
+      213: 3308934226539430255
+    second: Agos Idle Animation_8
+  - first:
+      213: -42467457660006503
+    second: Agos Idle Animation_9
+  - first:
+      213: 2845826121996812627
+    second: Agos Idle Animation_10
+  - first:
+      213: -512830019302048575
+    second: Agos Idle Animation_11
+  - first:
+      213: -1854098333350379761
+    second: Agos Idle Animation_12
+  - first:
+      213: 5737867784737484595
+    second: Agos Idle Animation_13
+  - first:
+      213: -1117986658694795928
+    second: Agos Idle Animation_14
+  - first:
+      213: -8038604896772717823
+    second: Agos Idle Animation_15
+  - first:
+      213: 5384411210215302794
+    second: Agos Idle Animation_16
+  - first:
+      213: 6557751219576707839
+    second: Agos Idle Animation_17
+  - first:
+      213: -518524998089372941
+    second: Agos Idle Animation_18
+  - first:
+      213: -7553411078272769407
+    second: Agos Idle Animation_19
+  - first:
+      213: 6153418125281108652
+    second: Agos Idle Animation_20
+  - first:
+      213: 5384784585042674420
+    second: Agos Idle Animation_21
+  - first:
+      213: -7663379874579689366
+    second: Agos Idle Animation_22
+  - first:
+      213: 4879525740884783475
+    second: Agos Idle Animation_23
+  - first:
+      213: 7759585613613549871
+    second: Agos Idle Animation_24
+  - first:
+      213: -5841036499361119099
+    second: Agos Idle Animation_25
+  - first:
+      213: 4174747173731724333
+    second: Agos Idle Animation_26
+  - first:
+      213: 516068268879356654
+    second: Agos Idle Animation_27
+  - first:
+      213: -7346866634110978112
+    second: Agos Idle Animation_28
+  - first:
+      213: -4337917195550226466
+    second: Agos Idle Animation_29
+  - first:
+      213: 7722148483385751859
+    second: Agos Idle Animation_30
+  - first:
+      213: 7213453067695024397
+    second: Agos Idle Animation_31
+  - first:
+      213: -2845446126430352243
+    second: Agos Idle Animation_32
+  - first:
+      213: -4919671845747931799
+    second: Agos Idle Animation_33
+  - first:
+      213: -1287066434748242966
+    second: Agos Idle Animation_34
+  - first:
+      213: 4705353006867196351
+    second: Agos Idle Animation_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Agos Idle Animation_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1c555e886a42300800000000000000
+      internalID: 226488988168733183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed9b4dcb46accee0800000000000000
+      internalID: -1239432952936686101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 421116deaad2707c0800000000000000
+      internalID: -4105262323174665948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25cd41ff345c958e0800000000000000
+      internalID: -1704114088149984174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9d09038956812f0800000000000000
+      internalID: -1001939212765701706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dafd3ea0b544b040800000000000000
+      internalID: 4662428139375164118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1bed214d68f31520800000000000000
+      internalID: 2671752152089488159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2de22a7515f11dc0800000000000000
+      internalID: -3669882748738015956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f61c306c522bbed20800000000000000
+      internalID: 3308934226539430255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_9
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f49af7210296ff0800000000000000
+      internalID: -42467457660006503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_10
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 351c526b7c76e7720800000000000000
+      internalID: 2845826121996812627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_11
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc385580df02e8f0800000000000000
+      internalID: -512830019302048575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_12
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0fb106a36be446e0800000000000000
+      internalID: -1854098333350379761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_13
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f6f65895001af40800000000000000
+      internalID: 5737867784737484595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_14
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 3
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86deed8ae0d1c70f0800000000000000
+      internalID: -1117986658694795928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_15
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103852ecf63217090800000000000000
+      internalID: -8038604896772717823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_16
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86a385c77549ba40800000000000000
+      internalID: 5384411210215302794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_17
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa11406dffc10b50800000000000000
+      internalID: 6557751219576707839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_18
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fa09b1f244ddc8f0800000000000000
+      internalID: -518524998089372941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_19
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1822d0dd4a4ec2790800000000000000
+      internalID: -7553411078272769407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_20
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2a4d7ce25556550800000000000000
+      internalID: 6153418125281108652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_21
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2c77fdc099aba40800000000000000
+      internalID: 5384784585042674420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60dccc3b9436a590800000000000000
+      internalID: -7663379874579689366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371ffc9fece87b340800000000000000
+      internalID: 4879525740884783475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29caa7e0069fab60800000000000000
+      internalID: 7759585613613549871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_25
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5844d7f304870fea0800000000000000
+      internalID: -5841036499361119099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_26
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2c685d8f6eafe930800000000000000
+      internalID: 4174747173731724333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_27
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee2a7663b51792700800000000000000
+      internalID: 516068268879356654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c735adb8bfaa0a90800000000000000
+      internalID: -7346866634110978112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed78b2e3b4f9cc3c0800000000000000
+      internalID: -4337917195550226466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_30
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3397707c1259a2b60800000000000000
+      internalID: 7722148483385751859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_31
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09e9e7b8555b1460800000000000000
+      internalID: 7213453067695024397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_32
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 3
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c8b96e2d1f288d0800000000000000
+      internalID: -2845446126430352243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_33
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 3
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96544b69580d9bbb0800000000000000
+      internalID: -4919671845747931799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3a08295eb632ee0800000000000000
+      internalID: -1287066434748242966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Idle Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 3
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb9a22531a5cc4140800000000000000
+      internalID: 4705353006867196351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Agos Idle Animation_0: 226488988168733183
+      Agos Idle Animation_1: -1239432952936686101
+      Agos Idle Animation_10: 2845826121996812627
+      Agos Idle Animation_11: -512830019302048575
+      Agos Idle Animation_12: -1854098333350379761
+      Agos Idle Animation_13: 5737867784737484595
+      Agos Idle Animation_14: -1117986658694795928
+      Agos Idle Animation_15: -8038604896772717823
+      Agos Idle Animation_16: 5384411210215302794
+      Agos Idle Animation_17: 6557751219576707839
+      Agos Idle Animation_18: -518524998089372941
+      Agos Idle Animation_19: -7553411078272769407
+      Agos Idle Animation_2: -4105262323174665948
+      Agos Idle Animation_20: 6153418125281108652
+      Agos Idle Animation_21: 5384784585042674420
+      Agos Idle Animation_22: -7663379874579689366
+      Agos Idle Animation_23: 4879525740884783475
+      Agos Idle Animation_24: 7759585613613549871
+      Agos Idle Animation_25: -5841036499361119099
+      Agos Idle Animation_26: 4174747173731724333
+      Agos Idle Animation_27: 516068268879356654
+      Agos Idle Animation_28: -7346866634110978112
+      Agos Idle Animation_29: -4337917195550226466
+      Agos Idle Animation_3: -1704114088149984174
+      Agos Idle Animation_30: 7722148483385751859
+      Agos Idle Animation_31: 7213453067695024397
+      Agos Idle Animation_32: -2845446126430352243
+      Agos Idle Animation_33: -4919671845747931799
+      Agos Idle Animation_34: -1287066434748242966
+      Agos Idle Animation_35: 4705353006867196351
+      Agos Idle Animation_4: -1001939212765701706
+      Agos Idle Animation_5: 4662428139375164118
+      Agos Idle Animation_6: 2671752152089488159
+      Agos Idle Animation_7: -3669882748738015956
+      Agos Idle Animation_8: 3308934226539430255
+      Agos Idle Animation_9: -42467457660006503
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

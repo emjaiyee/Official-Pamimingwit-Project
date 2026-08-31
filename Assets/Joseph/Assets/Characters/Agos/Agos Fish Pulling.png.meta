@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: a5aba6c77774efd46b9b374b3731e664
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7481327779595499254
+    second: Agos Fish Pulling_0
+  - first:
+      213: 9515953426371173
+    second: Agos Fish Pulling_1
+  - first:
+      213: 7887608849378631742
+    second: Agos Fish Pulling_2
+  - first:
+      213: 5649601384878709494
+    second: Agos Fish Pulling_3
+  - first:
+      213: 4677619633817032231
+    second: Agos Fish Pulling_4
+  - first:
+      213: 6902544751669336974
+    second: Agos Fish Pulling_5
+  - first:
+      213: 326786786294084145
+    second: Agos Fish Pulling_6
+  - first:
+      213: -2646129698202461233
+    second: Agos Fish Pulling_7
+  - first:
+      213: -4042654063634191898
+    second: Agos Fish Pulling_8
+  - first:
+      213: 6166445674966997633
+    second: Agos Fish Pulling_9
+  - first:
+      213: -8157489737987222973
+    second: Agos Fish Pulling_10
+  - first:
+      213: -5007340999409730370
+    second: Agos Fish Pulling_11
+  - first:
+      213: 7915173027596859245
+    second: Agos Fish Pulling_12
+  - first:
+      213: -4063085934625885831
+    second: Agos Fish Pulling_13
+  - first:
+      213: 8071190746317147526
+    second: Agos Fish Pulling_14
+  - first:
+      213: -410463350002109829
+    second: Agos Fish Pulling_15
+  - first:
+      213: -5654133239219341403
+    second: Agos Fish Pulling_16
+  - first:
+      213: -5392975671909955819
+    second: Agos Fish Pulling_17
+  - first:
+      213: 7454956672448064899
+    second: Agos Fish Pulling_18
+  - first:
+      213: -5534585510627784990
+    second: Agos Fish Pulling_19
+  - first:
+      213: 7720181181071764715
+    second: Agos Fish Pulling_20
+  - first:
+      213: -6310408002351484231
+    second: Agos Fish Pulling_21
+  - first:
+      213: 7789549599065127836
+    second: Agos Fish Pulling_22
+  - first:
+      213: 7414325419150766948
+    second: Agos Fish Pulling_23
+  - first:
+      213: -8948322187672961803
+    second: Agos Fish Pulling_24
+  - first:
+      213: -3648183902355159053
+    second: Agos Fish Pulling_25
+  - first:
+      213: -7610256961362110387
+    second: Agos Fish Pulling_26
+  - first:
+      213: 842916720615366366
+    second: Agos Fish Pulling_27
+  - first:
+      213: -1688562106169087860
+    second: Agos Fish Pulling_28
+  - first:
+      213: 6009806162209975529
+    second: Agos Fish Pulling_29
+  - first:
+      213: 7438671388704750350
+    second: Agos Fish Pulling_30
+  - first:
+      213: 2339764507777829071
+    second: Agos Fish Pulling_31
+  - first:
+      213: 4443589092105074636
+    second: Agos Fish Pulling_32
+  - first:
+      213: 4521326973323736415
+    second: Agos Fish Pulling_33
+  - first:
+      213: 5256364985221738383
+    second: Agos Fish Pulling_34
+  - first:
+      213: -8634424838216842667
+    second: Agos Fish Pulling_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Agos Fish Pulling_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09c2f0b50cfc2890800000000000000
+      internalID: -7481327779595499254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5629daf85bec12000800000000000000
+      internalID: 9515953426371173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e30e07a457a667d60800000000000000
+      internalID: 7887608849378631742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fa1044d68a676e40800000000000000
+      internalID: 5649601384878709494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7269e0c164e3ae040800000000000000
+      internalID: 4677619633817032231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8bdc7161e3cacf50800000000000000
+      internalID: 6902544751669336974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132b95ac9daf88400800000000000000
+      internalID: 326786786294084145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbd70d2f0f074bd0800000000000000
+      internalID: -2646129698202461233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e96b4b4c8b95e7c0800000000000000
+      internalID: -4042654063634191898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_9
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ad62f8bad939550800000000000000
+      internalID: 6166445674966997633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_10
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3429064bd46cace80800000000000000
+      internalID: -8157489737987222973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_11
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcfeec14e9528ab0800000000000000
+      internalID: -5007340999409730370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_12
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67f9a5aee758dd60800000000000000
+      internalID: 7915173027596859245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971fcbe9ed40d97c0800000000000000
+      internalID: -4063085934625885831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68d47a48831a20070800000000000000
+      internalID: 8071190746317147526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72bec502cdbd4af0800000000000000
+      internalID: -410463350002109829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a73a9b96cb7881b0800000000000000
+      internalID: -5654133239219341403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_17
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 517cb79133d4825b0800000000000000
+      internalID: -5392975671909955819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_18
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38de1357893557760800000000000000
+      internalID: 7454956672448064899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_19
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6c1043dc33133b0800000000000000
+      internalID: -5534585510627784990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_20
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec207381e7932b60800000000000000
+      internalID: 7720181181071764715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_21
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2be081b5dec68a0800000000000000
+      internalID: -6310408002351484231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_22
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b309ce61a0a1c60800000000000000
+      internalID: 7789549599065127836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_23
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46371a99fa9f4e660800000000000000
+      internalID: 7414325419150766948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_24
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcb10c616c21d380800000000000000
+      internalID: -8948322187672961803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_25
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f782d8d11c0f5dc0800000000000000
+      internalID: -3648183902355159053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_26
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4851905d9fe26690800000000000000
+      internalID: -7610256961362110387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_27
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede148b9a44a2bb00800000000000000
+      internalID: 842916720615366366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_28
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c882b98f5b50198e0800000000000000
+      internalID: -1688562106169087860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ecaa7bfcde176350800000000000000
+      internalID: 6009806162209975529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_30
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0bbb9c57387b3760800000000000000
+      internalID: 7438671388704750350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_31
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc80a285c63887020800000000000000
+      internalID: 2339764507777829071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_32
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc739b27cbccaad30800000000000000
+      internalID: 4443589092105074636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_33
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f557a5e5deafebe30800000000000000
+      internalID: 4521326973323736415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_34
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f61f9ca1c52f840800000000000000
+      internalID: 5256364985221738383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Pulling_35
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 3
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55286465b5c5c2880800000000000000
+      internalID: -8634424838216842667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Agos Fish Pulling_0: -7481327779595499254
+      Agos Fish Pulling_1: 9515953426371173
+      Agos Fish Pulling_10: -8157489737987222973
+      Agos Fish Pulling_11: -5007340999409730370
+      Agos Fish Pulling_12: 7915173027596859245
+      Agos Fish Pulling_13: -4063085934625885831
+      Agos Fish Pulling_14: 8071190746317147526
+      Agos Fish Pulling_15: -410463350002109829
+      Agos Fish Pulling_16: -5654133239219341403
+      Agos Fish Pulling_17: -5392975671909955819
+      Agos Fish Pulling_18: 7454956672448064899
+      Agos Fish Pulling_19: -5534585510627784990
+      Agos Fish Pulling_2: 7887608849378631742
+      Agos Fish Pulling_20: 7720181181071764715
+      Agos Fish Pulling_21: -6310408002351484231
+      Agos Fish Pulling_22: 7789549599065127836
+      Agos Fish Pulling_23: 7414325419150766948
+      Agos Fish Pulling_24: -8948322187672961803
+      Agos Fish Pulling_25: -3648183902355159053
+      Agos Fish Pulling_26: -7610256961362110387
+      Agos Fish Pulling_27: 842916720615366366
+      Agos Fish Pulling_28: -1688562106169087860
+      Agos Fish Pulling_29: 6009806162209975529
+      Agos Fish Pulling_3: 5649601384878709494
+      Agos Fish Pulling_30: 7438671388704750350
+      Agos Fish Pulling_31: 2339764507777829071
+      Agos Fish Pulling_32: 4443589092105074636
+      Agos Fish Pulling_33: 4521326973323736415
+      Agos Fish Pulling_34: 5256364985221738383
+      Agos Fish Pulling_35: -8634424838216842667
+      Agos Fish Pulling_4: 4677619633817032231
+      Agos Fish Pulling_5: 6902544751669336974
+      Agos Fish Pulling_6: 326786786294084145
+      Agos Fish Pulling_7: -2646129698202461233
+      Agos Fish Pulling_8: -4042654063634191898
+      Agos Fish Pulling_9: 6166445674966997633
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

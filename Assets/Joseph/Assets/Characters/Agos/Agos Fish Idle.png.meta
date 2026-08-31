@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 0e2c937f649e6d846aea4e1111e1cff5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2426652928633454772
+    second: Agos Fish Idle_0
+  - first:
+      213: -1997867324021218302
+    second: Agos Fish Idle_1
+  - first:
+      213: 6572353697965879150
+    second: Agos Fish Idle_2
+  - first:
+      213: 6405575273051402963
+    second: Agos Fish Idle_3
+  - first:
+      213: 445487077434928171
+    second: Agos Fish Idle_4
+  - first:
+      213: -7008293595430472971
+    second: Agos Fish Idle_5
+  - first:
+      213: -5041529822705181673
+    second: Agos Fish Idle_6
+  - first:
+      213: -3101468577643584264
+    second: Agos Fish Idle_7
+  - first:
+      213: 508238297467056836
+    second: Agos Fish Idle_8
+  - first:
+      213: 4167092406564670754
+    second: Agos Fish Idle_9
+  - first:
+      213: 2127110247473037099
+    second: Agos Fish Idle_10
+  - first:
+      213: -9006080723032350613
+    second: Agos Fish Idle_11
+  - first:
+      213: -8632977363850915782
+    second: Agos Fish Idle_12
+  - first:
+      213: 341202789736798439
+    second: Agos Fish Idle_13
+  - first:
+      213: 5246832474381249543
+    second: Agos Fish Idle_14
+  - first:
+      213: -2354997826480831547
+    second: Agos Fish Idle_15
+  - first:
+      213: -3053880655997735876
+    second: Agos Fish Idle_16
+  - first:
+      213: 8992190820067803383
+    second: Agos Fish Idle_17
+  - first:
+      213: 5089868424726259133
+    second: Agos Fish Idle_18
+  - first:
+      213: -7197106424783506437
+    second: Agos Fish Idle_19
+  - first:
+      213: -4468697443338018762
+    second: Agos Fish Idle_20
+  - first:
+      213: 8464428952048769830
+    second: Agos Fish Idle_21
+  - first:
+      213: 806068895906631121
+    second: Agos Fish Idle_22
+  - first:
+      213: -4300225293924335355
+    second: Agos Fish Idle_23
+  - first:
+      213: -3568129392149186403
+    second: Agos Fish Idle_24
+  - first:
+      213: -3193339122476759447
+    second: Agos Fish Idle_25
+  - first:
+      213: -6331069146022479219
+    second: Agos Fish Idle_26
+  - first:
+      213: -7044857838611826123
+    second: Agos Fish Idle_27
+  - first:
+      213: 881511523263995509
+    second: Agos Fish Idle_28
+  - first:
+      213: 4147637998839651013
+    second: Agos Fish Idle_29
+  - first:
+      213: -7156900169317534971
+    second: Agos Fish Idle_30
+  - first:
+      213: 9021440354392510228
+    second: Agos Fish Idle_31
+  - first:
+      213: -3459937564956370759
+    second: Agos Fish Idle_32
+  - first:
+      213: 7334524311075800774
+    second: Agos Fish Idle_33
+  - first:
+      213: -1957168746665393118
+    second: Agos Fish Idle_34
+  - first:
+      213: -8858562146060199430
+    second: Agos Fish Idle_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Agos Fish Idle_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f34a3b40cc25ed0800000000000000
+      internalID: -2426652928633454772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204ea5301462644e0800000000000000
+      internalID: -1997867324021218302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f2b71ddd0b53b50800000000000000
+      internalID: 6572353697965879150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2314cc5cc25e850800000000000000
+      internalID: 6405575273051402963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c298af220be2600800000000000000
+      internalID: 445487077434928171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2b8b24b1a8dbe90800000000000000
+      internalID: -7008293595430472971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_6
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c9e116653e80ab0800000000000000
+      internalID: -5041529822705181673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_7
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4a48bc2ce55f4d0800000000000000
+      internalID: -3101468577643584264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2f5cde900ad0700800000000000000
+      internalID: 508238297467056836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_9
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22dc38f277c74d930800000000000000
+      internalID: 4167092406564670754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_10
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f39ba0083058d10800000000000000
+      internalID: 2127110247473037099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_11
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b60e9257c49f30380800000000000000
+      internalID: -9006080723032350613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_12
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a309da9b3d0813880800000000000000
+      internalID: -8632977363850915782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_13
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e852a621223cb400800000000000000
+      internalID: 341202789736798439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_14
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c6a77265e70d840800000000000000
+      internalID: 5246832474381249543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_15
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c30bc144fd515fd0800000000000000
+      internalID: -2354997826480831547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_16
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c61d839bf6e95d0800000000000000
+      internalID: -3053880655997735876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_17
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f08bae78edaacc70800000000000000
+      internalID: 8992190820067803383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_18
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db529417d58d2a640800000000000000
+      internalID: 5089868424726259133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_19
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3f81ca6ddbe1c90800000000000000
+      internalID: -7197106424783506437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_20
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6302429f95ffbf1c0800000000000000
+      internalID: -4468697443338018762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_21
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b16611941b77570800000000000000
+      internalID: 8464428952048769830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_22
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd810dd36bbf2b00800000000000000
+      internalID: 806068895906631121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_23
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5018d75f0e78254c0800000000000000
+      internalID: -4300225293924335355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_24
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d98315cf8357b7ec0800000000000000
+      internalID: -3568129392149186403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_25
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9664a65bcfafea3d0800000000000000
+      internalID: -3193339122476759447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_26
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8af4e6b7268328a0800000000000000
+      internalID: -6331069146022479219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_27
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a7a6cfe13ab3e90800000000000000
+      internalID: -7044857838611826123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_28
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e50995f02cb3c00800000000000000
+      internalID: 881511523263995509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_29
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cadfb9e8ce5f8930800000000000000
+      internalID: 4147637998839651013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_30
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50335e207359dac90800000000000000
+      internalID: -7156900169317534971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_31
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f80f56438923d70800000000000000
+      internalID: 9021440354392510228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_32
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b8debfbd15dbffc0800000000000000
+      internalID: -3459937564956370759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_33
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 3
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c6c32e300779c560800000000000000
+      internalID: 7334524311075800774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_34
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2244389f46db6d4e0800000000000000
+      internalID: -1957168746665393118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Agos Fish Idle_35
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 3
+        width: 26
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af91c5fa9a0101580800000000000000
+      internalID: -8858562146060199430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Agos Fish Idle_0: -2426652928633454772
+      Agos Fish Idle_1: -1997867324021218302
+      Agos Fish Idle_10: 2127110247473037099
+      Agos Fish Idle_11: -9006080723032350613
+      Agos Fish Idle_12: -8632977363850915782
+      Agos Fish Idle_13: 341202789736798439
+      Agos Fish Idle_14: 5246832474381249543
+      Agos Fish Idle_15: -2354997826480831547
+      Agos Fish Idle_16: -3053880655997735876
+      Agos Fish Idle_17: 8992190820067803383
+      Agos Fish Idle_18: 5089868424726259133
+      Agos Fish Idle_19: -7197106424783506437
+      Agos Fish Idle_2: 6572353697965879150
+      Agos Fish Idle_20: -4468697443338018762
+      Agos Fish Idle_21: 8464428952048769830
+      Agos Fish Idle_22: 806068895906631121
+      Agos Fish Idle_23: -4300225293924335355
+      Agos Fish Idle_24: -3568129392149186403
+      Agos Fish Idle_25: -3193339122476759447
+      Agos Fish Idle_26: -6331069146022479219
+      Agos Fish Idle_27: -7044857838611826123
+      Agos Fish Idle_28: 881511523263995509
+      Agos Fish Idle_29: 4147637998839651013
+      Agos Fish Idle_3: 6405575273051402963
+      Agos Fish Idle_30: -7156900169317534971
+      Agos Fish Idle_31: 9021440354392510228
+      Agos Fish Idle_32: -3459937564956370759
+      Agos Fish Idle_33: 7334524311075800774
+      Agos Fish Idle_34: -1957168746665393118
+      Agos Fish Idle_35: -8858562146060199430
+      Agos Fish Idle_4: 445487077434928171
+      Agos Fish Idle_5: -7008293595430472971
+      Agos Fish Idle_6: -5041529822705181673
+      Agos Fish Idle_7: -3101468577643584264
+      Agos Fish Idle_8: 508238297467056836
+      Agos Fish Idle_9: 4167092406564670754
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
