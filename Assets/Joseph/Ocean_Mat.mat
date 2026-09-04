@@ -77,7 +77,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AnimateSpeed: 1.5
     - _BumpScale: 1
+    - _CausticCellsPerTile: 2
+    - _CausticDensity: 3
     - _CausticDistortion: 0.1
     - _CausticFadeDepth: 3
     - _CausticPixelation: 64
@@ -87,6 +90,8 @@ Material:
     - _CausticStrength: 0.5
     - _CausticSwayMagnitude: 0.06
     - _CausticSwaySpeed: 1.5
+    - _CausticThickness: 0.12
+    - _ColorBands: 3
     - _Cutoff: 0.5
     - _DepthPixelation: 10
     - _DepthRange: 0
@@ -94,6 +99,9 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _FoamAmount: 0
+    - _FoamCutoff: 0.15
+    - _FoamSpeed: 2
+    - _FrameRate: 8
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -107,6 +115,8 @@ Material:
     - _NoiseScale: 5
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _PixelGridSize: 128
+    - _PixelsPerTile: 32
     - _RefractionStrength: 0.2
     - _ShadowStrength: 0
     - _ShoreFade: 0.05
@@ -119,15 +129,19 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SurfaceLevel: 5
+    - _Threshold: 0.5
+    - _TileScale: 1
     - _UVSec: 0
     - _WaveAmplitude: 0.02
     - _WaveFrequency: 1.5
+    - _WaveScale: 0.25
     - _WaveSpeed: 3
+    - _WaveStrength: 0.03
     - _WobbleFrequency: 2
     - _WobbleStrength: 0.01
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.35046482, g: 0.539144, b: 0.5064902, a: 1}
+    - _BaseColor: {r: 0.34901962, g: 0.4699358, b: 0.5372549, a: 1}
     - _CausticColor: {r: 0, g: 0.5806451, b: 1, a: 1}
     - _CausticSpeed: {r: 0.1, g: 0.1, b: -0.05, a: -0.05}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -135,10 +149,14 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
     - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _MediumColor: {r: 0.09999997, g: 0.39999998, b: 0.7, a: 1}
     - _MidColor: {r: 0.20358667, g: 0.4496222, b: 0.7075472, a: 1}
+    - _ScrollSpeed: {r: 0.02, g: 0.01, b: 0, a: 0}
     - _ShadowColor: {r: 0.629895, g: 0.7714527, b: 0.8962264, a: 1}
+    - _ShadowOffset: {r: 0.02, g: -0.02, b: 0, a: 0}
     - _ShallowColor: {r: 1, g: 1, b: 1, a: 1}
     - _SparkleColor: {r: 1, g: 1, b: 1, a: 1}
     - _SurfaceSpeed: {r: 0.01, g: 0.01, b: 0, a: 0}
+    - _WaveSpeed: {r: 0.05, g: -0.02, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
