@@ -37407,7 +37407,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 3, y: -1, z: 0}
@@ -37435,7 +37435,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: -1, z: 0}
@@ -37547,7 +37547,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 8, y: -1, z: 0}
@@ -38255,13 +38255,15 @@ MonoBehaviour:
   spawnArea: {fileID: 1403442158}
   trashPrefab: {fileID: 6916304624826777590, guid: 6a1d554e98c5c4344983360a8323ee15, type: 3}
   recyclableSprites:
-  - {fileID: 21300000, guid: 8ab2e06a6c754194b8e5ae197def667f, type: 3}
-  - {fileID: 21300000, guid: 8c6d0a76b7bdd1642bb896c66e88c8c7, type: 3}
-  - {fileID: 21300000, guid: 77f5a9fb2901d9b499b6c5204e6ebf0a, type: 3}
-  - {fileID: 21300000, guid: 68edb7646e847a5419b81ee7bd4cc41a, type: 3}
-  - {fileID: 21300000, guid: c908579544c63724a84a2ab5ee44bad6, type: 3}
+  - {fileID: -142289229411126708, guid: a7887be6bc5449e46a4fb7b34b1cd239, type: 3}
+  - {fileID: 3821229915377204064, guid: f4dbd4d424d406d44a535fdd0202e849, type: 3}
+  - {fileID: -3352274173023398308, guid: 0647d7841a98ca145a0f6ffcdd37c6cf, type: 3}
+  - {fileID: -4558844846886502240, guid: 415a069bc3322dc48962c77070142f00, type: 3}
   organicSprites:
-  - {fileID: 21300000, guid: a0b477f3b68f7e24f93e31b2d48638bf, type: 3}
+  - {fileID: -6946978553588802777, guid: 93a9e15a780172644880e141ac1ef061, type: 3}
+  - {fileID: -2079373902537233682, guid: 0b749c393d594a347b262b627bb5cc18, type: 3}
+  - {fileID: -5183242579825391516, guid: bbb24c0db5087aa4b9a88cc81ff8dcec, type: 3}
+  - {fileID: -7084236553054212896, guid: f66857fd439656b45b4f6dc3ade1ec7e, type: 3}
   trashCount: 6
   baseCoinReward: 2
   bonusLootPool:
