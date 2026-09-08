@@ -40,6 +40,8 @@ public class FishingManager : MonoBehaviour
 
     [Header("Casting Parameters")]
     [SerializeField] private float maxHoldTime = 1.5f;
+    [SerializeField] private float minCastDistance = 1.5f;
+    [SerializeField] private float maxCastDistance = 5.0f;
 
     [Header("Wait & Nibble Parameters")]
     [Tooltip("Minimum awkward silence delay (seconds) before any fish approaches.")]
@@ -56,6 +58,7 @@ public class FishingManager : MonoBehaviour
     [SerializeField] private float maxBiteWindow = 3.0f;
     [SerializeField] private float loseBaitChance = 0.5f;
     private Coroutine biteCoroutine;
+    private Coroutine bobberDeployFallbackCoroutine;
 
     [Header("Audio")]
     [SerializeField] private AudioClip castSFX;
@@ -132,8 +135,14 @@ public class FishingManager : MonoBehaviour
     {
         if (inputLocked) return;
 
-        if (GameManager.Instance != null && GameManager.Instance.currentState == GameState.UI)
+        if (GameManager.Instance != null && (GameManager.Instance.currentState == GameState.UI || GameManager.Instance.IsTransitioningDay))
             return;
+
+        if (StaminaManager.Instance != null && StaminaManager.Instance.GetStamina() <= 0f)
+            return;
+
+        if (InputHandler.Instance == null) return;
+        var input = InputHandler.Instance;
 
         bool hasRod = EquipmentManager.Instance != null && EquipmentManager.Instance.hasFishingRodEquipped;
         bool hasDynamite = EquipmentManager.Instance != null && EquipmentManager.Instance.hasDynamiteEquipped;
@@ -147,9 +156,7 @@ public class FishingManager : MonoBehaviour
         if (UIManager.Instance != null && UIManager.Instance.IsPointerOverUI())
             return;
 
-        if (InputHandler.Instance == null) return;
-        var input = InputHandler.Instance;
-
+        // 1. START AIMING / CHARGING OR REELING
         if (input.ClickDown)
         {
             if (state == FishingState.Idle)
@@ -201,14 +208,15 @@ public class FishingManager : MonoBehaviour
             }
         }
 
-        if (input.ClickHeld && state == FishingState.Aiming)
+        // 2. CHARGE ON HOLD & CAST ONLY ON RELEASE
+        if (state == FishingState.Aiming)
         {
             ChargeCast();
-        }
 
-        if (input.ClickUp && state == FishingState.Aiming)
-        {
-            CastRod();
+            if (input.ClickUp)
+            {
+                CastRod();
+            }
         }
     }
 
@@ -269,10 +277,12 @@ public class FishingManager : MonoBehaviour
 
         Vector3 mouse = GetMouseWorldPosition();
         Vector3 dir = (mouse - player.position).normalized;
-        Vector3 initialTarget = player.position + dir * 1f; 
 
-        if (!Physics2D.OverlapCircle(initialTarget, 0.2f, waterLayer))
+        if (!TryGetValidWaterTarget(dir, minCastDistance, out _))
+        {
+            UIManager.Instance?.ShowMessage("Aim towards the water!");
             return;
+        }
 
         GameManager.Instance?.SetState(GameState.Fishing);
         cachedPlayer?.StartAiming(isDynamite);
@@ -282,32 +292,61 @@ public class FishingManager : MonoBehaviour
         isCastPending = false;
         pendingIsDynamite = isDynamite;
         pendingItem = heldItem;
-
-        ChargeCast();
     }
 
     private void ChargeCast()
     {
         holdTime += Time.deltaTime;
-        holdTime = Mathf.Clamp(holdTime, 0, maxHoldTime);
 
         Vector3 mouse = GetMouseWorldPosition();
         Vector3 dir = (mouse - player.position).normalized;
-
         cachedPlayer?.SetFishingDirection(dir);
+
+        // Auto-cast when reaching full charge capacity
+        if (holdTime >= maxHoldTime)
+        {
+            holdTime = maxHoldTime;
+            CastRod();
+        }
+    }
+
+    private bool TryGetValidWaterTarget(Vector3 direction, float desiredDistance, out Vector3 validPosition)
+    {
+        Vector3 origin = player.position;
+        validPosition = origin + direction * desiredDistance;
+
+        if (Physics2D.OverlapCircle(validPosition, 0.25f, waterLayer))
+        {
+            return true;
+        }
+
+        int steps = 10;
+        for (int i = steps; i >= 1; i--)
+        {
+            float stepDist = Mathf.Lerp(minCastDistance, maxCastDistance, i / (float)steps);
+            Vector3 testPos = origin + direction * stepDist;
+
+            if (Physics2D.OverlapCircle(testPos, 0.25f, waterLayer))
+            {
+                validPosition = testPos;
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private void CastRod()
     {
-        float power = holdTime / maxHoldTime;
+        float power = Mathf.Clamp01(holdTime / maxHoldTime);
         Vector3 mouse = GetMouseWorldPosition();
         Vector3 dir = (mouse - player.position).normalized;
-        float distance = Mathf.Lerp(1f, 4f, power);
-        pendingTargetPos = player.position + dir * distance;
+        float targetDistance = Mathf.Lerp(minCastDistance, maxCastDistance, power);
 
-        if (!Physics2D.OverlapCircle(pendingTargetPos, 0.2f, waterLayer))
+        if (!TryGetValidWaterTarget(dir, targetDistance, out pendingTargetPos))
         {
-            Cleanup(); 
+            UIManager.Instance?.ShowMessage("Cannot cast here!");
+            Cleanup();
             return;
         }
 
@@ -333,12 +372,30 @@ public class FishingManager : MonoBehaviour
         }
 
         isCastPending = true;
+
+        if (bobberDeployFallbackCoroutine != null) StopCoroutine(bobberDeployFallbackCoroutine);
+        bobberDeployFallbackCoroutine = StartCoroutine(DeployBobberFallbackRoutine());
+    }
+
+    private IEnumerator DeployBobberFallbackRoutine()
+    {
+        yield return new WaitForSeconds(0.35f);
+        if (isCastPending)
+        {
+            DeployBobber();
+        }
     }
 
     public void DeployBobber()
     {
         if (!isCastPending) return;
         isCastPending = false;
+
+        if (bobberDeployFallbackCoroutine != null)
+        {
+            StopCoroutine(bobberDeployFallbackCoroutine);
+            bobberDeployFallbackCoroutine = null;
+        }
 
         if (pendingIsDynamite)
         {
@@ -640,6 +697,12 @@ public class FishingManager : MonoBehaviour
             biteCoroutine = null;
         }
 
+        if (bobberDeployFallbackCoroutine != null)
+        {
+            StopCoroutine(bobberDeployFallbackCoroutine);
+            bobberDeployFallbackCoroutine = null;
+        }
+
         if (currentBobber != null)
             Destroy(currentBobber.gameObject);
 
@@ -694,7 +757,11 @@ public class FishingManager : MonoBehaviour
 
     private void ResetFishing()
     {
-        GameManager.Instance?.SetState(GameState.Normal);
+        if (GameManager.Instance != null && GameManager.Instance.currentState == GameState.Fishing)
+        {
+            GameManager.Instance.SetState(GameState.Normal);
+        }
+
         state = FishingState.Idle;
         holdTime = 0;
     }
@@ -705,6 +772,12 @@ public class FishingManager : MonoBehaviour
         {
             StopCoroutine(biteCoroutine);
             biteCoroutine = null;
+        }
+
+        if (bobberDeployFallbackCoroutine != null)
+        {
+            StopCoroutine(bobberDeployFallbackCoroutine);
+            bobberDeployFallbackCoroutine = null;
         }
 
         if (currentBobber != null)
@@ -733,6 +806,8 @@ public class FishingManager : MonoBehaviour
         {
             fishingLine.enabled = false;
         }
+
+        ResetFishing();
     }
 
     private InventoryItem FindBaitInInventory()
