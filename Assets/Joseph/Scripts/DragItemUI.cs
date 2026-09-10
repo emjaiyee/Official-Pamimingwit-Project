@@ -1,85 +1,105 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
-using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
 public class DragItemUI : MonoBehaviour
 {
-    public static DragItemUI Instance;
-    private RectTransform rectTransform; // Reference to this object's RectTransform
-    private Canvas canvas; // Reference to the parent Canvas
-    public Image icon;
+    public static DragItemUI Instance { get; private set; }
+
+    [Header("UI References")]
+    [SerializeField] private Image icon;
+    private RectTransform rectTransform;
+    private Canvas canvas;
     private AudioSource audioSource;
 
     [Header("Sway Settings")]
-    public float swayAmount = 0.5f;
-    public float lerpSpeed = 10f;
-    public float dragScale = 1.2f;
+    [SerializeField] private float swayAmount = 0.5f;
+    [SerializeField] private float lerpSpeed = 12f;
+    [SerializeField] private float dragScale = 1.2f;
 
     [Header("Float Animation")]
-    public float floatAmplitude = 2f; // How much the item bobs up and down
-    public float floatSpeed = 3f;     // How fast the item bobs
+    [SerializeField] private float floatAmplitude = 2f;
+    [SerializeField] private float floatSpeed = 3f;
 
     [Header("Audio")]
-    public AudioClip pickUpSFX;
-    public AudioClip dropSFX;
+    [SerializeField] private AudioClip pickUpSFX;
+    [SerializeField] private AudioClip dropSFX;
 
     private Vector2 lastMousePos;
+    private Vector2 currentVelocity;
     private float currentBaseScale = 1f;
-    void Awake()
+
+    private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
-        rectTransform = GetComponent<RectTransform>(); // Get this object's RectTransform
-        canvas = GetComponentInParent<Canvas>(); // Get the parent Canvas
-        audioSource = GetComponent<AudioSource>(); // Get the AudioSource
-        if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>(); // Ensure AudioSource exists
-        if (icon != null) icon.enabled = false;
-        if (icon != null) icon.rectTransform.anchoredPosition = Vector2.zero; // Ensure icon starts centered relative to its parent
-        // Crucial: Make the icon not block raycasts so OnDrop can reach slots underneath
-        if (icon != null) icon.raycastTarget = false;
+        rectTransform = GetComponent<RectTransform>();
+        canvas = GetComponentInParent<Canvas>();
+        audioSource = GetComponent<AudioSource>();
+
+        if (audioSource == null) 
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        if (icon != null)
+        {
+            icon.enabled = false;
+            icon.raycastTarget = false;
+            icon.rectTransform.anchoredPosition = Vector2.zero;
+        }
     }
 
-    void Update()
+    private void Update()
     {
-        if (icon != null && icon.enabled)
+        if (icon == null || !icon.enabled || canvas == null || Mouse.current == null) 
+            return;
+
+        Vector2 currentMousePos = Mouse.current.position.ReadValue();
+
+        // 1. Follow Cursor Space
+        Camera uiCamera = (canvas.renderMode == RenderMode.ScreenSpaceOverlay) ? null : canvas.worldCamera;
+
+        if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
+            (RectTransform)rectTransform.parent,
+            currentMousePos,
+            uiCamera,
+            out Vector2 localPoint))
         {
-                if (Mouse.current != null && canvas != null)
-                {
-                    Vector2 currentMousePos = Mouse.current.position.ReadValue();
-
-                    // Determine the correct camera: Null for Overlay, worldCamera for others
-                    Camera uiCamera = (canvas.renderMode == RenderMode.ScreenSpaceOverlay) ? null : canvas.worldCamera;
-
-                    // Absolutely map the mouse position to the UI local space
-                    if (RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                        (RectTransform)rectTransform.parent,
-                        currentMousePos,
-                        uiCamera,
-                        out Vector2 localPoint))
-                    {
-                        rectTransform.anchoredPosition = localPoint;
-                    }
-
-                    // Calculate mouse velocity for the tilt effect
-                    float deltaX = currentMousePos.x - lastMousePos.x;
-                    float deltaY = currentMousePos.y - lastMousePos.y;
-
-                    float targetRotZ = Mathf.Clamp(-deltaX * swayAmount, -25f, 25f);
-                    float targetRotX = Mathf.Clamp(deltaY * swayAmount, -15f, 15f);
-                    
-                    icon.transform.localRotation = Quaternion.Lerp(icon.transform.localRotation, Quaternion.Euler(targetRotX, 0, targetRotZ), Time.deltaTime * lerpSpeed);
-                    
-                    // Smoothly scale up while dragging
-                    icon.transform.localScale = Vector3.Lerp(icon.transform.localScale, Vector3.one * (currentBaseScale * dragScale), Time.deltaTime * lerpSpeed);
-                    
-                    // Apply subtle float animation
-                    float bob = Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
-                    icon.rectTransform.anchoredPosition = new Vector2(0, bob); // This is relative to DragItemUI's position
-
-                    lastMousePos = currentMousePos;
-                }
+            rectTransform.anchoredPosition = localPoint;
         }
+
+        // 2. Frame-rate Independent Sway Calculation
+        Vector2 rawDelta = currentMousePos - lastMousePos;
+        currentVelocity = Vector2.Lerp(currentVelocity, rawDelta, 1f - Mathf.Exp(-lerpSpeed * Time.deltaTime));
+
+        float targetRotZ = Mathf.Clamp(-currentVelocity.x * swayAmount, -25f, 25f);
+        float targetRotX = Mathf.Clamp(currentVelocity.y * swayAmount, -15f, 15f);
+
+        float blendFactor = 1f - Mathf.Exp(-lerpSpeed * Time.deltaTime);
+
+        icon.transform.localRotation = Quaternion.Lerp(
+            icon.transform.localRotation, 
+            Quaternion.Euler(targetRotX, 0f, targetRotZ), 
+            blendFactor
+        );
+
+        // 3. Smooth Scaling
+        icon.transform.localScale = Vector3.Lerp(
+            icon.transform.localScale, 
+            Vector3.one * (currentBaseScale * dragScale), 
+            blendFactor
+        );
+
+        // 4. Bobbing Oscillation
+        float bob = Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
+        icon.rectTransform.anchoredPosition = new Vector2(0f, bob);
+
+        lastMousePos = currentMousePos;
     }
 
     public void StartDrag(ItemData item, Color tint, float baseScale)
@@ -87,18 +107,18 @@ public class DragItemUI : MonoBehaviour
         if (item == null || icon == null) return;
 
         if (Mouse.current != null)
+        {
             lastMousePos = Mouse.current.position.ReadValue();
+            currentVelocity = Vector2.zero;
+        }
 
         icon.sprite = item.icon;
         icon.enabled = true;
         icon.color = tint;
         currentBaseScale = baseScale;
-        icon.rectTransform.anchoredPosition = Vector2.zero; // Reset bobbing position
+        icon.rectTransform.anchoredPosition = Vector2.zero;
 
-        if (pickUpSFX != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(pickUpSFX);
-        }
+        PlaySFX(pickUpSFX);
     }
 
     public void StopDrag()
@@ -106,15 +126,20 @@ public class DragItemUI : MonoBehaviour
         if (icon != null)
         {
             icon.enabled = false;
-            icon.transform.localRotation = Quaternion.identity; // Reset rotation for next drag
+            icon.transform.localRotation = Quaternion.identity;
             icon.transform.localScale = Vector3.one;
             icon.color = Color.white;
-            icon.rectTransform.anchoredPosition = Vector2.zero; // Reset bobbing position
+            icon.rectTransform.anchoredPosition = Vector2.zero;
         }
 
-        if (dropSFX != null && audioSource != null)
+        PlaySFX(dropSFX);
+    }
+
+    private void PlaySFX(AudioClip clip)
+    {
+        if (clip != null && audioSource != null && audioSource.isActiveAndEnabled)
         {
-            audioSource.PlayOneShot(dropSFX);
+            audioSource.PlayOneShot(clip);
         }
     }
 }
