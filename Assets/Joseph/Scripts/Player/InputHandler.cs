@@ -1,9 +1,16 @@
 ﻿﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 
 public class InputHandler : MonoBehaviour
 {
     public static InputHandler Instance { get; private set; }
+
+    // Static registration pool to avoid FindObjectsByType GC allocations
+    private static readonly List<Interactable> registeredInteractables = new List<Interactable>();
+
+    [Header("Interaction Settings")]
+    [SerializeField] private float defaultInteractionRadius = 2.0f;
 
     public Vector2 MoveInput { get; private set; }
 
@@ -44,6 +51,22 @@ public class InputHandler : MonoBehaviour
         RotatePressed = false;
     }
 
+    public static void RegisterInteractable(Interactable interactable)
+    {
+        if (interactable != null && !registeredInteractables.Contains(interactable))
+        {
+            registeredInteractables.Add(interactable);
+        }
+    }
+
+    public static void UnregisterInteractable(Interactable interactable)
+    {
+        if (interactable != null && registeredInteractables.Contains(interactable))
+        {
+            registeredInteractables.Remove(interactable);
+        }
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
         MoveInput = context.ReadValue<Vector2>();
@@ -51,7 +74,6 @@ public class InputHandler : MonoBehaviour
 
     public void OnClick(InputAction.CallbackContext context)
     {
-        // Always track hold and release states regardless of GameState
         if (context.started)
         {
             ClickDown = true;
@@ -77,7 +99,8 @@ public class InputHandler : MonoBehaviour
 
         if (GameManager.Instance == null) return;
 
-        // Handle dialogue advancement if in UI state
+        InteractPressed = true;
+
         if (GameManager.Instance.currentState == GameState.UI)
         {
             if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive)
@@ -93,13 +116,15 @@ public class InputHandler : MonoBehaviour
 
         if (GameManager.Instance.currentState != GameState.Normal) return;
 
-        Interactable i = FindClosest();
-        if (i != null) i.Interact();
+        Interactable closest = FindClosest();
+        if (closest != null) closest.Interact();
     }
 
     public void OnInventory(InputAction.CallbackContext context)
     {
         if (!context.started) return;
+
+        InventoryPressed = true;
 
         if (PlayerUIManager.Instance != null)
             PlayerUIManager.Instance.ToggleInventory();
@@ -109,6 +134,8 @@ public class InputHandler : MonoBehaviour
     {
         if (!context.started) return;
 
+        CraftingPressed = true;
+
         if (UIManager.Instance != null)
             UIManager.Instance.ToggleCrafting();
     }
@@ -116,6 +143,8 @@ public class InputHandler : MonoBehaviour
     public void OnCancel(InputAction.CallbackContext context)
     {
         if (!context.started) return;
+
+        CancelPressed = true;
 
         UIManager.Instance?.CloseAllStandardPanels();
     }
@@ -129,21 +158,28 @@ public class InputHandler : MonoBehaviour
 
     private Interactable FindClosest()
     {
-        Interactable[] list = Object.FindObjectsByType<Interactable>(FindObjectsSortMode.None);
+        if (PlayerController.Instance == null) return null;
 
-        float dist = 999f;
+        Vector3 playerPos = PlayerController.Instance.transform.position;
+        float minDistanceSq = defaultInteractionRadius * defaultInteractionRadius;
         Interactable closest = null;
 
-        Vector3 playerPos = PlayerController.Instance != null ? PlayerController.Instance.transform.position : transform.position;
-
-        foreach (var i in list)
+        for (int i = registeredInteractables.Count - 1; i >= 0; i--)
         {
-            float d = Vector2.Distance(playerPos, i.transform.position);
+            Interactable candidate = registeredInteractables[i];
 
-            if (d < 2f && d < dist)
+            if (candidate == null)
             {
-                dist = d;
-                closest = i;
+                registeredInteractables.RemoveAt(i);
+                continue;
+            }
+
+            float sqrDist = (playerPos - candidate.transform.position).sqrMagnitude;
+
+            if (sqrDist < minDistanceSq)
+            {
+                minDistanceSq = sqrDist;
+                closest = candidate;
             }
         }
 
