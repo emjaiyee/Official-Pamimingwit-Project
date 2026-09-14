@@ -183,35 +183,19 @@ public class GameManager : MonoBehaviour
     {
         if (postProcessingVolume == null) return;
 
-        if (hours == 5)
+        float currentTotalHours = hours + (minutes / 60f) + (seconds / 3600f);
+
+        if (currentTotalHours >= 5f && currentTotalHours < 6f)
         {
-            postProcessingVolume.weight = 1f - ((float)minutes / 60f);
+            postProcessingVolume.weight = 1f - (currentTotalHours - 5f);
         }
-        else if (hours >= 6 && hours < 17)
+        else if (currentTotalHours >= 6f && currentTotalHours < 18f)
         {
             postProcessingVolume.weight = 0f;
         }
-        else if (hours == 17)
+        else if (currentTotalHours >= 18f && currentTotalHours < 20f)
         {
-            if (minutes < 30)
-            {
-                postProcessingVolume.weight = 0f;
-            }
-            else
-            {
-                postProcessingVolume.weight = (float)(minutes - 30) / 30f;
-            }
-        }
-        else if (hours == 18)
-        {
-            if (minutes < 30)
-            {
-                postProcessingVolume.weight = 0.5f + ((float)minutes / 60f);
-            }
-            else
-            {
-                postProcessingVolume.weight = 1f;
-            }
+            postProcessingVolume.weight = Mathf.Clamp01((currentTotalHours - 18f) / 2f);
         }
         else
         {
