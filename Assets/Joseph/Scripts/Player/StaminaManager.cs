@@ -16,7 +16,8 @@ public class StaminaManager : MonoBehaviour
     [SerializeField] private float fatigueMaxStaminaMultiplier = 0.5f;
 
     private float currentStamina;
-    private bool isFatiguedNextDay = false;
+    private bool isFatiguedToday = false;
+    private bool pendingFatigueNextDay = false;
     private bool isPassingOut = false;
 
     public event Action<float, float> OnStaminaChanged;
@@ -49,7 +50,6 @@ public class StaminaManager : MonoBehaviour
 
     private void Update()
     {
-        // Regenerate stamina if below effective max and not working late
         float effectiveMax = GetEffectiveMaxStamina();
 
         if (currentStamina < effectiveMax && (GameManager.Instance == null || !GameManager.Instance.IsLateNight))
@@ -63,18 +63,16 @@ public class StaminaManager : MonoBehaviour
     private void HandleDayAdvanced()
     {
         isPassingOut = false;
+        
+        // Transfer queued fatigue to current active day state
+        isFatiguedToday = pendingFatigueNextDay;
+        pendingFatigueNextDay = false;
 
-        if (isFatiguedNextDay)
+        currentStamina = GetEffectiveMaxStamina();
+
+        if (isFatiguedToday)
         {
-            // Apply fatigue penalty for today
-            currentStamina = GetEffectiveMaxStamina();
             UIManager.Instance?.ShowMessage("Feeling sluggish from passing out last night...");
-            isFatiguedNextDay = false; // Reset flag for subsequent days
-        }
-        else
-        {
-            // Full recovery when sleeping normally
-            RefillStamina();
         }
 
         OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
@@ -88,12 +86,12 @@ public class StaminaManager : MonoBehaviour
 
     public void SetFatiguedForNextDay(bool state)
     {
-        isFatiguedNextDay = state;
+        pendingFatigueNextDay = state;
     }
 
     public float GetEffectiveMaxStamina()
     {
-        return isFatiguedNextDay ? (maxStamina * fatigueMaxStaminaMultiplier) : maxStamina;
+        return isFatiguedToday ? (maxStamina * fatigueMaxStaminaMultiplier) : maxStamina;
     }
 
     public void RefillStamina()
