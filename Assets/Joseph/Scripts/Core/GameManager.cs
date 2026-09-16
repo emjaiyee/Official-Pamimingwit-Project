@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System;
 using TMPro;
 using UnityEngine.Rendering;
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
                     hours = 0;
                 }
 
-                if (hours == 6 && !IsTransitioningDay)
+                if (hours == 0 && !IsTransitioningDay)
                 {
                     TriggerMorningTransition(false);
                     return;
@@ -187,7 +187,7 @@ public class GameManager : MonoBehaviour
 
         if (currentTotalHours >= 5f && currentTotalHours < 6f)
         {
-            postProcessingVolume.weight = 1f - (currentTotalHours - 5f);
+            postProcessingVolume.weight = 0.5f - (currentTotalHours - 5f);
         }
         else if (currentTotalHours >= 6f && currentTotalHours < 18f)
         {
@@ -199,7 +199,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            postProcessingVolume.weight = 1f;
+            postProcessingVolume.weight = 0.5f;
         }
     }
 
