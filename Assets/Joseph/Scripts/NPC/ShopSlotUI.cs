@@ -8,17 +8,44 @@ public class ShopSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public Image icon;
     public TextMeshProUGUI itemName;
     public TextMeshProUGUI priceText;
+    public TextMeshProUGUI stockText;
     
     private ItemData item;
 
-    public void Setup(ItemData newItem)
+    private void Awake()
+    {
+        if (stockText == null)
+        {
+            foreach (TextMeshProUGUI text in GetComponentsInChildren<TextMeshProUGUI>(true))
+            {
+                if (text != null && text.gameObject.name == "QuantityText")
+                {
+                    stockText = text;
+                    break;
+                }
+            }
+        }
+    }
+
+    public void Setup(ItemData newItem, int price, int stock)
     {
         item = newItem;
         if (item == null) return;
 
         if (icon != null) icon.sprite = item.icon;
-        if (itemName != null) itemName.text = item.itemName;
-        if (priceText != null) priceText.text = item.price.ToString();
+
+        if (itemName != null)
+        {
+            itemName.text = stockText != null ? item.itemName : $"{item.itemName} ({stock})";
+        }
+
+        if (stockText != null)
+        {
+            stockText.text = stock.ToString();
+            stockText.gameObject.SetActive(true);
+        }
+
+        if (priceText != null) priceText.text = price.ToString();
     }
 
     public void OnBuyClicked()
