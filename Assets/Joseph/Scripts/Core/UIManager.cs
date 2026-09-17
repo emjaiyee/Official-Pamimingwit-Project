@@ -154,9 +154,10 @@ public class UIManager : MonoBehaviour
         GameManager.Instance?.AdvanceDay();
         GameEvents.TriggerSound(SoundType.Rooster);
 
-        if (dayTransitionText != null)
+        if (dayTransitionText != null && GameManager.Instance != null)
         {
-            string dayStr = $"DAY: {GameManager.Instance.currentDay}";
+            string dayName = GameManager.Instance.GetCurrentDayOfWeekName();
+            string dayStr = $"DAY: {dayName} ({GameManager.Instance.currentDay})";
             yield return StartCoroutine(TypewriterEffect(dayTransitionText, dayStr));
         }
 
@@ -251,7 +252,7 @@ public class UIManager : MonoBehaviour
     // ---------------------------
     // SHOPS
     // ---------------------------
-    private void RefreshShopStock(ItemData[] stock, Transform targetContent)
+    private void RefreshShopStock(System.Collections.Generic.List<ShopStockEntry> stock, Transform targetContent)
     {
         if (targetContent == null || shopSlotPrefab == null) return;
 
@@ -260,11 +261,11 @@ public class UIManager : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        foreach (ItemData item in stock)
+        foreach (ShopStockEntry entry in stock)
         {
             GameObject obj = Instantiate(shopSlotPrefab, targetContent);
             ShopSlotUI slot = obj.GetComponent<ShopSlotUI>();
-            if (slot != null) slot.Setup(item);
+            if (slot != null) slot.Setup(entry.item, entry.GetPrice(), entry.currentStock);
         }
     }
 
@@ -272,7 +273,7 @@ public class UIManager : MonoBehaviour
     {
         if (shopPanel == null) return;
         currentShopType = ActiveShopType.General;
-        if (ShopManager.Instance != null) RefreshShopStock(ShopManager.Instance.shopStock, shopContent);
+        if (ShopManager.Instance != null) RefreshShopStock(ShopManager.Instance.GetAvailableStock(), shopContent);
         TogglePanelState(shopPanel, true);
 
         if (PlayerUIManager.Instance != null && PlayerUIManager.Instance.InventoryPanel != null)
@@ -285,7 +286,7 @@ public class UIManager : MonoBehaviour
     {
         if (industrialShopPanel == null) return;
         currentShopType = ActiveShopType.Industrial;
-        if (IndustrialShopManager.Instance != null) RefreshShopStock(IndustrialShopManager.Instance.shopStock, industrialShopContent);
+        if (IndustrialShopManager.Instance != null) RefreshShopStock(IndustrialShopManager.Instance.GetAvailableStock(), industrialShopContent);
         TogglePanelState(industrialShopPanel, true);
 
         if (PlayerUIManager.Instance != null && PlayerUIManager.Instance.InventoryPanel != null)

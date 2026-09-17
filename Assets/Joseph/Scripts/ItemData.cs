@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 
-public enum ItemType { Tool, Material, Fish, Junk, Bait, Deployable, Artifact }
+public enum ItemType { Tool, Material, Fish, Junk, Bait, Deployable, Artifact, Consumable }
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
 public class ItemData : ScriptableObject
 {
-    public int ID; // stable ID (IMPORTANT)
+    public int ID;
     public GameObject prefab;
 
     public string itemName;

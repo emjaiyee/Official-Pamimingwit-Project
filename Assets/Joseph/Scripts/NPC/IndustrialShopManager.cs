@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class IndustrialShopManager : MonoBehaviour
 {
@@ -7,26 +8,89 @@ public class IndustrialShopManager : MonoBehaviour
     [Header("Settings")]
     public float sellMultiplier = 0.7f; // Industrial shops pay less for standard goods
     public ItemData[] shopStock;
+    public ShopStockEntry[] dynamicStock;
 
     void Awake()
     {
         Instance = this;
+        InitializeDynamicStock();
+        GameManager.OnDayAdvanced += RefreshDynamicStock;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.OnDayAdvanced -= RefreshDynamicStock;
+    }
+
+    private void InitializeDynamicStock()
+    {
+        if (dynamicStock == null || dynamicStock.Length == 0)
+        {
+            dynamicStock = new ShopStockEntry[shopStock != null ? shopStock.Length : 0];
+            for (int i = 0; i < dynamicStock.Length; i++)
+                dynamicStock[i] = new ShopStockEntry { item = shopStock[i] };
+        }
+
+        RefreshDynamicStock();
+    }
+
+    private void RefreshDynamicStock()
+    {
+        int day = GameManager.Instance != null ? GameManager.Instance.currentDay : 1;
+        foreach (ShopStockEntry entry in dynamicStock)
+            entry?.RefreshForDay(day);
+    }
+
+    public List<ShopStockEntry> GetAvailableStock()
+    {
+        RefreshDynamicStock();
+        List<ShopStockEntry> available = new();
+        foreach (ShopStockEntry entry in dynamicStock)
+        {
+            if (entry != null && entry.item != null && entry.currentStock > 0)
+                available.Add(entry);
+        }
+        return available;
+    }
+
+    public int GetPrice(ItemData item)
+    {
+        ShopStockEntry entry = FindEntry(item);
+        return entry != null ? entry.GetPrice() : item != null ? item.price : 0;
+    }
+
+    private ShopStockEntry FindEntry(ItemData item)
+    {
+        RefreshDynamicStock();
+        foreach (ShopStockEntry entry in dynamicStock)
+            if (entry != null && entry.item == item) return entry;
+        return null;
     }
 
     public void BuyItem(ItemData item)
     {
         if (item == null || PlayerWallet.Instance == null) return;
 
-        if (PlayerWallet.Instance.SpendCoins(item.price))
+        ShopStockEntry entry = FindEntry(item);
+        if (entry == null || entry.currentStock <= 0)
+        {
+            UIManager.Instance?.ShowMessage("This item is out of stock today.");
+            return;
+        }
+
+        int price = entry.GetPrice();
+        if (PlayerWallet.Instance.SpendCoins(price))
         {
             if (Inventory.Instance.AddItem(item, 1))
             {
+                entry.RecordPurchase();
                 UIManager.Instance?.ShowMessage($"Purchased {item.itemName}!");
+                RefreshOpenShop();
             }
             else
             {
                 // Refund if inventory is full
-                PlayerWallet.Instance.AddCoins(item.price);
+                PlayerWallet.Instance.AddCoins(price);
                 UIManager.Instance?.ShowMessage("Inventory Full!");
             }
         }
@@ -36,12 +100,18 @@ public class IndustrialShopManager : MonoBehaviour
         }
     }
 
+    public void RefreshOpenShop()
+    {
+        if (UIManager.Instance != null && UIManager.Instance.currentShopType == UIManager.ActiveShopType.Industrial)
+        UIManager.Instance.OpenIndustrialShop();
+    }
+
     public void SellItem(ItemSlotUI slot)
     {
         InventoryItem invItem = slot.GetItem();
         if (invItem == null || invItem.item == null) return;
 
-        int totalValue = Mathf.RoundToInt(invItem.item.price * sellMultiplier * invItem.amount);
+        int totalValue = Mathf.RoundToInt(GetPrice(invItem.item) * sellMultiplier * invItem.amount);
 
         string prompt = $"Sell {invItem.amount}x {invItem.item.itemName} for {totalValue} coins?";
 
@@ -59,10 +129,12 @@ public class IndustrialShopManager : MonoBehaviour
                         SustainabilityManager.Instance?.Add(fish.sustainabilityPenalty * invItem.amount);
                     }
 
+                    FindEntry(invItem.item)?.RecordSale(invItem.amount);
                     PlayerWallet.Instance.AddCoins(totalValue);
                     invItem.item = null;
                     invItem.amount = 0;
                     Inventory.Instance?.OnInventoryChanged?.Invoke();
+                    RefreshOpenShop();
                 });
             },
             "Cancel",
