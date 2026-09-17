@@ -203,9 +203,25 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public string GetDayOfWeekName(int dayNumber)
+    {
+        string[] weekdays = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+        int normalizedIndex = ((dayNumber - 1) % weekdays.Length + weekdays.Length) % weekdays.Length;
+        return weekdays[normalizedIndex];
+    }
+
+    public string GetCurrentDayOfWeekName() => GetDayOfWeekName(currentDay);
+
     public void DisplayTime()
     {
-        if (dayText != null) dayText.text = $"Day: {currentDay}";
+        string dayName = GetCurrentDayOfWeekName();
+
+        if (dayText != null) dayText.text = $"{dayName} - Day {currentDay}";
+
+        if (UIManager.Instance != null && UIManager.Instance.dayHUDText != null)
+        {
+            UIManager.Instance.dayHUDText.text = dayName;
+        }
 
         int displayHour = hours % 12;
         if (displayHour == 0) displayHour = 12;

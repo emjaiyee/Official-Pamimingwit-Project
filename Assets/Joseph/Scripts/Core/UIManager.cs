@@ -154,9 +154,10 @@ public class UIManager : MonoBehaviour
         GameManager.Instance?.AdvanceDay();
         GameEvents.TriggerSound(SoundType.Rooster);
 
-        if (dayTransitionText != null)
+        if (dayTransitionText != null && GameManager.Instance != null)
         {
-            string dayStr = $"DAY: {GameManager.Instance.currentDay}";
+            string dayName = GameManager.Instance.GetCurrentDayOfWeekName();
+            string dayStr = $"DAY: {dayName} ({GameManager.Instance.currentDay})";
             yield return StartCoroutine(TypewriterEffect(dayTransitionText, dayStr));
         }
 
