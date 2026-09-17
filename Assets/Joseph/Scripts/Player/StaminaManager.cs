@@ -100,6 +100,20 @@ public class StaminaManager : MonoBehaviour
         OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
     }
 
+    public bool RestoreStamina(float amount)
+    {
+        if (amount <= 0f) return false;
+
+        float previousStamina = currentStamina;
+        currentStamina = Mathf.Clamp(currentStamina + amount, 0f, GetEffectiveMaxStamina());
+
+        if (Mathf.Approximately(previousStamina, currentStamina))
+            return false;
+
+        OnStaminaChanged?.Invoke(currentStamina, GetEffectiveMaxStamina());
+        return true;
+    }
+
     public void SetStamina(float amount)
     {
         currentStamina = Mathf.Clamp(amount, 0, GetEffectiveMaxStamina());

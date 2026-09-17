@@ -96,6 +96,48 @@ public class Inventory : MonoBehaviour
         LateInventoryUpdate();
     }
 
+    public bool TryUseSelectedHotbarConsumable()
+    {
+        if (HotbarManager.Instance == null || HotbarManager.Instance.selectedIndex < 0 || HotbarManager.Instance.selectedIndex >= itemList.Count)
+            return false;
+
+        return TryUseInventoryItem(itemList[HotbarManager.Instance.selectedIndex]);
+    }
+
+    public bool TryUseInventoryItem(InventoryItem slotItem)
+    {
+        if (slotItem == null || slotItem.item == null || !(slotItem.item is ConsumableData consumable))
+            return false;
+
+        if (StaminaManager.Instance == null)
+            return false;
+
+        float maxStamina = StaminaManager.Instance.GetEffectiveMaxStamina();
+        if (StaminaManager.Instance.GetStamina() >= maxStamina)
+        {
+            UIManager.Instance?.ShowMessage($"{consumable.itemName} can't be used right now. You're already at full stamina.");
+            return false;
+        }
+
+        if (!StaminaManager.Instance.RestoreStamina(consumable.staminaRestoreAmount))
+        {
+            UIManager.Instance?.ShowMessage($"{consumable.itemName} can't be used right now.");
+            return false;
+        }
+
+        slotItem.amount--;
+        if (slotItem.amount <= 0)
+        {
+            slotItem.item = null;
+            slotItem.amount = 0;
+            slotItem.quality = FishQuality.None;
+        }
+
+        OnInventoryChanged?.Invoke();
+        LateInventoryUpdate();
+        return true;
+    }
+
     private void LateInventoryUpdate()
     {
         RebuildItemCount();

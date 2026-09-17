@@ -225,6 +225,12 @@ public class ItemSlotUI : MonoBehaviour, IPointerClickHandler, IPointerEnterHand
             }
             else
             {
+                if (currentItem != null && currentItem.item != null && currentItem.item is ConsumableData)
+                {
+                    if (Inventory.Instance != null && Inventory.Instance.TryUseInventoryItem(currentItem))
+                        return;
+                }
+
                 HotbarManager.Instance?.SelectSlot(index);
             }
         }

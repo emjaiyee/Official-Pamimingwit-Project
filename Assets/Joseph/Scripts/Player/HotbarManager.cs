@@ -27,6 +27,17 @@ public class HotbarManager : MonoBehaviour
         if (UIManager.Instance != null && UIManager.Instance.IsUIOpen()) return;
 
         HandleSelectionInput();
+        HandleUseInput();
+    }
+
+    private void HandleUseInput()
+    {
+        if (Keyboard.current == null) return;
+
+        if (Keyboard.current.eKey.wasPressedThisFrame)
+        {
+            Inventory.Instance?.TryUseSelectedHotbarConsumable();
+        }
     }
 
     private void HandleSelectionInput()
