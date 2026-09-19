@@ -24,6 +24,7 @@ public class SaveData
     public List<InventorySaveData> inventorySaveData;
     public List<QuestProgress> questProgressData;
     public List<NarrativeTriggerState> narrativeTriggerStates;
+    public List<int> revealedFishIds;
 
     public List<string> destroyedObjectIDs;
     public List<SpawnedTrashData> spawnedBeachTrash;

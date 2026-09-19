@@ -1,4 +1,5 @@
 ﻿﻿using System;
+using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -64,6 +65,13 @@ public class UIManager : MonoBehaviour
     [Header("Quest UI")]
     [SerializeField] private GameObject questPanel;
 
+    [Header("Fish Index UI")]
+    public GameObject fishIndexPanel;
+    public Transform fishIndexGrid;
+    public GameObject fishIndexEntryPrefab;
+    public Button fishIndexToggleButton;
+    public Sprite fishIndexLockedSprite;
+
     [Header("Game Messages")]
     [SerializeField] private TextMeshProUGUI messageText;
 
@@ -88,6 +96,17 @@ public class UIManager : MonoBehaviour
         if (cleaningPanel != null) cleaningPanel.SetActive(false);
         if (cutscenePanel != null) cutscenePanel.SetActive(false);
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
+        if (fishIndexPanel != null) fishIndexPanel.SetActive(false);
+
+        GameEvents.OnItemCaught += RefreshFishIndex;
+
+        if (fishIndexToggleButton != null)
+        {
+            fishIndexToggleButton.onClick.RemoveAllListeners();
+            fishIndexToggleButton.onClick.AddListener(ToggleFishIndex);
+        }
+
+        RefreshFishIndex();
 
         if (cutsceneFadeOverlay != null && (CutsceneManager.Instance == null || !CutsceneManager.Instance.IsCutsceneActive))
         {
@@ -98,6 +117,11 @@ public class UIManager : MonoBehaviour
         {
             dayTransitionOverlay.alpha = SaveController.shouldLoadGame ? 1f : 0f;
         }
+    }
+
+    private void OnDestroy()
+    {
+        GameEvents.OnItemCaught -= RefreshFishIndex;
     }
 
     // ---------------------------
@@ -341,6 +365,106 @@ public class UIManager : MonoBehaviour
     public void ToggleCrafting() => TogglePanelState(craftingPanel);
     public void ToggleQuest() => TogglePanelState(questPanel);
 
+    public void ToggleFishIndex()
+    {
+        if (fishIndexPanel == null)
+            return;
+
+        RefreshFishIndex();
+        TogglePanelState(fishIndexPanel);
+    }
+
+    public void RefreshFishIndex(ItemData caughtItem = null)
+    {
+        if (fishIndexGrid == null)
+            return;
+
+        foreach (Transform child in fishIndexGrid)
+        {
+            Destroy(child.gameObject);
+        }
+
+        if (FishIndex.Instance == null)
+            FishIndex.EnsureInstance();
+
+        IReadOnlyList<FishData> fishList = FishIndex.Instance != null ? FishIndex.Instance.GetAllFish() : null;
+        if (fishList == null)
+            return;
+
+        foreach (FishData fish in fishList)
+        {
+            if (fish == null)
+                continue;
+
+            GameObject entry = fishIndexEntryPrefab != null
+                ? Instantiate(fishIndexEntryPrefab, fishIndexGrid)
+                : new GameObject(fish.itemName, typeof(RectTransform));
+
+            RectTransform entryRect = entry.GetComponent<RectTransform>();
+            if (entryRect != null)
+            {
+                entryRect.SetParent(fishIndexGrid, false);
+            }
+
+            Image background = entry.GetComponent<Image>();
+            if (background == null)
+            {
+                background = entry.AddComponent<Image>();
+                background.color = new Color(1f, 1f, 1f, 0.15f);
+            }
+
+            Transform labelTransform = entry.transform.Find("Label");
+            TextMeshProUGUI label = labelTransform != null ? labelTransform.GetComponent<TextMeshProUGUI>() : null;
+            if (label == null)
+            {
+                GameObject textObj = new GameObject("Label", typeof(RectTransform));
+                textObj.transform.SetParent(entry.transform, false);
+                label = textObj.AddComponent<TextMeshProUGUI>();
+                label.alignment = TextAlignmentOptions.Center;
+                label.fontSize = 18;
+                label.color = Color.white;
+                label.rectTransform.anchorMin = new Vector2(0f, 0f);
+                label.rectTransform.anchorMax = new Vector2(1f, 1f);
+                label.rectTransform.offsetMin = Vector2.zero;
+                label.rectTransform.offsetMax = Vector2.zero;
+            }
+
+            Transform iconTransform = entry.transform.Find("Icon");
+            Image icon = iconTransform != null ? iconTransform.GetComponent<Image>() : null;
+            if (icon == null)
+            {
+                GameObject iconObj = new GameObject("Icon", typeof(RectTransform));
+                iconObj.transform.SetParent(entry.transform, false);
+                icon = iconObj.AddComponent<Image>();
+                icon.rectTransform.anchorMin = new Vector2(0f, 0.5f);
+                icon.rectTransform.anchorMax = new Vector2(0f, 0.5f);
+                icon.rectTransform.sizeDelta = new Vector2(32f, 32f);
+                icon.rectTransform.anchoredPosition = new Vector2(18f, 0f);
+            }
+
+            bool unlocked = FishIndex.Instance.IsFishUnlocked(fish);
+            if (unlocked)
+            {
+                icon.sprite = fish.icon;
+                icon.enabled = fish.icon != null;
+                label.text = fish.itemName;
+                label.color = Color.white;
+                background.color = new Color(0.2f, 0.6f, 0.25f, 0.75f);
+            }
+            else
+            {
+                icon.sprite = fishIndexLockedSprite != null ? fishIndexLockedSprite : fish.icon;
+                icon.enabled = true;
+                Color c = icon.color;
+                c.a = 0.55f;
+                icon.color = c;
+                label.text = "????";
+                label.color = new Color(0.8f, 0.8f, 0.8f, 0.8f);
+                background.color = new Color(0.15f, 0.15f, 0.15f, 0.85f);
+            }
+        }
+    }
+
     public void CloseAllStandardPanels()
     {
         if ((dialoguePanel != null && dialoguePanel.activeSelf) ||
@@ -356,6 +480,7 @@ public class UIManager : MonoBehaviour
 
         if (craftingPanel != null && craftingPanel.activeSelf) { TogglePanelState(craftingPanel, false); closedSomething = true; }
         if (questPanel != null && questPanel.activeSelf) { TogglePanelState(questPanel, false); closedSomething = true; }
+        if (fishIndexPanel != null && fishIndexPanel.activeSelf) { TogglePanelState(fishIndexPanel, false); closedSomething = true; }
         if (choicePanel != null && choicePanel.activeSelf) { HideChoicePanel(); closedSomething = true; }
         if (cleaningPanel != null && cleaningPanel.activeSelf) { TogglePanelState(cleaningPanel, false); closedSomething = true; }
 
@@ -431,6 +556,7 @@ public class UIManager : MonoBehaviour
                (industrialShopPanel != null && industrialShopPanel.activeSelf) ||
                (trashDisposalPanel != null && trashDisposalPanel.activeSelf) ||
                (questPanel != null && questPanel.activeSelf) ||
+               (fishIndexPanel != null && fishIndexPanel.activeSelf) ||
                (choicePanel != null && choicePanel.activeSelf) ||
                (cleaningPanel != null && cleaningPanel.activeSelf) ||
                (cutscenePanel != null && cutscenePanel.activeSelf) ||

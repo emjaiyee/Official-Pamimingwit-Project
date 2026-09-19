@@ -60,6 +60,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        FishIndex.EnsureInstance();
+
         if (postProcessingVolume == null)
         {
             postProcessingVolume = GetComponent<Volume>();
