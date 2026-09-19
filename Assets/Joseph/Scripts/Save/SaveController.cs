@@ -124,6 +124,10 @@ public class SaveController : MonoBehaviour
                 ? Inventory.Instance.GetInventoryItems()
                 : null,
 
+            revealedFishIds = FishIndex.Instance != null
+                ? FishIndex.Instance.GetUnlockedFishIds()
+                : new System.Collections.Generic.List<int>(),
+
             coins = PlayerWallet.Instance != null ? PlayerWallet.Instance.coins : 0,
             sustainability = SustainabilityManager.Instance != null ? SustainabilityManager.Instance.CurrentSustainability : 0,
             currentDay = GameManager.Instance != null ? GameManager.Instance.currentDay : 1,
@@ -188,6 +192,9 @@ public class SaveController : MonoBehaviour
 
         if (Inventory.Instance != null)
             Inventory.Instance.SetInventoryItems(saveData.inventorySaveData);
+
+        if (FishIndex.Instance != null)
+            FishIndex.Instance.LoadUnlockedFishIds(saveData.revealedFishIds);
 
         if (PlayerWallet.Instance != null)
         {
