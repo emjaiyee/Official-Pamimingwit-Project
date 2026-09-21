@@ -1,32 +1,33 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+[DisallowMultipleComponent]
 public class RippleBobUI : MonoBehaviour
 {
     [Header("Ripple Settings (match shader)")]
-    public RectTransform rippleCenter;
-    public float rippleSpeed = 1f;
-    public float rippleScale = 0.05f;
-    public float rippleStrength = 10f;
+    [SerializeField] private RectTransform rippleCenter;
+    [SerializeField] private float rippleSpeed = 1f;
+    [SerializeField] private float rippleScale = 0.05f;
+    [SerializeField] private float rippleStrength = 10f;
 
     [Header("Shadow")]
-    public RectTransform shadow;
-    public float shadowDelay = 0.2f;
-    public float shadowStrengthMultiplier = 0.4f;
+    [SerializeField] private RectTransform shadow;
+    [SerializeField] private float shadowDelay = 0.2f;
+    [SerializeField] private float shadowStrengthMultiplier = 0.4f;
 
     [Header("Extra Motion")]
-    public bool useRotation = true;
-    public float rotationAmount = 3f;
+    [SerializeField] private bool useRotation = true;
+    [SerializeField] private float rotationAmount = 3f;
 
-    public bool useScale = true;
-    public float scaleAmount = 0.05f;
+    [SerializeField] private bool useScale = true;
+    [SerializeField] private float scaleAmount = 0.05f;
 
     private RectTransform rt;
     private Vector2 startPos;
     private Vector2 shadowStartPos;
     private Image shadowImage;
 
-    void Start()
+    private void Awake()
     {
         rt = GetComponent<RectTransform>();
         startPos = rt.anchoredPosition;
@@ -38,53 +39,60 @@ public class RippleBobUI : MonoBehaviour
         }
     }
 
-    void Update()
+    private void OnEnable()
+    {
+        // Re-anchor start position when object reactivates to prevent canvas shifts
+        startPos = rt.anchoredPosition;
+        if (shadow != null)
+        {
+            shadowStartPos = shadow.anchoredPosition;
+        }
+    }
+
+    private void Update()
     {
         if (rippleCenter == null) return;
 
-        // Distance (UI space)
-        float distance = Vector2.Distance(rt.anchoredPosition, rippleCenter.anchoredPosition);
+        // Sample distance using immutable startPos to prevent positional drift
+        float distance = Vector2.Distance(startPos, rippleCenter.anchoredPosition);
+        float time = Time.time;
 
-        // MAIN WAVE
-        float wave = Mathf.Sin(distance * rippleScale - Time.time * rippleSpeed);
+        // Main Wave Waveform Calculation
+        float wave = Mathf.Sin(distance * rippleScale - time * rippleSpeed);
 
-        // 🌊 BUTTON MOVEMENT
-        rt.anchoredPosition = startPos + Vector2.up * wave * rippleStrength;
+        // Position Updates
+        rt.anchoredPosition = startPos + Vector2.up * (wave * rippleStrength);
 
-        // Rotation
+        // Rotation Matrix Updates
         if (useRotation)
         {
             float rot = wave * rotationAmount;
-            rt.localRotation = Quaternion.Euler(0, 0, rot);
+            rt.localRotation = Quaternion.Euler(0f, 0f, rot);
         }
 
-        // Scale
+        // Scale Factor Updates
         if (useScale)
         {
-            float scale = 1 + wave * scaleAmount;
-            rt.localScale = new Vector3(scale, scale, 1);
+            float scale = 1f + wave * scaleAmount;
+            rt.localScale = new Vector3(scale, scale, 1f);
         }
 
-        // 🌑 SHADOW (soft water style FIXED)
+        // Shadow Processing Loop
         if (shadow != null)
         {
-            float shadowWave = Mathf.Sin(distance * rippleScale - (Time.time - shadowDelay) * rippleSpeed);
+            float shadowWave = Mathf.Sin(distance * rippleScale - (time - shadowDelay) * rippleSpeed);
 
-            // Slight movement only (not full bob)
-            shadow.anchoredPosition = shadowStartPos + Vector2.up * shadowWave * (rippleStrength * 0.15f);
+            shadow.anchoredPosition = shadowStartPos + Vector2.up * (shadowWave * (rippleStrength * 0.15f * shadowStrengthMultiplier));
 
-            // Soft elliptical scaling (top-down feel)
-            float scale = 1f - shadowWave * 0.08f;
-            shadow.localScale = new Vector3(scale * 1.2f, scale * 0.7f, 1f);
+            float shadowScale = 1f - shadowWave * 0.08f;
+            shadow.localScale = new Vector3(shadowScale * 1.2f, shadowScale * 0.7f, 1f);
 
-            // Fade alpha to simulate blur / water diffusion
             if (shadowImage != null)
             {
                 float alpha = 0.25f + (1f - Mathf.Abs(shadowWave)) * 0.25f;
-
-                Color c = shadowImage.color;
-                c.a = alpha;
-                shadowImage.color = c;
+                Color color = shadowImage.color;
+                color.a = alpha;
+                shadowImage.color = color;
             }
         }
     }
