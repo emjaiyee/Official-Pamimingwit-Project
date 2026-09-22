@@ -447,17 +447,16 @@ public class UIManager : MonoBehaviour
             {
                 icon.sprite = fish.icon;
                 icon.enabled = fish.icon != null;
+                icon.color = Color.white;
                 label.text = fish.itemName;
                 label.color = Color.white;
                 background.color = new Color(0.2f, 0.6f, 0.25f, 0.75f);
             }
             else
             {
-                icon.sprite = fishIndexLockedSprite != null ? fishIndexLockedSprite : fish.icon;
-                icon.enabled = true;
-                Color c = icon.color;
-                c.a = 0.55f;
-                icon.color = c;
+                icon.sprite = fish.icon != null ? fish.icon : fishIndexLockedSprite;
+                icon.enabled = icon.sprite != null;
+                icon.color = Color.black;
                 label.text = "????";
                 label.color = new Color(0.8f, 0.8f, 0.8f, 0.8f);
                 background.color = new Color(0.15f, 0.15f, 0.15f, 0.85f);
