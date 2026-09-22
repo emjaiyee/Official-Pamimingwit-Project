@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
@@ -43,6 +43,7 @@ public class UIManager : MonoBehaviour
     public Button cleanUpButton;
     public TextMeshProUGUI cleanUpText;
     public GameObject cleaningPanel;
+    public GameObject seaweedPanel;
 
     [Header("Cutscene UI")]
     public GameObject cutscenePanel;
@@ -94,6 +95,7 @@ public class UIManager : MonoBehaviour
         if (choicePanel != null) choicePanel.SetActive(false);
         if (questPanel != null) questPanel.SetActive(false);
         if (cleaningPanel != null) cleaningPanel.SetActive(false);
+        if (seaweedPanel != null) seaweedPanel.SetActive(false);
         if (cutscenePanel != null) cutscenePanel.SetActive(false);
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
         if (fishIndexPanel != null) fishIndexPanel.SetActive(false);
@@ -447,17 +449,16 @@ public class UIManager : MonoBehaviour
             {
                 icon.sprite = fish.icon;
                 icon.enabled = fish.icon != null;
+                icon.color = Color.white;
                 label.text = fish.itemName;
                 label.color = Color.white;
                 background.color = new Color(0.2f, 0.6f, 0.25f, 0.75f);
             }
             else
             {
-                icon.sprite = fishIndexLockedSprite != null ? fishIndexLockedSprite : fish.icon;
-                icon.enabled = true;
-                Color c = icon.color;
-                c.a = 0.55f;
-                icon.color = c;
+                icon.sprite = fish.icon != null ? fish.icon : fishIndexLockedSprite;
+                icon.enabled = icon.sprite != null;
+                icon.color = Color.black;
                 label.text = "????";
                 label.color = new Color(0.8f, 0.8f, 0.8f, 0.8f);
                 background.color = new Color(0.15f, 0.15f, 0.15f, 0.85f);
@@ -483,6 +484,7 @@ public class UIManager : MonoBehaviour
         if (fishIndexPanel != null && fishIndexPanel.activeSelf) { TogglePanelState(fishIndexPanel, false); closedSomething = true; }
         if (choicePanel != null && choicePanel.activeSelf) { HideChoicePanel(); closedSomething = true; }
         if (cleaningPanel != null && cleaningPanel.activeSelf) { TogglePanelState(cleaningPanel, false); closedSomething = true; }
+        if (seaweedPanel != null && seaweedPanel.activeSelf) { TogglePanelState(seaweedPanel, false); closedSomething = true; }
 
         if ((shopPanel != null && shopPanel.activeSelf) ||
             (industrialShopPanel != null && industrialShopPanel.activeSelf) ||
@@ -559,6 +561,7 @@ public class UIManager : MonoBehaviour
                (fishIndexPanel != null && fishIndexPanel.activeSelf) ||
                (choicePanel != null && choicePanel.activeSelf) ||
                (cleaningPanel != null && cleaningPanel.activeSelf) ||
+               (seaweedPanel != null && seaweedPanel.activeSelf) ||
                (cutscenePanel != null && cutscenePanel.activeSelf) ||
                (dialoguePanel != null && dialoguePanel.activeSelf);
     }
