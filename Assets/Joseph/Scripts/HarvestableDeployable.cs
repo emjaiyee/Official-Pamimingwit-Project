@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public enum DeployableType { Cage, Farm }
+public enum DeployableType { Cage, Farm, Coral, Seaweed }
 
 public class HarvestableDeployable : MonoBehaviour, IInteractable
 {
     [Header("Harvest Settings")]
     public DeployableType deployableType;
     public ItemData resultItem;
+    [Tooltip("Items randomly awarded when this deployable is successfully harvested.")]
+    public ItemData[] harvestPool;
     public int amount = 4;
     public float readyTime = 60f;
     [Tooltip("Positive for sustainable farms, negative for illegal cages.")]
     public int sustainabilityEffect = 0;
 
     [Header("Visuals")]
+    public Sprite seedlingSprite;
     public Sprite growingSprite;
     public Sprite readySprite;
     
@@ -35,32 +38,31 @@ public class HarvestableDeployable : MonoBehaviour, IInteractable
     private Vector3 basePosition;
     private bool isInWater;
     private float rippleTimer;
+    private bool isSeaweed => deployableType == DeployableType.Seaweed;
 
-    void Start()
+    private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        if (sr != null && growingSprite != null) sr.sprite = growingSprite;
-        //if (readyIndicator != null) readyIndicator.gameObject.SetActive(false);
+        if (sr != null)
+        {
+            sr.sprite = isSeaweed && seedlingSprite != null ? seedlingSprite : growingSprite;
+        }
 
         basePosition = transform.position;
 
-        // Check if placed in water using the layer defined in FishingManager
         if (FishingManager.Instance != null)
         {
             isInWater = Physics2D.OverlapCircle(transform.position, 0.1f, FishingManager.Instance.waterLayer);
         }
     }
 
-    void Update()
+    private void Update()
     {
-        // Handle water visuals regardless of readiness
         if (isInWater)
         {
-            // Gentle vertical bobbing
             float yOffset = Mathf.Sin(Time.time * bobSpeed) * bobAmount;
             transform.position = basePosition + new Vector3(0, yOffset, 0);
 
-            // Spawning ripples
             rippleTimer += Time.deltaTime;
             if (rippleTimer >= rippleInterval)
             {
@@ -92,7 +94,10 @@ public class HarvestableDeployable : MonoBehaviour, IInteractable
             {
                 spawnedIndicator = Instantiate(readyIndicatorPrefab, transform.position + indicatorOffset, Quaternion.identity);
             }
-        
+        }
+        else if (isSeaweed && sr != null && growingSprite != null && timer >= readyTime * 0.34f)
+        {
+            sr.sprite = growingSprite;
         }
     }
 
@@ -100,23 +105,36 @@ public class HarvestableDeployable : MonoBehaviour, IInteractable
     {
         if (!isReady) return;
 
-        // Random yield/haul: minimum of 1 and max of 4
-        int finalHaul = Random.Range(1, 5);
+        if (isSeaweed)
+        {
+            if (SeaweedHarvestMinigame.Instance != null)
+            {
+                SeaweedHarvestMinigame.Instance.StartGame(this);
+            }
+            else
+            {
+                Debug.LogError("[HarvestableDeployable] SeaweedHarvestMinigame instance missing in scene!");
+            }
+            return;
+        }
+
+        CompleteHarvest(Random.Range(1, 5), true);
+    }
+
+    public bool CompleteHarvest(int harvestAmount, bool useOceanCatch = false)
+    {
+        if (!isReady) return false;
 
         bool anyAdded = false;
-        for (int i = 0; i < finalHaul; i++)
+        for (int i = 0; i < harvestAmount; i++)
         {
-            // Try to get a random catch from the ocean manager
-            ItemData caught = (ReactiveOceanManager.Instance != null) ? ReactiveOceanManager.Instance.GetRandomCatch() : null;
-            
-            // Fallback to the resultItem if the ocean catch failed (e.g. uninitialized tier or empty pool)
-            if (caught == null) caught = resultItem;
+            ItemData caught = GetHarvestItem(useOceanCatch);
+            if (caught == null && useOceanCatch) caught = resultItem;
 
-            if (caught != null && Inventory.Instance != null)
+            if (caught != null && Inventory.Instance != null &&
+                Inventory.Instance.AddItem(caught, 1, FishQuality.Bronze))
             {
-                // Always grant Bronze quality for deployable hauls as requested
-                if (Inventory.Instance.AddItem(caught, 1, FishQuality.Bronze))
-                    anyAdded = true;
+                anyAdded = true;
             }
         }
 
@@ -124,26 +142,62 @@ public class HarvestableDeployable : MonoBehaviour, IInteractable
         {
             if (sustainabilityEffect != 0) SustainabilityManager.Instance?.Add(sustainabilityEffect);
             UIManager.Instance?.ShowMessage($"{deployableType} haul harvested!");
-            
-            // REUSABLE: Reset state instead of destroying the object
-            isReady = false;
-            timer = 0;
-            if (sr != null && growingSprite != null) sr.sprite = growingSprite;
-            //if (readyIndicator != null) readyIndicator.gameObject.SetActive(false);
-
-            if (spawnedIndicator != null)
-            {
-                Destroy(spawnedIndicator);
-            }
+            ResetGrowth();
+            return true;
         }
         else
         {
             UIManager.Instance?.ShowMessage("Inventory Full!");
+            return false;
+        }
+    }
+
+    private ItemData GetHarvestItem(bool useOceanCatch)
+    {
+        if (harvestPool != null && harvestPool.Length > 0)
+        {
+            ItemData pooledItem = harvestPool[Random.Range(0, harvestPool.Length)];
+            if (pooledItem != null) return pooledItem;
+        }
+
+        if (useOceanCatch && ReactiveOceanManager.Instance != null)
+        {
+            ItemData oceanCatch = ReactiveOceanManager.Instance.GetRandomCatch();
+            if (oceanCatch != null) return oceanCatch;
+        }
+
+        return resultItem;
+    }
+
+    public void ConsumeAfterHarvest()
+    {
+        Destroy(gameObject);
+    }
+
+    public void ResetGrowth()
+    {
+        isReady = false;
+        timer = 0;
+        if (sr != null)
+        {
+            sr.sprite = isSeaweed && seedlingSprite != null ? seedlingSprite : growingSprite;
+        }
+
+        if (spawnedIndicator != null)
+        {
+            Destroy(spawnedIndicator);
+            spawnedIndicator = null;
         }
     }
 
     public string GetInteractPrompt()
     {
-        return isReady ? $"Harvest {deployableType} [E]" : $"Growing... ({Mathf.Ceil(readyTime - timer)}s)";
+        if (isReady) return isSeaweed ? "Harvest Seaweed [E]" : $"Harvest {deployableType} [E]";
+        if (isSeaweed)
+        {
+            string stage = timer < readyTime * 0.34f ? "Seedling" : "Growing";
+            return $"{stage}... ({Mathf.Ceil(readyTime - timer)}s)";
+        }
+        return $"Growing... ({Mathf.Ceil(readyTime - timer)}s)";
     }
 }

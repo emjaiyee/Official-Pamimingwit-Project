@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
@@ -43,6 +43,7 @@ public class UIManager : MonoBehaviour
     public Button cleanUpButton;
     public TextMeshProUGUI cleanUpText;
     public GameObject cleaningPanel;
+    public GameObject seaweedPanel;
 
     [Header("Cutscene UI")]
     public GameObject cutscenePanel;
@@ -94,6 +95,7 @@ public class UIManager : MonoBehaviour
         if (choicePanel != null) choicePanel.SetActive(false);
         if (questPanel != null) questPanel.SetActive(false);
         if (cleaningPanel != null) cleaningPanel.SetActive(false);
+        if (seaweedPanel != null) seaweedPanel.SetActive(false);
         if (cutscenePanel != null) cutscenePanel.SetActive(false);
         if (dialoguePanel != null) dialoguePanel.SetActive(false);
         if (fishIndexPanel != null) fishIndexPanel.SetActive(false);
@@ -482,6 +484,7 @@ public class UIManager : MonoBehaviour
         if (fishIndexPanel != null && fishIndexPanel.activeSelf) { TogglePanelState(fishIndexPanel, false); closedSomething = true; }
         if (choicePanel != null && choicePanel.activeSelf) { HideChoicePanel(); closedSomething = true; }
         if (cleaningPanel != null && cleaningPanel.activeSelf) { TogglePanelState(cleaningPanel, false); closedSomething = true; }
+        if (seaweedPanel != null && seaweedPanel.activeSelf) { TogglePanelState(seaweedPanel, false); closedSomething = true; }
 
         if ((shopPanel != null && shopPanel.activeSelf) ||
             (industrialShopPanel != null && industrialShopPanel.activeSelf) ||
@@ -558,6 +561,7 @@ public class UIManager : MonoBehaviour
                (fishIndexPanel != null && fishIndexPanel.activeSelf) ||
                (choicePanel != null && choicePanel.activeSelf) ||
                (cleaningPanel != null && cleaningPanel.activeSelf) ||
+               (seaweedPanel != null && seaweedPanel.activeSelf) ||
                (cutscenePanel != null && cutscenePanel.activeSelf) ||
                (dialoguePanel != null && dialoguePanel.activeSelf);
     }
