@@ -46,7 +46,7 @@ public class HotbarManager : MonoBehaviour
         if (Mouse.current != null)
         {
             float scroll = Mouse.current.scroll.ReadValue().y;
-            if (scroll != 0)
+            if (Mathf.Abs(scroll) > 0.01f)
             {
                 int newIndex = selectedIndex - (int)Mathf.Sign(scroll);
                 if (newIndex < 0) newIndex = hotbarSize - 1;

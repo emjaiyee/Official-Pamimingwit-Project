@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        moveInput = InputHandler.Instance.MoveInput;
+        moveInput = InputHandler.Instance != null ? InputHandler.Instance.MoveInput : Vector2.zero;
 
         bool isMoving = moveInput != Vector2.zero;
         animator.SetBool("isWalking", isMoving);

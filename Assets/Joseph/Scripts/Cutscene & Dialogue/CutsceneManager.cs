@@ -5,7 +5,24 @@ using UnityEngine.InputSystem;
 
 public class CutsceneManager : MonoBehaviour
 {
-    public static CutsceneManager Instance;
+    public static CutsceneManager Instance { get; private set; }
+
+    public static CutsceneManager EnsureInstance()
+    {
+        if (Instance != null)
+            return Instance;
+
+        CutsceneManager found = FindObjectOfType<CutsceneManager>(true);
+        if (found != null)
+        {
+            Instance = found;
+            return found;
+        }
+
+        GameObject managerObject = new GameObject("CutsceneManager");
+        Instance = managerObject.AddComponent<CutsceneManager>();
+        return Instance;
+    }
 
     private CutsceneStep[] currentSteps;
     private int currentIndex;
@@ -25,7 +42,20 @@ public class CutsceneManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
     }
 
     private void Update()
@@ -60,6 +90,9 @@ public class CutsceneManager : MonoBehaviour
 
     public void StartCutscene(DialogueLine[] lines, Action onFinish = null)
     {
+        if (lines == null || lines.Length == 0)
+            return;
+
         CutsceneStep[] converted = new CutsceneStep[lines.Length];
         for (int i = 0; i < lines.Length; i++)
         {
@@ -72,6 +105,15 @@ public class CutsceneManager : MonoBehaviour
 
     public void StartCutscene(CutsceneStep[] steps, Action onFinish = null)
     {
+        if (EnsureInstance() != this)
+        {
+            EnsureInstance().StartCutscene(steps, onFinish);
+            return;
+        }
+
+        if (steps == null || steps.Length == 0)
+            return;
+
         if (IsCutsceneActive) return;
         
         // Ensure the cutscenePanel has a CanvasGroup
@@ -240,8 +282,10 @@ public class CutsceneManager : MonoBehaviour
     private void EndCutscene()
     {
         IsCutsceneActive = false;
-        UIManager.Instance.cutscenePanel.SetActive(false);
-        
+
+        if (UIManager.Instance != null && UIManager.Instance.cutscenePanel != null)
+            UIManager.Instance.cutscenePanel.SetActive(false);
+
         GameManager.Instance?.SetState(GameState.Normal);
         PlayerController.Instance?.UnlockMovement();
 

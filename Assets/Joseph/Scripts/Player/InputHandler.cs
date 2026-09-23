@@ -6,6 +6,23 @@ public class InputHandler : MonoBehaviour
 {
     public static InputHandler Instance { get; private set; }
 
+    public static InputHandler EnsureInstance()
+    {
+        if (Instance != null)
+            return Instance;
+
+        InputHandler found = FindObjectOfType<InputHandler>(true);
+        if (found != null)
+        {
+            Instance = found;
+            return found;
+        }
+
+        GameObject inputHandlerObject = new GameObject("InputHandler");
+        Instance = inputHandlerObject.AddComponent<InputHandler>();
+        return Instance;
+    }
+
     // Static registration pool to avoid FindObjectsByType GC allocations
     private static readonly List<Interactable> registeredInteractables = new List<Interactable>();
 
@@ -36,6 +53,12 @@ public class InputHandler : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
     }
 
     private void LateUpdate()
