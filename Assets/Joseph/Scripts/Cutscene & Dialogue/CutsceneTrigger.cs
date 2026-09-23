@@ -77,6 +77,7 @@ public class CutsceneTrigger : MonoBehaviour
     {
         if (hasTriggered && triggerOnce) return;
 
+        CutsceneManager.EnsureInstance();
         if (CutsceneManager.Instance == null)
         {
             Debug.LogError($"CutsceneTrigger on {gameObject.name}: CutsceneManager.Instance is null! Is there a CutsceneManager in the scene?");
@@ -89,6 +90,6 @@ public class CutsceneTrigger : MonoBehaviour
 
         hasTriggered = true;
         NarrativeStateManager.Instance?.SetTriggered(triggerID, true); // Persist state
-        CutsceneManager.Instance?.StartCutscene(cutscene);
+        CutsceneManager.Instance.StartCutscene(cutscene);
     }
 }

@@ -79,6 +79,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Scroll",
+                    "type": "Value",
+                    "id": "668c61d0-1b2d-4d31-a9ef-1d5150d3d0f4",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Cancel",
                     "type": "Button",
                     "id": "39ada634-705c-4263-a6ec-74d7249e1a9c",
@@ -191,17 +200,6 @@
                 },
                 {
                     "name": "",
-                    "id": "95242407-965f-429b-b01d-53eb8b139761",
-                    "path": "<Keyboard>/e",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Interact",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "ccc3f327-c531-4358-9e14-654238f55aec",
                     "path": "<Keyboard>/tab",
                     "interactions": "",
@@ -268,6 +266,17 @@
                 },
                 {
                     "name": "",
+                    "id": "d386b3d2-10b0-44f4-9aaa-396f3d5be324",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Scroll",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "cdfa05df-770e-4d37-bb07-052203843382",
                     "path": "<Keyboard>/escape",
                     "interactions": "",
@@ -329,6 +338,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4d63be22-faf6-47d2-950b-4244f2b6734f",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

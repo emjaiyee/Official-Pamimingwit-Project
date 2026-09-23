@@ -6,6 +6,10 @@ public class TrashModule : NPCModule
     [Tooltip("Unique ID for this specific trash object. Required if this is a permanent scene object (e.g. for an objective).")]
     public string worldObjectID;
 
+    [Header("Minigame Fallback Reference")]
+    [Tooltip("Optional direct reference to the CleaningMiniGameManager UI component in the scene canvas.")]
+    [SerializeField] private CleaningMiniGameManager minigameOverride;
+
 #if UNITY_EDITOR
     private void OnValidate()
     {
@@ -55,22 +59,37 @@ public class TrashModule : NPCModule
 
         SaveController.RegisterDestruction(worldObjectID);
             
-        // UIManager.HideChoicePanel() is called automatically by ShowChoice's button listener
         ObjectiveCutsceneTrigger.NotifyProgress(gameObject);
-        Destroy(gameObject); // Remove the trash object from world
+        Destroy(gameObject);
     }
 
     // Called when "Clean Up" is chosen
     public void ChoiceCleanUp()
     {
-        // UIManager.HideChoicePanel() is called automatically by ShowChoice's button listener
-        if (CleaningMiniGameManager.Instance != null)
+        CleaningMiniGameManager manager = minigameOverride != null
+            ? minigameOverride
+            : CleaningMiniGameManager.Instance;
+
+        if (manager == null)
         {
-            CleaningMiniGameManager.Instance.StartGame(this.gameObject);
+            manager = FindFirstObjectByType<CleaningMiniGameManager>(FindObjectsInactive.Include);
+        }
+
+        if (manager != null)
+        {
+            manager.StartGame(gameObject);
         }
         else
         {
-            Debug.LogError("TrashModule: CleaningMiniGameManager Instance not found in the scene!");
+            Debug.LogWarning("[TrashModule] CleaningMiniGameManager instance missing from scene. Performing direct cleanup fallback.");
+
+            // Direct cleanup fallback
+            if (SustainabilityManager.Instance != null)
+                SustainabilityManager.Instance.Add(5);
+
+            SaveController.RegisterDestruction(worldObjectID);
+            ObjectiveCutsceneTrigger.NotifyProgress(gameObject);
+            Destroy(gameObject);
         }
     }
 }

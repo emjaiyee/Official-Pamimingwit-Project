@@ -186,23 +186,29 @@ public class GameManager : MonoBehaviour
         if (postProcessingVolume == null) return;
 
         float currentTotalHours = hours + (minutes / 60f) + (seconds / 3600f);
+        float timeOfDayWeight;
 
         if (currentTotalHours >= 5f && currentTotalHours < 6f)
         {
-            postProcessingVolume.weight = 0.5f * (6f - currentTotalHours);
+            timeOfDayWeight = 0.5f * (6f - currentTotalHours);
         }
         else if (currentTotalHours >= 6f && currentTotalHours < 18f)
         {
-            postProcessingVolume.weight = 0f;
+            timeOfDayWeight = 0f;
         }
         else if (currentTotalHours >= 18f && currentTotalHours < 20f)
         {
-            postProcessingVolume.weight = 0.5f * ((currentTotalHours - 18f) / 2f);
+            timeOfDayWeight = 0.5f * ((currentTotalHours - 18f) / 2f);
         }
         else
         {
-            postProcessingVolume.weight = 0.5f;
+            timeOfDayWeight = 0.5f;
         }
+
+        float weatherWeight = WeatherManager.Instance != null
+            ? WeatherManager.Instance.WeatherDimWeight
+            : 0f;
+        postProcessingVolume.weight = Mathf.Clamp01(timeOfDayWeight + weatherWeight);
     }
 
     public string GetDayOfWeekName(int dayNumber)
