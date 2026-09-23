@@ -48,6 +48,12 @@ public class CleaningMiniGameManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            enabled = false;
+            return;
+        }
+
         Instance = this;
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null) audioSource = gameObject.AddComponent<AudioSource>();
@@ -55,6 +61,14 @@ public class CleaningMiniGameManager : MonoBehaviour
         if (comboText != null)
         {
             originalComboScale = comboText.transform.localScale;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
         }
     }
 
