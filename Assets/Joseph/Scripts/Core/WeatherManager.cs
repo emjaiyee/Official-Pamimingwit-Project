@@ -37,20 +37,10 @@ public class WeatherManager : MonoBehaviour
     [Tooltip("AudioSource that plays rain ambience.")]
     [SerializeField] private AudioSource rainAudioSource;
 
-    [Header("Lighting Profiles (optional)")]
-    [Tooltip("Ambient colour for a sunny day.")]
-    [SerializeField] private Color sunnyColor = new Color(1f, 0.95f, 0.8f);
-    [Tooltip("Ambient colour for a cloudy day.")]
-    [SerializeField] private Color cloudyColor = new Color(0.8f, 0.85f, 0.9f);
-    [Tooltip("Ambient colour for a rainy day.")]
-    [SerializeField] private Color rainyColor = new Color(0.6f, 0.66f, 0.8f);
-
-    [Tooltip("Intensity of the global light during sunny weather.")]
-    [SerializeField] private float sunnyIntensity = 1f;
-    [Tooltip("Intensity of the global light during cloudy weather.")]
-    [SerializeField] private float cloudyIntensity = 0.7f;
-    [Tooltip("Intensity of the global light during rainy weather.")]
-    [SerializeField] private float rainyIntensity = 0.4f;
+    /// <summary>
+    /// Dimming weight contributed by current weather (0 = sunny, higher = darker).
+    /// </summary>
+    public float WeatherDimWeight { get; private set; } = 0f;
 
     private void Awake()
     {
@@ -59,17 +49,37 @@ public class WeatherManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         Instance = this;
+    }
+
+    private void Start()
+    {
+        ApplyWeather();
     }
 
     private void OnEnable()
     {
         GameManager.OnDayAdvanced += OnNewDay;
+        ApplyWeather();
     }
 
     private void OnDisable()
     {
         GameManager.OnDayAdvanced -= OnNewDay;
+    }
+
+    /// <summary>
+    /// Sets the current weather state and immediately applies the matching visual/audio setup.
+    /// </summary>
+    public void SetWeather(WeatherState newWeather, bool applyImmediately = true)
+    {
+        CurrentWeather = newWeather;
+
+        if (applyImmediately)
+        {
+            ApplyWeather();
+        }
     }
 
     /// <summary>
@@ -107,24 +117,37 @@ public class WeatherManager : MonoBehaviour
     /// </summary>
     private void ApplyWeather()
     {
+        switch (CurrentWeather)
+        {
+            case WeatherState.Sunny:
+                WeatherDimWeight = 0f;
+                break;
+            case WeatherState.Cloudy:
+                WeatherDimWeight = 0.15f;
+                break;
+            case WeatherState.Raining:
+                WeatherDimWeight = 0.25f;
+                break;
+        }
+
         if (globalLight2D != null)
         {
             switch (CurrentWeather)
             {
                 case WeatherState.Sunny:
-                    globalLight2D.color = sunnyColor;
-                    globalLight2D.intensity = sunnyIntensity;
+                    globalLight2D.intensity = 1f;
                     break;
                 case WeatherState.Cloudy:
-                    globalLight2D.color = cloudyColor;
-                    globalLight2D.intensity = cloudyIntensity;
+                    globalLight2D.intensity = 0.7f;
                     break;
                 case WeatherState.Raining:
-                    globalLight2D.color = rainyColor;
-                    globalLight2D.intensity = rainyIntensity;
+                    globalLight2D.intensity = 0.4f;
                     break;
             }
         }
+
+        if (GameManager.Instance != null)
+            GameManager.Instance.ControlPPV();
 
         // Rain particles and audio are only active during the Raining state.
         bool rainActive = CurrentWeather == WeatherState.Raining;
@@ -147,4 +170,3 @@ public class WeatherManager : MonoBehaviour
         }
     }
 }
-

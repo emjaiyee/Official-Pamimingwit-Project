@@ -39055,6 +39055,7 @@ GameObject:
   - component: {fileID: 1539058059}
   - component: {fileID: 1539058060}
   - component: {fileID: 1539058061}
+  - component: {fileID: 1539058070}
   - component: {fileID: 1539058062}
   - component: {fileID: 1539058063}
   - component: {fileID: 1539058064}
@@ -39108,6 +39109,21 @@ MonoBehaviour:
   timeMultiplier: 120
   lateNightStartHour: 19
   lateNightStaminaDrainRate: 2.5
+--- !u!114 &1539058070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539058058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6831d913e4d423499a0563c7445ea8e, type: 3}
+  m_Name: WeatherManager
+  m_EditorClassIdentifier: Assembly-CSharp::WeatherManager
+  globalLight2D: {fileID: 1940071902}
+  rainParticleSystem: {fileID: 0}
+  rainAudioSource: {fileID: 0}
 --- !u!114 &1539058061
 MonoBehaviour:
   m_ObjectHideFlags: 0
