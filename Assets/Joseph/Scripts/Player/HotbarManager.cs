@@ -42,26 +42,34 @@ public class HotbarManager : MonoBehaviour
 
     private void HandleSelectionInput()
     {
-        // Mouse Scroll Selection
-        if (Mouse.current != null)
+        float scroll = InputHandler.Instance != null ? InputHandler.Instance.GetHotbarScrollDelta() : 0f;
+        if (Mathf.Abs(scroll) > 0.01f)
         {
-            float scroll = Mouse.current.scroll.ReadValue().y;
-            if (Mathf.Abs(scroll) > 0.01f)
-            {
-                int newIndex = selectedIndex - (int)Mathf.Sign(scroll);
-                if (newIndex < 0) newIndex = hotbarSize - 1;
-                if (newIndex >= hotbarSize) newIndex = 0;
+            int newIndex = selectedIndex - (int)Mathf.Sign(scroll);
+            if (newIndex < 0) newIndex = hotbarSize - 1;
+            if (newIndex >= hotbarSize) newIndex = 0;
 
-                SelectSlot(newIndex);
-            }
+            SelectSlot(newIndex);
         }
 
-        // Number Key Selection (1-6)
+        // Number Key Selection (1-6), plus Input System action fallback
         if (Keyboard.current != null)
         {
             for (int i = 0; i < hotbarSize; i++)
             {
                 if (Keyboard.current[Key.Digit1 + i].wasPressedThisFrame)
+                {
+                    SelectSlot(i);
+                }
+            }
+        }
+
+        if (InputHandler.Instance != null)
+        {
+            for (int i = 0; i < hotbarSize; i++)
+            {
+                string actionName = $"Player/{i + 1}";
+                if (InputHandler.Instance.WasActionPressed(actionName))
                 {
                     SelectSlot(i);
                 }
