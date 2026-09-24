@@ -1,25 +1,11 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-using System;
+using System.Collections;
 
-/// <summary>
-/// Manages daily weather states for the game. On each new day a weighted random weather
-/// (Sunny 50%, Cloudy 30%, Raining 20%) is selected, the global 2D lighting is updated and
-/// rain particle/effects are toggled. Other gameplay systems can query the current weather
-/// via the public <c>CurrentWeather</c> property.
-/// </summary>
 public class WeatherManager : MonoBehaviour
 {
     public static WeatherManager Instance { get; private set; }
 
-    /// <summary>
-    /// Current weather state. Read‑only for external code.
-    /// </summary>
-    public WeatherState CurrentWeather { get; private set; } = WeatherState.Sunny;
-
-    /// <summary>
-    /// Possible weather states.
-    /// </summary>
     public enum WeatherState
     {
         Sunny,
@@ -27,20 +13,41 @@ public class WeatherManager : MonoBehaviour
         Raining
     }
 
+    [Header("Weather Control")]
+    [Tooltip("Change this dropdown in the Inspector at runtime or edit time to switch weather.")]
+    [SerializeField] private WeatherState currentWeather = WeatherState.Sunny;
+    
+    public WeatherState CurrentWeather 
+    { 
+        get => currentWeather; 
+        private set => currentWeather = value; 
+    }
+
     [Header("URP 2D Lighting")]
-    [Tooltip("Reference to the scene's Global Light 2D used for ambient lighting adjustments.")]
     [SerializeField] private Light2D globalLight2D;
 
     [Header("Rain Effects")]
-    [Tooltip("Particle system that renders rain drops.")]
     [SerializeField] private ParticleSystem rainParticleSystem;
-    [Tooltip("AudioSource that plays rain ambience.")]
     [SerializeField] private AudioSource rainAudioSource;
 
-    /// <summary>
-    /// Dimming weight contributed by current weather (0 = sunny, higher = darker).
-    /// </summary>
+    [Header("Transition Settings")]
+    [Tooltip("Duration in seconds for lighting and audio fade transitions.")]
+    [SerializeField] private float transitionDuration = 2.5f;
+
+    [Header("Target Intensity Values")]
+    [SerializeField] private float sunnyLightIntensity = 1.0f;
+    [SerializeField] private float cloudyLightIntensity = 0.7f;
+    [SerializeField] private float rainyLightIntensity = 0.4f;
+
+    [Header("Target Audio Volumes")]
+    [SerializeField] private float maxRainVolume = 0.8f;
+
+    public static event System.Action<WeatherState> OnWeatherChanged;
+
     public float WeatherDimWeight { get; private set; } = 0f;
+
+    private Coroutine transitionCoroutine;
+    private WeatherState lastAppliedWeather;
 
     private void Awake()
     {
@@ -55,13 +62,13 @@ public class WeatherManager : MonoBehaviour
 
     private void Start()
     {
-        ApplyWeather();
+        lastAppliedWeather = currentWeather;
+        ApplyWeather(true);
     }
 
     private void OnEnable()
     {
         GameManager.OnDayAdvanced += OnNewDay;
-        ApplyWeather();
     }
 
     private void OnDisable()
@@ -69,104 +76,168 @@ public class WeatherManager : MonoBehaviour
         GameManager.OnDayAdvanced -= OnNewDay;
     }
 
-    /// <summary>
-    /// Sets the current weather state and immediately applies the matching visual/audio setup.
-    /// </summary>
-    public void SetWeather(WeatherState newWeather, bool applyImmediately = true)
+#if UNITY_EDITOR
+    private void OnValidate()
     {
-        CurrentWeather = newWeather;
-
-        if (applyImmediately)
+        // Triggers in the Unity Editor when you switch the dropdown in the Inspector
+        if (Application.isPlaying && lastAppliedWeather != currentWeather)
         {
-            ApplyWeather();
+            lastAppliedWeather = currentWeather;
+            ApplyWeather(false);
         }
     }
+#endif
 
-    /// <summary>
-    /// Called each time the day advances. Rolls a new weather state and applies the corresponding effects.
-    /// </summary>
+    public void SetWeather(WeatherState newWeather, bool applyImmediately = false)
+    {
+        currentWeather = newWeather;
+        lastAppliedWeather = newWeather;
+        ApplyWeather(applyImmediately);
+    }
+
     private void OnNewDay()
     {
         RollWeather();
-        ApplyWeather();
+        ApplyWeather(false);
     }
 
-    /// <summary>
-    /// Chooses a weather state based on the defined weighted probabilities.
-    /// </summary>
     private void RollWeather()
     {
-        // Unity's Random.Range with int is inclusive‑exclusive (min inclusive, max exclusive).
-        int roll = UnityEngine.Random.Range(0, 100);
-        if (roll < 50) // 0‑49 -> Sunny (50%)
-        {
-            CurrentWeather = WeatherState.Sunny;
-        }
-        else if (roll < 80) // 50‑79 -> Cloudy (30%)
-        {
-            CurrentWeather = WeatherState.Cloudy;
-        }
-        else // 80‑99 -> Raining (20%)
-        {
-            CurrentWeather = WeatherState.Raining;
-        }
+        int roll = Random.Range(0, 100);
+        if (roll < 50)
+            currentWeather = WeatherState.Sunny;
+        else if (roll < 80)
+            currentWeather = WeatherState.Cloudy;
+        else
+            currentWeather = WeatherState.Raining;
+
+        lastAppliedWeather = currentWeather;
     }
 
-    /// <summary>
-    /// Updates lighting and particle/audio based on <c>CurrentWeather</c>.
-    /// </summary>
-    private void ApplyWeather()
+    private void ApplyWeather(bool immediate)
     {
-        switch (CurrentWeather)
+        float targetIntensity = sunnyLightIntensity;
+        float targetVolume = 0f;
+        bool isRaining = currentWeather == WeatherState.Raining;
+
+        switch (currentWeather)
         {
             case WeatherState.Sunny:
                 WeatherDimWeight = 0f;
+                targetIntensity = sunnyLightIntensity;
+                targetVolume = 0f;
                 break;
+
             case WeatherState.Cloudy:
                 WeatherDimWeight = 0.15f;
+                targetIntensity = cloudyLightIntensity;
+                targetVolume = 0f;
                 break;
+
             case WeatherState.Raining:
                 WeatherDimWeight = 0.25f;
+                targetIntensity = rainyLightIntensity;
+                targetVolume = maxRainVolume;
                 break;
         }
 
-        if (globalLight2D != null)
+        // --- Particle System Control ---
+        if (rainParticleSystem != null)
         {
-            switch (CurrentWeather)
+            if (isRaining)
             {
-                case WeatherState.Sunny:
-                    globalLight2D.intensity = 1f;
-                    break;
-                case WeatherState.Cloudy:
-                    globalLight2D.intensity = 0.7f;
-                    break;
-                case WeatherState.Raining:
-                    globalLight2D.intensity = 0.4f;
-                    break;
+                if (!rainParticleSystem.gameObject.activeSelf)
+                    rainParticleSystem.gameObject.SetActive(true);
+
+                var emission = rainParticleSystem.emission;
+                emission.enabled = true;
+
+                if (!rainParticleSystem.isPlaying)
+                    rainParticleSystem.Play();
             }
+            else
+            {
+                var emission = rainParticleSystem.emission;
+                emission.enabled = false;
+
+                if (rainParticleSystem.isPlaying)
+                    rainParticleSystem.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+            }
+        }
+
+        // --- Audio Control ---
+        if (rainAudioSource != null)
+        {
+            if (isRaining && !rainAudioSource.gameObject.activeSelf)
+                rainAudioSource.gameObject.SetActive(true);
+        }
+
+        if (transitionCoroutine != null)
+            StopCoroutine(transitionCoroutine);
+
+        if (immediate)
+        {
+            if (globalLight2D != null) globalLight2D.intensity = targetIntensity;
+            if (rainAudioSource != null)
+            {
+                rainAudioSource.volume = targetVolume;
+                if (isRaining && !rainAudioSource.isPlaying) rainAudioSource.Play();
+                else if (!isRaining) rainAudioSource.Stop();
+            }
+        }
+        else
+        {
+            transitionCoroutine = StartCoroutine(TransitionWeatherRoutine(targetIntensity, targetVolume, isRaining));
         }
 
         if (GameManager.Instance != null)
             GameManager.Instance.ControlPPV();
 
-        // Rain particles and audio are only active during the Raining state.
-        bool rainActive = CurrentWeather == WeatherState.Raining;
-        if (rainParticleSystem != null)
+        OnWeatherChanged?.Invoke(currentWeather);
+    }
+
+    private IEnumerator TransitionWeatherRoutine(float targetIntensity, float targetVolume, bool isRaining)
+    {
+        float elapsedTime = 0f;
+
+        float startIntensity = globalLight2D != null ? globalLight2D.intensity : targetIntensity;
+        float startVolume = rainAudioSource != null ? rainAudioSource.volume : 0f;
+
+        if (isRaining && rainAudioSource != null && !rainAudioSource.isPlaying)
         {
-            var emission = rainParticleSystem.emission;
-            emission.enabled = rainActive;
-            if (rainActive && !rainParticleSystem.isPlaying)
-                rainParticleSystem.Play();
-            else if (!rainActive && rainParticleSystem.isPlaying)
-                rainParticleSystem.Stop();
+            rainAudioSource.volume = 0f;
+            rainAudioSource.Play();
         }
+
+        while (elapsedTime < transitionDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float t = elapsedTime / transitionDuration;
+            float smoothT = Mathf.SmoothStep(0f, 1f, t);
+
+            if (globalLight2D != null)
+            {
+                globalLight2D.intensity = Mathf.Lerp(startIntensity, targetIntensity, smoothT);
+            }
+
+            if (rainAudioSource != null)
+            {
+                rainAudioSource.volume = Mathf.Lerp(startVolume, targetVolume, smoothT);
+            }
+
+            yield return null;
+        }
+
+        if (globalLight2D != null) globalLight2D.intensity = targetIntensity;
         if (rainAudioSource != null)
         {
-            rainAudioSource.enabled = rainActive;
-            if (rainActive && !rainAudioSource.isPlaying)
-                rainAudioSource.Play();
-            else if (!rainActive && rainAudioSource.isPlaying)
+            rainAudioSource.volume = targetVolume;
+            if (!isRaining && rainAudioSource.volume <= 0.01f)
+            {
                 rainAudioSource.Stop();
+            }
         }
+
+        transitionCoroutine = null;
     }
 }
