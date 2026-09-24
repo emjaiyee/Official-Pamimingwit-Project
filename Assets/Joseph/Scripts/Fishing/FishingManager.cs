@@ -42,6 +42,7 @@ public class FishingManager : MonoBehaviour
     [SerializeField] private float maxHoldTime = 1.5f;
     [SerializeField] private float minCastDistance = 1.5f;
     [SerializeField] private float maxCastDistance = 5.0f;
+    [SerializeField] private float maxWaterCastDistance = 5.0f;
 
     [Header("Wait & Nibble Parameters")]
     [Tooltip("Minimum awkward silence delay (seconds) before any fish approaches.")]
@@ -150,7 +151,8 @@ public class FishingManager : MonoBehaviour
         bool holdingFish = heldItem is FishData;
         bool holdingJunk = heldItem != null && heldItem.itemType == ItemType.Junk;
 
-        if (!debugMode && !hasRod && !hasDynamite && !holdingFish && !holdingJunk)
+        bool canUseFishingTools = hasRod || hasDynamite;
+        if (!debugMode && !canUseFishingTools && !holdingFish && !holdingJunk)
             return;
 
         if (UIManager.Instance != null && UIManager.Instance.IsPointerOverUI())
@@ -275,6 +277,21 @@ public class FishingManager : MonoBehaviour
     {
         if (player == null) return;
 
+        bool hasRodEquipped = EquipmentManager.Instance != null && EquipmentManager.Instance.hasFishingRodEquipped;
+        bool hasDynamiteEquipped = EquipmentManager.Instance != null && EquipmentManager.Instance.hasDynamiteEquipped;
+
+        if (!isDynamite && !hasRodEquipped)
+        {
+            UIManager.Instance?.ShowMessage("You need a fishing rod to fish!");
+            return;
+        }
+
+        if (isDynamite && !hasDynamiteEquipped)
+        {
+            UIManager.Instance?.ShowMessage("You need dynamite to throw it!");
+            return;
+        }
+
         Vector3 mouse = GetMouseWorldPosition();
         Vector3 dir = (mouse - player.position).normalized;
 
@@ -312,20 +329,21 @@ public class FishingManager : MonoBehaviour
 
     private bool TryGetValidWaterTarget(Vector3 direction, float desiredDistance, out Vector3 validPosition)
     {
-        Vector3 origin = player.position;
-        validPosition = origin + direction * desiredDistance;
-
-        if (Physics2D.OverlapCircle(validPosition, 0.25f, waterLayer))
+        if (player == null)
         {
-            return true;
+            validPosition = Vector3.zero;
+            return false;
         }
 
-        int steps = 10;
-        for (int i = steps; i >= 1; i--)
-        {
-            float stepDist = Mathf.Lerp(minCastDistance, maxCastDistance, i / (float)steps);
-            Vector3 testPos = origin + direction * stepDist;
+        direction = direction == Vector3.zero ? Vector3.right : direction.normalized;
 
+        Vector3 origin = player.position;
+        validPosition = origin + direction * Mathf.Clamp(desiredDistance, minCastDistance, maxWaterCastDistance);
+
+        float maxDistance = Mathf.Min(maxCastDistance, maxWaterCastDistance);
+        for (float distance = minCastDistance; distance <= maxDistance; distance += 0.25f)
+        {
+            Vector3 testPos = origin + direction * distance;
             if (Physics2D.OverlapCircle(testPos, 0.25f, waterLayer))
             {
                 validPosition = testPos;
@@ -333,7 +351,7 @@ public class FishingManager : MonoBehaviour
             }
         }
 
-        return false;
+        return Physics2D.OverlapCircle(validPosition, 0.25f, waterLayer);
     }
 
     private void CastRod()
@@ -704,9 +722,15 @@ public class FishingManager : MonoBehaviour
         }
 
         if (currentBobber != null)
+        {
             Destroy(currentBobber.gameObject);
+            currentBobber = null;
+        }
 
         pendingArtifact = null;
+        pendingItem = null;
+        pendingTargetPos = Vector3.zero;
+        isCastPending = false;
         ClearRuntimeArtifact();
 
         if (audioSource != null && audioSource.isPlaying && audioSource.clip == pullSFX)
@@ -764,6 +788,11 @@ public class FishingManager : MonoBehaviour
 
         state = FishingState.Idle;
         holdTime = 0;
+        inputLocked = false;
+        isCastPending = false;
+        pendingItem = null;
+        pendingTargetPos = Vector3.zero;
+        currentBobber = null;
     }
 
     public void CancelFishing()

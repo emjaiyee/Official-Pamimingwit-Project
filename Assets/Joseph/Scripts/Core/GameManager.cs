@@ -10,6 +10,7 @@ public enum GameState
     UI
 }
 
+[DefaultExecutionOrder(-100)]
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
@@ -52,10 +53,20 @@ public class GameManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
+            Debug.LogWarning($"[GameManager] Duplicate instance on '{name}' was removed. The existing instance is '{Instance.name}'.");
             Destroy(gameObject);
             return;
         }
+
         Instance = this;
+    }
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            Instance = null;
+        }
     }
 
     private void Start()
@@ -208,7 +219,7 @@ public class GameManager : MonoBehaviour
         float weatherWeight = WeatherManager.Instance != null
             ? WeatherManager.Instance.WeatherDimWeight
             : 0f;
-        postProcessingVolume.weight = Mathf.Clamp01(timeOfDayWeight + weatherWeight);
+        postProcessingVolume.weight = Mathf.Min(0.5f, timeOfDayWeight + weatherWeight);
     }
 
     public string GetDayOfWeekName(int dayNumber)
