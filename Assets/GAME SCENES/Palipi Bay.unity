@@ -35894,7 +35894,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2612c063c5c912c4f91b7165bdfd61cd, type: 2}
+  - {fileID: 2100000, guid: fa4cf9d6f0c950a4f869c176b05e3177, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38075,7 +38075,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: -1, z: 0}
@@ -38299,7 +38299,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: -1, z: 0}
@@ -38327,7 +38327,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 8, y: -1, z: 0}
@@ -38985,6 +38985,7 @@ GameObject:
   - component: {fileID: 1539058066}
   - component: {fileID: 1539058067}
   - component: {fileID: 1539058068}
+  - component: {fileID: 1539058071}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -39146,6 +39147,25 @@ MonoBehaviour:
   cloudyLightIntensity: 0.7
   rainyLightIntensity: 0.4
   maxRainVolume: 0.8
+--- !u!114 &1539058071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539058058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076096d6904454046a662fa7ab17e43a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CloudShadowSpawner
+  cloudShadowPrefabs:
+  - {fileID: 2921369147095677334, guid: 629721e53e94c134eb881a5ec1c30944, type: 3}
+  - {fileID: 2921369147095677334, guid: c182462baebd24f429628790b32eb701, type: 3}
+  windDirection: {x: 1, y: 0.2}
+  moveSpeed: 1.5
+  spawnBounds: {x: 12, y: 7}
+  maxClouds: 5
 --- !u!1 &1573592439
 GameObject:
   m_ObjectHideFlags: 0
