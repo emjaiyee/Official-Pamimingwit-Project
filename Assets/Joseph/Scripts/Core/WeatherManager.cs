@@ -42,6 +42,8 @@ public class WeatherManager : MonoBehaviour
     [Header("Target Audio Volumes")]
     [SerializeField] private float maxRainVolume = 0.8f;
 
+    public static event System.Action<WeatherState> OnWeatherChanged;
+
     public float WeatherDimWeight { get; private set; } = 0f;
 
     private Coroutine transitionCoroutine;
@@ -190,6 +192,8 @@ public class WeatherManager : MonoBehaviour
 
         if (GameManager.Instance != null)
             GameManager.Instance.ControlPPV();
+
+        OnWeatherChanged?.Invoke(currentWeather);
     }
 
     private IEnumerator TransitionWeatherRoutine(float targetIntensity, float targetVolume, bool isRaining)
