@@ -6,13 +6,21 @@ public class WeatherManager : MonoBehaviour
 {
     public static WeatherManager Instance { get; private set; }
 
-    public WeatherState CurrentWeather { get; private set; } = WeatherState.Sunny;
-
     public enum WeatherState
     {
         Sunny,
         Cloudy,
         Raining
+    }
+
+    [Header("Weather Control")]
+    [Tooltip("Change this dropdown in the Inspector at runtime or edit time to switch weather.")]
+    [SerializeField] private WeatherState currentWeather = WeatherState.Sunny;
+    
+    public WeatherState CurrentWeather 
+    { 
+        get => currentWeather; 
+        private set => currentWeather = value; 
     }
 
     [Header("URP 2D Lighting")]
@@ -37,6 +45,7 @@ public class WeatherManager : MonoBehaviour
     public float WeatherDimWeight { get; private set; } = 0f;
 
     private Coroutine transitionCoroutine;
+    private WeatherState lastAppliedWeather;
 
     private void Awake()
     {
@@ -49,6 +58,12 @@ public class WeatherManager : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        lastAppliedWeather = currentWeather;
+        ApplyWeather(true);
+    }
+
     private void OnEnable()
     {
         GameManager.OnDayAdvanced += OnNewDay;
@@ -59,9 +74,22 @@ public class WeatherManager : MonoBehaviour
         GameManager.OnDayAdvanced -= OnNewDay;
     }
 
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        // Triggers in the Unity Editor when you switch the dropdown in the Inspector
+        if (Application.isPlaying && lastAppliedWeather != currentWeather)
+        {
+            lastAppliedWeather = currentWeather;
+            ApplyWeather(false);
+        }
+    }
+#endif
+
     public void SetWeather(WeatherState newWeather, bool applyImmediately = false)
     {
-        CurrentWeather = newWeather;
+        currentWeather = newWeather;
+        lastAppliedWeather = newWeather;
         ApplyWeather(applyImmediately);
     }
 
@@ -75,20 +103,22 @@ public class WeatherManager : MonoBehaviour
     {
         int roll = Random.Range(0, 100);
         if (roll < 50)
-            CurrentWeather = WeatherState.Sunny;
+            currentWeather = WeatherState.Sunny;
         else if (roll < 80)
-            CurrentWeather = WeatherState.Cloudy;
+            currentWeather = WeatherState.Cloudy;
         else
-            CurrentWeather = WeatherState.Raining;
+            currentWeather = WeatherState.Raining;
+
+        lastAppliedWeather = currentWeather;
     }
 
     private void ApplyWeather(bool immediate)
     {
         float targetIntensity = sunnyLightIntensity;
         float targetVolume = 0f;
-        bool isRaining = CurrentWeather == WeatherState.Raining;
+        bool isRaining = currentWeather == WeatherState.Raining;
 
-        switch (CurrentWeather)
+        switch (currentWeather)
         {
             case WeatherState.Sunny:
                 WeatherDimWeight = 0f;
@@ -109,17 +139,37 @@ public class WeatherManager : MonoBehaviour
                 break;
         }
 
-        // Particle System Emission Control
+        // --- Particle System Control ---
         if (rainParticleSystem != null)
         {
-            var emission = rainParticleSystem.emission;
-            emission.enabled = isRaining;
+            if (isRaining)
+            {
+                if (!rainParticleSystem.gameObject.activeSelf)
+                    rainParticleSystem.gameObject.SetActive(true);
 
-            if (isRaining && !rainParticleSystem.isPlaying)
-                rainParticleSystem.Play();
+                var emission = rainParticleSystem.emission;
+                emission.enabled = true;
+
+                if (!rainParticleSystem.isPlaying)
+                    rainParticleSystem.Play();
+            }
+            else
+            {
+                var emission = rainParticleSystem.emission;
+                emission.enabled = false;
+
+                if (rainParticleSystem.isPlaying)
+                    rainParticleSystem.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+            }
         }
 
-        // Interrupt active transitions to prevent blending conflicts
+        // --- Audio Control ---
+        if (rainAudioSource != null)
+        {
+            if (isRaining && !rainAudioSource.gameObject.activeSelf)
+                rainAudioSource.gameObject.SetActive(true);
+        }
+
         if (transitionCoroutine != null)
             StopCoroutine(transitionCoroutine);
 
