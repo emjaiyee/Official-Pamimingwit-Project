@@ -162,11 +162,18 @@ MonoBehaviour:
   seaweedMinGrowthDays: 2
   seaweedMaxGrowthDays: 4
   sustainabilityEffect: 3
-  seedlingSprite: {fileID: 21300000, guid: 9b570091166e51147aed00ea49df3b2e, type: 3}
-  growingSprite: {fileID: -5704960430369663482, guid: 3c7c79be2d4c3ec459c756bc78374ec1, type: 3}
-  readySprite: {fileID: 6339998685727416878, guid: 3c7c79be2d4c3ec459c756bc78374ec1, type: 3}
+  seedlingSprite: {fileID: 9108645093442628315, guid: c64bd946f89fb6f4393311569fca39aa, type: 3}
+  growingSprite: {fileID: 8139234783368520941, guid: 804ff0ec3429202459d2c59ed3ad815a, type: 3}
+  readySprite: {fileID: 7571581124045121783, guid: ff74ea041671cea429733e5a437848f9, type: 3}
+  coralClearSprite: {fileID: 0}
+  coralInfestedSprite: {fileID: 0}
+  coralMinGrowthDays: 2
+  coralMaxGrowthDays: 4
+  coralMinInfestationDays: 1
+  coralMaxInfestationDays: 3
+  coralDamageToBreak: 5
   readyIndicatorPrefab: {fileID: 36053578057516784, guid: 0941449a705334944bbd9abdb19a2e08, type: 3}
-  indicatorOffset: {x: 0, y: 1.2, z: 0}
+  indicatorOffset: {x: 0, y: 0.8, z: 0}
   pulseSpeed: 5
   pulseAmount: 0.15
   ripplePrefab: {fileID: 688194962809374536, guid: 72274e37cba02974abbca7c77e1404de, type: 3}

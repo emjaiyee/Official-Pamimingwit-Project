@@ -159,12 +159,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 39af1e8298e643d3b757d836c8d95f41, type: 2}
   amount: 4
   readyTime: 15
+  seaweedMinGrowthDays: 2
+  seaweedMaxGrowthDays: 4
   sustainabilityEffect: 3
-  seedlingSprite: {fileID: 21300000, guid: 9b570091166e51147aed00ea49df3b2e, type: 3}
-  growingSprite: {fileID: -5704960430369663482, guid: 3c7c79be2d4c3ec459c756bc78374ec1, type: 3}
-  readySprite: {fileID: 6339998685727416878, guid: 3c7c79be2d4c3ec459c756bc78374ec1, type: 3}
-  coralClearSprite: {fileID: 21300000, guid: a0b477f3b68f7e24f93e31b2d48638bf, type: 3}
-  coralInfestedSprite: {fileID: 21300000, guid: 4a10a48b6d4e31244996400cf045b357, type: 3}
+  seedlingSprite: {fileID: -1373686841730094138, guid: c64bd946f89fb6f4393311569fca39aa, type: 3}
+  growingSprite: {fileID: -4728983451160979942, guid: 804ff0ec3429202459d2c59ed3ad815a, type: 3}
+  readySprite: {fileID: -7426510036606453381, guid: ff74ea041671cea429733e5a437848f9, type: 3}
+  coralClearSprite: {fileID: -7426510036606453381, guid: ff74ea041671cea429733e5a437848f9, type: 3}
+  coralInfestedSprite: {fileID: 4808940299671903168, guid: 0b2a9fa1cd165a448800da7dc68f73d9, type: 3}
   coralMinGrowthDays: 2
   coralMaxGrowthDays: 4
   coralMinInfestationDays: 1
