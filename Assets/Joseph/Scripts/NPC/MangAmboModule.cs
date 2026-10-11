@@ -6,13 +6,19 @@ using System.Collections.Generic;
 [Serializable]
 public class TieredDialogue
 {
-    public string tierName; // Must match the tierName in ReactiveOceanManager
+    public string tierName;
     public DialogueLine[] lines;
 
     [Header("Milestone Reward")]
     public int rewardCoins;
     public ItemData rewardItem;
     public int rewardAmount = 1;
+}
+
+[Serializable]
+private class ClaimedTiersWrapper
+{
+    public List<string> tiers = new List<string>();
 }
 
 public class MangAmboModule : NPCModule
@@ -24,7 +30,7 @@ public class MangAmboModule : NPCModule
     [SerializeField] private DialogueLine[] defaultDialogue;
     [SerializeField] private List<TieredDialogue> tieredDialogues = new List<TieredDialogue>();
 
-    private HashSet<string> claimedTiers = new HashSet<string>();
+    private readonly HashSet<string> claimedTiers = new HashSet<string>();
 
     private void Awake()
     {
@@ -53,12 +59,13 @@ public class MangAmboModule : NPCModule
             if (currentTier != null)
             {
                 TieredDialogue match = tieredDialogues.Find(t => t.tierName == currentTier.tierName);
-                bool alreadyClaimed = match != null && claimedTiers.Contains(match.tierName);
-
-                if (match != null && !alreadyClaimed && match.lines != null && match.lines.Length > 0)
+                if (match != null && match.lines != null && match.lines.Length > 0)
                 {
                     linesToDisplay = match.lines;
-                    activeTierMatch = match; // Only set active match if eligible for reward
+                    if (!claimedTiers.Contains(match.tierName))
+                    {
+                        activeTierMatch = match;
+                    }
                 }
             }
         }
@@ -81,14 +88,20 @@ public class MangAmboModule : NPCModule
 
         if (!hasCoins && !hasItem) return;
 
+        // Check inventory space before committing state changes
+        if (hasItem && Inventory.Instance != null)
+        {
+            bool added = Inventory.Instance.AddItem(tieredData.rewardItem, tieredData.rewardAmount);
+            if (!added)
+            {
+                UIManager.Instance?.ShowMessage("Inventory full! Free up space to claim your reward.");
+                return;
+            }
+        }
+
         if (hasCoins)
         {
             PlayerWallet.Instance?.AddCoins(tieredData.rewardCoins);
-        }
-
-        if (hasItem && Inventory.Instance != null)
-        {
-            Inventory.Instance.AddItem(tieredData.rewardItem, tieredData.rewardAmount);
         }
 
         claimedTiers.Add(tieredData.tierName);
@@ -99,8 +112,11 @@ public class MangAmboModule : NPCModule
 
     private void SaveClaimedTiers()
     {
-        string data = string.Join(",", claimedTiers);
-        PlayerPrefs.SetString(moduleSaveID, data);
+        ClaimedTiersWrapper wrapper = new ClaimedTiersWrapper();
+        wrapper.tiers.AddRange(claimedTiers);
+        string json = JsonUtility.ToJson(wrapper);
+        
+        PlayerPrefs.SetString(moduleSaveID, json);
         PlayerPrefs.Save();
     }
 
@@ -109,11 +125,14 @@ public class MangAmboModule : NPCModule
         claimedTiers.Clear();
         if (PlayerPrefs.HasKey(moduleSaveID))
         {
-            string data = PlayerPrefs.GetString(moduleSaveID);
-            string[] tiers = data.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
-            foreach (string t in tiers)
+            string json = PlayerPrefs.GetString(moduleSaveID);
+            ClaimedTiersWrapper wrapper = JsonUtility.FromJson<ClaimedTiersWrapper>(json);
+            if (wrapper != null && wrapper.tiers != null)
             {
-                claimedTiers.Add(t);
+                foreach (string t in wrapper.tiers)
+                {
+                    claimedTiers.Add(t);
+                }
             }
         }
     }
