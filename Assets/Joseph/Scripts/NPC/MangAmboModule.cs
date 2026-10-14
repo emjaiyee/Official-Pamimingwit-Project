@@ -15,14 +15,14 @@ public class TieredDialogue
     public int rewardAmount = 1;
 }
 
-[Serializable]
-private class ClaimedTiersWrapper
-{
-    public List<string> tiers = new List<string>();
-}
-
 public class MangAmboModule : NPCModule
 {
+    [Serializable]
+    private class ClaimedTiersWrapper
+    {
+        public List<string> tiers = new List<string>();
+    }
+
     [Header("Persistence ID")]
     [SerializeField] private string moduleSaveID = "MangAmbo_ClaimedTiers";
 
@@ -88,7 +88,6 @@ public class MangAmboModule : NPCModule
 
         if (!hasCoins && !hasItem) return;
 
-        // Check inventory space before committing state changes
         if (hasItem && Inventory.Instance != null)
         {
             bool added = Inventory.Instance.AddItem(tieredData.rewardItem, tieredData.rewardAmount);

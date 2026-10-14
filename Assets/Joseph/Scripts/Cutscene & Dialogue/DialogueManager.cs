@@ -36,6 +36,7 @@ public class DialogueManager : MonoBehaviour
 
     public bool IsDialogueActive { get; private set; }
     private bool isDisplayingLine;
+    private float inputLockoutTimer;
 
     private void Awake()
     {
@@ -51,13 +52,20 @@ public class DialogueManager : MonoBehaviour
     {
         if (!IsDialogueActive) return;
 
+        if (inputLockoutTimer > 0f)
+        {
+            inputLockoutTimer -= Time.deltaTime;
+            return;
+        }
+
         // Block advance while active text transitions are animating
         if (isDisplayingLine) return;
 
         bool spacePressed = Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame;
         bool clickPressed = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
+        bool ePressed = Keyboard.current != null && Keyboard.current.eKey.wasPressedThisFrame;
 
-        if (spacePressed || clickPressed)
+        if (spacePressed || clickPressed || ePressed)
         {
             AdvanceDialogue();
         }
@@ -92,11 +100,14 @@ public class DialogueManager : MonoBehaviour
         currentIndex = 0;
         onFinishCallback = onFinish;
         IsDialogueActive = true;
+        isDisplayingLine = true;
+        inputLockoutTimer = 0.35f;
 
         if (UIManager.Instance == null || UIManager.Instance.dialoguePanel == null)
         {
             Debug.LogError("[DialogueManager] UIManager Instance or Dialogue Panel missing!");
             IsDialogueActive = false;
+            isDisplayingLine = false;
             return;
         }
 
@@ -185,6 +196,9 @@ public class DialogueManager : MonoBehaviour
 
     public void AdvanceDialogue()
     {
+        if (!IsDialogueActive || isDisplayingLine || inputLockoutTimer > 0f) return;
+
+        inputLockoutTimer = 0.2f;
         currentIndex++;
         if (currentIndex < currentLines.Length)
         {

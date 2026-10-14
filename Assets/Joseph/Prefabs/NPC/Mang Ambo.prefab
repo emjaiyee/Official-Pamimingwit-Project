@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 518eedd3244d9064fb2a810b0aebead9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCManager
-  npcName: Aling Cora
+  npcName: Mang Ambo
 --- !u!114 &7424284905135307767
 MonoBehaviour:
   m_ObjectHideFlags: 0
