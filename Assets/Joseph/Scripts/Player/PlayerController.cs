@@ -16,7 +16,17 @@ public class PlayerController : MonoBehaviour
     [Header("Shadow Settings")]
     [SerializeField] private Transform shadowTransform;
 
+    [Header("Water Walking Ripples")]
+    [SerializeField] private GameObject waterRipplePrefab;
+    [SerializeField] private LayerMask waterLayer;
+    [SerializeField, Min(0.05f)] private float waterRippleInterval = 0.45f;
+    [SerializeField] private float waterRippleScale = 0.5f;
+    [SerializeField] private Vector2 waterRippleOffset = new Vector2(0f, -0.15f);
+    [SerializeField, Min(0.01f)] private float waterCheckRadius = 0.1f;
+
     private Animator animator;
+    private float waterRippleTimer;
+    private bool wasWalkingOnWater;
 
     // 🆕 CURRENT ITEM
     ItemData currentItem;
@@ -59,6 +69,8 @@ public class PlayerController : MonoBehaviour
 
         if (!movementLocked)
             HandleMovement();
+
+        UpdateWaterRipples();
     }
 
     void LateUpdate()
@@ -106,6 +118,41 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat(InputXHash, moveInput.x);
             animator.SetFloat(InputYHash, moveInput.y);
         }
+    }
+
+    private void UpdateWaterRipples()
+    {
+        Vector2 ripplePosition = (Vector2)transform.position + waterRippleOffset;
+        bool isWalkingOnWater =
+            !movementLocked &&
+            moveInput.sqrMagnitude > 0.01f &&
+            waterRipplePrefab != null &&
+            Physics2D.OverlapCircle(ripplePosition, waterCheckRadius, waterLayer) != null;
+
+        if (!isWalkingOnWater)
+        {
+            waterRippleTimer = 0f;
+            wasWalkingOnWater = false;
+            return;
+        }
+
+        if (wasWalkingOnWater)
+        {
+            waterRippleTimer += Time.deltaTime;
+            if (waterRippleTimer < Mathf.Max(waterRippleInterval, 0.05f))
+                return;
+        }
+
+        wasWalkingOnWater = true;
+        waterRippleTimer = 0f;
+
+        GameObject ripple = Instantiate(
+            waterRipplePrefab,
+            new Vector3(ripplePosition.x, ripplePosition.y, transform.position.z),
+            Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
+
+        if (ripple.TryGetComponent<RippleEffect>(out var rippleEffect))
+            rippleEffect.Initialize(waterRippleScale);
     }
 
     private void SyncShadow()

@@ -79,8 +79,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1426643241
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3738340056795658991, guid: 2aa21b749c03b67419108a69705e43a3, type: 3}
@@ -127,7 +127,7 @@ SortingGroup:
   m_GameObject: {fileID: 688194962809374536}
   m_Enabled: 1
   m_SortingLayerID: 76410801
-  m_SortingLayer: 9
+  m_SortingLayer: 17
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0

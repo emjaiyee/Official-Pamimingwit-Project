@@ -573,7 +573,7 @@ SortingGroup:
   m_GameObject: {fileID: 27822891}
   m_Enabled: 1
   m_SortingLayerID: 76410801
-  m_SortingLayer: 16
+  m_SortingLayer: 17
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -14249,7 +14249,7 @@ SortingGroup:
   m_GameObject: {fileID: 412249138}
   m_Enabled: 1
   m_SortingLayerID: 1976298219
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -14813,7 +14813,7 @@ SortingGroup:
   m_GameObject: {fileID: 488625831}
   m_Enabled: 1
   m_SortingLayerID: 1976298219
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -15642,7 +15642,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -784358621
-  m_SortingLayer: 14
+  m_SortingLayer: 15
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -20022,7 +20022,7 @@ SortingGroup:
   m_GameObject: {fileID: 614003619}
   m_Enabled: 1
   m_SortingLayerID: 1557954747
-  m_SortingLayer: 18
+  m_SortingLayer: 19
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -20578,7 +20578,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 735575153
-  m_SortingLayer: 10
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Positions:
@@ -22294,9 +22294,9 @@ GameObject:
   - component: {fileID: 759103442}
   - component: {fileID: 759103441}
   - component: {fileID: 759103440}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Waves
-  m_TagString: Water
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22823,7 +22823,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -13, y: -1, z: 0}
@@ -22879,7 +22879,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -11, y: -1, z: 0}
@@ -22935,7 +22935,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -9, y: -1, z: 0}
@@ -23103,7 +23103,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -3, y: -1, z: 0}
@@ -23495,7 +23495,7 @@ Tilemap:
       - {fileID: 696848205, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: -329836100, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
       - {fileID: 1989759959, guid: 1fea9eda45c906041a1d13c5fed13636, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 13, y: -1, z: 0}
@@ -24021,7 +24021,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1976298219
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -37671,6 +37671,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4108252574710588403, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      propertyPath: waterCheckRadius
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108252574710588403, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      propertyPath: waterRippleScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108252574710588403, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      propertyPath: waterRipplePrefab
+      value: 
+      objectReference: {fileID: 688194962809374536, guid: acc9d75df2e060c4d9bba0dc2d026420, type: 3}
+    - target: {fileID: 4108252574710588403, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      propertyPath: waterRippleInterval
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108252574710588403, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
+      propertyPath: waterRippleOffset.y
+      value: -0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5243109721669505822, guid: afa333c1857618642a68ab1ac764ee71, type: 3}
       propertyPath: m_Name
       value: Agos
@@ -41745,7 +41765,7 @@ SortingGroup:
   m_GameObject: {fileID: 1200506234}
   m_Enabled: 1
   m_SortingLayerID: 739791343
-  m_SortingLayer: 19
+  m_SortingLayer: 20
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -83036,7 +83056,7 @@ SortingGroup:
   m_GameObject: {fileID: 1249184667}
   m_Enabled: 1
   m_SortingLayerID: 1976298219
-  m_SortingLayer: 12
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -84797,7 +84817,7 @@ SortingGroup:
   m_GameObject: {fileID: 1359875852}
   m_Enabled: 1
   m_SortingLayerID: 739791343
-  m_SortingLayer: 19
+  m_SortingLayer: 20
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -85056,7 +85076,7 @@ SortingGroup:
   m_GameObject: {fileID: 1362762637}
   m_Enabled: 1
   m_SortingLayerID: 76410801
-  m_SortingLayer: 16
+  m_SortingLayer: 17
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
@@ -91385,7 +91405,7 @@ TilemapCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -96794,7 +96814,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1564462907
-  m_SortingLayer: 13
+  m_SortingLayer: 14
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -101849,7 +101869,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1564462907
-  m_SortingLayer: 13
+  m_SortingLayer: 14
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -107976,7 +107996,7 @@ MonoBehaviour:
   m_Intensity: 10
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 0000000081d63ce3d1f02238bbd8b7b3dd66aff959b10edf2bfc2c62ebeacb75d940a498b1ef8d0429d9085571fcd72b3bcf3f5dbb80dc5cef51182c5bd4b00323a33fd1670fb0f7ff9c8bcfdbb5ad02
+  m_ApplyToSortingLayers: 0000000081d63ce3d1f02238bbd8b7b3dd66aff959b10edf2bfc2c62ebeacb75d940a498b1ef8d0429d9085571fcd72b3bcf3f5dbb80dc5cef51182c5bd4b00323a33fd1670fb0f7ff9c8bcfdbb5ad02d92728b9
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
