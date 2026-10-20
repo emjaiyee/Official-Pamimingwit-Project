@@ -5602,6 +5602,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   moveSpeed: 4
   shadowTransform: {fileID: 1302522906546831035}
+  waterRipplePrefab: {fileID: 688194962809374536, guid: 72274e37cba02974abbca7c77e1404de, type: 3}
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  waterRippleInterval: 0.45
+  waterRippleScale: 0.5
+  waterRippleOffset: {x: 0, y: -0.15}
+  waterCheckRadius: 0.1
 --- !u!114 &6524500479562787420
 MonoBehaviour:
   m_ObjectHideFlags: 0
