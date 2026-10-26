@@ -5610,6 +5610,10 @@ MonoBehaviour:
   waterRippleScale: 0.5
   waterRippleOffset: {x: 0, y: -0.15}
   waterCheckRadius: 0.1
+  waterSinkDepth: 2.5
+  waterSinkMinimumVisibleFraction: 0.2
+  waterSinkShadowMinimumScale: 0.45
+  waterSinkShadowMinimumAlpha: 0.4
 --- !u!114 &6524500479562787420
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
@@ -23,10 +24,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float waterRippleScale = 0.5f;
     [SerializeField] private Vector2 waterRippleOffset = new Vector2(0f, -0.15f);
     [SerializeField, Min(0.01f)] private float waterCheckRadius = 0.1f;
+    [SerializeField, Min(0.01f)] private float waterSinkDepth = 2.5f;
+    [SerializeField, Range(0f, 1f)] private float waterSinkMinimumVisibleFraction = 0.2f;
+    [SerializeField, Range(0.1f, 1f)] private float waterSinkShadowMinimumScale = 0.45f;
+    [SerializeField, Range(0f, 1f)] private float waterSinkShadowMinimumAlpha = 0.4f;
 
     private Animator animator;
     private float waterRippleTimer;
     private bool wasWalkingOnWater;
+    private SpriteMask waterSinkMask;
+    private float waterVisibleFraction = 1f;
+    private float waterSinkProgress;
+    private float appliedShadowSinkOffset;
+    private float lastShadowPositionY;
+    private bool hasLastShadowPosition;
+    private SpriteRenderer shadowSpriteRenderer;
+    private Vector3 originalShadowScale;
+    private Color originalShadowColor;
 
     // 🆕 CURRENT ITEM
     ItemData currentItem;
@@ -59,6 +73,14 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (shadowTransform != null)
+        {
+            shadowSpriteRenderer = shadowTransform.GetComponent<SpriteRenderer>();
+            originalShadowScale = shadowTransform.localScale;
+            if (shadowSpriteRenderer != null)
+                originalShadowColor = shadowSpriteRenderer.color;
+        }
+        InitializeWaterSinkMask();
 
         TeleportToSpawnPoint();
     }
@@ -76,6 +98,7 @@ public class PlayerController : MonoBehaviour
     void LateUpdate()
     {
         SyncShadow();
+        SyncWaterSinkMask();
     }
 
     void FixedUpdate()
@@ -123,11 +146,14 @@ public class PlayerController : MonoBehaviour
     private void UpdateWaterRipples()
     {
         Vector2 ripplePosition = (Vector2)transform.position + waterRippleOffset;
+        Collider2D waterCollider = Physics2D.OverlapCircle(ripplePosition, waterCheckRadius, waterLayer);
+        UpdateWaterSinking(waterCollider, ripplePosition.y);
+
         bool isWalkingOnWater =
             !movementLocked &&
             moveInput.sqrMagnitude > 0.01f &&
             waterRipplePrefab != null &&
-            Physics2D.OverlapCircle(ripplePosition, waterCheckRadius, waterLayer) != null;
+            waterCollider != null;
 
         if (!isWalkingOnWater)
         {
@@ -155,9 +181,101 @@ public class PlayerController : MonoBehaviour
             rippleEffect.Initialize(waterRippleScale);
     }
 
+    private void UpdateWaterSinking(Collider2D waterCollider, float footY)
+    {
+        float depth = 0f;
+        if (waterCollider != null)
+        {
+            float waterDepth = Mathf.Max(waterSinkDepth, 0.01f);
+            depth = Mathf.Clamp01((waterCollider.bounds.max.y - footY) / waterDepth);
+        }
+
+        waterSinkProgress = depth;
+        waterVisibleFraction = Mathf.Lerp(1f, waterSinkMinimumVisibleFraction, depth);
+    }
+
+    private void InitializeWaterSinkMask()
+    {
+        if (spriteRenderer == null)
+            return;
+
+        GameObject maskObject = new GameObject("Water Sink Mask");
+        maskObject.transform.SetParent(transform, false);
+        waterSinkMask = maskObject.AddComponent<SpriteMask>();
+        waterSinkMask.isCustomRangeActive = true;
+
+        SortingGroup sortingGroup = GetComponent<SortingGroup>();
+        int sortingLayerID = sortingGroup != null ? sortingGroup.sortingLayerID : spriteRenderer.sortingLayerID;
+        int sortingOrder = sortingGroup != null ? sortingGroup.sortingOrder : spriteRenderer.sortingOrder;
+        waterSinkMask.backSortingLayerID = sortingLayerID;
+        waterSinkMask.frontSortingLayerID = sortingLayerID;
+        waterSinkMask.backSortingOrder = sortingOrder - 1;
+        waterSinkMask.frontSortingOrder = sortingOrder + 1;
+        waterSinkMask.enabled = false;
+    }
+
+    private void SyncWaterSinkMask()
+    {
+        if (spriteRenderer == null || waterSinkMask == null)
+            return;
+
+        Sprite sprite = spriteRenderer.sprite;
+        bool isSinking = waterVisibleFraction < 0.999f && sprite != null;
+        if (!isSinking)
+        {
+            spriteRenderer.maskInteraction = SpriteMaskInteraction.None;
+            waterSinkMask.enabled = false;
+            return;
+        }
+
+        Bounds spriteBounds = sprite.bounds;
+        float visibleFraction = Mathf.Clamp01(waterVisibleFraction);
+        bool flipY = spriteRenderer.flipY;
+        float verticalDirection = flipY ? -1f : 1f;
+        float spriteTop = flipY ? -spriteBounds.min.y : spriteBounds.max.y;
+
+        waterSinkMask.sprite = sprite;
+        waterSinkMask.alphaCutoff = 0.01f;
+        waterSinkMask.transform.localScale = new Vector3(
+            spriteRenderer.flipX ? -1f : 1f,
+            verticalDirection * visibleFraction,
+            1f);
+        waterSinkMask.transform.localPosition = new Vector3(
+            0f,
+            spriteTop * (1f - visibleFraction),
+            0f);
+        waterSinkMask.enabled = true;
+        spriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
+    }
+
     private void SyncShadow()
     {
         if (shadowTransform == null || spriteRenderer == null) return;
+
+        float shadowSinkOffset = spriteRenderer.sprite != null
+            ? spriteRenderer.sprite.bounds.size.y *
+                Mathf.Abs(spriteRenderer.transform.localScale.y) *
+                (1f - waterVisibleFraction)
+            : 0f;
+        Vector3 shadowPosition = shadowTransform.localPosition;
+        if (hasLastShadowPosition && Mathf.Approximately(shadowPosition.y, lastShadowPositionY))
+            shadowPosition.y -= appliedShadowSinkOffset;
+
+        shadowPosition.y += shadowSinkOffset;
+        shadowTransform.localPosition = shadowPosition;
+        appliedShadowSinkOffset = shadowSinkOffset;
+        lastShadowPositionY = shadowPosition.y;
+        hasLastShadowPosition = true;
+
+        float shadowScale = Mathf.Lerp(1f, waterSinkShadowMinimumScale, waterSinkProgress);
+        shadowTransform.localScale = originalShadowScale * shadowScale;
+
+        if (shadowSpriteRenderer != null)
+        {
+            Color shadowColor = originalShadowColor;
+            shadowColor.a *= Mathf.Lerp(1f, waterSinkShadowMinimumAlpha, waterSinkProgress);
+            shadowSpriteRenderer.color = shadowColor;
+        }
 
         bool isFlipped = spriteRenderer.flipX;
 
