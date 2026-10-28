@@ -14,8 +14,10 @@ public class PlayerController : MonoBehaviour
 
     bool movementLocked;
     private SpriteRenderer spriteRenderer;
+    private SortingGroup sortingGroup;
     private readonly HashSet<Collider2D> walkInFrontContacts = new HashSet<Collider2D>();
-    private bool spriteWasEnabled;
+    private int originalSortingLayerID;
+    private int originalSortingOrder;
 
     [Header("Shadow Settings")]
     [SerializeField] private Transform shadowTransform;
@@ -76,8 +78,17 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        if (spriteRenderer != null)
-            spriteWasEnabled = spriteRenderer.enabled;
+        sortingGroup = GetComponent<SortingGroup>();
+        if (sortingGroup != null)
+        {
+            originalSortingLayerID = sortingGroup.sortingLayerID;
+            originalSortingOrder = sortingGroup.sortingOrder;
+        }
+        else if (spriteRenderer != null)
+        {
+            originalSortingLayerID = spriteRenderer.sortingLayerID;
+            originalSortingOrder = spriteRenderer.sortingOrder;
+        }
         if (shadowTransform != null)
         {
             shadowSpriteRenderer = shadowTransform.GetComponent<SpriteRenderer>();
@@ -96,14 +107,14 @@ public class PlayerController : MonoBehaviour
         if (IsWalkInFrontCollider(otherCollider))
         {
             walkInFrontContacts.Add(otherCollider);
-            UpdateWalkInFrontVisibility();
+            UpdateWalkInFrontSorting();
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (walkInFrontContacts.Remove(collision.otherCollider))
-            UpdateWalkInFrontVisibility();
+            UpdateWalkInFrontSorting();
     }
 
     private bool IsWalkInFrontCollider(Collider2D collider)
@@ -124,10 +135,27 @@ public class PlayerController : MonoBehaviour
         return targetRenderer != null && targetRenderer.sortingLayerName == "WalkInfront";
     }
 
-    private void UpdateWalkInFrontVisibility()
+    private void UpdateWalkInFrontSorting()
     {
-        if (spriteRenderer != null)
-            spriteRenderer.enabled = spriteWasEnabled && walkInFrontContacts.Count == 0;
+        int sortingLayerID = walkInFrontContacts.Count > 0
+            ? SortingLayer.NameToID("Ground Design")
+            : originalSortingLayerID;
+        int sortingOrder = walkInFrontContacts.Count > 0
+            ? (shadowTransform != null && shadowTransform.TryGetComponent<SortingGroup>(out var shadowSortingGroup)
+                ? shadowSortingGroup.sortingOrder + 1
+                : originalSortingOrder)
+            : originalSortingOrder;
+
+        if (sortingGroup != null)
+        {
+            sortingGroup.sortingLayerID = sortingLayerID;
+            sortingGroup.sortingOrder = sortingOrder;
+        }
+        else if (spriteRenderer != null)
+        {
+            spriteRenderer.sortingLayerID = sortingLayerID;
+            spriteRenderer.sortingOrder = sortingOrder;
+        }
     }
 
     void Update()
@@ -520,7 +548,7 @@ public class PlayerController : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         walkInFrontContacts.Clear();
-        UpdateWalkInFrontVisibility();
+        UpdateWalkInFrontSorting();
         TeleportToSpawnPoint();
     }
 
