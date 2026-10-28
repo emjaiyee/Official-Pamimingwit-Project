@@ -32,6 +32,8 @@ public class PlayerUIManager : MonoBehaviour
     private float targetMaxStamina;
     private float visualStamina;
     private bool initializedStamina;
+    private int displayedStamina = -1;
+    private int displayedMaxStamina = -1;
 
     public GameObject InventoryPanel => inventoryPanel;
 
@@ -148,7 +150,16 @@ public class PlayerUIManager : MonoBehaviour
         staminaSlider.value = visualStamina;
 
         if (staminaText != null)
-            staminaText.text = $"{Mathf.CeilToInt(visualStamina)} / {Mathf.CeilToInt(targetMaxStamina)}";
+        {
+            int currentDisplay = Mathf.CeilToInt(visualStamina);
+            int maxDisplay = Mathf.CeilToInt(targetMaxStamina);
+            if (currentDisplay != displayedStamina || maxDisplay != displayedMaxStamina)
+            {
+                staminaText.text = $"{currentDisplay} / {maxDisplay}";
+                displayedStamina = currentDisplay;
+                displayedMaxStamina = maxDisplay;
+            }
+        }
 
         if (staminaFillImage != null)
         {

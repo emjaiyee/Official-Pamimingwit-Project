@@ -13,6 +13,11 @@ public enum GameState
 [DefaultExecutionOrder(-100)]
 public class GameManager : MonoBehaviour
 {
+    private static readonly string[] Weekdays =
+    {
+        "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+    };
+
     public static GameManager Instance { get; private set; }
 
     public GameState currentState { get; private set; } = GameState.Normal;
@@ -91,8 +96,11 @@ public class GameManager : MonoBehaviour
     {
         if (currentState == GameState.UI || IsTransitioningDay) return;
 
+        int previousMinutes = minutes;
+        int previousHours = hours;
         CalculateTime();
-        DisplayTime();
+        if (minutes != previousMinutes || hours != previousHours)
+            DisplayTime();
         HandleLateNightDebuff();
     }
 
@@ -224,9 +232,8 @@ public class GameManager : MonoBehaviour
 
     public string GetDayOfWeekName(int dayNumber)
     {
-        string[] weekdays = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
-        int normalizedIndex = ((dayNumber - 1) % weekdays.Length + weekdays.Length) % weekdays.Length;
-        return weekdays[normalizedIndex];
+        int normalizedIndex = ((dayNumber - 1) % Weekdays.Length + Weekdays.Length) % Weekdays.Length;
+        return Weekdays[normalizedIndex];
     }
 
     public string GetCurrentDayOfWeekName() => GetDayOfWeekName(currentDay);
@@ -267,6 +274,7 @@ public class GameManager : MonoBehaviour
         minutes = 0;
         seconds = 0f;
         ControlPPV();
+        DisplayTime();
     }
 
     public string ProcessTax()
