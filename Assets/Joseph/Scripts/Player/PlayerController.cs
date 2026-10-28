@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,8 @@ public class PlayerController : MonoBehaviour
 
     bool movementLocked;
     private SpriteRenderer spriteRenderer;
+    private readonly HashSet<Collider2D> walkInFrontContacts = new HashSet<Collider2D>();
+    private bool spriteWasEnabled;
 
     [Header("Shadow Settings")]
     [SerializeField] private Transform shadowTransform;
@@ -73,6 +76,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+            spriteWasEnabled = spriteRenderer.enabled;
         if (shadowTransform != null)
         {
             shadowSpriteRenderer = shadowTransform.GetComponent<SpriteRenderer>();
@@ -83,6 +88,46 @@ public class PlayerController : MonoBehaviour
         InitializeWaterSinkMask();
 
         TeleportToSpawnPoint();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Collider2D otherCollider = collision.otherCollider;
+        if (IsWalkInFrontCollider(otherCollider))
+        {
+            walkInFrontContacts.Add(otherCollider);
+            UpdateWalkInFrontVisibility();
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (walkInFrontContacts.Remove(collision.otherCollider))
+            UpdateWalkInFrontVisibility();
+    }
+
+    private bool IsWalkInFrontCollider(Collider2D collider)
+    {
+        if (collider == null)
+            return false;
+
+        SortingGroup sortingGroup = collider.GetComponentInParent<SortingGroup>();
+        if (sortingGroup != null)
+            return sortingGroup.sortingLayerName == "WalkInfront";
+
+        Renderer targetRenderer = collider.GetComponent<Renderer>();
+        if (targetRenderer == null)
+            targetRenderer = collider.GetComponentInParent<Renderer>();
+        if (targetRenderer == null)
+            targetRenderer = collider.GetComponentInChildren<Renderer>();
+
+        return targetRenderer != null && targetRenderer.sortingLayerName == "WalkInfront";
+    }
+
+    private void UpdateWalkInFrontVisibility()
+    {
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = spriteWasEnabled && walkInFrontContacts.Count == 0;
     }
 
     void Update()
@@ -474,6 +519,8 @@ public class PlayerController : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        walkInFrontContacts.Clear();
+        UpdateWalkInFrontVisibility();
         TeleportToSpawnPoint();
     }
 
