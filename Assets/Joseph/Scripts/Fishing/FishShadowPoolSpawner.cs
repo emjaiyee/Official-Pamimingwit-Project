@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public sealed class FishShadowPoolSpawner : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
         public Vector3 driftDirection;
         public float driftSpeed;
         public float respawnTime;
+        public float rippleTimer;
     }
 
     private const int PoolCount = 4;
@@ -29,6 +31,11 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
     [SerializeField] private int sortingOrder = 10;
     [SerializeField] private Color poolColor = new Color(0.2f, 0.95f, 1f, 1f);
     [SerializeField] private Vector2 poolScaleRange = new Vector2(1.1f, 1.65f);
+
+    [Header("Pool Ripples")]
+    [SerializeField] private GameObject ripplePrefab;
+    [SerializeField, Min(0.05f)] private float rippleInterval = 1.2f;
+    [SerializeField] private float rippleScale = 0.5f;
 
     [Header("Pool Movement")]
     [SerializeField] private Vector2 driftSpeedRange = new Vector2(0.025f, 0.07f);
@@ -86,6 +93,16 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
             else
             {
                 pool.driftDirection = Random.insideUnitCircle.normalized;
+            }
+
+            if (!float.IsPositiveInfinity(pool.respawnTime))
+            {
+                pool.rippleTimer += deltaTime;
+                if (ripplePrefab != null && pool.rippleTimer >= Mathf.Max(rippleInterval, 0.05f))
+                {
+                    pool.rippleTimer = 0f;
+                    SpawnRipple(pool);
+                }
             }
 
             pool.respawnTime -= deltaTime;
@@ -157,6 +174,26 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
                 respawnTime = Random.Range(respawnTimeRange.x, respawnTimeRange.y)
             };
             pools.Add(pool);
+        }
+    }
+
+    private void SpawnRipple(ShadowPool pool)
+    {
+        GameObject ripple = Instantiate(
+            ripplePrefab,
+            pool.transform.position,
+            Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
+
+        if (ripple.TryGetComponent<RippleEffect>(out RippleEffect rippleEffect))
+        {
+            rippleEffect.Initialize(rippleScale);
+        }
+
+        SortingGroup sortingGroup = ripple.GetComponent<SortingGroup>();
+        if (sortingGroup != null)
+        {
+            sortingGroup.sortingLayerName = sortingLayerName;
+            sortingGroup.sortingOrder = sortingOrder + 1;
         }
     }
 

@@ -115213,6 +115213,9 @@ MonoBehaviour:
   sortingOrder: 10
   poolColor: {r: 0, g: 0, b: 0, a: 1}
   poolScaleRange: {x: 1.35, y: 1.65}
+  ripplePrefab: {fileID: 688194962809374536, guid: 72274e37cba02974abbca7c77e1404de, type: 3}
+  rippleInterval: 1.2
+  rippleScale: 0.5
   driftSpeedRange: {x: 0.02, y: 0.04}
   respawnTimeRange: {x: 8, y: 15}
 --- !u!1660057539 &9223372036854775807

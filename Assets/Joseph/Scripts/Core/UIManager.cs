@@ -130,6 +130,34 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public CanvasGroup EnsureCutsceneFadeOverlay()
+    {
+        if (cutsceneFadeOverlay != null)
+            return cutsceneFadeOverlay;
+
+        GameObject overlayObject = new GameObject("CutsceneFadeOverlay", typeof(RectTransform), typeof(Canvas), typeof(CanvasGroup));
+        Canvas overlayCanvas = overlayObject.GetComponent<Canvas>();
+        overlayCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        overlayCanvas.overrideSorting = true;
+        overlayCanvas.sortingOrder = short.MaxValue;
+
+        GameObject backgroundObject = new GameObject("BlackBackground", typeof(RectTransform), typeof(Image));
+        backgroundObject.transform.SetParent(overlayObject.transform, false);
+        RectTransform backgroundRect = backgroundObject.GetComponent<RectTransform>();
+        backgroundRect.anchorMin = Vector2.zero;
+        backgroundRect.anchorMax = Vector2.one;
+        backgroundRect.offsetMin = Vector2.zero;
+        backgroundRect.offsetMax = Vector2.zero;
+
+        Image backgroundImage = backgroundObject.GetComponent<Image>();
+        backgroundImage.color = Color.black;
+        backgroundImage.raycastTarget = false;
+
+        cutsceneFadeOverlay = overlayObject.GetComponent<CanvasGroup>();
+        cutsceneFadeOverlay.alpha = 0f;
+        return cutsceneFadeOverlay;
+    }
+
     private void OnDestroy()
     {
         GameEvents.OnItemCaught -= RefreshFishIndex;

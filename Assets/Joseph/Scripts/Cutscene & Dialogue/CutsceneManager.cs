@@ -29,11 +29,16 @@ public class CutsceneManager : MonoBehaviour
     private Action onFinishCallback;
 
     [SerializeField] private float fadeDuration = 0.5f;
-    [SerializeField] private float panelFadeDuration = 0.25f; // For the cutscenePanel itself to fade
+    [SerializeField] private float panelFadeDuration = 0.25f;
+    [SerializeField] private float panelEntranceOffset = 18f;
+    [SerializeField] private float panelHoverDistance = 4f;
+    [SerializeField] private float panelHoverDuration = 6f;
     [SerializeField] private float textFadeDuration = 0.15f; // For the text content
     private bool isFading;
-    private CanvasGroup cutscenePanelCanvasGroup; // CanvasGroup for the cutscenePanel
-    private Coroutine panelFadeCoroutine; // Coroutine for the cutscenePanel fade
+    private CanvasGroup cutscenePanelCanvasGroup;
+    private RectTransform cutscenePanelRectTransform;
+    private Vector2 cutscenePanelRestPosition;
+    private Coroutine panelMotionCoroutine;
     private CanvasGroup cutsceneNameCanvasGroup;
     private CanvasGroup cutsceneContentCanvasGroup;
     private CanvasGroup cutsceneCharacterCanvasGroup;
@@ -124,6 +129,11 @@ public class CutsceneManager : MonoBehaviour
             {
                 cutscenePanelCanvasGroup = UIManager.Instance.cutscenePanel.AddComponent<CanvasGroup>();
             }
+            cutscenePanelRectTransform = UIManager.Instance.cutscenePanel.GetComponent<RectTransform>();
+            if (cutscenePanelRectTransform != null)
+            {
+                cutscenePanelRestPosition = cutscenePanelRectTransform.anchoredPosition;
+            }
         }
         else { Debug.LogError("CutsceneManager: UIManager Instance or Cutscene Panel is missing!"); return; }
 
@@ -179,12 +189,17 @@ public class CutsceneManager : MonoBehaviour
 
         // Set alpha to 0 before activating, then fade in
         cutscenePanelCanvasGroup.alpha = 0f;
+        if (cutscenePanelRectTransform != null)
+        {
+            cutscenePanelRectTransform.anchoredPosition = cutscenePanelRestPosition - Vector2.up * panelEntranceOffset;
+        }
         UIManager.Instance.cutscenePanel.SetActive(true);
         GameManager.Instance?.SetState(GameState.UI);
         PlayerController.Instance?.LockMovement();
 
         yield return StartCoroutine(FadeCutscenePanel(1f, () => UIManager.Instance?.PlayPanelOpenSFX())); // Fade in the cutscene panel and play sound
 
+        panelMotionCoroutine = StartCoroutine(PanelHoverRoutine());
         yield return StartCoroutine(DisplayStepRoutine()); // Display first step with fade
 
         // Fade from black (full screen)
@@ -270,9 +285,9 @@ public class CutsceneManager : MonoBehaviour
 
     private IEnumerator EndCutsceneRoutine()
     {
-        isFading = true; // Set isFading to true at the start of the routine
-        yield return StartCoroutine(FadeCutscenePanel(0f, () => UIManager.Instance?.PlayPanelCloseSFX())); // Fade out the cutscene panel itself and play sound
-        yield return StartCoroutine(Fade(1f)); // Fade to black (full screen overlay)
+        isFading = true;
+        yield return StartCoroutine(Fade(1f));
+        UIManager.Instance?.PlayPanelCloseSFX();
 
         EndCutscene();
         yield return StartCoroutine(Fade(0f)); // Fade from black (full screen)
@@ -282,6 +297,16 @@ public class CutsceneManager : MonoBehaviour
     private void EndCutscene()
     {
         IsCutsceneActive = false;
+
+        if (panelMotionCoroutine != null)
+        {
+            StopCoroutine(panelMotionCoroutine);
+            panelMotionCoroutine = null;
+        }
+        if (cutscenePanelRectTransform != null)
+        {
+            cutscenePanelRectTransform.anchoredPosition = cutscenePanelRestPosition;
+        }
 
         if (UIManager.Instance != null && UIManager.Instance.cutscenePanel != null)
             UIManager.Instance.cutscenePanel.SetActive(false);
@@ -295,11 +320,29 @@ public class CutsceneManager : MonoBehaviour
         onFinishCallback?.Invoke();
     }
 
+    private IEnumerator PanelHoverRoutine()
+    {
+        float elapsed = 0f;
+        float hoverDuration = Mathf.Max(0.01f, panelHoverDuration);
+        while (IsCutsceneActive && cutscenePanelRectTransform != null)
+        {
+            elapsed += Time.deltaTime;
+            float phase = elapsed * Mathf.PI * 2f / hoverDuration;
+            float hoverOffset = Mathf.Sin(phase) * panelHoverDistance;
+            cutscenePanelRectTransform.anchoredPosition = cutscenePanelRestPosition + Vector2.up * hoverOffset;
+            yield return null;
+        }
+    }
+
     private IEnumerator Fade(float targetAlpha)
     {
-        if (UIManager.Instance == null || UIManager.Instance.cutsceneFadeOverlay == null) yield break;
+        if (UIManager.Instance == null) yield break;
 
-        CanvasGroup cg = UIManager.Instance.cutsceneFadeOverlay;
+        CanvasGroup cg = UIManager.Instance.EnsureCutsceneFadeOverlay();
+        if (!cg.gameObject.activeSelf)
+        {
+            cg.gameObject.SetActive(true);
+        }
         float startAlpha = cg.alpha;
         float time = 0;
 
@@ -312,25 +355,37 @@ public class CutsceneManager : MonoBehaviour
         cg.alpha = targetAlpha;
     }
 
-    // New fade method for the cutscenePanel itself
     private IEnumerator FadeCutscenePanel(float targetAlpha, Action onComplete = null)
     {
         if (cutscenePanelCanvasGroup == null) yield break;
 
         float startAlpha = cutscenePanelCanvasGroup.alpha;
+        Vector2 startPosition = cutscenePanelRectTransform != null
+            ? cutscenePanelRectTransform.anchoredPosition
+            : Vector2.zero;
+        Vector2 targetPosition = cutscenePanelRestPosition;
         float time = 0;
 
         while (time < panelFadeDuration)
         {
             time += Time.deltaTime;
-            cutscenePanelCanvasGroup.alpha = Mathf.Lerp(startAlpha, targetAlpha, time / panelFadeDuration);
+            float progress = Mathf.Clamp01(time / panelFadeDuration);
+            float easedProgress = 1f - Mathf.Pow(1f - progress, 3f);
+            cutscenePanelCanvasGroup.alpha = Mathf.Lerp(startAlpha, targetAlpha, easedProgress);
+            if (cutscenePanelRectTransform != null)
+            {
+                cutscenePanelRectTransform.anchoredPosition = Vector2.Lerp(startPosition, targetPosition, easedProgress);
+            }
             yield return null;
         }
         cutscenePanelCanvasGroup.alpha = targetAlpha;
+        if (cutscenePanelRectTransform != null)
+        {
+            cutscenePanelRectTransform.anchoredPosition = cutscenePanelRestPosition;
+        }
         onComplete?.Invoke();
     }
 
-    // New fade method for the text content itself
     private IEnumerator FadeText(float targetAlpha)
     {
         if (cutsceneNameCanvasGroup == null && cutsceneContentCanvasGroup == null && cutsceneCharacterCanvasGroup == null) yield break;
