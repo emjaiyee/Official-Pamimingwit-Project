@@ -544,10 +544,14 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   poolCount: 4
   positionAttempts: 120
+  minimumShaderDepth: 0.13
+  minimumWaterDepth: 2
+  depthSampleCount: 24
   sortingLayerName: WalkInfront
   sortingOrder: 10
-  poolColor: {r: 0.2, g: 0.95, b: 1, a: 1}
   poolScaleRange: {x: 1.1, y: 1.65}
+  bubbleParticlePrefab: {fileID: 2522534860448226045, guid: c271a67d24237214cb50883bc77ca15f, type: 3}
+  bubbleParticleScale: 1
   ripplePrefab: {fileID: 688194962809374536, guid: 72274e37cba02974abbca7c77e1404de, type: 3}
   rippleInterval: 1.2
   rippleScale: 0.5

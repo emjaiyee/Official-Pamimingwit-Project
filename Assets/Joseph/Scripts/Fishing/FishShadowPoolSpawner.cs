@@ -8,7 +8,7 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
     private sealed class ShadowPool
     {
         public Transform transform;
-        public SpriteRenderer renderer;
+        public Vector2 fishingAreaRadius;
         public Vector3 driftDirection;
         public float driftSpeed;
         public float respawnTime;
@@ -17,8 +17,13 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
 
     private const int PoolCount = 4;
     private const int PositionAttempts = 120;
+    private const int MinimumDepthSampleCount = 4;
+    private const int DefaultDepthSampleCount = 24;
     private const float MinimumRespawnTime = 8f;
     private const float MaximumRespawnTime = 15f;
+    private static readonly int SurfaceLevelProperty = Shader.PropertyToID("_SurfaceLevel");
+    private static readonly int DepthVerticalScaleProperty = Shader.PropertyToID("_DepthVerticalScale");
+    private static readonly Vector2 PoolSpriteHalfSize = new Vector2(0.75f, 0.4375f);
 
     [Header("Water Placement")]
     [SerializeField] private LayerMask waterLayer;
@@ -26,16 +31,28 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
     [SerializeField] private int poolCount = PoolCount;
     [SerializeField] private int positionAttempts = PositionAttempts;
 
-    [Header("Pool Appearance")]
+    [Header("Depth Filter")]
+    [Tooltip("Minimum normalized shader depth required for a pool. Matches the water shader's _SurfaceLevel and _DepthVerticalScale.")]
+    [SerializeField, Range(0f, 1f)] private float minimumShaderDepth = 0.13f;
+    [Tooltip("Fallback minimum distance in world units from the water's edge when its material has no depth shader properties.")]
+    [SerializeField, Min(0f)] private float minimumWaterDepth = 2f;
+    [Tooltip("Number of points checked around the depth boundary. Higher values follow irregular shorelines more accurately.")]
+    [SerializeField, Min(MinimumDepthSampleCount)] private int depthSampleCount = DefaultDepthSampleCount;
+
+    [Header("Fishing Area")]
     [SerializeField] private string sortingLayerName = "WalkInfront";
     [SerializeField] private int sortingOrder = 10;
-    [SerializeField] private Color poolColor = new Color(0.2f, 0.95f, 1f, 1f);
+    [Tooltip("Controls the hidden fishing area radius, independently for each spawned pool.")]
     [SerializeField] private Vector2 poolScaleRange = new Vector2(1.1f, 1.65f);
+
+    [Header("Pool Bubbles")]
+    [SerializeField] private GameObject bubbleParticlePrefab;
+    [SerializeField, Min(0f)] private float bubbleParticleScale = 1f;
 
     [Header("Pool Ripples")]
     [SerializeField] private GameObject ripplePrefab;
     [SerializeField, Min(0.05f)] private float rippleInterval = 1.2f;
-    [SerializeField] private float rippleScale = 0.5f;
+    [SerializeField, Min(0f)] private float rippleScale = 0.5f;
 
     [Header("Pool Movement")]
     [SerializeField] private Vector2 driftSpeedRange = new Vector2(0.025f, 0.07f);
@@ -44,8 +61,6 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
     public static FishShadowPoolSpawner Instance { get; private set; }
 
     private readonly List<ShadowPool> pools = new List<ShadowPool>();
-    private Sprite poolSprite;
-    private Texture2D poolTexture;
     private bool initialized;
 
     private void Awake()
@@ -62,18 +77,12 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
 
         Instance = this;
         if (mainCamera == null) mainCamera = Camera.main;
-        poolTexture = CreatePoolTexture();
-        poolSprite = Sprite.Create(poolTexture, new Rect(0, 0, poolTexture.width, poolTexture.height), new Vector2(0.5f, 0.5f), 64f);
-        poolSprite.name = "Fish Shadow Pool";
         StartCoroutine(SpawnPools());
     }
 
     private void OnDestroy()
     {
         if (Instance == this) Instance = null;
-
-        if (poolSprite != null) Destroy(poolSprite);
-        if (poolTexture != null) Destroy(poolTexture);
     }
 
     private void Update()
@@ -86,7 +95,7 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
             if (pool.transform == null) continue;
 
             Vector3 nextPosition = pool.transform.position + pool.driftDirection * (pool.driftSpeed * deltaTime);
-            if (Physics2D.OverlapCircle(nextPosition, 0.1f, waterLayer) != null)
+            if (IsDeepWaterPosition(nextPosition))
             {
                 pool.transform.position = nextPosition;
             }
@@ -95,21 +104,29 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
                 pool.driftDirection = Random.insideUnitCircle.normalized;
             }
 
-            if (!float.IsPositiveInfinity(pool.respawnTime))
+            if (ripplePrefab != null)
             {
-                pool.rippleTimer += deltaTime;
-                if (ripplePrefab != null && pool.rippleTimer >= Mathf.Max(rippleInterval, 0.05f))
+                pool.rippleTimer -= deltaTime;
+                if (pool.rippleTimer <= 0f)
                 {
-                    pool.rippleTimer = 0f;
                     SpawnRipple(pool);
+                    pool.rippleTimer = Random.Range(rippleInterval * 0.75f, rippleInterval * 1.25f);
                 }
             }
 
             pool.respawnTime -= deltaTime;
             if (pool.respawnTime <= 0f)
             {
-                StartCoroutine(RelocatePool(pool));
-                pool.respawnTime = float.PositiveInfinity;
+                if (TryFindWaterPosition(out Vector3 position))
+                {
+                    pool.transform.position = position;
+                    pool.driftDirection = Random.insideUnitCircle.normalized;
+                    pool.respawnTime = Random.Range(respawnTimeRange.x, respawnTimeRange.y);
+                }
+                else
+                {
+                    pool.respawnTime = 2f;
+                }
             }
         }
     }
@@ -118,11 +135,11 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
     {
         foreach (ShadowPool pool in pools)
         {
-            if (pool.transform == null || pool.renderer == null || !pool.renderer.enabled) continue;
+            if (pool.transform == null) continue;
 
-            Bounds bounds = pool.renderer.bounds;
-            float normalizedX = (position.x - bounds.center.x) / Mathf.Max(bounds.extents.x, 0.01f);
-            float normalizedY = (position.y - bounds.center.y) / Mathf.Max(bounds.extents.y, 0.01f);
+            Vector2 offset = position - (Vector2)pool.transform.position;
+            float normalizedX = offset.x / Mathf.Max(pool.fishingAreaRadius.x, 0.01f);
+            float normalizedY = offset.y / Mathf.Max(pool.fishingAreaRadius.y, 0.01f);
             if ((normalizedX * normalizedX) + (normalizedY * normalizedY) <= 1f)
             {
                 return true;
@@ -156,22 +173,19 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
             poolObject.transform.SetParent(transform, true);
             poolObject.transform.position = position;
 
-            SpriteRenderer spriteRenderer = poolObject.AddComponent<SpriteRenderer>();
-            spriteRenderer.sprite = poolSprite;
-            spriteRenderer.sortingLayerName = sortingLayerName;
-            spriteRenderer.sortingOrder = sortingOrder;
-            spriteRenderer.color = poolColor;
-
             float scale = Random.Range(poolScaleRange.x, poolScaleRange.y);
-            poolObject.transform.localScale = new Vector3(scale, scale * Random.Range(0.8f, 1.15f), 1f);
+            float heightScale = Random.Range(0.8f, 1.15f);
+            Vector2 fishingAreaRadius = Vector2.Scale(PoolSpriteHalfSize, new Vector2(scale, scale * heightScale));
 
+            SpawnBubbleParticles(poolObject.transform);
             ShadowPool pool = new ShadowPool
             {
                 transform = poolObject.transform,
-                renderer = spriteRenderer,
+                fishingAreaRadius = fishingAreaRadius,
                 driftDirection = Random.insideUnitCircle.normalized,
                 driftSpeed = Random.Range(driftSpeedRange.x, driftSpeedRange.y),
-                respawnTime = Random.Range(respawnTimeRange.x, respawnTimeRange.y)
+                respawnTime = Random.Range(respawnTimeRange.x, respawnTimeRange.y),
+                rippleTimer = Random.Range(0f, rippleInterval)
             };
             pools.Add(pool);
         }
@@ -197,43 +211,20 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
         }
     }
 
-    private IEnumerator RelocatePool(ShadowPool pool)
+    private void SpawnBubbleParticles(Transform poolTransform)
     {
-        if (pool.transform == null || pool.renderer == null) yield break;
+        if (bubbleParticlePrefab == null) return;
 
-        Color startColor = pool.renderer.color;
-        float elapsed = 0f;
-        while (elapsed < 0.6f && pool.renderer != null)
-        {
-            elapsed += Time.deltaTime;
-            Color color = startColor;
-            color.a = Mathf.Lerp(startColor.a, 0f, elapsed / 0.6f);
-            pool.renderer.color = color;
-            yield return null;
-        }
+        GameObject bubbles = Instantiate(bubbleParticlePrefab, poolTransform, false);
+        bubbles.transform.localPosition = Vector3.zero;
+        bubbles.transform.localScale = bubbleParticlePrefab.transform.localScale * bubbleParticleScale;
 
-        if (pool.transform != null && TryFindWaterPosition(out Vector3 position))
+        ParticleSystemRenderer particleRenderer = bubbles.GetComponent<ParticleSystemRenderer>();
+        if (particleRenderer != null)
         {
-            pool.transform.position = position;
-            pool.driftDirection = Random.insideUnitCircle.normalized;
-            pool.respawnTime = Random.Range(respawnTimeRange.x, respawnTimeRange.y);
+            particleRenderer.sortingLayerName = sortingLayerName;
+            particleRenderer.sortingOrder = sortingOrder + 1;
         }
-        else if (pool.transform != null)
-        {
-            pool.respawnTime = 2f;
-        }
-
-        elapsed = 0f;
-        while (elapsed < 0.6f && pool.renderer != null)
-        {
-            elapsed += Time.deltaTime;
-            Color color = startColor;
-            color.a = Mathf.Lerp(0f, startColor.a, elapsed / 0.6f);
-            pool.renderer.color = color;
-            yield return null;
-        }
-
-        if (pool.renderer != null) pool.renderer.color = startColor;
     }
 
     private bool TryFindWaterPosition(out Vector3 position)
@@ -252,7 +243,7 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
                 Random.Range(cameraPosition.y - height, cameraPosition.y + height),
                 0f);
 
-            if (Physics2D.OverlapCircle(candidate, 0.1f, waterLayer) != null)
+            if (IsDeepWaterPosition(candidate))
             {
                 position = candidate;
                 return true;
@@ -262,48 +253,49 @@ public sealed class FishShadowPoolSpawner : MonoBehaviour
         return false;
     }
 
-    private static Texture2D CreatePoolTexture()
+    private bool IsDeepWaterPosition(Vector2 position)
     {
-        const int width = 96;
-        const int height = 56;
-        Texture2D texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
-        texture.name = "Fish Shadow Pool Texture";
-        texture.filterMode = FilterMode.Bilinear;
-        texture.wrapMode = TextureWrapMode.Clamp;
+        Collider2D waterCollider = Physics2D.OverlapCircle(position, 0.1f, waterLayer);
+        if (waterCollider == null) return false;
 
-        Vector2[] ellipseCenters =
+        if (TryGetShaderDepth(waterCollider, position, out float shaderDepth))
         {
-            new Vector2(0.5f, 0.5f),
-            new Vector2(0.29f, 0.55f),
-            new Vector2(0.7f, 0.43f)
-        };
-        Vector2[] ellipseRadii =
-        {
-            new Vector2(0.36f, 0.34f),
-            new Vector2(0.23f, 0.24f),
-            new Vector2(0.22f, 0.25f)
-        };
-
-        for (int y = 0; y < height; y++)
-        {
-            for (int x = 0; x < width; x++)
-            {
-                Vector2 point = new Vector2((x + 0.5f) / width, (y + 0.5f) / height);
-                float edgeDistance = float.PositiveInfinity;
-                for (int i = 0; i < ellipseCenters.Length; i++)
-                {
-                    Vector2 offset = point - ellipseCenters[i];
-                    float distance = (offset.x * offset.x) / (ellipseRadii[i].x * ellipseRadii[i].x) +
-                        (offset.y * offset.y) / (ellipseRadii[i].y * ellipseRadii[i].y);
-                    edgeDistance = Mathf.Min(edgeDistance, distance);
-                }
-
-                float alpha = 1f - Mathf.SmoothStep(0.82f, 1.08f, edgeDistance);
-                texture.SetPixel(x, y, new Color(1f, 1f, 1f, alpha));
-            }
+            return shaderDepth >= minimumShaderDepth;
         }
 
-        texture.Apply();
-        return texture;
+        if (minimumWaterDepth <= 0f) return true;
+
+        int sampleCount = Mathf.Max(MinimumDepthSampleCount, depthSampleCount);
+        for (int i = 0; i < sampleCount; i++)
+        {
+            float angle = i * (Mathf.PI * 2f / sampleCount);
+            Vector2 sample = position + new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * minimumWaterDepth;
+            if (!waterCollider.OverlapPoint(sample)) return false;
+        }
+
+        return true;
     }
+
+    private static bool TryGetShaderDepth(Collider2D waterCollider, Vector2 position, out float depth)
+    {
+        depth = 0f;
+        Renderer waterRenderer = waterCollider.GetComponent<Renderer>();
+        if (waterRenderer == null) waterRenderer = waterCollider.GetComponentInParent<Renderer>();
+        if (waterRenderer == null) return false;
+
+        Material waterMaterial = waterRenderer.sharedMaterial;
+        if (waterMaterial == null ||
+            !waterMaterial.HasProperty(SurfaceLevelProperty) ||
+            !waterMaterial.HasProperty(DepthVerticalScaleProperty))
+        {
+            return false;
+        }
+
+        float depthScale = waterMaterial.GetFloat(DepthVerticalScaleProperty);
+        float normalizedDistance = Mathf.Clamp01(
+            (waterMaterial.GetFloat(SurfaceLevelProperty) - position.y) / Mathf.Max(0.001f, Mathf.Abs(depthScale)));
+        depth = depthScale < 0f ? 1f - normalizedDistance : normalizedDistance;
+        return true;
+    }
+
 }
