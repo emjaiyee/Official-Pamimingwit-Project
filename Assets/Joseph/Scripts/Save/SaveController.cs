@@ -213,6 +213,7 @@ public class SaveController : MonoBehaviour
         {
             GameManager.Instance.currentDay = saveData.currentDay;
             GameManager.Instance.currentTaxAmount = saveData.currentTaxAmount;
+            GameManager.Instance.DisplayTime();
         }
 
         if (StaminaManager.Instance != null)

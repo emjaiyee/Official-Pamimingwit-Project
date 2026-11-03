@@ -1,0 +1,1391 @@
+fileFormatVersion: 2
+guid: cb149208266dfdb4c9e88f9083cee9d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5005119681512591604
+    second: NPC1M Walking Animation_0
+  - first:
+      213: -7923601554622073718
+    second: NPC1M Walking Animation_1
+  - first:
+      213: 2665288955468125571
+    second: NPC1M Walking Animation_2
+  - first:
+      213: 5652937501207586444
+    second: NPC1M Walking Animation_3
+  - first:
+      213: 3673950835843808651
+    second: NPC1M Walking Animation_4
+  - first:
+      213: 3558536481497736385
+    second: NPC1M Walking Animation_5
+  - first:
+      213: -7610857123475133541
+    second: NPC1M Walking Animation_6
+  - first:
+      213: -3999278651936994408
+    second: NPC1M Walking Animation_7
+  - first:
+      213: 7751513245382223442
+    second: NPC1M Walking Animation_8
+  - first:
+      213: 2926670760364027813
+    second: NPC1M Walking Animation_9
+  - first:
+      213: -1502645104842899067
+    second: NPC1M Walking Animation_10
+  - first:
+      213: 1279101289026654230
+    second: NPC1M Walking Animation_11
+  - first:
+      213: -3205487863298654905
+    second: NPC1M Walking Animation_12
+  - first:
+      213: -5606057290208634527
+    second: NPC1M Walking Animation_13
+  - first:
+      213: -8202130360102464106
+    second: NPC1M Walking Animation_14
+  - first:
+      213: -5448418587651647875
+    second: NPC1M Walking Animation_15
+  - first:
+      213: -5450845527766027692
+    second: NPC1M Walking Animation_16
+  - first:
+      213: -5561266618003188094
+    second: NPC1M Walking Animation_17
+  - first:
+      213: -7850297744491006906
+    second: NPC1M Walking Animation_18
+  - first:
+      213: -7073424236567974445
+    second: NPC1M Walking Animation_19
+  - first:
+      213: -8172124254332311083
+    second: NPC1M Walking Animation_20
+  - first:
+      213: 8606304830836408792
+    second: NPC1M Walking Animation_21
+  - first:
+      213: -8918930722478255074
+    second: NPC1M Walking Animation_22
+  - first:
+      213: 1723427281574165952
+    second: NPC1M Walking Animation_23
+  - first:
+      213: 4513438509222621595
+    second: NPC1M Walking Animation_24
+  - first:
+      213: -8948382136209565190
+    second: NPC1M Walking Animation_25
+  - first:
+      213: 805351149252912897
+    second: NPC1M Walking Animation_26
+  - first:
+      213: -1316920158563042029
+    second: NPC1M Walking Animation_27
+  - first:
+      213: -6006975960795141338
+    second: NPC1M Walking Animation_28
+  - first:
+      213: -5779545829991606889
+    second: NPC1M Walking Animation_29
+  - first:
+      213: 5102360185642702788
+    second: NPC1M Walking Animation_30
+  - first:
+      213: 272176149609653427
+    second: NPC1M Walking Animation_31
+  - first:
+      213: 298869367050497817
+    second: NPC1M Walking Animation_32
+  - first:
+      213: -6268402788202235187
+    second: NPC1M Walking Animation_33
+  - first:
+      213: 5607226089909387193
+    second: NPC1M Walking Animation_34
+  - first:
+      213: -2527428822201758944
+    second: NPC1M Walking Animation_35
+  - first:
+      213: 8970243093592816693
+    second: NPC1M Walking Animation_36
+  - first:
+      213: 2067600067106132070
+    second: NPC1M Walking Animation_37
+  - first:
+      213: -3022725269634134373
+    second: NPC1M Walking Animation_38
+  - first:
+      213: -6933557771908612961
+    second: NPC1M Walking Animation_39
+  - first:
+      213: 7125234632866852215
+    second: NPC1M Walking Animation_40
+  - first:
+      213: -4273007859463270457
+    second: NPC1M Walking Animation_41
+  - first:
+      213: -3580803983201235711
+    second: NPC1M Walking Animation_42
+  - first:
+      213: 4111858486085180641
+    second: NPC1M Walking Animation_43
+  - first:
+      213: -8497587246741998997
+    second: NPC1M Walking Animation_44
+  - first:
+      213: -7668840287819457798
+    second: NPC1M Walking Animation_45
+  - first:
+      213: -1031757128916396781
+    second: NPC1M Walking Animation_46
+  - first:
+      213: -1427829981457002947
+    second: NPC1M Walking Animation_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0dfd205d1c57540800000000000000
+      internalID: 5005119681512591604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84b40bfd56b90290800000000000000
+      internalID: -7923601554622073718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38513760f220df420800000000000000
+      internalID: 2665288955468125571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8666f0f4b4437e40800000000000000
+      internalID: 5652937501207586444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d38bcd1de7cf230800000000000000
+      internalID: 3673950835843808651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c4e0f37316726130800000000000000
+      internalID: 3558536481497736385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b630f25cdc06690800000000000000
+      internalID: -7610857123475133541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_7
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b0e715145bf78c0800000000000000
+      internalID: -3999278651936994408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_8
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2562eb63a38e29b60800000000000000
+      internalID: 7751513245382223442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af2506ec8f9d9820800000000000000
+      internalID: 2926670760364027813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_10
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5810c5e0d38852be0800000000000000
+      internalID: -1502645104842899067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6109d2c68d740c110800000000000000
+      internalID: 1279101289026654230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_12
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74df14095c1d383d0800000000000000
+      internalID: -3205487863298654905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_13
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16910a2c8984332b0800000000000000
+      internalID: -5606057290208634527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_14
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69555ace4ed2c2e80800000000000000
+      internalID: -8202130360102464106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_15
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76536759245364b0800000000000000
+      internalID: -5448418587651647875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_16
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452baff4fd4ba54b0800000000000000
+      internalID: -5450845527766027692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_17
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2869eacc97962d2b0800000000000000
+      internalID: -5561266618003188094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_18
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64430964bc32e0390800000000000000
+      internalID: -7850297744491006906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_19
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd2ab9222626dd90800000000000000
+      internalID: -7073424236567974445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_20
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d92b28d948c69e80800000000000000
+      internalID: -8172124254332311083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_21
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d18bbe35acbf6770800000000000000
+      internalID: 8606304830836408792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_22
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e149d5e23c7993480800000000000000
+      internalID: -8918930722478255074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_23
+      rect:
+        serializedVersion: 2
+        x: 1121
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cdf1724bf7dae710800000000000000
+      internalID: 1723427281574165952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9178c13964f2ae30800000000000000
+      internalID: 4513438509222621595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_25
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af917c09bd5f0d380800000000000000
+      internalID: -8948382136209565190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_26
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1072ca27a9e2d2b00800000000000000
+      internalID: 805351149252912897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_27
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d7c47d71c59bde0800000000000000
+      internalID: -1316920158563042029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_28
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62bae72a03fe2aca0800000000000000
+      internalID: -6006975960795141338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_29
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795924060bdeacfa0800000000000000
+      internalID: -5779545829991606889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_30
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7545d2e893fc640800000000000000
+      internalID: 5102360185642702788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_31
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b421d914c6f6c300800000000000000
+      internalID: 272176149609653427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_32
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 3
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f6a491b1cc52400800000000000000
+      internalID: 298869367050497817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_33
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca332420e82209a0800000000000000
+      internalID: -6268402788202235187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_34
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bff950ab6ed0dd40800000000000000
+      internalID: 5607226089909387193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_35
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 2
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02b849980e4ccecd0800000000000000
+      internalID: -2527428822201758944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_36
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c30863194bc7c70800000000000000
+      internalID: 8970243093592816693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_37
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6605f617e4791bc10800000000000000
+      internalID: 2067600067106132070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_38
+      rect:
+        serializedVersion: 2
+        x: 1841
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e4cd1e16f1d06d0800000000000000
+      internalID: -3022725269634134373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_39
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cfcb721fd07cf90800000000000000
+      internalID: -6933557771908612961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_40
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77de651c52be1e260800000000000000
+      internalID: 7125234632866852215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_41
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf4d3ebdf933b4c0800000000000000
+      internalID: -4273007859463270457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_42
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d8cfacfbd6e4ec0800000000000000
+      internalID: -3580803983201235711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_43
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec58cde181401930800000000000000
+      internalID: 4111858486085180641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_44
+      rect:
+        serializedVersion: 2
+        x: 2129
+        y: 3
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b62bd06db61821a80800000000000000
+      internalID: -8497587246741998997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_45
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa1155b36ec29590800000000000000
+      internalID: -7668840287819457798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_46
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31516749b567ea1f0800000000000000
+      internalID: -1031757128916396781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC1M Walking Animation_47
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 3
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e4a9362345f2ce0800000000000000
+      internalID: -1427829981457002947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NPC1M Walking Animation_0: 5005119681512591604
+      NPC1M Walking Animation_1: -7923601554622073718
+      NPC1M Walking Animation_10: -1502645104842899067
+      NPC1M Walking Animation_11: 1279101289026654230
+      NPC1M Walking Animation_12: -3205487863298654905
+      NPC1M Walking Animation_13: -5606057290208634527
+      NPC1M Walking Animation_14: -8202130360102464106
+      NPC1M Walking Animation_15: -5448418587651647875
+      NPC1M Walking Animation_16: -5450845527766027692
+      NPC1M Walking Animation_17: -5561266618003188094
+      NPC1M Walking Animation_18: -7850297744491006906
+      NPC1M Walking Animation_19: -7073424236567974445
+      NPC1M Walking Animation_2: 2665288955468125571
+      NPC1M Walking Animation_20: -8172124254332311083
+      NPC1M Walking Animation_21: 8606304830836408792
+      NPC1M Walking Animation_22: -8918930722478255074
+      NPC1M Walking Animation_23: 1723427281574165952
+      NPC1M Walking Animation_24: 4513438509222621595
+      NPC1M Walking Animation_25: -8948382136209565190
+      NPC1M Walking Animation_26: 805351149252912897
+      NPC1M Walking Animation_27: -1316920158563042029
+      NPC1M Walking Animation_28: -6006975960795141338
+      NPC1M Walking Animation_29: -5779545829991606889
+      NPC1M Walking Animation_3: 5652937501207586444
+      NPC1M Walking Animation_30: 5102360185642702788
+      NPC1M Walking Animation_31: 272176149609653427
+      NPC1M Walking Animation_32: 298869367050497817
+      NPC1M Walking Animation_33: -6268402788202235187
+      NPC1M Walking Animation_34: 5607226089909387193
+      NPC1M Walking Animation_35: -2527428822201758944
+      NPC1M Walking Animation_36: 8970243093592816693
+      NPC1M Walking Animation_37: 2067600067106132070
+      NPC1M Walking Animation_38: -3022725269634134373
+      NPC1M Walking Animation_39: -6933557771908612961
+      NPC1M Walking Animation_4: 3673950835843808651
+      NPC1M Walking Animation_40: 7125234632866852215
+      NPC1M Walking Animation_41: -4273007859463270457
+      NPC1M Walking Animation_42: -3580803983201235711
+      NPC1M Walking Animation_43: 4111858486085180641
+      NPC1M Walking Animation_44: -8497587246741998997
+      NPC1M Walking Animation_45: -7668840287819457798
+      NPC1M Walking Animation_46: -1031757128916396781
+      NPC1M Walking Animation_47: -1427829981457002947
+      NPC1M Walking Animation_5: 3558536481497736385
+      NPC1M Walking Animation_6: -7610857123475133541
+      NPC1M Walking Animation_7: -3999278651936994408
+      NPC1M Walking Animation_8: 7751513245382223442
+      NPC1M Walking Animation_9: 2926670760364027813
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

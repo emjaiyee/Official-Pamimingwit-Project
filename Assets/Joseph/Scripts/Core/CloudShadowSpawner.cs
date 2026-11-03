@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class CloudShadowSpawner : MonoBehaviour
 {
-    [Header("Cloud Prefabs")]
-    [SerializeField] private GameObject[] cloudShadowPrefabs;
+    [Header("Cloud Sprites")]
+    [SerializeField] private Sprite[] cloudSprites;
 
     [Header("Movement & Wind")]
     [SerializeField] private Vector2 windDirection = new Vector2(1f, 0.2f);
@@ -97,7 +97,7 @@ public class CloudShadowSpawner : MonoBehaviour
     {
         ClearClouds();
 
-        if (cloudShadowPrefabs == null || cloudShadowPrefabs.Length == 0) return;
+        if (cloudSprites == null || cloudSprites.Length == 0) return;
 
         for (int i = 0; i < maxClouds; i++)
         {
@@ -107,7 +107,6 @@ public class CloudShadowSpawner : MonoBehaviour
 
     private void SpawnCloud(bool randomizeInitialPosition)
     {
-        GameObject prefab = cloudShadowPrefabs[Random.Range(0, cloudShadowPrefabs.Length)];
         Vector3 spawnPos = cameraTransform.position;
 
         if (randomizeInitialPosition)
@@ -125,7 +124,14 @@ public class CloudShadowSpawner : MonoBehaviour
 
         spawnPos.z = 0f;
 
-        GameObject cloud = Instantiate(prefab, spawnPos, Quaternion.identity, transform);
+        GameObject cloud = new GameObject("Cloud Overlay");
+        cloud.transform.position = spawnPos;
+        cloud.transform.SetParent(transform, true);
+
+        SpriteRenderer spriteRenderer = cloud.AddComponent<SpriteRenderer>();
+        spriteRenderer.sprite = cloudSprites[Random.Range(0, cloudSprites.Length)];
+        spriteRenderer.sortingLayerName = "Rain";
+
         activeClouds.Add(cloud);
     }
 
