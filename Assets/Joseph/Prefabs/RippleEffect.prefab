@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 735575153
-  m_SortingLayer: 10
+  m_SortingLayer: 11
   m_SortingOrder: -1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3738340056795658991, guid: 2aa21b749c03b67419108a69705e43a3, type: 3}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e402037421bfdd147a686e7768f46f92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RippleEffect
-  lifetime: 0.8
+  lifetime: 0.6
   animationFrames:
   - {fileID: 3738340056795658991, guid: 2aa21b749c03b67419108a69705e43a3, type: 3}
   - {fileID: 7465700634594992841, guid: 2aa21b749c03b67419108a69705e43a3, type: 3}
@@ -127,7 +127,7 @@ SortingGroup:
   m_GameObject: {fileID: 688194962809374536}
   m_Enabled: 1
   m_SortingLayerID: 735575153
-  m_SortingLayer: 10
+  m_SortingLayer: 11
   m_SortingOrder: -1
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
